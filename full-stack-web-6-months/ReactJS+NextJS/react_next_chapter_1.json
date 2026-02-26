@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 1: TypeScript & React Foundations",
+    "chapterId": "react_nextjs_chapter_1",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Which keyword should you use by default for declaring variables in TypeScript?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "var",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "let",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "const",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "function",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What is the output?",
+            "codeSnippet": "const greet = (name: string) => `Hello, ${name}!`;\nconsole.log(greet('Alice'));",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Hello, Alice!",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "Hello, name!",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "undefined",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Error",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What does this destructuring do?",
+            "codeSnippet": "const { name, age } = { name: 'Alice', age: 25, city: 'NYC' };",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Extracts name and age into separate variables",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "Creates a new object with only name and age",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Deletes city from the object",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Renames the object properties",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What does the spread operator do in this code?",
+            "codeSnippet": "const arr1 = [1, 2];\nconst arr2 = [...arr1, 3, 4];",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Combines arr1 with new elements into arr2",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "Removes elements from arr1",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Converts arr1 to a string",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Creates a reference to arr1",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What is TSX?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "A JavaScript framework",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "TypeScript + JSX: HTML-like syntax with type checking",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "A CSS preprocessor",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "A database query language",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What is wrong with this TSX?",
+            "codeSnippet": "function App() {\n  return (\n    <h1>Hello</h1>\n    <p>World</p>\n  );\n}",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Missing semicolon",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Multiple root elements without a parent wrapper",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Wrong function name",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "TSX cannot have text",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "How do you add a CSS class in TSX?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "<div class=\"container\">",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "<div className=\"container\">",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "<div class-name=\"container\">",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "<div style=\"container\">",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What is React's main benefit over vanilla JavaScript?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "It's faster at runtime",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "It provides a declarative way to build UIs",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "It doesn't use JavaScript",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "It doesn't need a browser",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What is a Single-Page Application (SPA)?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "An app with only one HTML page",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "An app where JavaScript handles routing without full page reloads",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "An app that loads slowly",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "An app without any pages",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Why does React use a Virtual DOM?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To make the app bigger",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To avoid updating the real DOM entirely",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "To efficiently update only the parts of the DOM that changed",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "To store data permanently",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between const, let, and var. Why should you prefer const?",
+            "preferredAnswer": "**`const`** declares a variable that **cannot be reassigned**. Once assigned, the reference cannot change.\n\n```typescript\nconst name = 'Alice';\nname = 'Bob';  // ❌ ERROR: Assignment to constant variable\n\nconst user = { name: 'Alice' };\nuser.name = 'Bob';  // ✅ OK (object contents can change)\nuser = {};          // ❌ ERROR (cannot reassign)\n```\n\n**`let`** declares a variable that **can be reassigned**. Use it when the value will change.\n\n```typescript\nlet count = 0;\ncount++;  // ✅ OK\n```\n\n**`var`** is the old way with **function scope** (not block scope), causing bugs. **Never use it.**\n\n```typescript\nif (true) {\n    var x = 10;\n}\nconsole.log(x);  // 10 (leaked out of block!)\n\nif (true) {\n    let y = 20;\n}\nconsole.log(y);  // ❌ ERROR (block-scoped)\n```\n\n**Why prefer const:**\n1. Prevents accidental reassignment\n2. Makes code more predictable\n3. Shows intent (this value won't change)\n4. Use `let` only when you need to reassign"
+        },
+        {
+            "id": 2,
+            "question": "What is destructuring? Provide examples of destructuring objects and arrays, including how it's used in React props.",
+            "preferredAnswer": "**Destructuring** extracts values from arrays or objects into separate variables.\n\n**Array Destructuring:**\n\n```typescript\nconst colors = ['red', 'green', 'blue'];\n\n// Without destructuring\nconst first = colors[0];\nconst second = colors[1];\n\n// With destructuring\nconst [first, second, third] = colors;\nconsole.log(first);  // 'red'\n\n// React example (useState)\nconst [count, setCount] = useState<number>(0);\n```\n\n**Object Destructuring:**\n\n```typescript\nconst user = { name: 'Alice', age: 25, email: 'alice@example.com' };\n\n// Without destructuring\nconst name = user.name;\nconst age = user.age;\n\n// With destructuring\nconst { name, age, email } = user;\n\n// With default values\nconst { name, age, role = 'user' } = user;\n```\n\n**In React Props (most common pattern):**\n\n```tsx\n// ❌ Without destructuring\nfunction Greeting(props) {\n    return <h1>Hello, {props.name}!</h1>;\n}\n\n// ✅ With destructuring (clean!)\nfunction Greeting({ name, age }) {\n    return (\n        <div>\n            <h1>Hello, {name}!</h1>\n            <p>Age: {age}</p>\n        </div>\n    );\n}\n\n// With default values\nfunction Button({ label = 'Click me', variant = 'primary' }) {\n    return <button className={variant}>{label}</button>;\n}\n```"
+        },
+        {
+            "id": 3,
+            "question": "What is the spread operator? Show how it's used to copy and merge objects/arrays, and explain why it's important in React state updates.",
+            "preferredAnswer": "The **spread operator (`...`)** expands arrays or objects.\n\n**Arrays:**\n\n```typescript\nconst nums = [1, 2, 3];\nconst moreNums = [4, 5];\n\n// Combine arrays\nconst all = [...nums, ...moreNums];  // [1, 2, 3, 4, 5]\n\n// Copy array\nconst copy = [...nums];  // [1, 2, 3]\n\n// Add elements\nconst extended = [...nums, 4, 5];  // [1, 2, 3, 4, 5]\n```\n\n**Objects:**\n\n```typescript\nconst user = { name: 'Alice', age: 25 };\nconst updates = { age: 26, city: 'NYC' };\n\n// Merge objects (later values override)\nconst updated = { ...user, ...updates };\n// { name: 'Alice', age: 26, city: 'NYC' }\n\n// Copy object\nconst copy = { ...user };\n\n// Override specific property\nconst withEmail = { ...user, email: 'alice@example.com' };\n```\n\n**Why it's critical in React:**\n\nReact requires **immutable state updates** — you cannot mutate state directly:\n\n```tsx\nconst [user, setUser] = useState({ name: 'Alice', age: 25 });\n\n// ❌ WRONG: Mutating state directly\nuser.age = 26;  // React won't detect the change!\n\n// ✅ CORRECT: Create new object with spread\nsetUser({ ...user, age: 26 });\n\n// Array example\nconst [items, setItems] = useState([1, 2, 3]);\n\n// ❌ WRONG\nitems.push(4);  // Mutates original array\n\n// ✅ CORRECT\nsetItems([...items, 4]);  // New array\n```\n\nSpread creates a new object/array, triggering React's re-render."
+        },
+        {
+            "id": 4,
+            "question": "What is TSX? Why does React use it with TypeScript? List the main TSX rules.",
+            "preferredAnswer": "**TSX (TypeScript + JSX)** is TypeScript's syntax extension that looks like HTML but compiles to JavaScript:\n\n```tsx\nconst element = <h1>Hello, world!</h1>;\n\n// Compiles to:\nconst element = React.createElement('h1', null, 'Hello, world!');\n```\n\n**Why React uses JSX:**\n\n1. **Readability** — Easier to visualize UI structure\n2. **Familiarity** — Looks like HTML, which developers know\n3. **Type safety** — IDEs can catch errors\n4. **Embedding expressions** — JavaScript works seamlessly\n\nWithout JSX:\n```typescript\nReact.createElement('div', { className: 'container' },\n    React.createElement('h1', null, 'Hello'),\n    React.createElement('p', null, 'Welcome')\n);\n```\n\nWith JSX:\n```tsx\n<div className=\"container\">\n    <h1>Hello</h1>\n    <p>Welcome</p>\n</div>\n```\n\n**Main JSX Rules:**\n\n1. **Single parent element** — Must wrap multiple elements\n```tsx\n// ❌ Wrong\nreturn <h1>Hi</h1><p>There</p>;\n\n// ✅ Correct\nreturn <><h1>Hi</h1><p>There</p></>;\n```\n\n2. **Use `className` not `class`**\n```tsx\n<div className=\"container\">  // ✅\n<div class=\"container\">       // ❌\n```\n\n3. **Close all tags**\n```tsx\n<img src=\"logo.png\" />  // ✅\n<input type=\"text\" />   // ✅\n```\n\n4. **camelCase attributes**\n```tsx\n<button onClick={handleClick}>  // ✅\n<button onclick={handleClick}>  // ❌\n```\n\n5. **Curly braces for JavaScript**\n```tsx\n<h1>Hello, {name}!</h1>\n<p>{age >= 18 ? 'Adult' : 'Minor'}</p>\n```"
+        },
+        {
+            "id": 5,
+            "question": "Explain the Virtual DOM. How does it make React faster than manual DOM manipulation?",
+            "preferredAnswer": "The **Virtual DOM** is a lightweight JavaScript representation of the real DOM that React keeps in memory.\n\n**How it works:**\n\n1. **React creates a virtual copy** of the DOM (JavaScript object)\n2. **When state changes**, React creates a **new virtual DOM**\n3. **React diffs** (compares) old vs new virtual DOM\n4. **React updates only what changed** in the real DOM\n\n**Example:**\n\n```tsx\nfunction Counter() {\n    const [count, setCount] = useState<number>(0);\n\n    return (\n        <div>\n            <h1>Counter App</h1>\n            <p>Count: {count}</p>\n            <button onClick={() => setCount(count + 1)}>+</button>\n        </div>\n    );\n}\n```\n\nWhen button is clicked:\n1. `count` changes from 0 → 1\n2. React creates new Virtual DOM with `<p>Count: 1</p>`\n3. React compares: Only the `<p>` text changed\n4. React updates **only that text node** in the real DOM\n\n**Why it's faster than manual DOM manipulation:**\n\n**Manual way (slow):**\n```typescript\n// Every update touches the DOM directly\nfor (let i = 0; i < 1000; i++) {\n    const div = document.createElement('div');\n    div.textContent = i;\n    document.body.appendChild(div);  // Expensive!\n}\n```\n\n**React way (fast):**\n- DOM manipulation is **expensive** (triggers reflows/repaints)\n- Virtual DOM changes are **cheap** (just JavaScript objects)\n- React **batches** updates and applies them efficiently\n- React **minimizes** actual DOM changes\n\n**Flow:**\n```\nState Change → Virtual DOM Update → Diff → Minimal Real DOM Update\n```\n\nThis makes React **fast** even with complex UIs updating frequently."
+        }
+    ]
+}

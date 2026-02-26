@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 8: Styling, Optimization & Production Practices",
+    "chapterId": "react_nextjs_chapter_8",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What file extension indicates a CSS Module?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": ".css",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": ".module.css",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": ".scoped.css",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": ".local.css",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Which Next.js component should you use for images?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "<img>",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "<Image>",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "<picture>",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "<NextImage>",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "How do you import Google Fonts in Next.js?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Add <link> in <head>",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Import from 'next/font/google'",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Install via npm",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Use @import in CSS",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What does the priority prop do on next/image?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Makes image load first (no lazy loading)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "Increases image quality",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Makes image responsive",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Adds blur placeholder",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Where do you define metadata for a page?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "In a separate metadata.js file",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Export a metadata object from page.tsx",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "In next.config.js",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "In package.json",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What file shows a loading state for a route?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "loading.tsx",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "loader.js",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "skeleton.js",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "pending.js",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What does dynamic import do?",
+            "codeSnippet": "const Chart = dynamic(() => import('./Chart'));",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Loads component only when needed (code splitting)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "Makes component update dynamically",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Enables hot reloading",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Compiles TypeScript",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What file handles 404 errors?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "404.js",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "not-found.tsx",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "error.tsx",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "missing.js",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What command builds a Next.js app for production?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "npm start",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "npm run build",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "npm run production",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "npm deploy",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What is the recommended platform for deploying Next.js apps?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "AWS",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Vercel",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Heroku",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "DigitalOcean",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Compare CSS Modules and Tailwind CSS. When would you use each approach?",
+            "preferredAnswer": "**CSS Modules** — Scoped CSS files\n\n```css\n/* Button.module.css */\n.button {\n  padding: 12px 24px;\n  background: blue;\n  color: white;\n}\n\n.primary {\n  background: #2563eb;\n}\n```\n\n```tsx\nimport styles from './Button.module.css';\n\nfunction Button() {\n  return <button className={styles.button}>Click</button>;\n}\n```\n\n**Pros:**\n✅ Standard CSS syntax (familiar)\n✅ Automatic scoping (no conflicts)\n✅ Works with Sass/SCSS\n✅ No extra dependencies\n✅ Good for existing CSS codebases\n\n**Cons:**\n❌ Verbose (separate file for styles)\n❌ No design system built-in\n❌ Manual responsive design\n❌ Class name management needed\n\n---\n\n**Tailwind CSS** — Utility-first framework\n\n```tsx\nfunction Button() {\n  return (\n    <button className=\"px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition\">\n      Click\n    </button>\n  );\n}\n```\n\n**Pros:**\n✅ Fast development (no switching between files)\n✅ Consistent design system\n✅ Responsive design utilities\n✅ Small production bundle (purges unused styles)\n✅ No naming conflicts\n\n**Cons:**\n❌ Learning curve (memorize class names)\n❌ HTML can look cluttered\n❌ Harder to theme dynamically\n❌ Refactoring means updating many files\n\n---\n\n**When to use CSS Modules:**\n✅ Migrating from traditional CSS\n✅ Team prefers standard CSS\n✅ Complex, unique designs\n✅ Need full control over CSS\n\n**When to use Tailwind:**\n✅ New projects\n✅ Rapid prototyping\n✅ Design system / component library\n✅ Team wants consistency\n✅ Mobile-first responsive design\n\n---\n\n**Hybrid Approach:**\n\n```tsx\n// Tailwind for layout, CSS Modules for complex components\nimport styles from './Card.module.css';\n\nfunction Card({ children }) {\n  return (\n    <div className=\"p-6 max-w-md mx-auto\">  {/* Tailwind */}\n      <div className={styles.cardContent}>    {/* CSS Module */}\n        {children}\n      </div>\n    </div>\n  );\n}\n```"
+        },
+        {
+            "id": 2,
+            "question": "Explain next/image optimization. What are the key features and how do you use it for different scenarios (static, remote, fill)?",
+            "preferredAnswer": "**`next/image`** automatically optimizes images for performance and user experience.\n\n**Key Features:**\n\n1. ✅ **Automatic format conversion** (WebP, AVIF)\n2. ✅ **Responsive images** (srcset for different screen sizes)\n3. ✅ **Lazy loading** (loads as you scroll)\n4. ✅ **Blur placeholder** (smooth loading experience)\n5. ✅ **Prevents layout shift** (reserves space)\n6. ✅ **On-demand optimization** (not at build time)\n\n---\n\n**Scenario 1: Static Image (local)**\n\n```tsx\nimport Image from 'next/image';\nimport profilePic from './profile.jpg';  // Import local image\n\nexport default function Profile() {\n  return (\n    <Image\n      src={profilePic}  // Auto-detects width/height\n      alt=\"Profile picture\"\n      placeholder=\"blur\"  // Automatic blur placeholder\n      priority  // Load immediately (above fold)\n    />\n  );\n}\n```\n\n---\n\n**Scenario 2: Remote Image (external URL)**\n\n```tsx\n// 1. Configure domains in next.config.js\nmodule.exports = {\n  images: {\n    remotePatterns: [\n      {\n        protocol: 'https',\n        hostname: 'images.unsplash.com',\n      },\n    ],\n  },\n};\n\n// 2. Use in component\nimport Image from 'next/image';\n\nexport default function Gallery() {\n  return (\n    <Image\n      src=\"https://images.unsplash.com/photo-123\"\n      alt=\"Photo\"\n      width={800}     // Must specify for remote images\n      height={600}\n      loading=\"lazy\"  // Default (lazy load)\n    />\n  );\n}\n```\n\n---\n\n**Scenario 3: Fill Container (responsive)**\n\n```tsx\nexport default function Hero() {\n  return (\n    <div className=\"relative w-full h-[500px]\">\n      <Image\n        src=\"/hero.jpg\"\n        alt=\"Hero image\"\n        fill  // Fills parent container\n        style={{ objectFit: 'cover' }}  // or 'contain', 'fill'\n        priority  // Above fold = priority\n      />\n    </div>\n  );\n}\n```\n\n---\n\n**Scenario 4: Multiple Images with Different Priorities**\n\n```tsx\nexport default function ProductGallery({ images }) {\n  return (\n    <div className=\"grid grid-cols-3 gap-4\">\n      {images.map((img, index) => (\n        <Image\n          key={img.id}\n          src={img.url}\n          alt={img.alt}\n          width={400}\n          height={300}\n          loading={index < 3 ? 'eager' : 'lazy'}  // First 3 eager\n          priority={index === 0}  // First image priority\n          placeholder=\"blur\"\n          blurDataURL={img.blurDataURL}\n        />\n      ))}\n    </div>\n  );\n}\n```\n\n---\n\n**Scenario 5: Custom Blur Placeholder**\n\n```tsx\n// Generate blur data URL (at build time or server)\nimport { getPlaiceholder } from 'plaiceholder';\n\nasync function getImage() {\n  const { base64 } = await getPlaiceholder('/image.jpg');\n  return base64;\n}\n\n// Use in component\n<Image\n  src=\"/image.jpg\"\n  alt=\"Image\"\n  width={800}\n  height={600}\n  placeholder=\"blur\"\n  blurDataURL=\"data:image/jpeg;base64,...\"  // Custom blur\n/>\n```\n\n---\n\n**Performance Tips:**\n\n✅ Use `priority` for above-fold images only\n✅ Use `loading=\"lazy\"` for below-fold (default)\n✅ Always provide `width` and `height` (prevents layout shift)\n✅ Use `fill` for responsive containers\n✅ Configure `remotePatterns` for external images\n✅ Use blur placeholders for smooth loading"
+        },
+        {
+            "id": 3,
+            "question": "What is metadata in Next.js? Create comprehensive metadata for a blog post including OpenGraph and Twitter cards.",
+            "preferredAnswer": "**Metadata** defines information about your page for SEO, social sharing, and browser display.\n\n**Complete Blog Post Metadata:**\n\n```tsx\n// app/blog/[slug]/page.tsx\n\n// Dynamic metadata based on post data\nexport async function generateMetadata({ params }) {\n  // Fetch post data\n  const post = await fetch(`https://api.example.com/posts/${params.slug}`)\n    .then(res => res.json());\n\n  return {\n    // Basic metadata\n    title: post.title,\n    description: post.excerpt,\n    keywords: post.tags,\n    \n    // Authors\n    authors: [\n      { \n        name: post.author.name, \n        url: `https://mysite.com/authors/${post.author.slug}` \n      }\n    ],\n    \n    // OpenGraph (Facebook, LinkedIn, etc.)\n    openGraph: {\n      title: post.title,\n      description: post.excerpt,\n      url: `https://mysite.com/blog/${post.slug}`,\n      siteName: 'My Blog',\n      locale: 'en_US',\n      type: 'article',\n      publishedTime: post.publishedAt,\n      modifiedTime: post.updatedAt,\n      authors: [post.author.name],\n      tags: post.tags,\n      images: [\n        {\n          url: post.image,\n          width: 1200,\n          height: 630,\n          alt: post.title,\n        },\n      ],\n    },\n    \n    // Twitter Card\n    twitter: {\n      card: 'summary_large_image',  // Large image preview\n      title: post.title,\n      description: post.excerpt,\n      creator: '@myhandle',\n      site: '@myhandle',\n      images: [post.image],\n    },\n    \n    // Robots (SEO)\n    robots: {\n      index: true,\n      follow: true,\n      nocache: false,\n      googleBot: {\n        index: true,\n        follow: true,\n        'max-video-preview': -1,\n        'max-image-preview': 'large',\n        'max-snippet': -1,\n      },\n    },\n    \n    // Alternate languages (if multilingual)\n    alternates: {\n      canonical: `https://mysite.com/blog/${post.slug}`,\n      languages: {\n        'en-US': `https://mysite.com/en/blog/${post.slug}`,\n        'es-ES': `https://mysite.com/es/blog/${post.slug}`,\n      },\n    },\n  };\n}\n\nexport default async function BlogPost({ params }) {\n  const post = await fetch(`https://api.example.com/posts/${params.slug}`)\n    .then(res => res.json());\n\n  // JSON-LD structured data for rich results\n  const jsonLd = {\n    '@context': 'https://schema.org',\n    '@type': 'BlogPosting',\n    headline: post.title,\n    description: post.excerpt,\n    image: post.image,\n    datePublished: post.publishedAt,\n    dateModified: post.updatedAt,\n    author: {\n      '@type': 'Person',\n      name: post.author.name,\n      url: `https://mysite.com/authors/${post.author.slug}`,\n    },\n    publisher: {\n      '@type': 'Organization',\n      name: 'My Blog',\n      logo: {\n        '@type': 'ImageObject',\n        url: 'https://mysite.com/logo.png',\n      },\n    },\n  };\n\n  return (\n    <>\n      {/* Structured data for Google */}\n      <script\n        type=\"application/ld+json\"\n        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}\n      />\n      \n      <article>\n        <header>\n          <h1>{post.title}</h1>\n          <div className=\"meta\">\n            <time dateTime={post.publishedAt}>\n              {new Date(post.publishedAt).toLocaleDateString()}\n            </time>\n            <span>By {post.author.name}</span>\n          </div>\n        </header>\n        \n        <img src={post.image} alt={post.title} />\n        \n        <div dangerouslySetInnerHTML={{ __html: post.content }} />\n        \n        <footer>\n          <div className=\"tags\">\n            {post.tags.map(tag => (\n              <span key={tag} className=\"tag\">{tag}</span>\n            ))}\n          </div>\n        </footer>\n      </article>\n    </>\n  );\n}\n```\n\n---\n\n**Layout Metadata (Template):**\n\n```tsx\n// app/layout.tsx\nexport const metadata = {\n  metadataBase: new URL('https://mysite.com'),\n  title: {\n    template: '%s | My Blog',  // Page titles append to this\n    default: 'My Blog - Web Development Articles',\n  },\n  description: 'Articles about web development, React, and Next.js',\n  openGraph: {\n    siteName: 'My Blog',\n    locale: 'en_US',\n    type: 'website',\n  },\n};\n```\n\n---\n\n**Generated HTML:**\n\n```html\n<head>\n  <title>Getting Started with Next.js | My Blog</title>\n  <meta name=\"description\" content=\"Learn how to build...\" />\n  \n  <!-- OpenGraph -->\n  <meta property=\"og:title\" content=\"Getting Started with Next.js\" />\n  <meta property=\"og:description\" content=\"Learn how to build...\" />\n  <meta property=\"og:image\" content=\"https://mysite.com/post-image.jpg\" />\n  <meta property=\"og:type\" content=\"article\" />\n  \n  <!-- Twitter -->\n  <meta name=\"twitter:card\" content=\"summary_large_image\" />\n  <meta name=\"twitter:title\" content=\"Getting Started with Next.js\" />\n  <meta name=\"twitter:image\" content=\"https://mysite.com/post-image.jpg\" />\n  \n  <!-- Structured Data -->\n  <script type=\"application/ld+json\">{...}</script>\n</head>\n```"
+        },
+        {
+            "id": 4,
+            "question": "Explain error boundaries in Next.js. Create error.tsx and not-found.tsx handlers with proper error recovery.",
+            "preferredAnswer": "**Error Boundaries** catch errors and show fallback UI instead of crashing the app.\n\n---\n\n**1. Route Error Boundary**\n\n```tsx\n// app/dashboard/error.tsx\n'use client';  // Must be Client Component\n\nimport { useEffect } from 'react';\n\nexport default function Error({ error, reset }) {\n  useEffect(() => {\n    // Log error to error reporting service\n    console.error('Dashboard error:', error);\n    // logErrorToService(error);\n  }, [error]);\n\n  return (\n    <div className=\"error-container\">\n      <div className=\"error-icon\">⚠️</div>\n      \n      <h2>Something went wrong in the dashboard</h2>\n      \n      <p className=\"error-message\">\n        {error.message || 'An unexpected error occurred'}\n      </p>\n      \n      {/* Stack trace in development */}\n      {process.env.NODE_ENV === 'development' && (\n        <details className=\"error-details\">\n          <summary>Error Details</summary>\n          <pre>{error.stack}</pre>\n        </details>\n      )}\n      \n      <div className=\"error-actions\">\n        <button \n          onClick={() => reset()}  // Try to recover\n          className=\"btn-primary\"\n        >\n          Try Again\n        </button>\n        \n        <a href=\"/\" className=\"btn-secondary\">\n          Go Home\n        </a>\n      </div>\n    </div>\n  );\n}\n```\n\n---\n\n**2. Global Error (Root)**\n\n```tsx\n// app/global-error.tsx\n'use client';\n\nexport default function GlobalError({ error, reset }) {\n  return (\n    <html>\n      <body>\n        <div style={{\n          display: 'flex',\n          flexDirection: 'column',\n          alignItems: 'center',\n          justifyContent: 'center',\n          minHeight: '100vh',\n          padding: '20px',\n        }}>\n          <h1>Application Error</h1>\n          <p>{error.message}</p>\n          \n          <button \n            onClick={() => reset()}\n            style={{\n              marginTop: '20px',\n              padding: '10px 20px',\n              background: '#2563eb',\n              color: 'white',\n              border: 'none',\n              borderRadius: '6px',\n              cursor: 'pointer',\n            }}\n          >\n            Try Again\n          </button>\n        </div>\n      </body>\n    </html>\n  );\n}\n```\n\n---\n\n**3. Not Found Handler**\n\n```tsx\n// app/not-found.tsx\nimport Link from 'next/link';\n\nexport default function NotFound() {\n  return (\n    <div className=\"not-found-container\">\n      <div className=\"not-found-content\">\n        <h1 className=\"error-code\">404</h1>\n        \n        <h2>Page Not Found</h2>\n        \n        <p className=\"description\">\n          The page you're looking for doesn't exist or has been moved.\n        </p>\n        \n        <div className=\"actions\">\n          <Link href=\"/\" className=\"btn-primary\">\n            Go Home\n          </Link>\n          \n          <Link href=\"/blog\" className=\"btn-secondary\">\n            View Blog\n          </Link>\n        </div>\n        \n        {/* Helpful links */}\n        <div className=\"helpful-links\">\n          <h3>Helpful Links:</h3>\n          <ul>\n            <li><Link href=\"/about\">About Us</Link></li>\n            <li><Link href=\"/contact\">Contact</Link></li>\n            <li><Link href=\"/sitemap\">Sitemap</Link></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  );\n}\n```\n\n```css\n/* app/not-found.css */\n.not-found-container {\n  min-height: 100vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 20px;\n}\n\n.not-found-content {\n  text-align: center;\n  max-width: 600px;\n}\n\n.error-code {\n  font-size: 120px;\n  font-weight: bold;\n  color: #2563eb;\n  margin: 0;\n}\n\n.description {\n  color: #6b7280;\n  margin: 20px 0;\n}\n\n.actions {\n  display: flex;\n  gap: 12px;\n  justify-content: center;\n  margin: 30px 0;\n}\n```\n\n---\n\n**4. Triggering Not Found**\n\n```tsx\n// app/blog/[slug]/page.tsx\nimport { notFound } from 'next/navigation';\n\nexport default async function BlogPost({ params }) {\n  const post = await getPost(params.slug);\n  \n  if (!post) {\n    notFound();  // Shows not-found.tsx\n  }\n  \n  return <article>...</article>;\n}\n```\n\n---\n\n**5. Nested Error Boundaries**\n\n```\napp/\n├── error.tsx              # Catches all app errors\n├── global-error.tsx       # Catches root layout errors\n└── dashboard/\n    ├── error.tsx          # Catches dashboard errors specifically\n    └── settings/\n        └── error.tsx      # Catches settings errors\n```\n\nErrors bubble up to nearest error boundary.\n\n---\n\n**Error Recovery Strategies:**\n\n```tsx\n'use client';\n\nimport { useState } from 'react';\n\nexport default function Error({ error, reset }) {\n  const [retryCount, setRetryCount] = useState(0);\n  \n  const handleRetry = () => {\n    if (retryCount < 3) {\n      setRetryCount(prev => prev + 1);\n      reset();  // Try again\n    } else {\n      // Too many retries, suggest alternative\n      window.location.href = '/';\n    }\n  };\n  \n  return (\n    <div>\n      <h2>Error occurred</h2>\n      <p>{error.message}</p>\n      \n      {retryCount < 3 ? (\n        <button onClick={handleRetry}>\n          Try Again ({3 - retryCount} attempts remaining)\n        </button>\n      ) : (\n        <p>Too many failed attempts. Redirecting to home...</p>\n      )}\n    </div>\n  );\n}\n```"
+        },
+        {
+            "id": 5,
+            "question": "What are the steps to deploy a Next.js application to production? Include build optimization, environment variables, and deployment options.",
+            "preferredAnswer": "**Complete Production Deployment Guide:**\n\n---\n\n**Step 1: Pre-Deployment Checklist**\n\n```bash\n# 1. Ensure all dependencies are installed\nnpm install\n\n# 2. Run tests\nnpm test\n\n# 3. Check for TypeScript errors\nnpm run type-check  # or tsc --noEmit\n\n# 4. Lint code\nnpm run lint\n\n# 5. Build locally\nnpm run build\n```\n\n---\n\n**Step 2: Environment Variables**\n\n```bash\n# .env.local (development - not committed)\nDATABASE_URL=postgresql://localhost/dev_db\nNEXTAUTH_SECRET=dev-secret-key\nNEXT_PUBLIC_API_URL=http://localhost:3000\n\n# .env.production (production - not committed)\nDATABASE_URL=postgresql://prod-server/prod_db\nNEXTAUTH_SECRET=super-secure-production-key\nNEXT_PUBLIC_API_URL=https://myapp.com\n```\n\n```js\n// Validate environment variables at build\n// lib/env.js\nconst requiredEnvVars = [\n  'DATABASE_URL',\n  'NEXTAUTH_SECRET',\n  'NEXT_PUBLIC_API_URL',\n];\n\nrequiredEnvVars.forEach(envVar => {\n  if (!process.env[envVar]) {\n    throw new Error(`Missing required environment variable: ${envVar}`);\n  }\n});\n```\n\n---\n\n**Step 3: Optimize next.config.js**\n\n```js\n// next.config.js\nmodule.exports = {\n  // Image optimization\n  images: {\n    formats: ['image/avif', 'image/webp'],\n    remotePatterns: [\n      {\n        protocol: 'https',\n        hostname: 'cdn.example.com',\n      },\n    ],\n  },\n  \n  // Compression\n  compress: true,\n  \n  // Security headers\n  async headers() {\n    return [\n      {\n        source: '/:path*',\n        headers: [\n          {\n            key: 'X-DNS-Prefetch-Control',\n            value: 'on',\n          },\n          {\n            key: 'X-Frame-Options',\n            value: 'SAMEORIGIN',\n          },\n          {\n            key: 'X-Content-Type-Options',\n            value: 'nosniff',\n          },\n          {\n            key: 'Referrer-Policy',\n            value: 'origin-when-cross-origin',\n          },\n        ],\n      },\n    ];\n  },\n  \n  // Redirects\n  async redirects() {\n    return [\n      {\n        source: '/old-blog/:path*',\n        destination: '/blog/:path*',\n        permanent: true,\n      },\n    ];\n  },\n};\n```\n\n---\n\n**Step 4: Build for Production**\n\n```bash\n# Build\nnpm run build\n\n# Output shows optimization results:\n```\n\n```\nRoute (app)                              Size     First Load JS\n┌ ○ /                                    1.2 kB         85 kB\n├ ○ /about                               890 B          84 kB\n├ ƒ /blog/[slug]                         1.5 kB         86 kB\n└ ○ /api/posts                           0 B             0 B\n\n○  (Static)   prerendered as static content\nƒ  (Dynamic)  server-rendered on demand\n```\n\n---\n\n**Step 5: Deployment Option 1 - Vercel (Recommended)**\n\n```bash\n# Install Vercel CLI\nnpm install -g vercel\n\n# Login\nvercel login\n\n# Deploy to preview\nvercel\n\n# Deploy to production\nvercel --prod\n```\n\n**Or GitHub Integration:**\n1. Push code to GitHub\n2. Import project in Vercel dashboard\n3. Configure environment variables in Vercel\n4. Automatic deployments on every push\n\n**Vercel Environment Variables:**\n```\nDATABASE_URL: postgresql://...\nNEXTAUTH_SECRET: your-secret\nNEXT_PUBLIC_API_URL: https://myapp.com\n```\n\n---\n\n**Step 6: Deployment Option 2 - Docker**\n\n```dockerfile\n# Dockerfile\nFROM node:18-alpine AS base\n\n# Dependencies\nFROM base AS deps\nRUN apk add --no-cache libc6-compat\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci\n\n# Builder\nFROM base AS builder\nWORKDIR /app\nCOPY --from=deps /app/node_modules ./node_modules\nCOPY . .\nRUN npm run build\n\n# Runner\nFROM base AS runner\nWORKDIR /app\nENV NODE_ENV production\n\nRUN addgroup --system --gid 1001 nodejs\nRUN adduser --system --uid 1001 nextjs\n\nCOPY --from=builder /app/public ./public\nCOPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./\nCOPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static\n\nUSER nextjs\n\nEXPOSE 3000\nENV PORT 3000\n\nCMD [\"node\", \"server.js\"]\n```\n\n```js\n// next.config.js - for Docker\nmodule.exports = {\n  output: 'standalone',  // Required for Docker\n};\n```\n\n```bash\n# Build and run\ndocker build -t my-nextjs-app .\ndocker run -p 3000:3000 --env-file .env.production my-nextjs-app\n```\n\n---\n\n**Step 7: Post-Deployment**\n\n```bash\n# 1. Test production build locally\nnpm run build\nnpm start\n\n# 2. Check Lighthouse score\n# Visit https://pagespeed.web.dev\n# Aim for 90+ in all categories\n\n# 3. Monitor errors\n# Set up error tracking (Sentry, etc.)\n\n# 4. Monitor performance\n# Vercel Analytics or Google Analytics\n```\n\n---\n\n**Production Checklist:**\n\n✅ All environment variables set\n✅ Database migrations run\n✅ SSL certificate configured\n✅ Custom domain connected\n✅ Error tracking enabled (Sentry)\n✅ Analytics configured\n✅ Performance monitoring (Vercel Analytics)\n✅ Sitemap generated\n✅ Robots.txt configured\n✅ Metadata optimized\n✅ Images optimized\n✅ Lighthouse score > 90\n✅ Security headers configured\n✅ CORS configured (if needed)\n✅ Rate limiting enabled (if needed)\n\n---\n\n**Continuous Deployment (CI/CD):**\n\n```yaml\n# .github/workflows/deploy.yml\nname: Deploy\n\non:\n  push:\n    branches: [main]\n\njobs:\n  deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      \n      - name: Setup Node\n        uses: actions/setup-node@v3\n        with:\n          node-version: 18\n          \n      - name: Install dependencies\n        run: npm ci\n        \n      - name: Run tests\n        run: npm test\n        \n      - name: Build\n        run: npm run build\n        env:\n          DATABASE_URL: ${{ secrets.DATABASE_URL }}\n          NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}\n          \n      - name: Deploy to Vercel\n        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }}\n```"
+        }
+    ]
+}

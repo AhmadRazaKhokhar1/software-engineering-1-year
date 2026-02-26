@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 9: Capstone Project - Next.js + Firebase Blog Platform",
+    "chapterId": "react_nextjs_chapter_9_firebase",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Which Firebase service is used for user authentication?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Firestore",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Firebase Auth",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Firebase Storage",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Cloud Functions",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What is Cloud Firestore?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "A file storage service",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "A NoSQL document database",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "An authentication provider",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "A hosting service",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Which Firebase service is used to store images?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Firestore",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Firebase Storage",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Firebase Database",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Cloud Functions",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What function adds a timestamp to Firestore documents?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "new Date()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "serverTimestamp()",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Date.now()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "timestamp()",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "How do you query Firestore for published posts?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "query(collection, filter('published', true))",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "query(collection, where('published', '==', true))",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "query(collection, published: true)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "collection.find({ published: true })",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What is the purpose of Firebase Security Rules?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To style the database",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To control who can read/write data",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To optimize queries",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To backup data",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "How do you get a download URL after uploading to Firebase Storage?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "storage.getURL(ref)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "getDownloadURL(storageRef)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "ref.downloadURL()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "storage.url(ref)",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What does onAuthStateChanged() do?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Logs in a user",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Listens for authentication state changes",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Creates a new user",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Logs out a user",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "How do you increment a field value in Firestore?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "updateDoc(ref, { views: views + 1 })",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "updateDoc(ref, { views: increment(1) })",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "updateDoc(ref, { views++ })",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "incrementField(ref, 'views', 1)",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What is the correct way to initialize Firebase in Next.js?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "initializeApp(config) every time",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Check if app exists with getApps() before initializing",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Use new Firebase(config)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Firebase.init(config)",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the Firebase setup process for a Next.js project. What services need to be enabled and what configuration is required?",
+            "preferredAnswer": "**Firebase Setup for Next.js:**\n\n**1. Create Firebase Project:**\n- Go to Firebase Console (console.firebase.google.com)\n- Click \"Add Project\"\n- Name your project\n- Disable Google Analytics (optional)\n- Create project\n\n**2. Enable Required Services:**\n\n**Authentication:**\n```\n1. Go to Authentication → Get Started\n2. Enable \"Email/Password\" sign-in method\n3. (Optional) Enable other providers (Google, GitHub, etc.)\n```\n\n**Firestore Database:**\n```\n1. Go to Firestore Database → Create Database\n2. Start in production mode\n3. Choose a location (closest to your users)\n4. Create database\n```\n\n**Firebase Storage:**\n```\n1. Go to Storage → Get Started\n2. Start in production mode\n3. Choose same location as Firestore\n```\n\n**3. Get Configuration:**\n```\n1. Project Settings → General\n2. Scroll to \"Your apps\"\n3. Click Web icon (</>) \n4. Register app\n5. Copy firebaseConfig object\n```\n\n**4. Install Firebase SDK:**\n```bash\nnpm install firebase\n```\n\n**5. Configure Firebase in Next.js:**\n\n```js\n// lib/firebase.js\nimport { initializeApp, getApps } from 'firebase/app';\nimport { getAuth } from 'firebase/auth';\nimport { getFirestore } from 'firebase/firestore';\nimport { getStorage } from 'firebase/storage';\n\nconst firebaseConfig = {\n  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,\n  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,\n  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,\n  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,\n  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,\n  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,\n};\n\n// Prevent multiple initializations\nconst app = getApps().length === 0 \n  ? initializeApp(firebaseConfig) \n  : getApps()[0];\n\nexport const auth = getAuth(app);\nexport const db = getFirestore(app);\nexport const storage = getStorage(app);\nexport default app;\n```\n\n**6. Environment Variables:**\n\n```bash\n# .env.local\nNEXT_PUBLIC_FIREBASE_API_KEY=\"AIza...\"\nNEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=\"project.firebaseapp.com\"\nNEXT_PUBLIC_FIREBASE_PROJECT_ID=\"project-id\"\nNEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=\"project.appspot.com\"\nNEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=\"123456789\"\nNEXT_PUBLIC_FIREBASE_APP_ID=\"1:123:web:abc\"\n```\n\n**7. Security Rules:**\n\n**Firestore Rules:**\n```typescript\nrules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    match /posts/{postId} {\n      allow read: if true;\n      allow create: if request.auth != null;\n      allow update, delete: if request.auth.uid == resource.data.authorId;\n    }\n  }\n}\n```\n\n**Storage Rules:**\n```typescript\nrules_version = '2';\nservice firebase.storage {\n  match /b/{bucket}/o {\n    match /posts/{allPaths=**} {\n      allow read: if true;\n      allow write: if request.auth != null \n                   && request.resource.size < 5 * 1024 * 1024;\n    }\n  }\n}\n```\n\n**8. Deploy Rules:**\n```bash\n# Install Firebase CLI\nnpm install -g firebase-tools\n\n# Login\nfirebase login\n\n# Initialize (select Firestore and Storage)\nfirebase init\n\n# Deploy rules\nfirebase deploy --only firestore:rules,storage:rules\n```\n\n**Key Points:**\n✅ Use `NEXT_PUBLIC_` prefix for client-side access\n✅ Check `getApps()` before initializing to prevent duplicates\n✅ Always set up security rules before going to production\n✅ Never commit `.env.local` to git"
+        },
+        {
+            "id": 2,
+            "question": "How does authentication work with Firebase in Next.js? Show the complete flow from registration to accessing protected data.",
+            "preferredAnswer": "**Complete Firebase Authentication Flow:**\n\n---\n\n**1. Setup Auth Context:**\n\n```tsx\n// lib/AuthContext.js\n'use client';\n\nimport { createContext, useContext, useEffect, useState } from 'react';\nimport { \n  onAuthStateChanged,\n  signInWithEmailAndPassword,\n  createUserWithEmailAndPassword,\n  signOut as firebaseSignOut\n} from 'firebase/auth';\nimport { auth, db } from './firebase';\nimport { doc, getDoc, setDoc } from 'firebase/firestore';\n\nconst AuthContext = createContext({});\n\nexport const useAuth = () => useContext(AuthContext);\n\nexport function AuthProvider({ children }) {\n  const [user, setUser] = useState(null);\n  const [userData, setUserData] = useState(null);\n  const [loading, setLoading] = useState(true);\n\n  useEffect(() => {\n    // Listen for auth state changes\n    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {\n      if (firebaseUser) {\n        setUser(firebaseUser);\n        \n        // Get additional user data from Firestore\n        const userDoc = await getDoc(doc(db, 'users', firebaseUser.uid));\n        if (userDoc.exists()) {\n          setUserData({ id: userDoc.id, ...userDoc.data() });\n        }\n      } else {\n        setUser(null);\n        setUserData(null);\n      }\n      setLoading(false);\n    });\n\n    return unsubscribe;\n  }, []);\n\n  const signUp = async (email, password, name) => {\n    // 1. Create Firebase Auth user\n    const userCredential = await createUserWithEmailAndPassword(\n      auth, \n      email, \n      password\n    );\n    \n    // 2. Create user document in Firestore\n    await setDoc(doc(db, 'users', userCredential.user.uid), {\n      name,\n      email,\n      role: 'user',\n      createdAt: new Date(),\n      updatedAt: new Date(),\n    });\n    \n    return userCredential.user;\n  };\n\n  const signIn = async (email, password) => {\n    return signInWithEmailAndPassword(auth, email, password);\n  };\n\n  const signOut = async () => {\n    await firebaseSignOut(auth);\n  };\n\n  return (\n    <AuthContext.Provider value={{ user, userData, loading, signUp, signIn, signOut }}>\n      {!loading && children}\n    </AuthContext.Provider>\n  );\n}\n```\n\n---\n\n**2. Registration Flow:**\n\n```tsx\n// app/(auth)/register/page.tsx\n'use client';\n\nimport { useState } from 'react';\nimport { useRouter } from 'next/navigation';\nimport { useAuth } from '@/lib/AuthContext';\n\nexport default function RegisterPage() {\n  const router = useRouter();\n  const { signUp } = useAuth();\n  const [formData, setFormData] = useState({\n    name: '',\n    email: '',\n    password: '',\n  });\n  const [error, setError] = useState('');\n\n  const handleSubmit = async (e) => {\n    e.preventDefault();\n    setError('');\n\n    try {\n      // Calls Firebase createUserWithEmailAndPassword\n      await signUp(formData.email, formData.password, formData.name);\n      router.push('/dashboard');\n    } catch (err) {\n      setError(err.message);\n    }\n  };\n\n  return (\n    <form onSubmit={handleSubmit}>\n      {error && <div className=\"error\">{error}</div>}\n      <input \n        name=\"name\" \n        value={formData.name}\n        onChange={(e) => setFormData({...formData, name: e.target.value})}\n      />\n      <input \n        type=\"email\" \n        name=\"email\" \n        value={formData.email}\n        onChange={(e) => setFormData({...formData, email: e.target.value})}\n      />\n      <input \n        type=\"password\" \n        name=\"password\" \n        value={formData.password}\n        onChange={(e) => setFormData({...formData, password: e.target.value})}\n      />\n      <button type=\"submit\">Register</button>\n    </form>\n  );\n}\n```\n\n**What happens:**\n1. User fills form\n2. `signUp()` called\n3. Firebase creates auth user\n4. User document created in Firestore\n5. `onAuthStateChanged` fires\n6. User logged in automatically\n7. Redirect to dashboard\n\n---\n\n**3. Login Flow:**\n\n```tsx\n// app/(auth)/login/page.tsx\n'use client';\n\nimport { useState } from 'react';\nimport { useRouter } from 'next/navigation';\nimport { useAuth } from '@/lib/AuthContext';\n\nexport default function LoginPage() {\n  const router = useRouter();\n  const { signIn } = useAuth();\n  const [formData, setFormData] = useState({ email: '', password: '' });\n  const [error, setError] = useState('');\n\n  const handleSubmit = async (e) => {\n    e.preventDefault();\n\n    try {\n      await signIn(formData.email, formData.password);\n      router.push('/dashboard');\n    } catch (err) {\n      setError('Invalid email or password');\n    }\n  };\n\n  return (\n    <form onSubmit={handleSubmit}>\n      {/* Form fields */}\n    </form>\n  );\n}\n```\n\n---\n\n**4. Protected Routes (Client Component):**\n\n```tsx\n// app/dashboard/page.tsx\n'use client';\n\nimport { useAuth } from '@/lib/AuthContext';\nimport { useRouter } from 'next/navigation';\nimport { useEffect } from 'react';\n\nexport default function DashboardPage() {\n  const { user, userData } = useAuth();\n  const router = useRouter();\n\n  useEffect(() => {\n    if (!user) {\n      router.push('/login');\n    }\n  }, [user, router]);\n\n  if (!user) {\n    return <div>Loading...</div>;\n  }\n\n  return (\n    <div>\n      <h1>Welcome, {userData?.name}!</h1>\n      <p>Email: {user.email}</p>\n    </div>\n  );\n}\n```\n\n---\n\n**5. Accessing Protected Data (Server Action):**\n\n```js\n// app/actions/posts.ts\n'use server';\n\nimport { cookies } from 'next/headers';\nimport { db } from '@/lib/firebase';\nimport { collection, addDoc, serverTimestamp } from 'firebase/firestore';\n\nexport async function createPost(userId, formData) {\n  // Verify user is authenticated\n  if (!userId) {\n    throw new Error('Unauthorized');\n  }\n\n  const postData = {\n    title: formData.get('title'),\n    content: formData.get('content'),\n    authorId: userId,\n    createdAt: serverTimestamp(),\n  };\n\n  const docRef = await addDoc(collection(db, 'posts'), postData);\n  return { success: true, id: docRef.id };\n}\n```\n\n---\n\n**6. Using in Components:**\n\n```tsx\n// app/components/CreatePost.js\n'use client';\n\nimport { useAuth } from '@/lib/AuthContext';\nimport { createPost } from '@/app/actions/posts';\n\nexport default function CreatePost() {\n  const { user } = useAuth();\n\n  const handleSubmit = async (formData) => {\n    if (!user) {\n      alert('Please login');\n      return;\n    }\n\n    const result = await createPost(user.uid, formData);\n    console.log('Post created:', result.id);\n  };\n\n  return (\n    <form action={handleSubmit}>\n      <input name=\"title\" />\n      <textarea name=\"content\" />\n      <button type=\"submit\">Create Post</button>\n    </form>\n  );\n}\n```\n\n---\n\n**7. Logout:**\n\n```tsx\n'use client';\n\nimport { useAuth } from '@/lib/AuthContext';\nimport { useRouter } from 'next/navigation';\n\nexport default function LogoutButton() {\n  const { signOut } = useAuth();\n  const router = useRouter();\n\n  const handleLogout = async () => {\n    await signOut();\n    router.push('/');\n  };\n\n  return <button onClick={handleLogout}>Logout</button>;\n}\n```\n\n---\n\n**Complete Flow Summary:**\n\n1. **Register:** Create Auth user → Create Firestore doc → Auto login\n2. **Login:** Sign in with email/password → `onAuthStateChanged` fires → Set user state\n3. **Access:** Check `user` exists → Pass `user.uid` to server actions → Verify in Firestore rules\n4. **Logout:** Call `signOut()` → `onAuthStateChanged` fires → Clear user state\n\n**Security:**\n✅ Firebase Auth handles password hashing\n✅ Firestore rules verify `request.auth.uid`\n✅ Client-side checks for UX\n✅ Server-side verification for security"
+        },
+        {
+            "id": 3,
+            "question": "Explain how to perform CRUD operations with Firestore. Show examples of creating, reading, updating, and deleting blog posts.",
+            "preferredAnswer": "**Firestore CRUD Operations for Blog Posts:**\n\n---\n\n**1. CREATE - Add New Post**\n\n```js\n// app/actions/posts.ts\n'use server';\n\nimport { collection, addDoc, serverTimestamp } from 'firebase/firestore';\nimport { db } from '@/lib/firebase';\nimport slugify from 'slugify';\nimport { revalidatePath } from 'next/cache';\nimport { redirect } from 'next/navigation';\n\nexport async function createPost(userId, formData) {\n  const title = formData.get('title');\n  const excerpt = formData.get('excerpt');\n  const content = formData.get('content');\n  const published = formData.get('published') === 'on';\n\n  // Generate slug\n  const slug = slugify(title, { lower: true, strict: true });\n\n  // Prepare post data\n  const postData = {\n    title,\n    slug,\n    excerpt,\n    content,\n    published,\n    authorId: userId,\n    views: 0,\n    createdAt: serverTimestamp(),  // Server timestamp\n    updatedAt: serverTimestamp(),\n    publishedAt: published ? serverTimestamp() : null,\n  };\n\n  // Add to Firestore\n  const postsRef = collection(db, 'posts');\n  const docRef = await addDoc(postsRef, postData);\n\n  console.log('Post created with ID:', docRef.id);\n\n  revalidatePath('/blog');\n  redirect(`/blog/${slug}`);\n}\n```\n\n**Usage:**\n```tsx\n'use client';\nimport { useAuth } from '@/lib/AuthContext';\nimport { createPost } from '@/app/actions/posts';\n\nexport default function NewPost() {\n  const { user } = useAuth();\n\n  const handleSubmit = async (formData) => {\n    await createPost(user.uid, formData);\n  };\n\n  return (\n    <form action={handleSubmit}>\n      <input name=\"title\" required />\n      <textarea name=\"excerpt\" required />\n      <textarea name=\"content\" required />\n      <label>\n        <input type=\"checkbox\" name=\"published\" />\n        Publish\n      </label>\n      <button type=\"submit\">Create Post</button>\n    </form>\n  );\n}\n```\n\n---\n\n**2. READ - Fetch Posts**\n\n**A. Get All Published Posts:**\n\n```js\nimport { \n  collection, \n  getDocs, \n  query, \n  where, \n  orderBy \n} from 'firebase/firestore';\nimport { db } from '@/lib/firebase';\n\nexport async function getPosts() {\n  const postsRef = collection(db, 'posts');\n  \n  // Query: only published, ordered by date\n  const q = query(\n    postsRef,\n    where('published', '==', true),\n    orderBy('publishedAt', 'desc')\n  );\n\n  const snapshot = await getDocs(q);\n  \n  // Convert to array of objects\n  const posts = snapshot.docs.map(doc => ({\n    id: doc.id,\n    ...doc.data(),\n    publishedAt: doc.data().publishedAt?.toDate() || null,\n  }));\n\n  return posts;\n}\n```\n\n**B. Get Single Post by Slug:**\n\n```js\nimport { \n  collection, \n  query, \n  where, \n  getDocs,\n  limit \n} from 'firebase/firestore';\n\nexport async function getPostBySlug(slug) {\n  const postsRef = collection(db, 'posts');\n  const q = query(\n    postsRef, \n    where('slug', '==', slug),\n    limit(1)\n  );\n\n  const snapshot = await getDocs(q);\n\n  if (snapshot.empty) {\n    return null;\n  }\n\n  const doc = snapshot.docs[0];\n  return {\n    id: doc.id,\n    ...doc.data(),\n    publishedAt: doc.data().publishedAt?.toDate() || null,\n  };\n}\n```\n\n**C. Get Post by ID:**\n\n```js\nimport { doc, getDoc } from 'firebase/firestore';\n\nexport async function getPostById(postId) {\n  const postRef = doc(db, 'posts', postId);\n  const postSnap = await getDoc(postRef);\n\n  if (!postSnap.exists()) {\n    return null;\n  }\n\n  return {\n    id: postSnap.id,\n    ...postSnap.data(),\n  };\n}\n```\n\n**D. Get User's Posts:**\n\n```js\nexport async function getUserPosts(userId) {\n  const postsRef = collection(db, 'posts');\n  const q = query(\n    postsRef,\n    where('authorId', '==', userId),\n    orderBy('createdAt', 'desc')\n  );\n\n  const snapshot = await getDocs(q);\n  return snapshot.docs.map(doc => ({\n    id: doc.id,\n    ...doc.data(),\n  }));\n}\n```\n\n---\n\n**3. UPDATE - Edit Post**\n\n```js\nimport { doc, getDoc, updateDoc, serverTimestamp } from 'firebase/firestore';\n\nexport async function updatePost(postId, userId, formData) {\n  // 1. Get post reference\n  const postRef = doc(db, 'posts', postId);\n  const postSnap = await getDoc(postRef);\n\n  if (!postSnap.exists()) {\n    throw new Error('Post not found');\n  }\n\n  const postData = postSnap.data();\n\n  // 2. Check ownership\n  if (postData.authorId !== userId) {\n    throw new Error('Unauthorized - You can only edit your own posts');\n  }\n\n  // 3. Prepare update data\n  const title = formData.get('title');\n  const slug = slugify(title, { lower: true, strict: true });\n  const published = formData.get('published') === 'on';\n\n  const updateData = {\n    title,\n    slug,\n    excerpt: formData.get('excerpt'),\n    content: formData.get('content'),\n    published,\n    updatedAt: serverTimestamp(),\n  };\n\n  // Set publishedAt if publishing for first time\n  if (published && !postData.publishedAt) {\n    updateData.publishedAt = serverTimestamp();\n  }\n\n  // 4. Update in Firestore\n  await updateDoc(postRef, updateData);\n\n  revalidatePath('/blog');\n  revalidatePath(`/blog/${slug}`);\n  redirect(`/blog/${slug}`);\n}\n```\n\n**Partial Update (specific fields only):**\n\n```js\nimport { doc, updateDoc } from 'firebase/firestore';\n\nexport async function incrementViews(postId) {\n  const postRef = doc(db, 'posts', postId);\n  \n  await updateDoc(postRef, {\n    views: increment(1)  // Atomic increment\n  });\n}\n\nexport async function togglePublished(postId, userId) {\n  const postRef = doc(db, 'posts', postId);\n  const postSnap = await getDoc(postRef);\n  \n  const currentPublished = postSnap.data().published;\n  \n  await updateDoc(postRef, {\n    published: !currentPublished,\n    updatedAt: serverTimestamp(),\n  });\n}\n```\n\n---\n\n**4. DELETE - Remove Post**\n\n```js\nimport { doc, getDoc, deleteDoc } from 'firebase/firestore';\n\nexport async function deletePost(postId, userId, userRole) {\n  // 1. Get post\n  const postRef = doc(db, 'posts', postId);\n  const postSnap = await getDoc(postRef);\n\n  if (!postSnap.exists()) {\n    throw new Error('Post not found');\n  }\n\n  const postData = postSnap.data();\n\n  // 2. Check authorization (owner or admin)\n  const isOwner = postData.authorId === userId;\n  const isAdmin = userRole === 'admin';\n\n  if (!isOwner && !isAdmin) {\n    throw new Error('Unauthorized - You can only delete your own posts');\n  }\n\n  // 3. Delete from Firestore\n  await deleteDoc(postRef);\n\n  // 4. Optional: Delete associated data (comments, likes)\n  await deletePostComments(postId);\n  \n  revalidatePath('/blog');\n  revalidatePath('/dashboard');\n  redirect('/dashboard');\n}\n\n// Helper: Delete all comments for a post\nasync function deletePostComments(postId) {\n  const commentsRef = collection(db, 'comments');\n  const q = query(commentsRef, where('postId', '==', postId));\n  const snapshot = await getDocs(q);\n\n  const deletePromises = snapshot.docs.map(doc => deleteDoc(doc.ref));\n  await Promise.all(deletePromises);\n}\n```\n\n---\n\n**5. Batch Operations (Multiple Updates)**\n\n```js\nimport { writeBatch, doc } from 'firebase/firestore';\n\nexport async function deleteMultiplePosts(postIds, userId) {\n  const batch = writeBatch(db);\n\n  for (const postId of postIds) {\n    const postRef = doc(db, 'posts', postId);\n    \n    // Verify ownership before adding to batch\n    const postSnap = await getDoc(postRef);\n    if (postSnap.exists() && postSnap.data().authorId === userId) {\n      batch.delete(postRef);\n    }\n  }\n\n  // Execute all deletes at once\n  await batch.commit();\n}\n```\n\n---\n\n**CRUD Summary:**\n\n| Operation | Function | Firestore Method |\n|-----------|----------|------------------|\n| **CREATE** | Add new document | `addDoc(collection, data)` |\n| **READ** | Get documents | `getDocs(query)` or `getDoc(docRef)` |\n| **UPDATE** | Modify existing | `updateDoc(docRef, data)` |\n| **DELETE** | Remove document | `deleteDoc(docRef)` |\n\n**Key Functions:**\n- `collection(db, 'posts')` - Reference to collection\n- `doc(db, 'posts', id)` - Reference to specific document\n- `serverTimestamp()` - Server-side timestamp\n- `increment(1)` - Atomic increment\n- `query()` - Build complex queries\n- `where()` - Filter data\n- `orderBy()` - Sort results\n- `limit()` - Limit results"
+        },
+        {
+            "id": 4,
+            "question": "How do you upload images to Firebase Storage and use them in your blog posts? Show the complete flow from file selection to storing the URL in Firestore.",
+            "preferredAnswer": "**Complete Firebase Storage Image Upload Flow:**\n\n---\n\n**1. Client-Side Upload Component**\n\n```tsx\n// app/components/ImageUpload.js\n'use client';\n\nimport { useState } from 'react';\nimport { ref, uploadBytes, getDownloadURL } from 'firebase/storage';\nimport { storage } from '@/lib/firebase';\nimport Image from 'next/image';\n\nexport default function ImageUpload({ onUploadComplete }) {\n  const [file, setFile] = useState(null);\n  const [preview, setPreview] = useState(null);\n  const [uploading, setUploading] = useState(false);\n  const [progress, setProgress] = useState(0);\n\n  const handleFileChange = (e) => {\n    const selectedFile = e.target.files[0];\n    \n    if (!selectedFile) return;\n\n    // Validate file type\n    if (!selectedFile.type.startsWith('image/')) {\n      alert('Please select an image file');\n      return;\n    }\n\n    // Validate file size (5MB max)\n    if (selectedFile.size > 5 * 1024 * 1024) {\n      alert('File size must be less than 5MB');\n      return;\n    }\n\n    setFile(selectedFile);\n\n    // Create preview\n    const reader = new FileReader();\n    reader.onloadend = () => {\n      setPreview(reader.result);\n    };\n    reader.readAsDataURL(selectedFile);\n  };\n\n  const handleUpload = async () => {\n    if (!file) return;\n\n    setUploading(true);\n\n    try {\n      // 1. Create unique filename\n      const timestamp = Date.now();\n      const filename = `posts/${timestamp}-${file.name}`;\n\n      // 2. Create storage reference\n      const storageRef = ref(storage, filename);\n\n      // 3. Upload file\n      await uploadBytes(storageRef, file, {\n        contentType: file.type,\n      });\n\n      // 4. Get download URL\n      const downloadURL = await getDownloadURL(storageRef);\n\n      // 5. Pass URL back to parent component\n      onUploadComplete(downloadURL);\n\n      // Reset\n      setFile(null);\n      setPreview(null);\n      alert('Image uploaded successfully!');\n    } catch (error) {\n      console.error('Upload error:', error);\n      alert('Failed to upload image');\n    } finally {\n      setUploading(false);\n    }\n  };\n\n  return (\n    <div className=\"image-upload\">\n      <input\n        type=\"file\"\n        accept=\"image/*\"\n        onChange={handleFileChange}\n        disabled={uploading}\n      />\n\n      {preview && (\n        <div className=\"preview\">\n          <Image \n            src={preview} \n            alt=\"Preview\" \n            width={300} \n            height={200}\n            className=\"object-cover\"\n          />\n        </div>\n      )}\n\n      {file && (\n        <button \n          onClick={handleUpload} \n          disabled={uploading}\n          className=\"bg-blue-600 text-white px-4 py-2 rounded\"\n        >\n          {uploading ? 'Uploading...' : 'Upload Image'}\n        </button>\n      )}\n    </div>\n  );\n}\n```\n\n---\n\n**2. Server Action for Upload (Alternative)**\n\n```js\n// app/actions/upload.js\n'use server';\n\nimport { ref, uploadBytes, getDownloadURL } from 'firebase/storage';\nimport { storage } from '@/lib/firebase';\n\nexport async function uploadImage(formData) {\n  try {\n    const file = formData.get('file');\n    \n    if (!file) {\n      throw new Error('No file provided');\n    }\n\n    // Validate file type\n    if (!file.type.startsWith('image/')) {\n      throw new Error('File must be an image');\n    }\n\n    // Validate file size (5MB)\n    if (file.size > 5 * 1024 * 1024) {\n      throw new Error('File size must be less than 5MB');\n    }\n\n    // Create unique filename\n    const timestamp = Date.now();\n    const filename = `posts/${timestamp}-${file.name}`;\n    \n    // Convert File to Buffer\n    const bytes = await file.arrayBuffer();\n    const buffer = Buffer.from(bytes);\n\n    // Create storage reference\n    const storageRef = ref(storage, filename);\n\n    // Upload file\n    await uploadBytes(storageRef, buffer, {\n      contentType: file.type,\n    });\n\n    // Get download URL\n    const downloadURL = await getDownloadURL(storageRef);\n\n    return { success: true, url: downloadURL };\n  } catch (error) {\n    console.error('Upload error:', error);\n    return { success: false, error: error.message };\n  }\n}\n```\n\n---\n\n**3. Using in Create Post Form**\n\n```tsx\n// app/components/CreatePostForm.js\n'use client';\n\nimport { useState } from 'react';\nimport { useAuth } from '@/lib/AuthContext';\nimport { createPost } from '@/app/actions/posts';\nimport ImageUpload from './ImageUpload';\n\nexport default function CreatePostForm() {\n  const { user } = useAuth();\n  const [coverImageUrl, setCoverImageUrl] = useState('');\n  const [formData, setFormData] = useState({\n    title: '',\n    excerpt: '',\n    content: '',\n    published: false,\n  });\n\n  const handleImageUpload = (url) => {\n    setCoverImageUrl(url);\n  };\n\n  const handleSubmit = async (e) => {\n    e.preventDefault();\n\n    // Create FormData object\n    const formDataToSend = new FormData();\n    formDataToSend.append('title', formData.title);\n    formDataToSend.append('excerpt', formData.excerpt);\n    formDataToSend.append('content', formData.content);\n    formDataToSend.append('coverImage', coverImageUrl);\n    formDataToSend.append('published', formData.published ? 'on' : 'off');\n\n    // Create post with cover image URL\n    await createPost(user.uid, formDataToSend);\n  };\n\n  return (\n    <form onSubmit={handleSubmit}>\n      <div>\n        <label>Title</label>\n        <input\n          type=\"text\"\n          value={formData.title}\n          onChange={(e) => setFormData({...formData, title: e.target.value})}\n          required\n        />\n      </div>\n\n      <div>\n        <label>Excerpt</label>\n        <textarea\n          value={formData.excerpt}\n          onChange={(e) => setFormData({...formData, excerpt: e.target.value})}\n          required\n        />\n      </div>\n\n      <div>\n        <label>Content</label>\n        <textarea\n          value={formData.content}\n          onChange={(e) => setFormData({...formData, content: e.target.value})}\n          rows={10}\n          required\n        />\n      </div>\n\n      <div>\n        <label>Cover Image</label>\n        <ImageUpload onUploadComplete={handleImageUpload} />\n        {coverImageUrl && (\n          <p className=\"text-sm text-green-600\">Image uploaded successfully!</p>\n        )}\n      </div>\n\n      <div>\n        <label>\n          <input\n            type=\"checkbox\"\n            checked={formData.published}\n            onChange={(e) => setFormData({...formData, published: e.target.checked})}\n          />\n          Publish immediately\n        </label>\n      </div>\n\n      <button type=\"submit\" className=\"bg-blue-600 text-white px-6 py-2 rounded\">\n        Create Post\n      </button>\n    </form>\n  );\n}\n```\n\n---\n\n**4. Store URL in Firestore**\n\n```js\n// app/actions/posts.ts\nimport { collection, addDoc, serverTimestamp } from 'firebase/firestore';\nimport { db } from '@/lib/firebase';\n\nexport async function createPost(userId, formData) {\n  const postData = {\n    title: formData.get('title'),\n    excerpt: formData.get('excerpt'),\n    content: formData.get('content'),\n    coverImage: formData.get('coverImage') || null,  // Store URL\n    published: formData.get('published') === 'on',\n    authorId: userId,\n    createdAt: serverTimestamp(),\n    updatedAt: serverTimestamp(),\n  };\n\n  const docRef = await addDoc(collection(db, 'posts'), postData);\n  return { success: true, id: docRef.id };\n}\n```\n\n---\n\n**5. Display Image in Blog Post**\n\n```tsx\n// app/blog/[slug]/page.tsx\nimport Image from 'next/image';\n\nexport default async function PostPage({ params }) {\n  const post = await getPostBySlug(params.slug);\n\n  return (\n    <article>\n      {/* Display cover image from Firestore URL */}\n      {post.coverImage && (\n        <div className=\"relative w-full h-96 mb-8\">\n          <Image\n            src={post.coverImage}  // URL from Firebase Storage\n            alt={post.title}\n            fill\n            className=\"object-cover rounded-lg\"\n            priority\n          />\n        </div>\n      )}\n\n      <h1>{post.title}</h1>\n      <p>{post.excerpt}</p>\n      <div dangerouslySetInnerHTML={{ __html: post.content }} />\n    </article>\n  );\n}\n```\n\n---\n\n**6. Delete Image from Storage (when post deleted)**\n\n```js\nimport { ref, deleteObject } from 'firebase/storage';\nimport { storage } from '@/lib/firebase';\n\nexport async function deletePost(postId, userId) {\n  // Get post data\n  const post = await getPostById(postId);\n\n  // Delete from Firestore\n  await deleteDoc(doc(db, 'posts', postId));\n\n  // Delete image from Storage if exists\n  if (post.coverImage) {\n    try {\n      // Extract path from URL\n      const imageUrl = new URL(post.coverImage);\n      const imagePath = decodeURIComponent(\n        imageUrl.pathname.split('/o/')[1].split('?')[0]\n      );\n      \n      const imageRef = ref(storage, imagePath);\n      await deleteObject(imageRef);\n    } catch (error) {\n      console.error('Error deleting image:', error);\n    }\n  }\n}\n```\n\n---\n\n**Complete Flow:**\n\n1. **User selects file** → Validation (type, size)\n2. **Create preview** → Show image before upload\n3. **Upload to Storage** → `uploadBytes()` with unique filename\n4. **Get download URL** → `getDownloadURL()`\n5. **Store URL in Firestore** → Save in post document\n6. **Display image** → Use Next.js `<Image>` with Storage URL\n7. **Delete cleanup** → Remove from Storage when post deleted\n\n**Security Rules for Storage:**\n\n```typescript\nrules_version = '2';\nservice firebase.storage {\n  match /b/{bucket}/o {\n    match /posts/{fileName} {\n      allow read: if true;\n      allow write: if request.auth != null \n                   && request.resource.size < 5 * 1024 * 1024\n                   && request.resource.contentType.matches('image/.*');\n    }\n  }\n}\n```\n\n**Key Points:**\n✅ Validate file type and size client-side AND in security rules\n✅ Use unique filenames (timestamp + original name)\n✅ Store download URL in Firestore, not the file itself\n✅ Configure Next.js to allow Firebase Storage URLs in `next.config.js`\n✅ Clean up storage when deleting posts"
+        },
+        {
+            "id": 5,
+            "question": "What are Firebase Security Rules? Write comprehensive security rules for a blog platform covering posts, comments, and users collections.",
+            "preferredAnswer": "**Firebase Security Rules for Blog Platform:**\n\n---\n\n**What are Firebase Security Rules?**\n\nFirebase Security Rules determine **who can read or write** your data. They run on Google's servers and provide **server-side validation** — clients cannot bypass them.\n\n**Key Concepts:**\n- `request.auth` → Information about authenticated user\n- `request.auth.uid` → User's unique ID\n- `resource.data` → Existing document data\n- `request.resource.data` → Incoming document data (for writes)\n- `get()` → Fetch another document\n- `exists()` → Check if document exists\n\n---\n\n**Complete Security Rules:**\n\n```typescript\nrules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    \n    // ============================================\n    // HELPER FUNCTIONS\n    // ============================================\n    \n    function isSignedIn() {\n      return request.auth != null;\n    }\n    \n    function getUserData() {\n      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;\n    }\n    \n    function isOwner(userId) {\n      return isSignedIn() && request.auth.uid == userId;\n    }\n    \n    function isAdmin() {\n      return isSignedIn() && getUserData().role == 'admin';\n    }\n    \n    function isOwnerOrAdmin(userId) {\n      return isOwner(userId) || isAdmin();\n    }\n    \n    // ============================================\n    // USERS COLLECTION\n    // ============================================\n    \n    match /users/{userId} {\n      // Anyone can read user profiles\n      allow read: if true;\n      \n      // Only create your own user document during registration\n      allow create: if isSignedIn() \n                    && request.auth.uid == userId\n                    && request.resource.data.role == 'user';  // Prevent self-promotion to admin\n      \n      // Only update your own profile (or admin can update anyone)\n      allow update: if isOwnerOrAdmin(userId)\n                    && (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['role'])  // Prevent role change\n                        || isAdmin());  // Unless admin\n      \n      // Only admins can delete users\n      allow delete: if isAdmin();\n    }\n    \n    // ============================================\n    // POSTS COLLECTION\n    // ============================================\n    \n    match /posts/{postId} {\n      // Anyone can read published posts\n      allow read: if resource.data.published == true;\n      \n      // Authors can read their own unpublished posts\n      allow read: if isSignedIn() && resource.data.authorId == request.auth.uid;\n      \n      // Admins can read all posts\n      allow read: if isAdmin();\n      \n      // Only authenticated users can create posts\n      allow create: if isSignedIn()\n                    && request.resource.data.authorId == request.auth.uid  // Must be post author\n                    && request.resource.data.keys().hasAll(['title', 'slug', 'content', 'authorId', 'published'])  // Required fields\n                    && request.resource.data.title is string\n                    && request.resource.data.title.size() >= 3\n                    && request.resource.data.title.size() <= 200\n                    && request.resource.data.content is string\n                    && request.resource.data.content.size() >= 10\n                    && request.resource.data.authorId is string\n                    && request.resource.data.published is bool\n                    && request.resource.data.views == 0;  // Views must start at 0\n      \n      // Authors can update their own posts (or admins can update any)\n      allow update: if isSignedIn()\n                    && (resource.data.authorId == request.auth.uid || isAdmin())\n                    && request.resource.data.authorId == resource.data.authorId;  // Cannot change author\n      \n      // Authors can delete their own posts (or admins can delete any)\n      allow delete: if isSignedIn()\n                    && (resource.data.authorId == request.auth.uid || isAdmin());\n    }\n    \n    // ============================================\n    // COMMENTS COLLECTION\n    // ============================================\n    \n    match /comments/{commentId} {\n      // Anyone can read comments\n      allow read: if true;\n      \n      // Only authenticated users can create comments\n      allow create: if isSignedIn()\n                    && request.resource.data.authorId == request.auth.uid  // Must be comment author\n                    && request.resource.data.keys().hasAll(['content', 'authorId', 'postId'])  // Required fields\n                    && request.resource.data.content is string\n                    && request.resource.data.content.size() >= 1\n                    && request.resource.data.content.size() <= 1000\n                    && exists(/databases/$(database)/documents/posts/$(request.resource.data.postId));  // Post must exist\n      \n      // Authors can update their own comments (or admins)\n      allow update: if isOwnerOrAdmin(resource.data.authorId)\n                    && request.resource.data.authorId == resource.data.authorId  // Cannot change author\n                    && request.resource.data.postId == resource.data.postId;     // Cannot change post\n      \n      // Authors can delete their own comments, or admins can delete any\n      allow delete: if isOwnerOrAdmin(resource.data.authorId);\n    }\n    \n    // ============================================\n    // CATEGORIES COLLECTION\n    // ============================================\n    \n    match /categories/{categoryId} {\n      // Anyone can read categories\n      allow read: if true;\n      \n      // Only admins can create, update, or delete categories\n      allow create, update, delete: if isAdmin();\n    }\n    \n    // ============================================\n    // TAGS COLLECTION\n    // ============================================\n    \n    match /tags/{tagId} {\n      // Anyone can read tags\n      allow read: if true;\n      \n      // Only admins can create, update, or delete tags\n      allow create, update, delete: if isAdmin();\n    }\n  }\n}\n```\n\n---\n\n**Storage Rules (for images):**\n\n```typescript\nrules_version = '2';\nservice firebase.storage {\n  match /b/{bucket}/o {\n    \n    // ============================================\n    // POST IMAGES\n    // ============================================\n    \n    match /posts/{fileName} {\n      // Anyone can read images\n      allow read: if true;\n      \n      // Only authenticated users can upload\n      allow write: if request.auth != null\n                   && request.resource.size < 5 * 1024 * 1024  // 5MB limit\n                   && request.resource.contentType.matches('image/.*');  // Must be image\n      \n      // Allow deletion by authenticated users (ownership checked in Firestore rules)\n      allow delete: if request.auth != null;\n    }\n    \n    // ============================================\n    // USER AVATARS\n    // ============================================\n    \n    match /users/{userId}/{fileName} {\n      // Anyone can read avatars\n      allow read: if true;\n      \n      // Users can only upload to their own folder\n      allow write: if request.auth != null\n                   && request.auth.uid == userId\n                   && request.resource.size < 2 * 1024 * 1024  // 2MB limit\n                   && request.resource.contentType.matches('image/.*');\n      \n      // Users can delete their own avatars\n      allow delete: if request.auth != null && request.auth.uid == userId;\n    }\n  }\n}\n```\n\n---\n\n**Testing Security Rules:**\n\n```typescript\n// In Firebase Console → Firestore → Rules → Rules Playground\n\n// Test 1: Unauthenticated user reading published post\nget /posts/post123\n// Authenticated: No\n// Expected: Allow (if post.published == true)\n\n// Test 2: User creating post with wrong authorId\ncreate /posts/newPost\n{\n  \"authorId\": \"differentUserId\",\n  \"title\": \"Test\",\n  \"content\": \"Content\"\n}\n// Authenticated: Yes (uid: userIdABC)\n// Expected: Deny (authorId must match request.auth.uid)\n\n// Test 3: Non-admin user trying to create category\ncreate /categories/cat123\n{\n  \"name\": \"Technology\"\n}\n// Authenticated: Yes (role: user)\n// Expected: Deny (only admins can create categories)\n```\n\n---\n\n**Key Security Principles:**\n\n✅ **Read access:**\n- Public posts: Anyone\n- Unpublished posts: Only author or admin\n- Comments: Anyone\n- User profiles: Anyone\n\n✅ **Write access:**\n- Posts: Only authenticated users (author can create/edit/delete own posts)\n- Comments: Only authenticated users (author can edit/delete own comments)\n- Categories/Tags: Only admins\n\n✅ **Data validation:**\n- Required fields enforced\n- String length limits\n- Type checking\n- Prevent field manipulation (e.g., can't change authorId, can't set own role to admin)\n\n✅ **Reference validation:**\n- Check if referenced documents exist (e.g., post exists before commenting)\n\n✅ **File upload restrictions:**\n- Size limits (5MB for posts, 2MB for avatars)\n- Content type validation (images only)\n- User ownership enforcement\n\n**Best Practices:**\n\n1. **Default deny** — Explicitly allow only what's needed\n2. **Validate input** — Check data types, sizes, required fields\n3. **Test thoroughly** — Use Rules Playground\n4. **Never trust client** — All validation happens server-side\n5. **Use helper functions** — Keep rules DRY and readable\n6. **Log and monitor** — Watch for rule violations in Firebase Console"
+        }
+    ]
+}

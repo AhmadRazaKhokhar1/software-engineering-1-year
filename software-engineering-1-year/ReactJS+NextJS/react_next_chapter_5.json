@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 5: Introduction to Next.js & App Router",
+    "chapterId": "react_nextjs_chapter_5",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is Next.js?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "A replacement for React",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "A React framework for production applications",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "A CSS framework",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "A database",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What is the main advantage of Next.js over a React SPA?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Easier to learn",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Server-side rendering for better performance and SEO",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "No JavaScript needed",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Smaller bundle size always",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Which routing system should you use for new Next.js projects?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Pages Router",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "App Router",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "React Router",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Express Router",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What file creates a route in the App Router?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "index.js",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "route.ts",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "page.tsx",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "component.js",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What route does this file create?",
+            "codeSnippet": "app/blog/[id]/page.tsx",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "/blog/id",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "/blog/:id (dynamic route)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "/blog",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "/[id]",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What is the purpose of layout.tsx?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To create a new route",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To wrap pages with shared UI",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To handle API requests",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To define metadata",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "By default, components in Next.js App Router are:",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Client Components",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Server Components",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Static Components",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Dynamic Components",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "How do you make a component a Client Component?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Add 'use server' at the top",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Add 'use client' at the top",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Put it in a 'client' folder",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Import from 'next/client'",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Which of these can you do in a Server Component?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Use useState",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Use onClick handlers",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Directly access databases",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Use useEffect",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Which of these requires a Client Component?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Fetching data with async/await",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Using useState and onClick",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Accessing environment variables",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Rendering static content",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between a React SPA and Next.js. What problems does Next.js solve?",
+            "preferredAnswer": "**React SPA (Single-Page Application):**\n\nFlow:\n```\nUser visits → Browser gets HTML (nearly empty) → Downloads JS bundle → JS executes → React renders → Content shows\n```\n\nCharacteristics:\n- ❌ Slow initial load (must download and execute JS first)\n- ❌ Poor SEO (search engines see empty HTML)\n- ❌ Client-side rendering only\n- ❌ Manual routing setup (React Router)\n- ❌ No built-in API routes (need separate backend)\n- ❌ Manual optimization (code splitting, images, etc.)\n\n**Next.js:**\n\nFlow:\n```\nUser visits → Server renders React to HTML → Browser gets full HTML → Content shows instantly → JS downloads → Hydration for interactivity\n```\n\nCharacteristics:\n- ✅ Fast initial load (HTML ready immediately)\n- ✅ Excellent SEO (search engines see full content)\n- ✅ Server-side + client-side rendering\n- ✅ File-based routing (automatic)\n- ✅ Built-in API routes\n- ✅ Automatic optimization (code splitting, images, fonts)\n\n**Problems Next.js solves:**\n\n1. **Performance** — Server renders HTML, users see content faster\n2. **SEO** — Search engines see full content immediately\n3. **Developer Experience** — No configuration needed, everything built-in\n4. **Full-stack** — Backend API routes in the same project\n5. **Optimization** — Image optimization, code splitting, font optimization automatic\n\n**When to use each:**\n- **React SPA**: Internal dashboards, admin panels (SEO doesn't matter)\n- **Next.js**: Public websites, e-commerce, blogs (SEO critical)"
+        },
+        {
+            "id": 2,
+            "question": "Explain file-based routing in Next.js App Router. How do you create: a static route, a dynamic route, and a catch-all route?",
+            "preferredAnswer": "**File-based routing** means folders and files in the `app/` directory automatically create routes.\n\n**1. Static Routes** — Fixed URLs\n\n```\napp/\n├── page.tsx              → /\n├── about/\n│   └── page.tsx          → /about\n├── contact/\n│   └── page.tsx          → /contact\n└── blog/\n    └── page.tsx          → /blog\n```\n\nExample:\n```tsx\n// app/about/page.tsx\nexport default function AboutPage() {\n  return <h1>About Us</h1>;\n}\n// Accessible at: /about\n```\n\n**2. Dynamic Routes** — Variable segments (use [brackets])\n\n```\napp/\n└── blog/\n    └── [id]/\n        └── page.tsx      → /blog/1, /blog/2, /blog/anything\n```\n\nExample:\n```tsx\n// app/blog/[id]/page.tsx\nexport default function BlogPost({ params }) {\n  return <h1>Blog Post: {params.id}</h1>;\n}\n\n// /blog/123 → params.id = \"123\"\n// /blog/my-post → params.id = \"my-post\"\n```\n\n**Nested dynamic routes:**\n```\napp/\n└── shop/\n    └── [category]/\n        └── [product]/\n            └── page.tsx  → /shop/electronics/laptop\n```\n\n```tsx\n// app/shop/[category]/[product]/page.tsx\nexport default function ProductPage({ params }) {\n  return (\n    <div>\n      <p>Category: {params.category}</p>\n      <p>Product: {params.product}</p>\n    </div>\n  );\n}\n\n// /shop/electronics/laptop\n// → params = { category: \"electronics\", product: \"laptop\" }\n```\n\n**3. Catch-All Routes** — Match multiple segments (use [...slug])\n\n```\napp/\n└── docs/\n    └── [...slug]/\n        └── page.tsx\n```\n\nExample:\n```tsx\n// app/docs/[...slug]/page.tsx\nexport default function DocsPage({ params }) {\n  return (\n    <div>\n      <h1>Documentation</h1>\n      <p>Path: {params.slug.join('/')}</p>\n    </div>\n  );\n}\n\n// /docs/getting-started\n// → params.slug = [\"getting-started\"]\n\n// /docs/api/authentication\n// → params.slug = [\"api\", \"authentication\"]\n\n// /docs/guides/deployment/vercel\n// → params.slug = [\"guides\", \"deployment\", \"vercel\"]\n```\n\n**Optional catch-all** — Use [[...slug]] to also match the base route:\n\n```\napp/\n└── shop/\n    └── [[...slug]]/\n        └── page.tsx\n\n// Matches:\n// /shop → params.slug = undefined\n// /shop/electronics → params.slug = [\"electronics\"]\n// /shop/electronics/laptop → params.slug = [\"electronics\", \"laptop\"]\n```\n\n**Special files:**\n- `page.tsx` → Makes route publicly accessible\n- `layout.tsx` → Shared UI wrapper\n- `loading.tsx` → Loading state\n- `error.tsx` → Error boundary\n- `not-found.tsx` → 404 page"
+        },
+        {
+            "id": 3,
+            "question": "What are layouts in Next.js? Create a root layout with a header and footer, and a nested layout for a blog section.",
+            "preferredAnswer": "**Layouts** are UI components that wrap pages and persist across navigations. They're perfect for shared elements like headers, footers, and sidebars.\n\n**Root Layout (Required)**\n\n```tsx\n// app/layout.tsx\nexport const metadata = {\n  title: 'My Next.js App',\n  description: 'A modern web application',\n};\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\">\n      <body>\n        {/* Header - shows on all pages */}\n        <header className=\"header\">\n          <div className=\"container\">\n            <h1>My App</h1>\n            <nav>\n              <a href=\"/\">Home</a>\n              <a href=\"/about\">About</a>\n              <a href=\"/blog\">Blog</a>\n              <a href=\"/contact\">Contact</a>\n            </nav>\n          </div>\n        </header>\n\n        {/* Main content - page.tsx renders here */}\n        <main className=\"main\">\n          {children}\n        </main>\n\n        {/* Footer - shows on all pages */}\n        <footer className=\"footer\">\n          <div className=\"container\">\n            <p>&copy; 2024 My App. All rights reserved.</p>\n            <div>\n              <a href=\"/privacy\">Privacy</a>\n              <a href=\"/terms\">Terms</a>\n            </div>\n          </div>\n        </footer>\n      </body>\n    </html>\n  );\n}\n```\n\n**Nested Layout for Blog**\n\n```\napp/\n├── layout.tsx           (Root layout)\n├── page.tsx             (Home)\n├── about/\n│   └── page.tsx         (About)\n└── blog/\n    ├── layout.tsx       (Blog layout - nested)\n    ├── page.tsx         (Blog list)\n    └── [id]/\n        └── page.tsx     (Blog post)\n```\n\n```tsx\n// app/blog/layout.tsx\nexport default function BlogLayout({ children }) {\n  return (\n    <div className=\"blog-layout\">\n      {/* Blog sidebar */}\n      <aside className=\"blog-sidebar\">\n        <div className=\"sidebar-section\">\n          <h3>Recent Posts</h3>\n          <ul>\n            <li><a href=\"/blog/1\">Getting Started with Next.js</a></li>\n            <li><a href=\"/blog/2\">Understanding Server Components</a></li>\n            <li><a href=\"/blog/3\">App Router Deep Dive</a></li>\n          </ul>\n        </div>\n\n        <div className=\"sidebar-section\">\n          <h3>Categories</h3>\n          <ul>\n            <li><a href=\"/blog?category=tutorials\">Tutorials</a></li>\n            <li><a href=\"/blog?category=guides\">Guides</a></li>\n            <li><a href=\"/blog?category=news\">News</a></li>\n          </ul>\n        </div>\n\n        <div className=\"sidebar-section\">\n          <h3>Tags</h3>\n          <div className=\"tags\">\n            <span className=\"tag\">Next.js</span>\n            <span className=\"tag\">React</span>\n            <span className=\"tag\">TypeScript</span>\n          </div>\n        </div>\n      </aside>\n\n      {/* Blog content */}\n      <div className=\"blog-content\">\n        {children}\n      </div>\n    </div>\n  );\n}\n```\n\n**Blog Page**\n\n```tsx\n// app/blog/page.tsx\nexport default function BlogPage() {\n  return (\n    <div>\n      <h1>Blog</h1>\n      <div className=\"posts\">\n        {/* Blog posts list */}\n      </div>\n    </div>\n  );\n}\n```\n\n**Final HTML structure when visiting /blog:**\n\n```html\n<html>\n  <body>\n    <header>Global Header</header>           ← Root layout\n    \n    <main>\n      <div class=\"blog-layout\">              ← Blog layout\n        <aside>Blog Sidebar</aside>\n        <div class=\"blog-content\">\n          <div>\n            <h1>Blog</h1>                    ← page.tsx\n            <!-- Posts -->\n          </div>\n        </div>\n      </div>\n    </main>\n    \n    <footer>Global Footer</footer>           ← Root layout\n  </body>\n</html>\n```\n\n**Key points:**\n\n✅ Root layout must include `<html>` and `<body>`\n✅ Nested layouts don't need `<html>` or `<body>`\n✅ Layouts persist during navigation (don't re-render)\n✅ Each layout wraps its children"
+        },
+        {
+            "id": 4,
+            "question": "Explain the difference between Server Components and Client Components. When should you use each?",
+            "preferredAnswer": "**Server Components** (default in App Router):\n\n```tsx\n// No 'use client' = Server Component\nexport default async function UsersPage() {\n  // ✅ Can fetch data with async/await\n  const users = await fetch('https://api.example.com/users')\n    .then(res => res.json());\n\n  return (\n    <ul>\n      {users.map(user => <li key={user.id}>{user.name}</li>)}\n    </ul>\n  );\n}\n```\n\n**Can do:**\n✅ Async/await directly in component\n✅ Access databases directly\n✅ Read files from filesystem\n✅ Use server-only libraries\n✅ Keep sensitive data on server (API keys)\n✅ Reduce client JavaScript bundle\n\n**Cannot do:**\n❌ Use React hooks (useState, useEffect, etc.)\n❌ Use browser APIs (window, localStorage, etc.)\n❌ Add event handlers (onClick, onChange, etc.)\n❌ Use browser-only libraries\n\n**Client Components** (add 'use client'):\n\n```tsx\n'use client';  // ← Makes this a Client Component\n\nimport { useState } from 'react';\n\nexport default function Counter() {\n  // ✅ Can use useState\n  const [count, setCount] = useState(0);\n\n  // ✅ Can use event handlers\n  return (\n    <div>\n      <p>Count: {count}</p>\n      <button onClick={() => setCount(count + 1)}>\n        Increment\n      </button>\n    </div>\n  );\n}\n```\n\n**Can do:**\n✅ Use React hooks (useState, useEffect, etc.)\n✅ Add event handlers (onClick, onChange, etc.)\n✅ Use browser APIs (window, localStorage, etc.)\n✅ Use browser-only libraries\n✅ Add interactivity\n\n**Cannot do:**\n❌ Use async component syntax\n❌ Directly access databases\n❌ Access server-only resources\n\n**Decision Tree:**\n\n```\nDoes it need interactivity?\n├─ Yes → Client Component\n└─ No → Server Component\n\nDoes it use React hooks?\n├─ Yes → Client Component\n└─ No → Server Component\n\nDoes it fetch data?\n├─ On server (async) → Server Component\n└─ On client (useEffect) → Client Component\n\nDoes it use browser APIs?\n├─ Yes → Client Component\n└─ No → Server Component\n```\n\n**Best Practice: Combine Both**\n\n```tsx\n// app/page.tsx (Server Component)\nimport Counter from './components/Counter';  // Client Component\n\nasync function getData() {\n  const res = await fetch('https://api.example.com/data');\n  return res.json();\n}\n\nexport default async function HomePage() {\n  const data = await getData();  // Server-side data fetching\n\n  return (\n    <div>\n      <h1>Server-rendered: {data.title}</h1>\n      <Counter />  {/* Client-side interactivity */}\n    </div>\n  );\n}\n```\n\n**When to use Server Components:**\n- Fetching data from APIs/databases\n- Rendering static content\n- Accessing backend resources\n- Keeping sensitive data secure\n- Reducing JavaScript bundle size\n\n**When to use Client Components:**\n- Forms and inputs\n- Buttons with onClick\n- Modals, dropdowns, tooltips\n- Animations\n- Browser APIs (localStorage, geolocation)\n- Third-party libraries that need browser\n\n**Rule:** Use Server Components by default. Only add 'use client' when you need interactivity or browser features."
+        },
+        {
+            "id": 5,
+            "question": "Create a Next.js page structure for a blog with: home page, about page, blog list, and individual blog posts. Include layouts and dynamic routes.",
+            "preferredAnswer": "**Folder Structure:**\n\n```\napp/\n├── layout.tsx              (Root layout - global)\n├── page.tsx                (Home page - /)\n├── about/\n│   └── page.tsx            (About page - /about)\n└── blog/\n    ├── layout.tsx          (Blog layout - sidebar)\n    ├── page.tsx            (Blog list - /blog)\n    └── [slug]/\n        └── page.tsx        (Blog post - /blog/my-post)\n```\n\n**Root Layout:**\n\n```tsx\n// app/layout.tsx\nexport const metadata = {\n  title: {\n    template: '%s | My Blog',\n    default: 'My Blog',\n  },\n  description: 'A blog about web development',\n};\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\">\n      <body>\n        <header className=\"header\">\n          <nav className=\"container\">\n            <a href=\"/\" className=\"logo\">My Blog</a>\n            <ul>\n              <li><a href=\"/\">Home</a></li>\n              <li><a href=\"/about\">About</a></li>\n              <li><a href=\"/blog\">Blog</a></li>\n            </ul>\n          </nav>\n        </header>\n\n        <main className=\"main\">\n          {children}\n        </main>\n\n        <footer className=\"footer\">\n          <div className=\"container\">\n            <p>&copy; 2024 My Blog</p>\n          </div>\n        </footer>\n      </body>\n    </html>\n  );\n}\n```\n\n**Home Page:**\n\n```tsx\n// app/page.tsx\nexport const metadata = {\n  title: 'Home',\n};\n\nexport default function HomePage() {\n  return (\n    <div className=\"container\">\n      <h1>Welcome to My Blog</h1>\n      <p>Latest articles about web development</p>\n      \n      <div className=\"featured-posts\">\n        <h2>Featured Posts</h2>\n        {/* Featured posts */}\n      </div>\n    </div>\n  );\n}\n```\n\n**About Page:**\n\n```tsx\n// app/about/page.tsx\nexport const metadata = {\n  title: 'About',\n  description: 'Learn more about me',\n};\n\nexport default function AboutPage() {\n  return (\n    <div className=\"container\">\n      <h1>About Me</h1>\n      <p>I'm a web developer passionate about React and Next.js.</p>\n    </div>\n  );\n}\n```\n\n**Blog Layout (with sidebar):**\n\n```tsx\n// app/blog/layout.tsx\nexport default function BlogLayout({ children }) {\n  const categories = ['React', 'Next.js', 'TypeScript', 'JavaScript'];\n  const recentPosts = [\n    { slug: 'getting-started-nextjs', title: 'Getting Started with Next.js' },\n    { slug: 'react-hooks-guide', title: 'React Hooks Guide' },\n    { slug: 'typescript-basics', title: 'TypeScript Basics' },\n  ];\n\n  return (\n    <div className=\"blog-layout container\">\n      <div className=\"blog-content\">\n        {children}\n      </div>\n\n      <aside className=\"blog-sidebar\">\n        <div className=\"sidebar-section\">\n          <h3>Recent Posts</h3>\n          <ul>\n            {recentPosts.map(post => (\n              <li key={post.slug}>\n                <a href={`/blog/${post.slug}`}>{post.title}</a>\n              </li>\n            ))}\n          </ul>\n        </div>\n\n        <div className=\"sidebar-section\">\n          <h3>Categories</h3>\n          <ul>\n            {categories.map(category => (\n              <li key={category}>\n                <a href={`/blog?category=${category}`}>{category}</a>\n              </li>\n            ))}\n          </ul>\n        </div>\n      </aside>\n    </div>\n  );\n}\n```\n\n**Blog List Page:**\n\n```tsx\n// app/blog/page.tsx\nexport const metadata = {\n  title: 'Blog',\n  description: 'Read my latest articles',\n};\n\nasync function getPosts() {\n  // In real app, fetch from database or CMS\n  return [\n    {\n      slug: 'getting-started-nextjs',\n      title: 'Getting Started with Next.js',\n      excerpt: 'Learn the basics of Next.js',\n      date: '2024-01-15',\n    },\n    {\n      slug: 'react-hooks-guide',\n      title: 'Complete React Hooks Guide',\n      excerpt: 'Master React hooks',\n      date: '2024-01-20',\n    },\n  ];\n}\n\nexport default async function BlogPage() {\n  const posts = await getPosts();\n\n  return (\n    <div>\n      <h1>Blog</h1>\n      <div className=\"posts-grid\">\n        {posts.map(post => (\n          <article key={post.slug} className=\"post-card\">\n            <h2>\n              <a href={`/blog/${post.slug}`}>{post.title}</a>\n            </h2>\n            <p className=\"date\">{post.date}</p>\n            <p>{post.excerpt}</p>\n            <a href={`/blog/${post.slug}`} className=\"read-more\">\n              Read more →\n            </a>\n          </article>\n        ))}\n      </div>\n    </div>\n  );\n}\n```\n\n**Individual Blog Post (Dynamic Route):**\n\n```tsx\n// app/blog/[slug]/page.tsx\n\n// Generate metadata dynamically\nexport async function generateMetadata({ params }) {\n  const post = await getPost(params.slug);\n  \n  return {\n    title: post.title,\n    description: post.excerpt,\n  };\n}\n\nasync function getPost(slug) {\n  // In real app, fetch from database/CMS\n  const posts = {\n    'getting-started-nextjs': {\n      title: 'Getting Started with Next.js',\n      content: 'Next.js is a React framework...',\n      date: '2024-01-15',\n      author: 'John Doe',\n    },\n  };\n  \n  return posts[slug];\n}\n\nexport default async function BlogPost({ params }) {\n  const post = await getPost(params.slug);\n\n  if (!post) {\n    return <div>Post not found</div>;\n  }\n\n  return (\n    <article className=\"blog-post\">\n      <header>\n        <h1>{post.title}</h1>\n        <div className=\"meta\">\n          <span>By {post.author}</span>\n          <span>{post.date}</span>\n        </div>\n      </header>\n\n      <div className=\"content\">\n        <p>{post.content}</p>\n      </div>\n    </article>\n  );\n}\n```\n\n**Routes created:**\n- `/` → Home page\n- `/about` → About page\n- `/blog` → Blog list (with sidebar)\n- `/blog/getting-started-nextjs` → Blog post (with sidebar)\n- `/blog/react-hooks-guide` → Blog post (with sidebar)\n\n**Key features:**\n✅ Root layout with header/footer on all pages\n✅ Nested blog layout with sidebar only on blog pages\n✅ Dynamic routes for individual posts\n✅ Server-side data fetching\n✅ Dynamic metadata for SEO\n✅ Clean URL structure"
+        }
+    ]
+}

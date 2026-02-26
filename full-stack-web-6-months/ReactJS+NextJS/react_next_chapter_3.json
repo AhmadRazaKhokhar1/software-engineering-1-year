@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 3: State, Events & Conditional Rendering",
+    "chapterId": "react_nextjs_chapter_3",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What does useState return?",
+            "codeSnippet": "const [count, setCount] = useState(0);",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Just the current value",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "An array with [currentValue, updaterFunction]",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "An object with value and setValue",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "A function to update state",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "How do you update state when the new value depends on the previous value?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "setCount(count + 1)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "setCount(prevCount => prevCount + 1)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "count = count + 1",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "setState({ count: count + 1 })",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What's wrong with this code?",
+            "codeSnippet": "const [user, setUser] = useState({ name: 'Alice', age: 25 });\nuser.age = 26;",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Nothing, it's correct",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "State is being mutated directly",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Missing useState import",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Age should be a string",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What is the correct way to handle a button click?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "<button onClick=\"handleClick()\">",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "<button onClick={handleClick()}>",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "<button onClick={handleClick}>",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "<button click={handleClick}>",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What makes an input 'controlled' in React?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "It has a submit handler",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Its value is controlled by React state",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "It's inside a form",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "It has validation",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What will this render when count is 0?",
+            "codeSnippet": "{count && <p>{count} messages</p>}",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Nothing",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "0 messages",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "The number 0",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "An error",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Why are keys important when rendering lists?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To make the code look better",
+                    "isCorreat": false
+                },
+                {
+                    "key": "B",
+                    "text": "To help React identify which items changed",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To prevent errors",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "They aren't important",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Which is the best choice for a key when rendering a list?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Array index",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Math.random()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Unique, stable ID from the data",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "The item's name",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "When does a component re-render?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Only when props change",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Only when state changes",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "When state changes, props change, or parent re-renders",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Every second automatically",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What happens to state updates in React?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "They happen immediately",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "They are asynchronous and batched",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "They happen on the next page load",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "They never happen",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain useState. How do you declare state, update it, and why must you use the setter function instead of mutating state directly?",
+            "preferredAnswer": "**`useState`** is a React Hook that lets you add state to functional components.\n\n**Declaration:**\n\n```tsx\nimport { useState } from 'react';\n\nfunction Counter() {\n    const [count, setCount] = useState(0);\n    //      ↑       ↑            ↑\n    //  current  updater    initial value\n    //  value   function\n}\n```\n\n**Updating state:**\n\n```tsx\n// Simple update\nsetCount(5);\n\n// Functional update (when new value depends on previous)\nsetCount(prevCount => prevCount + 1);\n```\n\n**Why use setter function instead of mutation:**\n\n```tsx\n// ❌ WRONG: Mutating state directly\ncount = count + 1;  // React doesn't know state changed\ncount++;            // No re-render happens\n\n// ✅ CORRECT: Using setter function\nsetCount(count + 1);  // React knows state changed, triggers re-render\n```\n\n**Reasons you MUST use the setter:**\n\n1. **React doesn't detect mutations** — Direct assignment doesn't trigger re-renders\n2. **State is immutable** — You should treat state as read-only\n3. **Batching** — React can batch multiple updates efficiently\n4. **Predictability** — State updates follow a clear, trackable pattern\n\n**With objects/arrays:**\n\n```tsx\nconst [user, setUser] = useState({ name: 'Alice', age: 25 });\n\n// ❌ WRONG\nuser.age = 26;  // Mutation!\n\n// ✅ CORRECT\nsetUser({ ...user, age: 26 });  // New object\n\nconst [items, setItems] = useState([1, 2, 3]);\n\n// ❌ WRONG\nitems.push(4);  // Mutation!\n\n// ✅ CORRECT\nsetItems([...items, 4]);  // New array\n```\n\nThe setter function tells React \"state has changed, re-render the component.\""
+        },
+        {
+            "id": 2,
+            "question": "What is a controlled input? Show how to create a controlled text input, and explain why it's better than uncontrolled inputs.",
+            "preferredAnswer": "A **controlled input** is a form input whose value is controlled by React state.\n\n**Controlled Input:**\n\n```tsx\nfunction LoginForm() {\n    const [email, setEmail] = useState('');\n    const [password, setPassword] = useState('');\n\n    const handleSubmit = (e) => {\n        e.preventDefault();\n        console.log('Email:', email);\n        console.log('Password:', password);\n    };\n\n    return (\n        <form onSubmit={handleSubmit}>\n            <input\n                type=\"email\"\n                value={email}                          // ← Controlled by state\n                onChange={(e) => setEmail(e.target.value)}\n                placeholder=\"Email\"\n            />\n            <input\n                type=\"password\"\n                value={password}                       // ← Controlled by state\n                onChange={(e) => setPassword(e.target.value)}\n                placeholder=\"Password\"\n            />\n            <button type=\"submit\">Login</button>\n        </form>\n    );\n}\n```\n\n**How it works:**\n\n1. Input's `value` prop is set to state variable\n2. User types → `onChange` event fires\n3. Event handler updates state with `setEmail(e.target.value)`\n4. Component re-renders with new state\n5. Input displays updated value\n\n**Uncontrolled Input (not recommended):**\n\n```tsx\nfunction UncontrolledForm() {\n    const emailRef = useRef();\n\n    const handleSubmit = (e) => {\n        e.preventDefault();\n        console.log(emailRef.current.value);  // Access DOM directly\n    };\n\n    return (\n        <form onSubmit={handleSubmit}>\n            <input type=\"email\" ref={emailRef} />\n            <button type=\"submit\">Submit</button>\n        </form>\n    );\n}\n```\n\n**Why controlled inputs are better:**\n\n1. **Single source of truth** — State controls the value, no DOM querying needed\n2. **Easy validation** — Can validate on every keystroke\n3. **Conditional rendering** — Can show/hide based on input value\n4. **Formatting** — Can format input in real-time (phone numbers, credit cards)\n5. **Testing** — Easier to test (just check state)\n6. **Predictable** — State always reflects what's in the input\n\n**Example with validation:**\n\n```tsx\nfunction EmailInput() {\n    const [email, setEmail] = useState('');\n    const [error, setError] = useState('');\n\n    const handleChange = (e) => {\n        const value = e.target.value;\n        setEmail(value);\n        \n        // Validate in real-time\n        if (value && !value.includes('@')) {\n            setError('Invalid email');\n        } else {\n            setError('');\n        }\n    };\n\n    return (\n        <div>\n            <input type=\"email\" value={email} onChange={handleChange} />\n            {error && <p className=\"error\">{error}</p>}\n        </div>\n    );\n}\n```"
+        },
+        {
+            "id": 3,
+            "question": "Demonstrate three different ways to conditionally render UI in React. When would you use each approach?",
+            "preferredAnswer": "**1. Ternary Operator** — Best for if/else (two options)\n\n```tsx\nfunction Greeting({ isLoggedIn }) {\n    return (\n        <div>\n            {isLoggedIn ? (\n                <h1>Welcome back!</h1>\n            ) : (\n                <h1>Please sign in.</h1>\n            )}\n        </div>\n    );\n}\n```\n\n**Use when:** You have exactly two options (A or B)\n\n**2. Logical AND (`&&`)** — Best for conditional presence\n\n```tsx\nfunction Notifications({ count }) {\n    return (\n        <div>\n            <h1>Inbox</h1>\n            {count > 0 && (\n                <div className=\"badge\">\n                    {count} new messages\n                </div>\n            )}\n        </div>\n    );\n}\n```\n\n**Use when:** You want to render something OR nothing (not two alternatives)\n\n⚠️ **Warning:** Be careful with falsy values:\n\n```tsx\n// ❌ BAD: Will render \"0\"\n{count && <p>{count} items</p>}\n\n// ✅ GOOD: Explicitly check\n{count > 0 && <p>{count} items</p>}\n```\n\n**3. if/else or early return** — Best for complex logic\n\n```tsx\nfunction Dashboard({ user }) {\n    // Early return pattern\n    if (!user) {\n        return <LoadingSpinner />;\n    }\n\n    if (!user.isVerified) {\n        return <VerifyEmailMessage />;\n    }\n\n    if (user.role === 'admin') {\n        return <AdminDashboard user={user} />;\n    }\n\n    if (user.role === 'editor') {\n        return <EditorDashboard user={user} />;\n    }\n\n    return <UserDashboard user={user} />;\n}\n```\n\n**Use when:** Multiple conditions or complex logic\n\n**Bonus: Switch statement or object mapping**\n\n```tsx\n// Switch (verbose)\nfunction StatusBadge({ status }) {\n    let color;\n    switch (status) {\n        case 'pending': color = 'yellow'; break;\n        case 'approved': color = 'green'; break;\n        case 'rejected': color = 'red'; break;\n        default: color = 'gray';\n    }\n    return <span className={`badge-${color}`}>{status}</span>;\n}\n\n// Object mapping (clean)\nfunction StatusBadge({ status }) {\n    const colors = {\n        pending: 'yellow',\n        approved: 'green',\n        rejected: 'red'\n    };\n    \n    const color = colors[status] || 'gray';\n    return <span className={`badge-${color}`}>{status}</span>;\n}\n```\n\n**Summary:**\n- Ternary: Two options (A or B)\n- &&: Optional rendering (show or hide)\n- if/else: Complex logic, multiple conditions\n- Object mapping: Many similar cases"
+        },
+        {
+            "id": 4,
+            "question": "Why are keys important when rendering lists? What happens if you use array index as a key when items can be reordered or deleted?",
+            "preferredAnswer": "**Keys** help React identify which items in a list have changed, been added, or removed.\n\n**Why keys are important:**\n\n```tsx\nfunction TodoList({ todos }) {\n    return (\n        <ul>\n            {todos.map(todo => (\n                <li key={todo.id}>  {/* ← Key helps React track this item */}\n                    {todo.text}\n                </li>\n            ))}\n        </ul>\n    );\n}\n```\n\n**How React uses keys:**\n\n1. **Identify changes** — React compares old and new lists by key\n2. **Preserve state** — Component state is tied to its key\n3. **Optimize updates** — Only changed items are updated\n\n**Problem with index as key:**\n\n```tsx\nfunction TodoList() {\n    const [todos, setTodos] = useState([\n        { id: 1, text: 'Task 1', done: false },\n        { id: 2, text: 'Task 2', done: false },\n        { id: 3, text: 'Task 3', done: false }\n    ]);\n\n    // ❌ BAD: Using index as key\n    return (\n        <ul>\n            {todos.map((todo, index) => (\n                <li key={index}>  {/* ← PROBLEM! */}\n                    <input type=\"checkbox\" checked={todo.done} />\n                    {todo.text}\n                    <button onClick={() => deleteTodo(todo.id)}>Delete</button>\n                </li>\n            ))}\n        </ul>\n    );\n}\n```\n\n**What goes wrong:**\n\nInitial state:\n```\nindex  key  text      checkbox\n0      0    Task 1    ☐\n1      1    Task 2    ☑ (checked)\n2      2    Task 3    ☐\n```\n\nUser deletes Task 1:\n```\nindex  key  text      checkbox\n0      0    Task 2    ☐  ← WRONG! Should be checked\n1      1    Task 3    ☑  ← WRONG! Should be unchecked\n```\n\nReact thinks:\n- Item with key 0 changed from \"Task 1\" to \"Task 2\"\n- Item with key 1 changed from \"Task 2\" to \"Task 3\"\n- Item with key 2 was removed\n\nResult: **Checkbox state is wrong!**\n\n**✅ CORRECT: Use unique, stable IDs**\n\n```tsx\n{todos.map(todo => (\n    <li key={todo.id}>  {/* ← Stable ID from data */}\n        <input type=\"checkbox\" checked={todo.done} />\n        {todo.text}\n        <button onClick={() => deleteTodo(todo.id)}>Delete</button>\n    </li>\n))}\n```\n\nNow React correctly tracks each item by its ID.\n\n**When index as key is OK:**\n\n✅ Static lists that never change\n✅ Items never reordered, added, or removed\n✅ Items have no state or identity\n\n```tsx\n// OK: Static, never changes\nconst months = ['Jan', 'Feb', 'Mar', ...];\n{months.map((month, index) => <li key={index}>{month}</li>)}\n```\n\n**Key Rules:**\n\n1. ✅ Use unique, stable ID from data when available\n2. ⚠️ Use index only for static lists\n3. ❌ Never use `Math.random()` or unstable values\n4. ❌ Don't use index for lists that change"
+        },
+        {
+            "id": 5,
+            "question": "Build a simple counter that has increment, decrement, and reset buttons. Add a feature that prevents the count from going below 0.",
+            "preferredAnswer": "```tsx\nimport { useState } from 'react';\n\nfunction Counter() {\n    const [count, setCount] = useState(0);\n\n    const increment = () => {\n        setCount(prevCount => prevCount + 1);\n    };\n\n    const decrement = () => {\n        // Prevent going below 0\n        setCount(prevCount => prevCount > 0 ? prevCount - 1 : 0);\n        // Or: setCount(prevCount => Math.max(0, prevCount - 1));\n    };\n\n    const reset = () => {\n        setCount(0);\n    };\n\n    return (\n        <div className=\"counter\">\n            <h1>Counter</h1>\n            <div className=\"display\">\n                <h2>{count}</h2>\n            </div>\n            <div className=\"controls\">\n                <button onClick={decrement} disabled={count === 0}>\n                    Decrement\n                </button>\n                <button onClick={reset}>\n                    Reset\n                </button>\n                <button onClick={increment}>\n                    Increment\n                </button>\n            </div>\n        </div>\n    );\n}\n\nexport default Counter;\n```\n\n```css\n/* Counter.css */\n.counter {\n    max-width: 400px;\n    margin: 50px auto;\n    padding: 30px;\n    text-align: center;\n    background: #f9fafb;\n    border-radius: 12px;\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n}\n\n.counter h1 {\n    margin: 0 0 20px 0;\n    color: #1f2937;\n}\n\n.display {\n    background: white;\n    padding: 40px;\n    border-radius: 8px;\n    margin-bottom: 20px;\n}\n\n.display h2 {\n    margin: 0;\n    font-size: 48px;\n    color: #2563eb;\n}\n\n.controls {\n    display: flex;\n    gap: 10px;\n}\n\n.controls button {\n    flex: 1;\n    padding: 12px 24px;\n    font-size: 16px;\n    font-weight: 600;\n    border: none;\n    border-radius: 6px;\n    cursor: pointer;\n    transition: all 0.2s;\n}\n\n.controls button:nth-child(1) {\n    background: #ef4444;\n    color: white;\n}\n\n.controls button:nth-child(1):hover:not(:disabled) {\n    background: #dc2626;\n}\n\n.controls button:nth-child(2) {\n    background: #6b7280;\n    color: white;\n}\n\n.controls button:nth-child(2):hover {\n    background: #4b5563;\n}\n\n.controls button:nth-child(3) {\n    background: #10b981;\n    color: white;\n}\n\n.controls button:nth-child(3):hover {\n    background: #059669;\n}\n\n.controls button:disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n}\n```\n\n**Enhanced version with step size:**\n\n```tsx\nfunction EnhancedCounter() {\n    const [count, setCount] = useState(0);\n    const [step, setStep] = useState(1);\n\n    const increment = () => {\n        setCount(prev => prev + step);\n    };\n\n    const decrement = () => {\n        setCount(prev => Math.max(0, prev - step));\n    };\n\n    const reset = () => {\n        setCount(0);\n    };\n\n    return (\n        <div className=\"counter\">\n            <h1>Enhanced Counter</h1>\n            \n            <div className=\"display\">\n                <h2>{count}</h2>\n            </div>\n\n            <div className=\"step-control\">\n                <label>Step size:</label>\n                <input\n                    type=\"number\"\n                    min=\"1\"\n                    value={step}\n                    onChange={(e) => setStep(Number(e.target.value))}\n                />\n            </div>\n\n            <div className=\"controls\">\n                <button onClick={decrement} disabled={count === 0}>\n                    - {step}\n                </button>\n                <button onClick={reset}>Reset</button>\n                <button onClick={increment}>+ {step}</button>\n            </div>\n        </div>\n    );\n}\n```\n\n**Key features:**\n\n✅ Prevents negative values\n✅ Disables decrement button at 0\n✅ Uses functional updates for reliability\n✅ Enhanced version supports custom step size"
+        }
+    ]
+}

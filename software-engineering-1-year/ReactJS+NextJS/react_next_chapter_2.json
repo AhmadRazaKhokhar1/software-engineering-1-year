@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 2: Functions, Interfaces & Advanced Types",
+    "chapterId": "typescript_chapter_2",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is the return type of a function that doesn't return anything?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "null",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "undefined",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "void",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "never",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What does the '?' symbol mean in function parameters?",
+            "codeSnippet": "function greet(name: string, greeting?: string): string { }",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "The parameter must be null",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "The parameter is optional",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "The parameter is readonly",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "The parameter has a default value",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What is the key difference between interfaces and type aliases?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Interfaces can only define objects, type aliases can define any type",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Interfaces support declaration merging, type aliases don't",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Type aliases are faster at runtime",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Interfaces cannot be extended",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What does the union type 'string | number' mean?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "The value must be both a string and a number",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "The value can be either a string or a number",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "The value is converted from string to number",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "The value is always a string",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What does the intersection type 'Person & Employee' create?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "A type that can be either Person or Employee",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "A type that has all properties from both Person and Employee",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "A type with only shared properties",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "A type with no properties",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What is the value of Direction.Down in this enum?",
+            "codeSnippet": "enum Direction {\n    Up,\n    Down,\n    Left,\n    Right\n}",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "\"Down\"",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "1",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "2",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "undefined",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "When should you use type assertions?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Always, to make code safer",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "When you know more about a type than TypeScript can infer",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To convert between incompatible types",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To disable type checking",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What does Partial<User> do?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Removes all properties from User",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Makes all properties of User optional",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Makes all properties of User required",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Picks some properties from User",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What does Pick<User, 'name' | 'email'> create?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "A User type without name and email",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "A type with only name and email properties from User",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "A User type with optional name and email",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "An array of name and email values",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What is the output of this code?",
+            "codeSnippet": "type Status = \"pending\" | \"approved\";\nlet status: Status = \"rejected\";",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "\"rejected\"",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "undefined",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Compilation error",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "null",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between optional parameters and default parameters in TypeScript functions. When would you use each?",
+            "preferredAnswer": "**Optional parameters** use `?` and may or may not be provided. If not provided, they are `undefined`:\n\n```typescript\nfunction greet(name: string, greeting?: string): string {\n    return greeting ? `${greeting}, ${name}!` : `Hello, ${name}!`;\n}\n\ngreet(\"Alice\");            // \"Hello, Alice!\" (greeting is undefined)\ngreet(\"Alice\", \"Welcome\"); // \"Welcome, Alice!\"\n```\n\n**Default parameters** provide a fallback value if the argument is not provided:\n\n```typescript\nfunction greet(name: string, greeting: string = \"Hello\"): string {\n    return `${greeting}, ${name}!`;\n}\n\ngreet(\"Alice\");            // \"Hello, Alice!\" (uses default)\ngreet(\"Alice\", \"Welcome\"); // \"Welcome, Alice!\"\n```\n\n**When to use each:**\n\n- **Optional parameters**: When the absence of a value is meaningful and you want to handle it explicitly (e.g., checking if a filter was provided)\n- **Default parameters**: When you want a sensible fallback value without extra conditional logic\n\n**Key difference:** Optional parameters can be `undefined`, default parameters always have a value."
+        },
+        {
+            "id": 2,
+            "question": "What is the difference between union types (|) and intersection types (&)? Provide examples of when you would use each.",
+            "preferredAnswer": "**Union Types (`|`)** — A value can be **ONE of several types**:\n\n```typescript\ntype ID = string | number;\n\nlet userId: ID = 123;       // ✅ number\nuserId = \"ABC123\";          // ✅ string\n\n// Use case: When a value can have different types\ntype Status = \"pending\" | \"approved\" | \"rejected\";\ntype ApiResult = Success | Error;\n```\n\n**Intersection Types (`&`)** — A value must have **ALL properties from ALL types**:\n\n```typescript\ninterface Person {\n    name: string;\n    age: number;\n}\n\ninterface Employee {\n    employeeId: number;\n    department: string;\n}\n\ntype EmployeePerson = Person & Employee;\n\nconst emp: EmployeePerson = {\n    name: \"Alice\",\n    age: 30,\n    employeeId: 12345,\n    department: \"Engineering\"\n};\n```\n\n**When to use:**\n\n- **Union**: When a value can be one of several distinct types (API responses, function parameters that accept multiple types)\n- **Intersection**: When combining multiple interfaces/types into one (mixins, extending objects with additional properties)\n\n**Simple rule:**\n- `|` = OR (one of these)\n- `&` = AND (all of these)"
+        },
+        {
+            "id": 3,
+            "question": "Create an interface called 'Product' and extend it to create 'DigitalProduct' with additional properties. Then write a function that accepts a Product.",
+            "preferredAnswer": "```typescript\n// Base interface\ninterface Product {\n    id: number;\n    name: string;\n    price: number;\n    description?: string;  // Optional\n}\n\n// Extended interface for digital products\ninterface DigitalProduct extends Product {\n    downloadUrl: string;\n    fileSize: number;        // in MB\n    format: \"pdf\" | \"mp4\" | \"zip\";\n}\n\n// Function that accepts any Product (including DigitalProduct)\nfunction displayProduct(product: Product): void {\n    console.log(`${product.name} - $${product.price}`);\n    if (product.description) {\n        console.log(`Description: ${product.description}`);\n    }\n}\n\n// Usage with base Product\nconst laptop: Product = {\n    id: 1,\n    name: \"MacBook Pro\",\n    price: 1999,\n    description: \"Powerful laptop\"\n};\n\n// Usage with DigitalProduct (also valid as Product)\nconst ebook: DigitalProduct = {\n    id: 2,\n    name: \"TypeScript Guide\",\n    price: 29.99,\n    downloadUrl: \"https://example.com/ts-guide.pdf\",\n    fileSize: 15,\n    format: \"pdf\"\n};\n\ndisplayProduct(laptop);  // ✅ Works\ndisplayProduct(ebook);   // ✅ Works (DigitalProduct extends Product)\n```\n\nExtending interfaces allows you to build specialized types while maintaining compatibility with functions that accept the base type."
+        },
+        {
+            "id": 4,
+            "question": "Explain what Partial<T>, Pick<T, K>, and Omit<T, K> do. Provide a practical example showing when you would use each.",
+            "preferredAnswer": "**`Partial<T>`** — Makes ALL properties optional:\n\n```typescript\ninterface User {\n    id: number;\n    name: string;\n    email: string;\n}\n\n// For updating users (only update some fields)\nfunction updateUser(id: number, updates: Partial<User>): void {\n    // updates can have any combination of User properties\n}\n\nupdateUser(1, { name: \"Alice\" });  // ✅ Only updating name\nupdateUser(2, { email: \"new@email.com\", name: \"Bob\" });  // ✅ Multiple fields\n```\n\n**`Pick<T, K>`** — Creates type with ONLY specified properties:\n\n```typescript\n// For API responses that shouldn't expose everything\ntype PublicUser = Pick<User, \"id\" | \"name\">;\n// { id: number; name: string; }\n\nfunction getPublicProfile(id: number): PublicUser {\n    return { id, name: \"Alice\" };  // No email exposed\n}\n```\n\n**`Omit<T, K>`** — Creates type WITHOUT specified properties:\n\n```typescript\ninterface User {\n    id: number;\n    name: string;\n    email: string;\n    password: string;  // Sensitive!\n}\n\n// Remove sensitive data\ntype SafeUser = Omit<User, \"password\">;\n// { id: number; name: string; email: string; }\n\n// For creating new users (id generated by server)\ntype CreateUser = Omit<User, \"id\">;\n// { name: string; email: string; password: string; }\n```\n\n**Summary:**\n- `Partial`: Update operations (some fields)\n- `Pick`: Select specific fields (public APIs)\n- `Omit`: Exclude fields (remove sensitive data, create operations)"
+        },
+        {
+            "id": 5,
+            "question": "What are type assertions and when should you use them? What are the dangers of overusing them?",
+            "preferredAnswer": "**Type assertions** tell TypeScript: \"Trust me, I know this type is correct.\" They use the `as` keyword:\n\n```typescript\n// DOM elements - TypeScript doesn't know the specific type\nconst input = document.getElementById(\"email\") as HTMLInputElement;\ninput.value = \"test@example.com\";  // Now we can access .value\n\n// API responses when you know the structure\nconst user = await response.json() as User;\n```\n\n**When to use them:**\n1. DOM element access (TypeScript can't know element types)\n2. API responses with known structure\n3. When narrowing from a broader type you're certain about\n\n**Dangers of overusing:**\n\n```typescript\n// ❌ DANGEROUS: Lying to TypeScript\nconst value: string = \"hello\";\nconst num = value as unknown as number;\nnum.toFixed(2);  // Runtime crash! \"hello\" is not a number\n\n// ❌ BAD: Asserting instead of validating\nfunction process(data: unknown) {\n    const user = data as User;  // No validation!\n    console.log(user.name);     // Might crash\n}\n\n// ✅ GOOD: Validate first\nfunction process(data: unknown) {\n    if (isUser(data)) {\n        console.log(data.name);  // Safe\n    }\n}\n```\n\n**Best practices:**\n1. Use type guards/validation when possible\n2. Only assert when you're 100% certain of the type\n3. Avoid `as unknown as X` — it bypasses all safety\n4. If you're asserting frequently, reconsider your types"
+        }
+    ]
+}
