@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 1: The Web, HTML & How Websites Work",
+  "chapterId": "html_chapter_1",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "What does HTML stand for?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Hyper Transfer Markup Language",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "HyperText Markup Language",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "HighText Machine Language",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "HyperText Making Language",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is responsible for the STRUCTURE of a web page?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "CSS",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "JavaScript",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "HTML",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Python",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What does a browser do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Stores website files",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Writes HTML code",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Reads and displays HTML files",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Creates servers",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What protocol is used for communication between browser and server?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "FTP",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "SMTP",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "HTTP",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "SSH",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which file is typically the default homepage of a website?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "home.html",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "main.html",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "page1.html",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "index.html",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "HTML is a __________.",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Programming language",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Scripting language",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Markup language",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Database language",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which part of the HTML tag signals the end of an element?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Opening tag",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Closing tag",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Attribute",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Content",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a self-closing (void) tag?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<p>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<h1>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<br>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<body>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "In the house analogy, what does CSS represent?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Bricks and walls",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Electricity and plumbing",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Paint and decoration",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Foundation",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What does the <title> tag do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Displays a heading on the page",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Sets the text shown on the browser tab",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Creates a link",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Adds a paragraph",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "What is the difference between the Internet and the Web?",
+      "preferredAnswer": "The **Internet** is the global network of connected computers. The **Web (WWW)** is a collection of websites and web pages that run on top of the Internet. The Internet is the infrastructure; the Web is a service that uses it."
+    },
+    {
+      "id": 2,
+      "question": "Explain the request-response cycle in simple terms.",
+      "preferredAnswer": "When you type a URL in your browser, the browser sends a **request** to the server asking for the web page. The server finds the HTML file and sends it back as a **response**. The browser then reads the HTML and displays the page on your screen."
+    },
+    {
+      "id": 3,
+      "question": "Why is HTML not considered a programming language?",
+      "preferredAnswer": "HTML is a **markup language**, not a programming language. It has no logic, no conditions (if/else), no loops, and no variables. It only **describes the structure** of content — it tells the browser *what* things are, not *how to think or decide*."
+    },
+    {
+      "id": 4,
+      "question": "Write the basic structure of an HTML document and label each part.",
+      "preferredAnswer": "```html\n<!DOCTYPE html>        <!-- Declaration: tells browser this is HTML5 -->\n<html>                 <!-- Root element -->\n  <head>               <!-- Head: metadata, title, links -->\n    <title>Page Title</title>\n  </head>\n  <body>               <!-- Body: all visible content -->\n    <h1>Heading</h1>\n    <p>Paragraph</p>\n  </body>\n</html>\n```"
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between an opening tag, closing tag, and a self-closing tag? Give one example of each.",
+      "preferredAnswer": "- **Opening tag:** Starts an element → `<p>`\n- **Closing tag:** Ends an element (has `/`) → `</p>`\n- **Self-closing tag:** Has no closing tag and no content → `<br>`\n\nExample: `<p>Hello</p>` uses opening and closing tags. `<br>` is self-closing."
+    }
+  ]
+}

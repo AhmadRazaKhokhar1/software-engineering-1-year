@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 2: CSS Box Model & Layout Foundations",
+  "chapterId": "html_css_chapter_2",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "What are the four layers of the CSS Box Model (from inside to outside)?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Margin → Border → Padding → Content",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Content → Padding → Border → Margin",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Content → Margin → Padding → Border",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Border → Padding → Content → Margin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What does box-sizing: border-box do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Removes all borders from elements",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Adds a box shadow",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Includes padding and border within the specified width/height",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Makes elements circular",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "How do you center a block element horizontally?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "text-align: center;",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "margin: auto 0;",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "margin: 0 auto; (with defined width)",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "display: center;",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which display value allows an element to sit inline but also accept width/height?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "block",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "inline",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "inline-block",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "none",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What happens when two vertical margins of 30px and 20px touch?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Total gap is 50px",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Total gap is 30px (larger margin wins)",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Total gap is 20px",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "No gap appears",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What does overflow: hidden do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Shows scrollbars",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Makes content transparent",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Clips content that exceeds the container",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Increases the container size",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which property controls the space INSIDE the border?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Margin",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Padding",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Border-spacing",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Gap",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What does background-size: cover do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Shrinks the image to fit inside without cropping",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Fills the entire container, may crop edges",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Tiles the image repeatedly",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Stretches the image without maintaining aspect ratio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What is the shorthand order for margin: 10px 20px 30px 40px?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Left, Right, Top, Bottom",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Top, Right, Bottom, Left",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Top, Bottom, Left, Right",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Right, Left, Top, Bottom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What is the difference between display: none and visibility: hidden?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "They are the same",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "display: none removes the element from layout; visibility: hidden hides it but keeps the space",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "visibility: hidden removes the element; display: none keeps the space",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Neither affects layout",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "Explain the CSS Box Model with all four layers. Use a real-world analogy.",
+      "preferredAnswer": "Four layers from inside to outside:\n1. **Content** — The actual text/image (like a gift inside a box)\n2. **Padding** — Space between content and border (like bubble wrap)\n3. **Border** — The visible edge (like the cardboard box)\n4. **Margin** — Space outside the border (like space between packages on a shelf)\n\nEvery HTML element follows this model."
+    },
+    {
+      "id": 2,
+      "question": "What is margin collapse? Give an example and explain how to avoid unexpected spacing.",
+      "preferredAnswer": "Margin collapse: when two **vertical** margins touch, only the **larger** one is used (they don't add). Example: .box-a { margin-bottom: 40px; } .box-b { margin-top: 25px; } → Actual gap is 40px, not 65px. Only vertical margins collapse; horizontal do not.\n\nTo avoid: use padding where possible; use only margin-bottom OR margin-top consistently; Flexbox/Grid containers prevent collapse between children."
+    },
+    {
+      "id": 3,
+      "question": "Explain the difference between display: block, display: inline, and display: inline-block. When would you use each?",
+      "preferredAnswer": "**block** — Full width, new line, accepts width/height. Use for sections, containers.\n**inline** — Content width only, same line, no width/height. Use for links, spans.\n**inline-block** — Same line like inline BUT accepts width/height. Use for nav links, buttons, cards side by side."
+    },
+    {
+      "id": 4,
+      "question": "Why should you always use box-sizing: border-box? Show the difference with an example.",
+      "preferredAnswer": "Without border-box, padding and border are **added to** width (e.g. width:300px + padding 40px + border 10px = 350px actual). With **box-sizing: border-box**, padding and border are **included within** the width (actual width stays 300px). Makes sizing predictable. Use: `*, *::before, *::after { box-sizing: border-box; }` in reset."
+    },
+    {
+      "id": 5,
+      "question": "Write CSS for a card component: white background, 1px solid light gray border, 8px border-radius, 25px padding, 20px bottom margin, 4px blue left border accent. Add hover: left border turns purple.",
+      "preferredAnswer": "```css\n.card {\n    background-color: #ffffff;\n    border: 1px solid #e0e0e0;\n    border-left: 4px solid #3498db;\n    border-radius: 8px;\n    padding: 25px;\n    margin-bottom: 20px;\n}\n.card:hover { border-left-color: #9b59b6; }\n```"
+    }
+  ]
+}

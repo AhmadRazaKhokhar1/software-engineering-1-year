@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 2: DOM Mastery (HTML + JS Integration)",
+  "chapterId": "html_css_js_chapter_2",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "What does DOM stand for?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Document Object Model",
+          "isCorrect": true
+        },
+        {
+          "key": "B",
+          "text": "Data Object Method",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Document Oriented Markup",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Dynamic Object Manipulation",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which method selects the FIRST element matching a CSS selector?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "getElementById()",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "querySelectorAll()",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "querySelector()",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "getElementsByClassName()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between `textContent` and `innerHTML`?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "They are identical",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "textContent returns plain text; innerHTML includes HTML tags",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "innerHTML is safer than textContent",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "textContent can parse HTML tags",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How do you TOGGLE a class on an element?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "element.classList.add(\"active\")",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "element.classList.toggle(\"active\")",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "element.classList.switch(\"active\")",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "element.className = \"active\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which method creates a new HTML element in JavaScript?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "document.newElement(\"div\")",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "document.createElement(\"div\")",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "document.addElement(\"div\")",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "document.buildElement(\"div\")",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How do you access `data-user-id=\"42\"` in JavaScript?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "element.data.userId",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "element.dataset.userId",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "element.getAttribute(\"userId\")",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "element.dataUserId",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which method adds an element as the LAST child of a parent?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "prepend()",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "before()",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "appendChild()",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "insertBefore()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "How do you completely remove an element from the page?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "element.hide()",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "element.display = \"none\"",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "element.remove()",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "element.delete()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What does `element.closest(\".card\")` do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Finds the first child with class \"card\"",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Finds the nearest ANCESTOR with class \"card\"",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Finds the nearest sibling with class \"card\"",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Creates a new element with class \"card\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Why is it better to toggle CSS classes with JS instead of setting inline styles?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Inline styles are faster",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Classes keep styling in CSS, maintaining separation of concerns",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Inline styles can't be overridden",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Classes don't work with transitions",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "What is the DOM and why is it important for JavaScript?",
+      "preferredAnswer": "The **DOM (Document Object Model)** is a tree-like representation of the HTML document that the browser creates in memory when it loads a page. Every HTML element becomes a **node** in this tree, with parent-child relationships.\n\nThe DOM is important because it's the **bridge between HTML and JavaScript**. Without the DOM, JavaScript would have no way to access, read, modify, or interact with the page content. The DOM provides methods like `querySelector`, `textContent`, `classList`, and `createElement` that allow JS to dynamically change what the user sees — without reloading the page.\n\nKey insight: When JavaScript \"changes HTML,\" it's actually changing the **DOM**. The original HTML file remains unchanged."
+    },
+    {
+      "id": 2,
+      "question": "Explain the difference between `textContent` and `innerHTML`. When should you use each?",
+      "preferredAnswer": "`textContent` reads and writes **plain text only**. Any HTML tags in the content are treated as literal text characters, not parsed as HTML. It's **safe** for user input because it can't inject malicious code.\n\n`innerHTML` reads and writes **HTML content**, including tags. When you set `innerHTML`, the browser parses any HTML tags and renders them. This is powerful for building complex elements but **dangerous** with user input (XSS attacks).\n\n```javascript\n// textContent: tags shown as text\nel.textContent = \"<b>Bold</b>\";   // Shows: <b>Bold</b>\n\n// innerHTML: tags parsed as HTML\nel.innerHTML = \"<b>Bold</b>\";     // Shows: Bold (in bold)\n```\n\n**Use `textContent`** when displaying user input or plain text. **Use `innerHTML`** when you need to insert HTML structure that you control (never from user input)."
+    },
+    {
+      "id": 3,
+      "question": "Write JavaScript code that selects all elements with class `\"card\"`, loops through them, and adds the class `\"highlighted\"` to each one.",
+      "preferredAnswer": "```javascript\nconst cards = document.querySelectorAll(\".card\");\n\ncards.forEach(card => {\n    card.classList.add(\"highlighted\");\n});\n```\n\n`querySelectorAll(\".card\")` returns a **NodeList** of all matching elements. The `forEach` method iterates through each card, and `classList.add(\"highlighted\")` adds the CSS class. The corresponding `.highlighted` styles would be defined in CSS, maintaining separation of concerns."
+    },
+    {
+      "id": 4,
+      "question": "What is the `dataset` property? How do you access `data-product-id=\"42\"` from an HTML element in JavaScript?",
+      "preferredAnswer": "The `dataset` property provides access to all **custom `data-*` attributes** on an HTML element. HTML5 allows you to store custom metadata using attributes prefixed with `data-`.\n\nThe naming convention converts **kebab-case** in HTML to **camelCase** in JavaScript:\n\n```html\n<div class=\"product\" data-product-id=\"42\" data-category=\"electronics\"></div>\n```\n\n```javascript\nconst product = document.querySelector(\".product\");\nconsole.log(product.dataset.productId);    // \"42\"\nconsole.log(product.dataset.category);     // \"electronics\"\n```\n\n`data-product-id` becomes `dataset.productId` in JavaScript. This is useful for storing IDs, categories, states, or any metadata that JavaScript needs without cluttering the visible UI."
+    },
+    {
+      "id": 5,
+      "question": "Explain the pattern: \"JavaScript toggles classes, CSS handles the visual changes.\" Why is this considered best practice? Give an example.",
+      "preferredAnswer": "This pattern means JavaScript only **adds or removes CSS classes** on elements, while **all visual styling is defined in CSS**. JavaScript never directly sets `style.backgroundColor` or other visual properties.\n\n**Why it's best practice:**\n1. **Separation of concerns** — styling stays in CSS, behavior in JS\n2. **Easier maintenance** — change colors/animations in CSS without touching JS\n3. **CSS transitions work** — class-based changes automatically animate with CSS transitions\n4. **Reusability** — the same class can be applied to any element\n5. **Performance** — browsers optimize class-based changes better than inline styles\n\n**Example:**\n```css\n/* CSS handles ALL visual changes */\n.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }\n.faq-item.active .faq-answer { max-height: 300px; }\n```\n```javascript\n// JavaScript ONLY toggles the class\nfaqItem.classList.toggle(\"active\");\n// CSS handles the smooth animation automatically!\n```\nJavaScript does the minimum work (toggling a class), while CSS does the heavy lifting (animations, colors, layout changes)."
+    }
+  ]
+}

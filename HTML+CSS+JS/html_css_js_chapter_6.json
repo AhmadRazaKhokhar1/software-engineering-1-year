@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 6: Forms, Validation & UX Patterns",
+  "chapterId": "html_css_js_chapter_6",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "What does `e.preventDefault()` do in a form submit handler?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Prevents JavaScript from running",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Stops the form from being validated",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Stops the browser from reloading the page",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Removes all event listeners",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which attribute disables the browser's built-in form validation?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "no-validate",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "disable-validation",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "novalidate",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "validate=\"false\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What event fires on every keystroke in an input field?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "change",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "submit",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "input",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "blur",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What does `aria-live=\"polite\"` do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Makes the element invisible",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Tells screen readers to announce changes when the user is idle",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Prevents the element from being focused",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Adds animation",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which is the best way to show form errors?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "alert(\"Error!\")",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "console.log(\"Error\")",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Inline text next to the field with clear message",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Change the page background to red",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What does `new FormData(form)` do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Resets the form",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Validates all fields",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Collects all form field names and values",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Sends the form to a server",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "When does the `blur` event fire?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "When the user clicks a button",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "When the user starts typing",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "When the user clicks away from a field",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "When the page loads",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Why should you add `<label>` elements to form inputs?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "They make the form look bigger",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "They are required by JavaScript",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "They improve accessibility and allow clicking the label to focus the input",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "They prevent form submission",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What does `aria-invalid=\"true\"` tell screen readers?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "The field is disabled",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "The field is hidden",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "The field has an error",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "The field is optional",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the `novalidate` attribute on a form?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "To remove all input fields",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "To let JavaScript handle validation instead of the browser",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "To make the form read-only",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "To hide error messages",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "Why do we use `e.preventDefault()` in form submission? What happens without it?",
+      "preferredAnswer": "`e.preventDefault()` stops the browser's default behavior of reloading the page and sending data to a server URL. Without it, the page refreshes, all JavaScript state is lost, and the user experience breaks in single-page applications."
+    },
+    {
+      "id": 2,
+      "question": "What is the difference between HTML built-in validation and custom JavaScript validation? When should you use each?",
+      "preferredAnswer": "HTML validation uses attributes like `required`, `minlength`, `pattern` — it's quick but gives limited control over error messages and styling. Custom JS validation gives full control over when, where, and how errors appear. Use HTML validation for simple forms; use JS validation when you need branded error messages, real-time feedback, or complex rules."
+    },
+    {
+      "id": 3,
+      "question": "What are ARIA attributes and why are they important in forms?",
+      "preferredAnswer": "ARIA (Accessible Rich Internet Applications) attributes provide extra information to assistive technologies like screen readers. `aria-required` tells the user a field is mandatory, `aria-invalid` signals an error, and `aria-describedby` links an input to its error message. They make forms usable for visually impaired users."
+    },
+    {
+      "id": 4,
+      "question": "Explain the difference between `input`, `change`, and `blur` events on a form field.",
+      "preferredAnswer": "`input` fires on every keystroke as the user types. `change` fires only when the user changes the value AND leaves the field (for text inputs) or immediately for checkboxes/selects. `blur` fires when the user clicks away from the field regardless of whether the value changed. Use `input` for real-time feedback, `blur` for validation after the user finishes a field."
+    },
+    {
+      "id": 5,
+      "question": "Why is it important to focus the first invalid field after a failed form submission?",
+      "preferredAnswer": "Focusing the first invalid field guides the user directly to where the problem is, saving them from scanning the entire form. It's especially important for accessibility — screen reader users would otherwise not know which field has an error. It creates a smoother, more professional user experience."
+    }
+  ]
+}

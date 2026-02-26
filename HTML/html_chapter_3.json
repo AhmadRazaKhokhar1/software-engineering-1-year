@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 3: Text Content, Headings & Writing Readable Pages",
+  "chapterId": "html_chapter_3",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "How many <h1> tags should a page have?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "As many as needed",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "At least three",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Exactly one",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "None",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which heading level is the LEAST important?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<h1>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<h3>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<h5>",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "<h6>",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What does the browser do with extra spaces and line breaks inside a <p> tag?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Displays them exactly as written",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Collapses them into a single space",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Removes all spaces completely",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Shows an error",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which tag should you use to force a line break without creating a new paragraph?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<p>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<hr>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<br>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<h6>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What does <hr> represent?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "A heading rule",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "A hyperlink reference",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "A thematic break between sections",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "A horizontal redirect",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Which of the following heading sequences is CORRECT?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "h1 → h3 → h5",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "h1 → h2 → h3",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "h2 → h1 → h3",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "h1 → h4 → h2",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Why should you NOT choose a heading level based on its size?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Because headings have no size",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Because size is controlled by CSS, headings define meaning",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Because all headings are the same size",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Because smaller headings load faster",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a VOID element?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<p>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<h1>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<br>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<html>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What is the correct way to write two separate paragraphs?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<p>First</p><p>Second</p>",
+          "isCorrect": true
+        },
+        {
+          "key": "B",
+          "text": "First<br><br>Second",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<p>First<br><br>Second</p>",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "First\\n\\nSecond",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "For SEO, why are headings important?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "They make text bold",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "They add colors to the page",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "They help search engines understand the page content and structure",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "They increase page loading speed",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "What is the heading hierarchy and why is it important?",
+      "preferredAnswer": "Heading hierarchy means using headings in a **logical, sequential order** from `<h1>` (most important) to `<h6>` (least important), without skipping levels. It is important because: (1) It creates a clear **content outline**, (2) **Screen readers** use it to help visually impaired users navigate, (3) **Search engines** use it to understand what the page is about, (4) It makes code **organized and readable** for developers."
+    },
+    {
+      "id": 2,
+      "question": "Explain whitespace collapsing with an example.",
+      "preferredAnswer": "Whitespace collapsing means the browser **reduces multiple spaces, tabs, and line breaks** into a single space when displaying content.\n\nExample: In `<p>Hello      World! How    are      you?</p>` the browser displays: **\"Hello World! How are you?\"** All the extra spaces are collapsed into single spaces."
+    },
+    {
+      "id": 3,
+      "question": "When should you use <br> and when should you NOT use it?",
+      "preferredAnswer": "**Use `<br>` for:** Poems and verses where line breaks are part of the content; addresses where each line is a separate piece of info; situations where a new line is needed within the SAME paragraph.\n\n**Do NOT use `<br>` for:** Creating space between paragraphs (use separate `<p>` tags); layout spacing (use CSS margins and padding); stacking multiple `<br>` tags for visual gaps."
+    },
+    {
+      "id": 4,
+      "question": "Write a properly structured HTML snippet for a page about \"Healthy Eating\" with one <h1>, two <h2> sections, and at least one <h3> under one of them.",
+      "preferredAnswer": "```html\n<h1>Guide to Healthy Eating</h1>\n<p>Eating healthy is essential for a long and active life.</p>\n<h2>Benefits of Healthy Eating</h2>\n<p>A balanced diet improves energy levels...</p>\n<h3>Physical Benefits</h3>\n<p>Healthy eating helps maintain a healthy weight...</p>\n<h3>Mental Benefits</h3>\n<p>Good nutrition is linked to better concentration...</p>\n<h2>Tips for Getting Started</h2>\n<p>Start by adding more fruits and vegetables...</p>\n```"
+    },
+    {
+      "id": 5,
+      "question": "List 4 common mistakes beginners make with text content in HTML and explain how to fix each one.",
+      "preferredAnswer": "1. **Using <br> for paragraph spacing** → Fix: Use separate `<p>` tags for each paragraph\n2. **Choosing headings based on size** → Fix: Choose headings by importance/meaning; use CSS for sizing\n3. **Skipping heading levels** (e.g., h1 → h4) → Fix: Always follow sequential order: h1 → h2 → h3\n4. **Writing text without any tags** → Fix: Always wrap text in proper HTML elements like `<p>`, `<h2>`, etc."
+    }
+  ]
+}

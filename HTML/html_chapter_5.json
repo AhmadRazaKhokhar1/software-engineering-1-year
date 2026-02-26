@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 5: Lists, Links & Navigation",
+  "chapterId": "html_chapter_5",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "Which HTML tag creates an unordered (bulleted) list?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<ol>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<dl>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<ul>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<list>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What does the href attribute in <a> stand for?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Hyper Reference Format",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Hypertext Reference",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "HTML Reference File",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Hyper Resource Finder",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which URL type should be used for linking to pages within your OWN website?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Absolute URL",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Relative URL",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "External URL",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Dynamic URL",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What does target=\"_blank\" do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Opens the link in the same tab",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Downloads the file",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Opens the link in a new tab",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Deletes the current page",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which tag pair is used for description lists?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<ul> and <li>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<ol> and <li>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<dl>, <dt>, and <dd>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<list> and <item>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How do you link to a section with id=\"features\" on the same page?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<a href=\"features\">",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<a href=\"#features\">",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "<a href=\"id:features\">",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "<a href=\"@features\">",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What does ../ mean in a relative URL path?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Go into a subfolder",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Stay in the current folder",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Go up one folder level",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Go to the root folder",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Where should a nested list be placed?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Directly inside <ul>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Inside an <li> element",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Inside <p>",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "After </ul>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is the BEST link text?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<a href=\"about.html\">Click here</a>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<a href=\"about.html\">Here</a>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<a href=\"about.html\">Learn about our company</a>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<a href=\"about.html\">Link</a>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Which attribute should you always add when using target=\"_blank\"?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "alt=\"blank\"",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "rel=\"noopener noreferrer\"",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "type=\"external\"",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "class=\"new-tab\"",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "What is the difference between <ul>, <ol>, and <dl>? Give one use case for each.",
+      "preferredAnswer": "- **<ul> (Unordered List):** Bullet points where order doesn't matter. Use case: A list of skills.\n- **<ol> (Ordered List):** Numbers where sequence matters. Use case: Step-by-step recipe instructions.\n- **<dl> (Description List):** Pairs terms with descriptions. Use case: A glossary defining HTML, CSS, and JavaScript."
+    },
+    {
+      "id": 2,
+      "question": "Explain the difference between absolute and relative URLs with examples.",
+      "preferredAnswer": "**Absolute URL** includes the full address (e.g. `https://www.google.com`). Used for external websites.\n\n**Relative URL** is a path relative to the current file (e.g. `about.html`, `../index.html`). Used for pages within your own website. Relative URLs depend on the current file's location."
+    },
+    {
+      "id": 3,
+      "question": "How do you create a link that jumps to a specific section on the same page? Write the complete code for both the link and the target.",
+      "preferredAnswer": "**Step 1:** Add an `id` to the target: `<h2 id=\"contact\">Contact Us</h2>`\n\n**Step 2:** Create the link: `<a href=\"#contact\">Jump to Contact Section</a>`\n\nWhen clicked, the page scrolls to the element with `id=\"contact\"`."
+    },
+    {
+      "id": 4,
+      "question": "Why should you use a <ul> with <li> elements for navigation menus instead of just writing links one after another?",
+      "preferredAnswer": "Using `<ul>` with `<li>` for navigation: (1) **Semantic meaning** — a menu IS a list of options; (2) **Accessibility** — screen readers announce \"navigation with 5 items\"; (3) **CSS styling** — lists are easier to style horizontally or vertically; (4) **Code organization** — cleaner and more maintainable."
+    },
+    {
+      "id": 5,
+      "question": "Write a nested list showing \"Fruits\" with sub-items (Apple, Banana) and \"Vegetables\" with sub-items (Carrot, Spinach) using proper HTML.",
+      "preferredAnswer": "```html\n<ul>\n    <li>Fruits\n        <ul>\n            <li>Apple</li>\n            <li>Banana</li>\n        </ul>\n    </li>\n    <li>Vegetables\n        <ul>\n            <li>Carrot</li>\n            <li>Spinach</li>\n        </ul>\n    </li>\n</ul>\n```\n\nThe nested <ul> is placed **inside** the parent <li>, not directly inside the outer <ul>."
+    }
+  ]
+}

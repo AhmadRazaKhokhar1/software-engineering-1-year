@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 3: Modern Layouts — Flexbox & Positioning",
+  "chapterId": "html_css_chapter_3",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "Which position value removes an element from the normal flow AND locks it to the viewport?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "relative",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "absolute",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "fixed",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "sticky",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What must a parent have for position: absolute on a child to work relative to it?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "display: flex",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "position: relative (or another position value)",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "overflow: hidden",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "z-index: 1",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which Flexbox property controls the direction items are laid out?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "justify-content",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "align-items",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "flex-direction",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "flex-wrap",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How do you perfectly center an element both horizontally and vertically with Flexbox?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "display: flex; text-align: center; vertical-align: middle;",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "display: flex; justify-content: center; align-items: center;",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "display: flex; align-content: center;",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "display: flex; margin: auto;",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What does justify-content: space-between do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Centers all items",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Puts equal space around each item",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "First item at start, last at end, equal space between",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "All items stack at the end",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What does flex: 1 do on a flex item?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Makes the item invisible",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Sets the item's order to 1",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Makes the item grow to fill available space equally",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Sets the item's width to 1px",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which position value creates a hybrid between relative and fixed?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "absolute",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "static",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "sticky",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "inherit",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What does the gap property do in Flexbox?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Creates space between flex items",
+          "isCorrect": true
+        },
+        {
+          "key": "B",
+          "text": "Creates padding inside flex items",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Creates a border around flex items",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Removes space between flex items",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What does z-index control?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "The horizontal position of an element",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "The stacking order (which element appears on top)",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "The zoom level of an element",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "The opacity of an element",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "In a sidebar layout, what flex value keeps the sidebar at a fixed 300px width?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "flex: 1",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "flex: 300px",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "flex: 0 0 300px",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "flex: auto",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "Explain the difference between position: absolute and position: fixed. Give one use case for each.",
+      "preferredAnswer": "**position: absolute** — Positioned relative to **nearest positioned ancestor**. Element scrolls with the page. Use case: Notification badge on top-right of an avatar.\n\n**position: fixed** — Positioned relative to the **viewport**. Element stays in place when scrolling. Use case: Fixed navigation bar at top of page.\n\nKey difference: Absolute scrolls with parent; fixed never scrolls."
+    },
+    {
+      "id": 2,
+      "question": "What are the two axes in Flexbox? How do justify-content and align-items relate to them?",
+      "preferredAnswer": "**Main Axis** — Primary direction items flow (horizontal by default with row, vertical with column). **Cross Axis** — Perpendicular to main axis.\n\n`justify-content` controls distribution along the **main axis** (e.g. center, space-between). `align-items` controls alignment along the **cross axis** (e.g. center, flex-start, stretch)."
+    },
+    {
+      "id": 3,
+      "question": "Write the CSS for a navigation bar with a logo on the left and menu links on the right, vertically centered, with a dark background.",
+      "preferredAnswer": "```css\n.navbar {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    background-color: #2c3e50;\n    padding: 15px 30px;\n}\n.nav-links { display: flex; list-style: none; gap: 25px; }\n.nav-links a { color: #ecf0f1; text-decoration: none; }\n.nav-links a:hover { color: #3498db; }\n```\nspace-between pushes logo and links to opposite ends; align-items: center vertically centers them."
+    },
+    {
+      "id": 4,
+      "question": "Explain position: sticky behavior. How is it different from fixed?",
+      "preferredAnswer": "**position: sticky** — Initially behaves like relative; when user scrolls past a threshold (e.g. top: 0), it \"sticks\" like fixed. Only sticks **within its parent** — when parent scrolls out of view, sticky element scrolls away too.\n\n**Difference from fixed:** fixed is always locked to viewport; sticky only sticks within parent boundaries. Sticky remains in flow until it sticks."
+    },
+    {
+      "id": 5,
+      "question": "Create a Flexbox card layout: 3 cards side by side, equal width, 20px gap, wrap on smaller screens. Each card min-width 280px.",
+      "preferredAnswer": "```css\n.card-container {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 20px;\n}\n.card {\n    flex: 1;\n    min-width: 280px;\n    background-color: #fff;\n    border: 1px solid #e0e0e0;\n    border-radius: 8px;\n    padding: 25px;\n}\n```\nflex: 1 = equal growth; min-width: 280px prevents too-narrow cards; flex-wrap: wrap allows wrapping."
+    }
+  ]
+}

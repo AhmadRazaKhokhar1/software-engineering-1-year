@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 7: Semantic HTML, Forms & Structured Data",
+  "chapterId": "html_chapter_7",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "Which semantic tag should wrap the primary, unique content of a page?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<section>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<article>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<main>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<div>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How many <main> elements can a page have?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Unlimited",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Two",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "One",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Three",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which tag represents self-contained, independently shareable content?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<section>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<article>",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "<aside>",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "<header>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What is the purpose of the <label> tag in forms?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Creates a button",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Styles the input field",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Associates text with an input for accessibility",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Validates form data",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which input type creates a dropdown calendar for selecting a date?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "type=\"time\"",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "type=\"calendar\"",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "type=\"date\"",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "type=\"datetime\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What attribute makes a form field mandatory?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "mandatory",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "required",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "must-fill",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "validate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which table tag is used for header cells?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<td>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<tr>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<th>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<thead>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What is the <aside> tag used for?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "The main content of the page",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Navigation links",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Supplementary/sidebar content",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "The page footer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which HTML attribute links a <label> to its <input>?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "name",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "class",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "for (matching input's id)",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "href",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Should HTML tables be used for page layout?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Yes, it's the standard method",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Yes, but only for simple layouts",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "No, tables are for data only; use CSS for layout",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "No, tables are deprecated",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "What is the difference between <section> and <article>? Give one example of each.",
+      "preferredAnswer": "**<section>** groups **thematically related content** that is part of a larger whole. Example: A \"Our Services\" section within a page.\n\n**<article>** represents **self-contained, independent content** that could be shared on its own (e.g. a blog post, news item).\n\n**Test:** If the content could stand alone as a blog post or product card → use `<article>`. If it's a themed group within a page → use `<section>`."
+    },
+    {
+      "id": 2,
+      "question": "Why is the <label> tag important for form accessibility? How does the for attribute work?",
+      "preferredAnswer": "The `<label>` tag: (1) **Screen readers** read the label when the input is focused; (2) **Clicking the label** focuses/activates the input (easier for checkboxes/radio on mobile).\n\nThe `for` attribute matches the `id` of the input: `<label for=\"email\">Email:</label>` and `<input type=\"email\" id=\"email\" name=\"email\">`. The values must match exactly."
+    },
+    {
+      "id": 3,
+      "question": "Write a complete HTML table showing 3 products with columns for Product Name, Price, and In Stock. Include <thead>, <tbody>, and <caption>.",
+      "preferredAnswer": "```html\n<table>\n    <caption>Product Inventory</caption>\n    <thead>\n        <tr><th>Product Name</th><th>Price</th><th>In Stock</th></tr>\n    </thead>\n    <tbody>\n        <tr><td>Wireless Headphones</td><td>$49.99</td><td>Yes</td></tr>\n        <tr><td>USB-C Cable</td><td>$9.99</td><td>Yes</td></tr>\n        <tr><td>Laptop Stand</td><td>$29.99</td><td>No</td></tr>\n    </tbody>\n</table>\n```"
+    },
+    {
+      "id": 4,
+      "question": "Explain the difference between <header>, <main>, and <footer>. How do they work together on a page?",
+      "preferredAnswer": "**<header>** — Introductory content (logo, nav), typically same across all pages, at the top.\n**<main>** — Primary, unique content that changes from page to page. Only ONE per page.\n**<footer>** — Closing content (copyright, links), typically same across all pages, at the bottom.\n\nTogether: `<header>` (same) + `<main>` (unique for this page) + `<footer>` (same)."
+    },
+    {
+      "id": 5,
+      "question": "List 4 HTML5 form validation attributes and explain what each one does with an example.",
+      "preferredAnswer": "1. **required** — Field must be filled: `<input type=\"text\" name=\"name\" required>`\n2. **minlength** — Minimum characters: `<input type=\"text\" name=\"username\" minlength=\"3\">`\n3. **max** — Maximum numeric value: `<input type=\"number\" name=\"age\" max=\"120\">`\n4. **pattern** — Must match regex: `<input type=\"text\" name=\"zip\" pattern=\"[0-9]{5}\" title=\"Enter 5-digit zip code\">`\n\nThese enable client-side validation without JavaScript."
+    }
+  ]
+}

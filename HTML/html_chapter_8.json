@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 8: Multi-Page Websites, Best Practices & Capstone",
+  "chapterId": "html_chapter_8",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "What should the homepage of a website always be named?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "home.html",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "main.html",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "index.html",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "default.html",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which folder structure practice is CORRECT?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "All files in one folder",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Images in a separate images/ folder",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "No folders needed for small projects",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "CSS files mixed with HTML files",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between class and id?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "They are the same thing",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "class is unique, id is reusable",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "class is reusable, id is unique",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Neither is used in HTML",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which file name follows best practices?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "My Page.html",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "PAGE_1.HTML",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "about-us.html",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "page (final).html",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "How do you link to a CSS file from HTML?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<style src=\"style.css\">",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<link rel=\"stylesheet\" href=\"css/style.css\">",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "<css file=\"style.css\">",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "<script src=\"style.css\">",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "From pages/about.html, how do you link to images/logo.png?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "src=\"images/logo.png\"",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "src=\"../images/logo.png\"",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "src=\"logo.png\"",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "src=\"/images/logo.png\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What is \"div soup\"?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "A recipe for web pages",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Using semantic tags correctly",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Excessive, unnecessary nesting of <div> elements",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "A CSS technique",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which class name follows best practices?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "class=\"blueBox\"",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "class=\"div1\"",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "class=\"hero-section\"",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "class=\"x\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What tool should you use to check HTML for errors?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Google Search",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "W3C Markup Validator",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Microsoft Word",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Photoshop",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "After mastering HTML, what should you learn next?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Python",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "CSS",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Java",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "SQL",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "Describe the ideal folder structure for a professional multi-page website with at least 5 pages, images, and preparation for CSS.",
+      "preferredAnswer": "```\nmy-website/\n├── index.html\n├── about.html\n├── contact.html\n├── pages/\n│   ├── services.html\n│   └── faq.html\n├── blog/\n│   ├── index.html\n│   └── post-1.html\n├── images/\n│   ├── logo.png\n│   ├── hero.jpg\n│   └── team/\n├── css/\n│   └── style.css\n└── js/\n    └── script.js\n```\nKey principles: index.html at root, images in dedicated folder, separate folders for blog/pages/CSS/JS. All file names lowercase with hyphens."
+    },
+    {
+      "id": 2,
+      "question": "What is the difference between class and id attributes? When should you use each one?",
+      "preferredAnswer": "**class** is **reusable** — can be applied to multiple elements. Use for styling groups of similar elements.\n\n**id** is **unique** — only ONE element per page. Use to target a single, specific element (e.g. for anchor links or JavaScript).\n\n**Rule of thumb:** Use `class` for styling repeated patterns. Use `id` for unique page sections or JS targets."
+    },
+    {
+      "id": 3,
+      "question": "List 5 common HTML mistakes and explain how to fix each one.",
+      "preferredAnswer": "1. **Missing <!DOCTYPE html>** → Always start with `<!DOCTYPE html>` for standards mode\n2. **Using <br> for spacing** → Use separate `<p>` tags; control spacing with CSS\n3. **Choosing headings for size** → Choose by meaning/importance; use CSS for sizing\n4. **Missing alt on images** → Always add descriptive alt text\n5. **Using <div> instead of semantic tags** → Use <header>, <nav>, <main>, <section>, <article>, <aside>, <footer> where appropriate"
+    },
+    {
+      "id": 4,
+      "question": "How does well-structured HTML make CSS easier? Give two specific examples.",
+      "preferredAnswer": "**Example 1: Semantic tags as selectors** — CSS can target `header`, `nav`, `main`, `footer` directly for layout and styling.\n\n**Example 2: Classes for reusable components** — e.g. `.card` on multiple `<article>` elements lets CSS style all cards at once. Without proper structure and classes, CSS would have nothing meaningful to target."
+    },
+    {
+      "id": 5,
+      "question": "You've completed the entire HTML course. List the correct learning path from here and explain why this order matters.",
+      "preferredAnswer": "1. **HTML** ✅ (Completed) — Structure and content\n2. **CSS** (Next) — Styling, layout, responsive design\n3. **JavaScript** — Interactivity and dynamic behavior\n4. **Git & GitHub** — Version control and collaboration\n5. **Frameworks** (React, etc.) — Building complex applications\n\n**Why this order:** CSS styles HTML elements; JavaScript manipulates HTML; frameworks generate HTML. The foundation (HTML) must come first."
+    }
+  ]
+}
