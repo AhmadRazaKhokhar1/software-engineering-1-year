@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 10: Networking, AsyncStorage & Client State",
+    "chapterId": "react_native_expo_chapter_10",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "fetch returns a Response; you typically call:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": ".json() after checking res.ok", "isCorrect": true },
+                { "key": "B", "text": ".sqlite()", "isCorrect": false },
+                { "key": "C", "text": ".gradle()", "isCorrect": false },
+                { "key": "D", "text": ".apk()", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "expo-secure-store is appropriate for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Sensitive secrets like tokens", "isCorrect": true },
+                { "key": "B", "text": "Large image caches only", "isCorrect": false },
+                { "key": "C", "text": "Public blog posts", "isCorrect": false },
+                { "key": "D", "text": "Git commit hashes", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "AsyncStorage stores:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Key-value pairs asynchronously", "isCorrect": true },
+                { "key": "B", "text": "Only encrypted data always", "isCorrect": false },
+                { "key": "C", "text": "SQL tables with joins", "isCorrect": false },
+                { "key": "D", "text": "Native Swift classes", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Modeling loading/error/success explicitly helps:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Predictable UI states for users", "isCorrect": true },
+                { "key": "B", "text": "Removing Metro bundler", "isCorrect": false },
+                { "key": "C", "text": "Avoiding TypeScript", "isCorrect": false },
+                { "key": "D", "text": "Guaranteed offline mode", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "TanStack Query primarily manages:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Server state caching and refetching", "isCorrect": true },
+                { "key": "B", "text": "Bluetooth pairing", "isCorrect": false },
+                { "key": "C", "text": "Gradle plugins", "isCorrect": false },
+                { "key": "D", "text": "Xcode signing", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Put API base URLs for public env in:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "EXPO_PUBLIC_* variables (Expo)", "isCorrect": true },
+                { "key": "B", "text": "Hardcoded secrets in Git", "isCorrect": false },
+                { "key": "C", "text": "AndroidManifest passwords", "isCorrect": false },
+                { "key": "D", "text": "Comments only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Secrets must not be:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Shipped in client JS for untrusted users", "isCorrect": true },
+                { "key": "B", "text": "Stored server-side", "isCorrect": false },
+                { "key": "C", "text": "Rotated periodically", "isCorrect": false },
+                { "key": "D", "text": "Access-controlled", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Context API is useful for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Sharing theme/auth without prop drilling", "isCorrect": true },
+                { "key": "B", "text": "Replacing HTTP", "isCorrect": false },
+                { "key": "C", "text": "Compiling Kotlin", "isCorrect": false },
+                { "key": "D", "text": "SQLite indexing only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "HTTP 401 usually means:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Unauthorized — fix credentials or refresh token", "isCorrect": true },
+                { "key": "B", "text": "Success", "isCorrect": false },
+                { "key": "C", "text": "Not found", "isCorrect": false },
+                { "key": "D", "text": "Rate limit always", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Retry with exponential backoff helps:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Transient network failures without hammering servers", "isCorrect": true },
+                { "key": "B", "text": "Removing AsyncStorage", "isCorrect": false },
+                { "key": "C", "text": "Disabling HTTPS", "isCorrect": false },
+                { "key": "D", "text": "Guaranteed 200 responses", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why use SecureStore instead of AsyncStorage for refresh tokens?",
+            "preferredAnswer": "**SecureStore** uses **OS-backed** secure storage; **AsyncStorage** is **not** encrypted and is inappropriate for **high-value secrets**."
+        },
+        {
+            "id": 2,
+            "question": "What is prop drilling?",
+            "preferredAnswer": "Passing props through **many intermediate** components that don’t use them—**Context** or state libraries reduce this."
+        },
+        {
+            "id": 3,
+            "question": "Why validate JSON shape from APIs?",
+            "preferredAnswer": "Servers can change; **runtime validation** (zod/io-ts) prevents **crashes** from unexpected **nulls** or types."
+        },
+        {
+            "id": 4,
+            "question": "What does refetch-on-focus mean in TanStack Query?",
+            "preferredAnswer": "When the app **returns active**, queries **refresh**—great for mobile where data **staleness** is common."
+        },
+        {
+            "id": 5,
+            "question": "Name one downside of putting everything in global state.",
+            "preferredAnswer": "**Harder reasoning**, **unnecessary re-renders**, and **tighter coupling**—prefer **local** state when possible."
+        }
+    ]
+}

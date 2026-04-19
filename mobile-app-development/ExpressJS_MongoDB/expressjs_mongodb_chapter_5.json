@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 5: Authentication, Authorization & Security",
+    "chapterId": "express_mongodb_chapter_5",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is the difference between authentication and authorization?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Authentication encrypts data; Authorization decrypts it",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Authentication verifies identity; Authorization verifies permissions",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Authentication is for admins; Authorization is for users",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "They are the same thing",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Which HTTP status code should be returned when a user provides invalid credentials?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "400 Bad Request",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "401 Unauthorized",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "403 Forbidden",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "404 Not Found",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What are the three parts of a JWT token?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Username, Password, Signature",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Header, Payload, Signature",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Token, Secret, Hash",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "ID, Role, Expiration",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Why should you use 'select: false' for the password field in a Mongoose schema?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To prevent password from being stored",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To exclude password from query results by default",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To encrypt the password automatically",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To make the password field optional",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What does bcrypt.hash() do?",
+            "codeSnippet": "const hashed = await bcrypt.hash(password, 12);",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Encrypts password with a reversible algorithm",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Creates a one-way hash with 12 salt rounds",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Compresses the password to 12 characters",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Encodes password in Base64",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Which middleware should come first: protect (authentication) or restrictTo (authorization)?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "restrictTo should come first",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "protect should come first",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "The order doesn't matter",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "They should be combined into one",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What does express-mongo-sanitize protect against?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "SQL injection attacks",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "NoSQL injection attacks (removing $ operators)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Cross-site scripting (XSS)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "DDoS attacks",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What is the purpose of the httpOnly cookie option?",
+            "codeSnippet": "res.cookie('token', token, { httpOnly: true });",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Only allow HTTP (not HTTPS) requests",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Prevent JavaScript from accessing the cookie",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Only send cookie with HTTP methods",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Enable HTTP/2 protocol",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What does rate limiting protect against?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "SQL injection",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Brute force attacks and API abuse",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Data theft",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Password cracking",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "When should you return 403 Forbidden instead of 401 Unauthorized?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "When the password is wrong",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "When the user is authenticated but lacks permission",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "When the token is expired",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "When no token is provided",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the JWT authentication flow from login to accessing a protected resource.",
+            "preferredAnswer": "**JWT Authentication Flow:**\n\n**1. User Login:**\n```javascript\nPOST /api/auth/login\nBody: { email: \"user@example.com\", password: \"password123\" }\n```\n\n**2. Server Validates Credentials:**\n```javascript\nconst user = await User.findOne({ email }).select('+password');\nconst isValid = await bcrypt.compare(password, user.password);\n```\n\n**3. Server Generates JWT:**\n```javascript\nconst token = jwt.sign(\n  { id: user._id, role: user.role },\n  process.env.JWT_SECRET,\n  { expiresIn: '7d' }\n);\n```\n\n**4. Server Returns Token:**\n```json\n{ \"success\": true, \"token\": \"eyJhbGciOiJIUzI1NiIs...\" }\n```\n\n**5. Client Stores Token:**\n- localStorage (convenient but XSS vulnerable)\n- httpOnly cookie (more secure)\n\n**6. Client Sends Token with Requests:**\n```javascript\nGET /api/users/me\nHeaders: { Authorization: \"Bearer eyJhbGciOiJIUzI1NiIs...\" }\n```\n\n**7. Server Verifies Token:**\n```javascript\nconst decoded = jwt.verify(token, process.env.JWT_SECRET);\nconst user = await User.findById(decoded.id);\n```\n\n**8. Server Returns Protected Resource:**\n```json\n{ \"success\": true, \"data\": { \"name\": \"John\", \"email\": \"...\" } }\n```\n\n**Key Points:**\n- JWT is stateless (no server-side session storage)\n- Token contains encoded user data\n- Each request must include the token\n- Server verifies signature to ensure token authenticity"
+        },
+        {
+            "id": 2,
+            "question": "Write a complete protect middleware that validates JWT tokens, checks if user exists, and handles all error cases.",
+            "preferredAnswer": "```javascript\n// src/middleware/auth.js\nconst jwt = require('jsonwebtoken');\nconst User = require('../models/User');\nconst asyncHandler = require('../utils/asyncHandler');\nconst AppError = require('../utils/AppError');\n\nexports.protect = asyncHandler(async (req, res, next) => {\n  let token;\n  \n  // 1. Extract token from header or cookie\n  if (\n    req.headers.authorization &&\n    req.headers.authorization.startsWith('Bearer')\n  ) {\n    token = req.headers.authorization.split(' ')[1];\n  } else if (req.cookies && req.cookies.token) {\n    token = req.cookies.token;\n  }\n  \n  // 2. Check if token exists\n  if (!token) {\n    return next(new AppError('Please log in to access this resource', 401));\n  }\n  \n  try {\n    // 3. Verify token\n    const decoded = jwt.verify(token, process.env.JWT_SECRET);\n    \n    // 4. Check if user still exists\n    const user = await User.findById(decoded.id);\n    \n    if (!user) {\n      return next(new AppError('User no longer exists', 401));\n    }\n    \n    // 5. Check if user is active\n    if (!user.isActive) {\n      return next(new AppError('Account has been deactivated', 401));\n    }\n    \n    // 6. Check if password changed after token issued\n    if (user.changedPasswordAfter(decoded.iat)) {\n      return next(new AppError('Password changed. Please log in again.', 401));\n    }\n    \n    // 7. Attach user to request\n    req.user = user;\n    next();\n    \n  } catch (error) {\n    // Handle specific JWT errors\n    if (error.name === 'JsonWebTokenError') {\n      return next(new AppError('Invalid token', 401));\n    }\n    if (error.name === 'TokenExpiredError') {\n      return next(new AppError('Token expired. Please log in again.', 401));\n    }\n    return next(new AppError('Authentication failed', 401));\n  }\n});\n```\n\n**Usage:**\n```javascript\nrouter.get('/profile', protect, getProfile);\n```"
+        },
+        {
+            "id": 3,
+            "question": "Implement role-based access control (RBAC) with a restrictTo middleware and explain how to use it.",
+            "preferredAnswer": "**restrictTo Middleware:**\n\n```javascript\n// src/middleware/auth.js\n\n// Basic role restriction\nexports.restrictTo = (...allowedRoles) => {\n  return (req, res, next) => {\n    // protect middleware must run first to populate req.user\n    if (!req.user) {\n      return next(new AppError('User not authenticated', 401));\n    }\n    \n    if (!allowedRoles.includes(req.user.role)) {\n      return next(\n        new AppError('You do not have permission for this action', 403)\n      );\n    }\n    \n    next();\n  };\n};\n\n// Advanced: Check resource ownership\nexports.checkOwnership = (Model, paramName = 'id') => {\n  return asyncHandler(async (req, res, next) => {\n    const resource = await Model.findById(req.params[paramName]);\n    \n    if (!resource) {\n      return next(new AppError('Resource not found', 404));\n    }\n    \n    const isOwner = resource.user?.toString() === req.user.id;\n    const isAdmin = req.user.role === 'admin';\n    \n    if (!isOwner && !isAdmin) {\n      return next(new AppError('Not authorized to access this resource', 403));\n    }\n    \n    req.resource = resource;\n    next();\n  });\n};\n```\n\n**Usage Examples:**\n\n```javascript\n// Only admins can access\nrouter.get(\n  '/admin/users',\n  protect,\n  restrictTo('admin'),\n  getAllUsers\n);\n\n// Admins and moderators can access\nrouter.put(\n  '/posts/:id/feature',\n  protect,\n  restrictTo('admin', 'moderator'),\n  featurePost\n);\n\n// Owner or admin can update\nrouter.put(\n  '/posts/:id',\n  protect,\n  checkOwnership(Post, 'id'),\n  updatePost\n);\n```\n\n**Roles Hierarchy Example:**\n\n```javascript\nconst roleHierarchy = {\n  admin: 3,\n  moderator: 2,\n  user: 1\n};\n\nexports.hasMinRole = (minRole) => {\n  return (req, res, next) => {\n    const userLevel = roleHierarchy[req.user.role] || 0;\n    const requiredLevel = roleHierarchy[minRole] || 0;\n    \n    if (userLevel < requiredLevel) {\n      return next(new AppError('Insufficient permissions', 403));\n    }\n    next();\n  };\n};\n```"
+        },
+        {
+            "id": 4,
+            "question": "List and explain 5 essential security measures for an Express API and how to implement them.",
+            "preferredAnswer": "**5 Essential Security Measures:**\n\n**1. Helmet - Security Headers:**\n```javascript\nconst helmet = require('helmet');\napp.use(helmet());\n```\n- Sets X-Frame-Options (prevents click-jacking)\n- Sets X-XSS-Protection\n- Sets Content-Security-Policy\n- Removes X-Powered-By header\n- Enforces HTTPS via HSTS\n\n**2. Rate Limiting - Prevent Abuse:**\n```javascript\nconst rateLimit = require('express-rate-limit');\n\nconst limiter = rateLimit({\n  windowMs: 15 * 60 * 1000,  // 15 minutes\n  max: 100,                   // 100 requests per window\n  message: { error: 'Too many requests' }\n});\n\napp.use('/api', limiter);\n```\n- Prevents brute force attacks\n- Mitigates DDoS attacks\n- Protects against API abuse\n\n**3. Data Sanitization - Prevent Injection:**\n```javascript\nconst mongoSanitize = require('express-mongo-sanitize');\nconst xss = require('xss-clean');\n\napp.use(mongoSanitize());  // NoSQL injection\napp.use(xss());            // XSS attacks\n```\n- Removes $ and . from req.body/params\n- Escapes HTML entities\n- Prevents script injection\n\n**4. CORS - Control Access:**\n```javascript\nconst cors = require('cors');\n\napp.use(cors({\n  origin: ['https://myapp.com'],\n  credentials: true,\n  methods: ['GET', 'POST', 'PUT', 'DELETE']\n}));\n```\n- Controls which domains can access API\n- Prevents unauthorized cross-origin requests\n- Protects sensitive endpoints\n\n**5. Request Size Limiting:**\n```javascript\napp.use(express.json({ limit: '10kb' }));\napp.use(express.urlencoded({ limit: '10kb', extended: true }));\n```\n- Prevents large payload attacks\n- Limits memory consumption\n- Protects against DoS via large bodies\n\n**Complete Setup:**\n```javascript\nconst helmet = require('helmet');\nconst rateLimit = require('express-rate-limit');\nconst mongoSanitize = require('express-mongo-sanitize');\nconst xss = require('xss-clean');\nconst cors = require('cors');\nconst hpp = require('hpp');\n\napp.use(helmet());\napp.use(cors({ origin: process.env.ALLOWED_ORIGINS }));\napp.use(rateLimit({ windowMs: 900000, max: 100 }));\napp.use(express.json({ limit: '10kb' }));\napp.use(mongoSanitize());\napp.use(xss());\napp.use(hpp());\n```"
+        },
+        {
+            "id": 5,
+            "question": "Create a complete password reset flow including forgot password, token generation, and reset password endpoints.",
+            "preferredAnswer": "**Password Reset Flow:**\n\n**1. User Model Methods:**\n```javascript\nconst crypto = require('crypto');\n\nuserSchema.methods.createPasswordResetToken = function() {\n  // Generate random token\n  const resetToken = crypto.randomBytes(32).toString('hex');\n  \n  // Hash and store in DB\n  this.passwordResetToken = crypto\n    .createHash('sha256')\n    .update(resetToken)\n    .digest('hex');\n  \n  // Set expiration (10 minutes)\n  this.passwordResetExpires = Date.now() + 10 * 60 * 1000;\n  \n  // Return unhashed token for email\n  return resetToken;\n};\n```\n\n**2. Forgot Password Controller:**\n```javascript\nexports.forgotPassword = asyncHandler(async (req, res, next) => {\n  const { email } = req.body;\n  \n  if (!email) {\n    return next(new AppError('Please provide email', 400));\n  }\n  \n  const user = await User.findOne({ email });\n  \n  if (!user) {\n    return next(new AppError('No user found with that email', 404));\n  }\n  \n  // Generate reset token\n  const resetToken = user.createPasswordResetToken();\n  await user.save({ validateBeforeSave: false });\n  \n  // Create reset URL\n  const resetURL = `${req.protocol}://${req.get('host')}/api/v1/auth/reset-password/${resetToken}`;\n  \n  try {\n    // Send email (implementation depends on email service)\n    // await sendEmail({ to: email, subject: 'Password Reset', url: resetURL });\n    \n    res.status(200).json({\n      success: true,\n      message: 'Reset token sent to email'\n    });\n  } catch (error) {\n    // Clear token on error\n    user.passwordResetToken = undefined;\n    user.passwordResetExpires = undefined;\n    await user.save({ validateBeforeSave: false });\n    \n    return next(new AppError('Error sending email', 500));\n  }\n});\n```\n\n**3. Reset Password Controller:**\n```javascript\nexports.resetPassword = asyncHandler(async (req, res, next) => {\n  const { password, passwordConfirm } = req.body;\n  \n  if (!password || !passwordConfirm) {\n    return next(new AppError('Please provide passwords', 400));\n  }\n  \n  if (password !== passwordConfirm) {\n    return next(new AppError('Passwords do not match', 400));\n  }\n  \n  // Hash token from URL\n  const hashedToken = crypto\n    .createHash('sha256')\n    .update(req.params.token)\n    .digest('hex');\n  \n  // Find user with valid, unexpired token\n  const user = await User.findOne({\n    passwordResetToken: hashedToken,\n    passwordResetExpires: { $gt: Date.now() }\n  });\n  \n  if (!user) {\n    return next(new AppError('Invalid or expired token', 400));\n  }\n  \n  // Update password\n  user.password = password;\n  user.passwordResetToken = undefined;\n  user.passwordResetExpires = undefined;\n  await user.save();\n  \n  // Send new JWT\n  sendTokenResponse(user, 200, res);\n});\n```\n\n**4. Routes:**\n```javascript\nrouter.post('/forgot-password', forgotPassword);\nrouter.put('/reset-password/:token', resetPassword);\n```\n\n**Security Features:**\n- Token is hashed before storing\n- Token expires after 10 minutes\n- Token is cleared after use\n- Password validation runs on save"
+        }
+    ]
+}

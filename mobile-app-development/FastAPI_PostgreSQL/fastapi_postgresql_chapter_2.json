@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 2: Control Flow & Logical Thinking",
+    "chapterId": "python_core_chapter_2",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is the output of the following code?",
+            "codeSnippet": "x = 10\nif x > 5:\n    print('A')\nelif x > 8:\n    print('B')\nelse:\n    print('C')",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "A",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "B",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "C",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "A and B",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Which logical operator returns True only if BOTH conditions are true?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "or",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "not",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "and",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "xor",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What does range(3) generate?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "1, 2, 3",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "0, 1, 2, 3",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "0, 1, 2",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "3",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What is the difference between = and == in Python?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "They are the same",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "= compares values, == assigns values",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "= assigns values, == compares values",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "== is used for strings only",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Which keyword is used to skip the rest of the current loop iteration and continue with the next?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "break",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "continue",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "pass",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "skip",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What happens if a while loop condition never becomes False?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "The program crashes immediately",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "It creates an infinite loop",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Python automatically stops it after 100 runs",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "It throws a SyntaxError",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Evaluate: True and False",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "True",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "False",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "None",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Error",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Which statement terminates the loop entirely?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "continue",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "pass",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "break",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "exit",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What is the output of this loop?",
+            "codeSnippet": "for i in range(1, 4):\n    print(i)",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "1 2 3 4",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "0 1 2 3",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "1 2 3",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "2 3 4",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What keyword is used as a placeholder for future code?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "break",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "continue",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "pass",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "None",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between 'break' and 'continue' with an example.",
+            "preferredAnswer": "Break terminates the loop completely. Execution moves to the first line after the loop.\nContinue skips only the current iteration and jumps back to the top of the loop to start the next cycle.\n\nExample:\nfor i in range(5):\n    if i == 2: continue  # Skips printing 2\n    if i == 4: break     # Stops the loop entirely before printing 4\n    print(i)\nOutput: 0, 1, 3"
+        },
+        {
+            "id": 2,
+            "question": "Why does range(5) produce numbers 0 to 4 instead of 1 to 5?",
+            "preferredAnswer": "Python uses zero-based indexing. The range(start, stop) function includes the start value but excludes the stop value. range(5) defaults start to 0. So it counts 0, 1, 2, 3, 4. This is extremely convenient because it runs exactly 5 times, matching the argument provided."
+        },
+        {
+            "id": 3,
+            "question": "Write a while loop that prints numbers from 1 to 5.",
+            "preferredAnswer": "count = 1\nwhile count <= 5:\n    print(count)\n    count += 1\n\nKey points: Initialize the variable before the loop, check the condition, and remember to increment the variable inside the loop to avoid an infinite loop."
+        },
+        {
+            "id": 4,
+            "question": "What is the important difference between using 'elif' and multiple separate 'if' statements?",
+            "preferredAnswer": "'elif' creates an exclusive chain: only the first matching block will run, and all later conditions are ignored.\n\nIf you used multiple 'if' statements instead of 'elif', Python would check every single one, potentially executing multiple blocks of code if conditions overlap. Use elif when you want exactly one outcome."
+        },
+        {
+            "id": 5,
+            "question": "Convert the following logic into Python code: Print 'Valid' if age is between 18 and 65 inclusive.",
+            "preferredAnswer": "age = int(input('Enter age: '))\nif 18 <= age <= 65:\n    print('Valid')\n\nThis uses Python's chained comparison feature, which is cleaner and more readable than writing age >= 18 and age <= 65."
+        }
+    ]
+}

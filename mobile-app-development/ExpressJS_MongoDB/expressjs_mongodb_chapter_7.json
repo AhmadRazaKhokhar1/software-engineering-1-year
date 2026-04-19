@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 7: Deployment, Testing & Capstone Project",
+    "chapterId": "express_mongodb_chapter_7",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is the purpose of environment variables in different deployment stages?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To make the code run faster",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To configure different settings for development, staging, and production",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To encrypt the source code",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To reduce file size",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Which file should contain environment variable templates that ARE committed to git?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": ".env",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": ".env.production",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": ".env.example",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": ".env.local",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What is the purpose of a health check endpoint?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To check user health data",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To verify the application is running and responsive",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To monitor database size",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To check network speed",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What does graceful shutdown mean?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Shutting down without saving data",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Completing ongoing requests and closing connections before stopping",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Restarting the server automatically",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Logging out all users",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What is MongoMemoryServer used for in testing?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To speed up production database",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To create an in-memory MongoDB instance for testing",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To backup production data",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To monitor database performance",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What does supertest library do?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Tests database queries",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Tests HTTP endpoints by making requests to Express apps",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Tests frontend components",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Tests CSS styles",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What is the purpose of the withCredentials option in axios?",
+            "codeSnippet": "axios.create({ withCredentials: true })",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To send user credentials in the URL",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To include cookies in cross-origin requests",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To encrypt the request body",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To validate API keys",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "In a Dockerfile, what does 'npm ci --only=production' do?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Installs all dependencies including devDependencies",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Installs only production dependencies from package-lock.json",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Creates a continuous integration pipeline",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Checks for dependency vulnerabilities",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What is the correct test structure using Jest?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "test() contains describe() which contains it()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "describe() contains it() or test()",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "it() contains describe() which contains test()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "All functions are interchangeable",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What HTTP status code should be returned when an order is successfully created?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "200 OK",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "201 Created",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "204 No Content",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "202 Accepted",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the different deployment environments (development, staging, production) and how to configure them properly.",
+            "preferredAnswer": "**Deployment Environments:**\n\n**1. Development:**\n- Local machine\n- Debug mode enabled\n- Detailed error messages\n- Hot reloading with nodemon\n- Local database\n\n```env\n# .env.development\nNODE_ENV=development\nPORT=3000\nMONGODB_URI=mongodb://localhost:27017/myapp_dev\nJWT_SECRET=dev-secret\nLOG_LEVEL=debug\n```\n\n**2. Staging:**\n- Test server mirroring production\n- Real services with test data\n- QA testing environment\n- Pre-production validation\n\n```env\n# .env.staging\nNODE_ENV=staging\nMONGODB_URI=mongodb+srv://user:pass@cluster/myapp_staging\nJWT_SECRET=staging-secret\nLOG_LEVEL=info\n```\n\n**3. Production:**\n- Live server with real users\n- Optimized performance\n- Security hardened\n- Minimal error details exposed\n\n```env\n# .env.production\nNODE_ENV=production\nMONGODB_URI=mongodb+srv://user:pass@cluster/myapp_prod\nJWT_SECRET=super-secure-production-secret\nLOG_LEVEL=warn\n```\n\n**Configuration Module:**\n\n```javascript\n// src/config/index.js\nconst dotenv = require('dotenv');\nconst path = require('path');\n\n// Load environment-specific file\nconst envFile = `.env.${process.env.NODE_ENV || 'development'}`;\ndotenv.config({ path: path.resolve(process.cwd(), envFile) });\ndotenv.config(); // Fallback\n\nconst config = {\n  env: process.env.NODE_ENV || 'development',\n  port: parseInt(process.env.PORT) || 3000,\n  db: { uri: process.env.MONGODB_URI },\n  jwt: { secret: process.env.JWT_SECRET }\n};\n\n// Validate required variables\nconst required = ['MONGODB_URI', 'JWT_SECRET'];\nrequired.forEach(key => {\n  if (!process.env[key]) throw new Error(`Missing: ${key}`);\n});\n\nmodule.exports = Object.freeze(config);\n```\n\n**Environment-Specific Behavior:**\n\n```javascript\n// Development only\nif (config.env === 'development') {\n  app.use(morgan('dev'));\n}\n\n// Production only\nif (config.env === 'production') {\n  app.use(helmet());\n  app.use(compression());\n}\n```"
+        },
+        {
+            "id": 2,
+            "question": "Describe how to write integration tests for an Express API using Jest and Supertest. Include setup, teardown, and example tests.",
+            "preferredAnswer": "**Testing Setup:**\n\n```bash\nnpm install --save-dev jest supertest mongodb-memory-server\n```\n\n**Jest Configuration:**\n\n```javascript\n// jest.config.js\nmodule.exports = {\n  testEnvironment: 'node',\n  setupFilesAfterEnv: ['./tests/setup.js'],\n  testTimeout: 30000,\n  verbose: true\n};\n```\n\n**Test Setup File:**\n\n```javascript\n// tests/setup.js\nconst mongoose = require('mongoose');\nconst { MongoMemoryServer } = require('mongodb-memory-server');\n\nlet mongoServer;\n\nbeforeAll(async () => {\n  mongoServer = await MongoMemoryServer.create();\n  await mongoose.connect(mongoServer.getUri());\n});\n\nafterEach(async () => {\n  const collections = mongoose.connection.collections;\n  for (const key in collections) {\n    await collections[key].deleteMany({});\n  }\n});\n\nafterAll(async () => {\n  await mongoose.disconnect();\n  await mongoServer.stop();\n});\n```\n\n**Integration Test Example:**\n\n```javascript\n// tests/integration/auth.test.js\nconst request = require('supertest');\nconst app = require('../../src/app');\nconst User = require('../../src/models/User');\n\ndescribe('Auth Endpoints', () => {\n  describe('POST /api/v1/auth/register', () => {\n    it('should register a new user', async () => {\n      const res = await request(app)\n        .post('/api/v1/auth/register')\n        .send({\n          name: 'Test User',\n          email: 'test@example.com',\n          password: 'Password123!',\n          passwordConfirm: 'Password123!'\n        });\n      \n      expect(res.status).toBe(201);\n      expect(res.body.success).toBe(true);\n      expect(res.body.token).toBeDefined();\n    });\n    \n    it('should not register with existing email', async () => {\n      await User.create({\n        name: 'Existing',\n        email: 'existing@example.com',\n        password: 'Password123!'\n      });\n      \n      const res = await request(app)\n        .post('/api/v1/auth/register')\n        .send({\n          name: 'New User',\n          email: 'existing@example.com',\n          password: 'Password123!',\n          passwordConfirm: 'Password123!'\n        });\n      \n      expect(res.status).toBe(409);\n    });\n  });\n  \n  describe('POST /api/v1/auth/login', () => {\n    beforeEach(async () => {\n      await User.create({\n        name: 'Test',\n        email: 'test@example.com',\n        password: 'Password123!'\n      });\n    });\n    \n    it('should login with valid credentials', async () => {\n      const res = await request(app)\n        .post('/api/v1/auth/login')\n        .send({\n          email: 'test@example.com',\n          password: 'Password123!'\n        });\n      \n      expect(res.status).toBe(200);\n      expect(res.body.token).toBeDefined();\n    });\n    \n    it('should reject invalid password', async () => {\n      const res = await request(app)\n        .post('/api/v1/auth/login')\n        .send({\n          email: 'test@example.com',\n          password: 'WrongPassword'\n        });\n      \n      expect(res.status).toBe(401);\n    });\n  });\n  \n  describe('GET /api/v1/auth/me', () => {\n    let token;\n    \n    beforeEach(async () => {\n      await User.create({\n        name: 'Test',\n        email: 'test@example.com',\n        password: 'Password123!'\n      });\n      \n      const res = await request(app)\n        .post('/api/v1/auth/login')\n        .send({ email: 'test@example.com', password: 'Password123!' });\n      \n      token = res.body.token;\n    });\n    \n    it('should get user with valid token', async () => {\n      const res = await request(app)\n        .get('/api/v1/auth/me')\n        .set('Authorization', `Bearer ${token}`);\n      \n      expect(res.status).toBe(200);\n      expect(res.body.data.email).toBe('test@example.com');\n    });\n    \n    it('should reject without token', async () => {\n      const res = await request(app).get('/api/v1/auth/me');\n      expect(res.status).toBe(401);\n    });\n  });\n});\n```\n\n**Running Tests:**\n\n```bash\nnpm test\nnpm run test:coverage\n```"
+        },
+        {
+            "id": 3,
+            "question": "Explain how to deploy an Express application to a cloud platform like Render or Railway, including environment configuration.",
+            "preferredAnswer": "**Deploying to Render:**\n\n**1. Prepare Application:**\n\n```json\n// package.json\n{\n  \"name\": \"my-api\",\n  \"scripts\": {\n    \"start\": \"node server.js\",\n    \"dev\": \"nodemon server.js\"\n  },\n  \"engines\": {\n    \"node\": \">=18.0.0\"\n  }\n}\n```\n\n**2. Add Health Check:**\n\n```javascript\napp.get('/health', (req, res) => {\n  res.json({ status: 'OK', timestamp: new Date() });\n});\n```\n\n**3. Create render.yaml:**\n\n```yaml\nservices:\n  - type: web\n    name: my-express-api\n    env: node\n    plan: free\n    buildCommand: npm install\n    startCommand: npm start\n    healthCheckPath: /health\n    envVars:\n      - key: NODE_ENV\n        value: production\n      - key: MONGODB_URI\n        sync: false\n      - key: JWT_SECRET\n        generateValue: true\n```\n\n**4. Deploy Steps:**\n- Create Render account\n- Connect GitHub repository\n- Create new Web Service\n- Add environment variables in dashboard\n- Deploy automatically on push\n\n---\n\n**Deploying to Railway:**\n\n```bash\n# Install CLI\nnpm install -g @railway/cli\n\n# Login\nrailway login\n\n# Initialize\nrailway init\n\n# Add MongoDB\nrailway add\n\n# Set variables\nrailway variables set NODE_ENV=production\nrailway variables set JWT_SECRET=your-secret\n\n# Deploy\nrailway up\n```\n\n---\n\n**Docker Deployment:**\n\n```dockerfile\n# Dockerfile\nFROM node:18-alpine\n\nWORKDIR /usr/src/app\n\nCOPY package*.json ./\nRUN npm ci --only=production\n\nCOPY . .\n\nEXPOSE 3000\n\nHEALTHCHECK --interval=30s --timeout=3s \\\n  CMD wget --spider http://localhost:3000/health || exit 1\n\nCMD [\"node\", \"server.js\"]\n```\n\n```yaml\n# docker-compose.yml\nversion: '3.8'\nservices:\n  api:\n    build: .\n    ports:\n      - \"3000:3000\"\n    environment:\n      - NODE_ENV=production\n      - MONGODB_URI=mongodb://mongo:27017/myapp\n    depends_on:\n      - mongo\n  mongo:\n    image: mongo:7\n    volumes:\n      - mongo-data:/data/db\nvolumes:\n  mongo-data:\n```\n\n**Production Checklist:**\n- ✅ Environment variables set\n- ✅ HTTPS enabled\n- ✅ Database connected\n- ✅ Health check working\n- ✅ Logging configured\n- ✅ Error handling in place"
+        },
+        {
+            "id": 4,
+            "question": "Create a shopping cart API with add, update, remove items, and calculate totals.",
+            "preferredAnswer": "**Cart Model:**\n\n```javascript\n// models/Cart.js\nconst mongoose = require('mongoose');\n\nconst cartItemSchema = new mongoose.Schema({\n  product: {\n    type: mongoose.Schema.Types.ObjectId,\n    ref: 'Product',\n    required: true\n  },\n  quantity: {\n    type: Number,\n    required: true,\n    min: 1,\n    default: 1\n  },\n  price: {\n    type: Number,\n    required: true\n  }\n});\n\nconst cartSchema = new mongoose.Schema({\n  user: {\n    type: mongoose.Schema.Types.ObjectId,\n    ref: 'User',\n    required: true,\n    unique: true\n  },\n  items: [cartItemSchema],\n  totalAmount: {\n    type: Number,\n    default: 0\n  }\n}, { timestamps: true });\n\n// Calculate total before saving\ncartSchema.pre('save', function(next) {\n  this.totalAmount = this.items.reduce((total, item) => {\n    return total + (item.price * item.quantity);\n  }, 0);\n  next();\n});\n\nmodule.exports = mongoose.model('Cart', cartSchema);\n```\n\n**Cart Controller:**\n\n```javascript\n// controllers/cartController.js\nconst Cart = require('../models/Cart');\nconst Product = require('../models/Product');\nconst asyncHandler = require('../utils/asyncHandler');\nconst AppError = require('../utils/AppError');\n\n// Get cart\nexports.getCart = asyncHandler(async (req, res) => {\n  let cart = await Cart.findOne({ user: req.user._id })\n    .populate('items.product', 'name price images stock');\n  \n  if (!cart) {\n    cart = await Cart.create({ user: req.user._id, items: [] });\n  }\n  \n  res.json({ success: true, data: cart });\n});\n\n// Add to cart\nexports.addToCart = asyncHandler(async (req, res, next) => {\n  const { productId, quantity = 1 } = req.body;\n  \n  const product = await Product.findById(productId);\n  if (!product) return next(new AppError('Product not found', 404));\n  if (product.stock < quantity) {\n    return next(new AppError(`Only ${product.stock} available`, 400));\n  }\n  \n  let cart = await Cart.findOne({ user: req.user._id });\n  if (!cart) {\n    cart = new Cart({ user: req.user._id, items: [] });\n  }\n  \n  const existingIndex = cart.items.findIndex(\n    item => item.product.toString() === productId\n  );\n  \n  if (existingIndex > -1) {\n    cart.items[existingIndex].quantity += quantity;\n  } else {\n    cart.items.push({\n      product: productId,\n      quantity,\n      price: product.discountPrice || product.price\n    });\n  }\n  \n  await cart.save();\n  await cart.populate('items.product', 'name price images');\n  \n  res.json({ success: true, data: cart });\n});\n\n// Update quantity\nexports.updateCartItem = asyncHandler(async (req, res, next) => {\n  const { productId } = req.params;\n  const { quantity } = req.body;\n  \n  if (quantity < 1) return next(new AppError('Quantity must be >= 1', 400));\n  \n  const product = await Product.findById(productId);\n  if (product.stock < quantity) {\n    return next(new AppError(`Only ${product.stock} available`, 400));\n  }\n  \n  const cart = await Cart.findOne({ user: req.user._id });\n  const itemIndex = cart.items.findIndex(\n    item => item.product.toString() === productId\n  );\n  \n  if (itemIndex === -1) return next(new AppError('Item not in cart', 404));\n  \n  cart.items[itemIndex].quantity = quantity;\n  await cart.save();\n  \n  res.json({ success: true, data: cart });\n});\n\n// Remove item\nexports.removeFromCart = asyncHandler(async (req, res) => {\n  const { productId } = req.params;\n  \n  const cart = await Cart.findOne({ user: req.user._id });\n  cart.items = cart.items.filter(\n    item => item.product.toString() !== productId\n  );\n  await cart.save();\n  \n  res.json({ success: true, data: cart });\n});\n\n// Clear cart\nexports.clearCart = asyncHandler(async (req, res) => {\n  const cart = await Cart.findOne({ user: req.user._id });\n  if (cart) {\n    cart.items = [];\n    await cart.save();\n  }\n  res.json({ success: true, data: cart });\n});\n```\n\n**Routes:**\n\n```javascript\nconst router = require('express').Router();\nconst { protect } = require('../middleware/auth');\nconst cartController = require('../controllers/cartController');\n\nrouter.use(protect);\n\nrouter.route('/')\n  .get(cartController.getCart)\n  .delete(cartController.clearCart);\n\nrouter.post('/items', cartController.addToCart);\n\nrouter.route('/items/:productId')\n  .put(cartController.updateCartItem)\n  .delete(cartController.removeFromCart);\n\nmodule.exports = router;\n```"
+        },
+        {
+            "id": 5,
+            "question": "Implement an order creation system with transaction support that validates stock, creates the order, and updates inventory atomically.",
+            "preferredAnswer": "**Order Model:**\n\n```javascript\n// models/Order.js\nconst mongoose = require('mongoose');\n\nconst orderSchema = new mongoose.Schema({\n  user: {\n    type: mongoose.Schema.Types.ObjectId,\n    ref: 'User',\n    required: true\n  },\n  items: [{\n    product: { type: mongoose.Schema.Types.ObjectId, ref: 'Product' },\n    name: String,\n    price: Number,\n    quantity: { type: Number, min: 1 }\n  }],\n  shippingAddress: {\n    street: { type: String, required: true },\n    city: { type: String, required: true },\n    state: { type: String, required: true },\n    zipCode: { type: String, required: true },\n    country: { type: String, required: true }\n  },\n  paymentMethod: {\n    type: String,\n    enum: ['card', 'paypal', 'cod'],\n    required: true\n  },\n  paymentStatus: {\n    type: String,\n    enum: ['pending', 'paid', 'failed', 'refunded'],\n    default: 'pending'\n  },\n  orderStatus: {\n    type: String,\n    enum: ['pending', 'processing', 'shipped', 'delivered', 'cancelled'],\n    default: 'pending'\n  },\n  subtotal: Number,\n  shippingCost: { type: Number, default: 0 },\n  tax: { type: Number, default: 0 },\n  totalAmount: { type: Number, required: true },\n  deliveredAt: Date\n}, { timestamps: true });\n\nmodule.exports = mongoose.model('Order', orderSchema);\n```\n\n**Order Controller with Transaction:**\n\n```javascript\n// controllers/orderController.js\nconst mongoose = require('mongoose');\nconst Order = require('../models/Order');\nconst Cart = require('../models/Cart');\nconst Product = require('../models/Product');\nconst asyncHandler = require('../utils/asyncHandler');\nconst AppError = require('../utils/AppError');\n\nexports.createOrder = asyncHandler(async (req, res, next) => {\n  const { shippingAddress, paymentMethod } = req.body;\n  \n  // Get cart\n  const cart = await Cart.findOne({ user: req.user._id })\n    .populate('items.product');\n  \n  if (!cart || cart.items.length === 0) {\n    return next(new AppError('Cart is empty', 400));\n  }\n  \n  // Start transaction\n  const session = await mongoose.startSession();\n  session.startTransaction();\n  \n  try {\n    const orderItems = [];\n    \n    // Validate stock and update inventory\n    for (const item of cart.items) {\n      const product = await Product.findById(item.product._id).session(session);\n      \n      if (!product) {\n        throw new AppError(`Product not found: ${item.product.name}`, 404);\n      }\n      \n      if (product.stock < item.quantity) {\n        throw new AppError(\n          `Insufficient stock for ${product.name}. Available: ${product.stock}`,\n          400\n        );\n      }\n      \n      // Reduce stock\n      product.stock -= item.quantity;\n      await product.save({ session });\n      \n      orderItems.push({\n        product: product._id,\n        name: product.name,\n        price: item.price,\n        quantity: item.quantity\n      });\n    }\n    \n    // Calculate totals\n    const subtotal = cart.totalAmount;\n    const shippingCost = subtotal >= 100 ? 0 : 10;\n    const tax = subtotal * 0.1;\n    const totalAmount = subtotal + shippingCost + tax;\n    \n    // Create order\n    const [order] = await Order.create([{\n      user: req.user._id,\n      items: orderItems,\n      shippingAddress,\n      paymentMethod,\n      subtotal,\n      shippingCost,\n      tax,\n      totalAmount\n    }], { session });\n    \n    // Clear cart\n    cart.items = [];\n    await cart.save({ session });\n    \n    // Commit transaction\n    await session.commitTransaction();\n    \n    res.status(201).json({\n      success: true,\n      data: order\n    });\n    \n  } catch (error) {\n    // Rollback on error\n    await session.abortTransaction();\n    return next(error);\n  } finally {\n    session.endSession();\n  }\n});\n\n// Cancel order (restore stock)\nexports.cancelOrder = asyncHandler(async (req, res, next) => {\n  const order = await Order.findById(req.params.id);\n  \n  if (!order) return next(new AppError('Order not found', 404));\n  if (order.user.toString() !== req.user._id.toString()) {\n    return next(new AppError('Not authorized', 403));\n  }\n  if (order.orderStatus !== 'pending') {\n    return next(new AppError('Can only cancel pending orders', 400));\n  }\n  \n  const session = await mongoose.startSession();\n  session.startTransaction();\n  \n  try {\n    // Restore stock\n    for (const item of order.items) {\n      await Product.findByIdAndUpdate(\n        item.product,\n        { $inc: { stock: item.quantity } },\n        { session }\n      );\n    }\n    \n    order.orderStatus = 'cancelled';\n    await order.save({ session });\n    \n    await session.commitTransaction();\n    \n    res.json({ success: true, data: order });\n    \n  } catch (error) {\n    await session.abortTransaction();\n    return next(error);\n  } finally {\n    session.endSession();\n  }\n});\n```\n\n**Key Points:**\n- All operations use same session\n- Stock validated before reducing\n- Transaction ensures atomicity\n- Rollback on any failure\n- Cart cleared only after successful order"
+        }
+    ]
+}

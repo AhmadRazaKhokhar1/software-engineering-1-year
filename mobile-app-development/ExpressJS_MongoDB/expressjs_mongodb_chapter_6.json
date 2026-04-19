@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 6: Advanced Backend Features & Performance",
+    "chapterId": "express_mongodb_chapter_6",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Which Multer storage type stores files in memory as Buffer objects?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "multer.diskStorage()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "multer.memoryStorage()",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "multer.bufferStorage()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "multer.cloudStorage()",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What happens if a transaction fails in MongoDB?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Only failed operations are rolled back",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "All operations within the transaction are rolled back",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "The database crashes",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Nothing happens, errors are ignored",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What does the lean() method do in Mongoose queries?",
+            "codeSnippet": "const products = await Product.find().lean();",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Returns only lean/slim documents with fewer fields",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Returns plain JavaScript objects instead of Mongoose documents",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Compresses the response",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Removes null values from results",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Which index type is best for full-text search in MongoDB?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Single field index",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Compound index",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Text index",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Unique index",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What is the purpose of a TTL index?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To sort documents by time",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To automatically delete documents after a specified time",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To track document creation time",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To limit query time",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What does Redis setex command do?",
+            "codeSnippet": "await redis.setex('key', 300, 'value');",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Sets a key if it doesn't exist",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Sets a key with an expiration time in seconds",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Sets an exclusive lock on the key",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Sets a key with extended characters",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What is the correct order of compound index fields for this query?",
+            "codeSnippet": "Product.find({ category: 'electronics', price: { $gte: 100 } }).sort({ createdAt: -1 })",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "{ price: 1, category: 1, createdAt: -1 }",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "{ category: 1, price: 1, createdAt: -1 }",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "{ createdAt: -1, category: 1, price: 1 }",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "{ category: 1, createdAt: -1, price: 1 }",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Which Sharp method resizes an image to fit within specified dimensions?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "sharp(buffer).resize(500, 500)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "sharp(buffer).scale(500, 500)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "sharp(buffer).crop(500, 500)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "sharp(buffer).fit(500, 500)",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What is the purpose of winston-daily-rotate-file?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To rotate server instances daily",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To create new log files daily and manage old ones",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To rotate database backups",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To schedule daily tasks",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What does the { session } option do in Mongoose operations during a transaction?",
+            "codeSnippet": "await Product.findById(id).session(session);",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Creates a new user session",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Associates the operation with the transaction session",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Stores the result in session storage",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Enables session-based caching",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Implement a complete file upload system with Multer that validates file types, limits file size, and generates unique filenames.",
+            "preferredAnswer": "```javascript\n// src/middleware/upload.js\nconst multer = require('multer');\nconst path = require('path');\nconst crypto = require('crypto');\nconst AppError = require('../utils/AppError');\n\n// Storage configuration\nconst storage = multer.diskStorage({\n  destination: (req, file, cb) => {\n    // Different folders for different file types\n    let folder = 'uploads/';\n    if (file.mimetype.startsWith('image/')) {\n      folder += 'images/';\n    } else if (file.mimetype === 'application/pdf') {\n      folder += 'documents/';\n    }\n    cb(null, folder);\n  },\n  filename: (req, file, cb) => {\n    // Generate unique filename\n    const uniqueId = crypto.randomBytes(16).toString('hex');\n    const ext = path.extname(file.originalname);\n    const filename = `${file.fieldname}-${uniqueId}${ext}`;\n    cb(null, filename);\n  }\n});\n\n// File filter\nconst fileFilter = (req, file, cb) => {\n  const allowedTypes = {\n    'image/jpeg': ['.jpg', '.jpeg'],\n    'image/png': ['.png'],\n    'image/gif': ['.gif'],\n    'image/webp': ['.webp'],\n    'application/pdf': ['.pdf']\n  };\n  \n  const ext = path.extname(file.originalname).toLowerCase();\n  const isValidType = allowedTypes[file.mimetype];\n  const isValidExt = isValidType && isValidType.includes(ext);\n  \n  if (isValidType && isValidExt) {\n    cb(null, true);\n  } else {\n    cb(new AppError(\n      'Invalid file type. Allowed: JPEG, PNG, GIF, WebP, PDF', \n      400\n    ), false);\n  }\n};\n\nconst upload = multer({\n  storage,\n  fileFilter,\n  limits: {\n    fileSize: 5 * 1024 * 1024, // 5MB\n    files: 5 // Max 5 files\n  }\n});\n\nmodule.exports = upload;\n```\n\n**Controller:**\n```javascript\nexports.uploadFile = asyncHandler(async (req, res, next) => {\n  if (!req.file) {\n    return next(new AppError('Please upload a file', 400));\n  }\n  \n  res.status(200).json({\n    success: true,\n    data: {\n      filename: req.file.filename,\n      path: `/uploads/${req.file.filename}`,\n      size: req.file.size,\n      mimetype: req.file.mimetype\n    }\n  });\n});\n```\n\n**Route:**\n```javascript\nrouter.post('/upload', protect, upload.single('file'), uploadFile);\n```"
+        },
+        {
+            "id": 2,
+            "question": "Explain MongoDB transactions and write a transaction example for creating an order that updates product stock and user order history atomically.",
+            "preferredAnswer": "**MongoDB Transactions:**\n\nTransactions ensure multiple operations either all succeed or all fail together (atomicity). They're essential when multiple collections must be updated consistently.\n\n**Example: Order Creation Transaction:**\n\n```javascript\nconst mongoose = require('mongoose');\nconst Order = require('../models/Order');\nconst Product = require('../models/Product');\nconst User = require('../models/User');\nconst asyncHandler = require('../utils/asyncHandler');\nconst AppError = require('../utils/AppError');\n\nexports.createOrder = asyncHandler(async (req, res, next) => {\n  const { items, shippingAddress } = req.body;\n  \n  // Start transaction\n  const session = await mongoose.startSession();\n  session.startTransaction();\n  \n  try {\n    let totalAmount = 0;\n    const orderItems = [];\n    \n    // 1. Validate products and calculate total\n    for (const item of items) {\n      const product = await Product.findById(item.productId).session(session);\n      \n      if (!product) {\n        throw new AppError(`Product not found: ${item.productId}`, 404);\n      }\n      \n      if (product.stock < item.quantity) {\n        throw new AppError(\n          `Insufficient stock for ${product.name}`, \n          400\n        );\n      }\n      \n      // Update stock\n      product.stock -= item.quantity;\n      await product.save({ session });\n      \n      // Add to order items\n      orderItems.push({\n        product: product._id,\n        name: product.name,\n        price: product.price,\n        quantity: item.quantity\n      });\n      \n      totalAmount += product.price * item.quantity;\n    }\n    \n    // 2. Create order\n    const [order] = await Order.create([{\n      user: req.user._id,\n      items: orderItems,\n      totalAmount,\n      shippingAddress,\n      status: 'pending'\n    }], { session });\n    \n    // 3. Update user's order history\n    await User.findByIdAndUpdate(\n      req.user._id,\n      { \n        $push: { orders: order._id },\n        $inc: { totalSpent: totalAmount }\n      },\n      { session }\n    );\n    \n    // Commit transaction\n    await session.commitTransaction();\n    \n    res.status(201).json({\n      success: true,\n      data: order\n    });\n    \n  } catch (error) {\n    // Rollback on any error\n    await session.abortTransaction();\n    return next(error);\n  } finally {\n    session.endSession();\n  }\n});\n```\n\n**Key Points:**\n- All operations use same `session`\n- If any operation fails, all are rolled back\n- `session.commitTransaction()` makes changes permanent\n- `session.abortTransaction()` undoes all changes"
+        },
+        {
+            "id": 3,
+            "question": "Describe database indexing strategies. Create indexes for a Product model that optimizes common query patterns.",
+            "preferredAnswer": "**Indexing Strategies:**\n\n1. **Single Field Index:** For queries filtering on one field\n2. **Compound Index:** For queries filtering/sorting on multiple fields\n3. **Text Index:** For full-text search\n4. **Partial Index:** Index only documents matching a condition\n5. **TTL Index:** Auto-delete documents after time\n\n**Product Model with Optimized Indexes:**\n\n```javascript\nconst productSchema = new mongoose.Schema({\n  name: String,\n  slug: { type: String, unique: true },\n  description: String,\n  price: Number,\n  category: String,\n  brand: String,\n  tags: [String],\n  ratings: {\n    average: Number,\n    count: Number\n  },\n  stock: Number,\n  isActive: { type: Boolean, default: true },\n  createdAt: { type: Date, default: Date.now }\n});\n\n// 1. Unique slug lookup\nproductSchema.index({ slug: 1 }, { unique: true });\n\n// 2. Category browsing with price sort\n// Supports: find({ category: 'x' }).sort({ price: 1 })\nproductSchema.index({ category: 1, price: 1 });\n\n// 3. Category browsing with rating sort\n// Supports: find({ category: 'x' }).sort({ 'ratings.average': -1 })\nproductSchema.index({ category: 1, 'ratings.average': -1 });\n\n// 4. Full-text search with weighted fields\nproductSchema.index(\n  { name: 'text', description: 'text', tags: 'text' },\n  { weights: { name: 10, tags: 5, description: 1 } }\n);\n\n// 5. Active products by category (partial index)\nproductSchema.index(\n  { category: 1, createdAt: -1 },\n  { partialFilterExpression: { isActive: true } }\n);\n\n// 6. Tag filtering (multikey index)\nproductSchema.index({ tags: 1 });\n\n// 7. Price range queries\nproductSchema.index({ price: 1 });\n\n// 8. Brand filtering with price\nproductSchema.index({ brand: 1, price: 1 });\n```\n\n**Index Design Rules:**\n\n1. **Equality → Sort → Range:**\n```javascript\n// Query: find({ category: 'x', price: { $gte: 100 } }).sort({ name: 1 })\n// Index: { category: 1, name: 1, price: 1 }\n```\n\n2. **Most selective field first:**\n```javascript\n// If brand has more unique values than category\n// Index: { brand: 1, category: 1 }\n```\n\n3. **Cover the query if possible:**\n```javascript\n// Query only needs name and price\n// Index: { category: 1, name: 1, price: 1 }\n// This index can return results without reading documents\n```"
+        },
+        {
+            "id": 4,
+            "question": "Implement a caching layer using Redis for API responses with cache invalidation.",
+            "preferredAnswer": "**Redis Caching Implementation:**\n\n```javascript\n// src/config/redis.js\nconst Redis = require('ioredis');\n\nconst redis = new Redis({\n  host: process.env.REDIS_HOST || 'localhost',\n  port: process.env.REDIS_PORT || 6379\n});\n\nmodule.exports = redis;\n```\n\n**Cache Middleware:**\n\n```javascript\n// src/middleware/cache.js\nconst redis = require('../config/redis');\n\n// Cache middleware\nconst cache = (duration = 300) => {\n  return async (req, res, next) => {\n    if (req.method !== 'GET') return next();\n    \n    const key = `cache:${req.originalUrl}`;\n    \n    try {\n      // Check cache\n      const cached = await redis.get(key);\n      \n      if (cached) {\n        return res.json(JSON.parse(cached));\n      }\n      \n      // Override res.json to cache response\n      const originalJson = res.json.bind(res);\n      \n      res.json = (data) => {\n        // Cache successful responses only\n        if (res.statusCode === 200) {\n          redis.setex(key, duration, JSON.stringify(data));\n        }\n        return originalJson(data);\n      };\n      \n      next();\n    } catch (error) {\n      console.error('Cache error:', error);\n      next();\n    }\n  };\n};\n\n// Clear cache by pattern\nconst clearCache = async (pattern) => {\n  const keys = await redis.keys(`cache:${pattern}`);\n  if (keys.length > 0) {\n    await redis.del(...keys);\n  }\n};\n\n// Clear specific cache\nconst deleteCache = async (key) => {\n  await redis.del(`cache:${key}`);\n};\n\nmodule.exports = { cache, clearCache, deleteCache };\n```\n\n**Usage in Routes:**\n\n```javascript\nconst { cache, clearCache } = require('../middleware/cache');\n\n// Cache GET requests\nrouter.get('/', cache(300), getAllProducts);  // 5 min\nrouter.get('/:id', cache(600), getProduct);   // 10 min\n\n// Invalidate cache on mutations\nrouter.post('/', protect, async (req, res, next) => {\n  await createProduct(req, res, next);\n  await clearCache('/api/v1/products*');\n});\n\nrouter.put('/:id', protect, async (req, res, next) => {\n  await updateProduct(req, res, next);\n  await clearCache(`/api/v1/products*`);\n});\n\nrouter.delete('/:id', protect, async (req, res, next) => {\n  await deleteProduct(req, res, next);\n  await clearCache('/api/v1/products*');\n});\n```\n\n**Advanced: User-specific Caching:**\n\n```javascript\nconst userCache = (duration = 300) => {\n  return async (req, res, next) => {\n    const userId = req.user?.id || 'anonymous';\n    const key = `cache:${userId}:${req.originalUrl}`;\n    // ... same logic\n  };\n};\n```"
+        },
+        {
+            "id": 5,
+            "question": "Set up a production-ready logging system using Winston with daily log rotation and different log levels.",
+            "preferredAnswer": "**Winston Logger Setup:**\n\n```javascript\n// src/utils/logger.js\nconst winston = require('winston');\nconst DailyRotateFile = require('winston-daily-rotate-file');\nconst path = require('path');\n\nconst logDir = 'logs';\n\n// Custom log format\nconst logFormat = winston.format.combine(\n  winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),\n  winston.format.errors({ stack: true }),\n  winston.format.printf(({ timestamp, level, message, stack, ...meta }) => {\n    let log = `${timestamp} [${level.toUpperCase()}]: ${message}`;\n    if (Object.keys(meta).length) {\n      log += ` ${JSON.stringify(meta)}`;\n    }\n    if (stack) {\n      log += `\\n${stack}`;\n    }\n    return log;\n  })\n);\n\n// Create transports\nconst transports = [\n  // Error logs (30 days retention)\n  new DailyRotateFile({\n    filename: path.join(logDir, 'error-%DATE%.log'),\n    datePattern: 'YYYY-MM-DD',\n    level: 'error',\n    maxFiles: '30d',\n    maxSize: '20m',\n    zippedArchive: true\n  }),\n  \n  // Combined logs (14 days retention)\n  new DailyRotateFile({\n    filename: path.join(logDir, 'combined-%DATE%.log'),\n    datePattern: 'YYYY-MM-DD',\n    maxFiles: '14d',\n    maxSize: '20m',\n    zippedArchive: true\n  })\n];\n\n// Add console transport for development\nif (process.env.NODE_ENV !== 'production') {\n  transports.push(\n    new winston.transports.Console({\n      format: winston.format.combine(\n        winston.format.colorize(),\n        logFormat\n      )\n    })\n  );\n}\n\n// Create logger\nconst logger = winston.createLogger({\n  level: process.env.LOG_LEVEL || 'info',\n  format: logFormat,\n  transports,\n  exceptionHandlers: [\n    new DailyRotateFile({\n      filename: path.join(logDir, 'exceptions-%DATE%.log'),\n      datePattern: 'YYYY-MM-DD',\n      maxFiles: '30d'\n    })\n  ],\n  rejectionHandlers: [\n    new DailyRotateFile({\n      filename: path.join(logDir, 'rejections-%DATE%.log'),\n      datePattern: 'YYYY-MM-DD',\n      maxFiles: '30d'\n    })\n  ]\n});\n\nmodule.exports = logger;\n```\n\n**Request Logger Middleware:**\n\n```javascript\n// src/middleware/requestLogger.js\nconst logger = require('../utils/logger');\n\nmodule.exports = (req, res, next) => {\n  const start = Date.now();\n  \n  res.on('finish', () => {\n    const duration = Date.now() - start;\n    const logData = {\n      method: req.method,\n      url: req.originalUrl,\n      status: res.statusCode,\n      duration: `${duration}ms`,\n      ip: req.ip,\n      userId: req.user?.id\n    };\n    \n    if (res.statusCode >= 500) {\n      logger.error('Request failed', logData);\n    } else if (res.statusCode >= 400) {\n      logger.warn('Client error', logData);\n    } else {\n      logger.info('Request completed', logData);\n    }\n  });\n  \n  next();\n};\n```\n\n**Usage:**\n```javascript\nlogger.info('Server started', { port: 3000 });\nlogger.error('Database error', { error: err.message });\nlogger.warn('Rate limit exceeded', { ip: req.ip });\nlogger.debug('Query executed', { query, duration: '45ms' });\n```"
+        }
+    ]
+}

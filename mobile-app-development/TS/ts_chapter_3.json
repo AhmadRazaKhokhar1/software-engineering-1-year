@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 3: TypeScript in Real Projects (Frontend & Backend)",
+    "chapterId": "typescript_chapter_3",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Which command creates a new Vite project with TypeScript?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "npm create vite@latest my-app -- --template typescript",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "npm create vite@latest my-app -- --template vanilla-ts",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "npm init vite typescript",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "npx create-vite --typescript",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What is the purpose of type guards when handling API responses?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To make API calls faster",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To validate data structure at runtime before using it",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To convert data types automatically",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To cache API responses",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What does the 'private' access modifier do?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Makes the property accessible only within the class",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "Makes the property accessible in subclasses",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Makes the property read-only",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Makes the property optional",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Which access modifier allows subclasses to access a property but not external code?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "private",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "public",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "protected",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "readonly",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What is the purpose of generics in TypeScript?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To create classes that work with any type while maintaining type safety",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "To make all types optional",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "To disable type checking",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To convert types at runtime",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What does this generic function return?",
+            "codeSnippet": "function getFirst<T>(arr: T[]): T | undefined {\n    return arr[0];\n}\n\nconst result = getFirst([1, 2, 3]);",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Type: any",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Type: number | undefined",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Type: number[]",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Type: T",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What type does a caught error have in TypeScript?",
+            "codeSnippet": "try {\n    throw new Error('fail');\n} catch (error) {\n    // What is error's type?\n}",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Error",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "any",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "unknown",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "never",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What is a Result type pattern used for?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To return either success data or error without throwing exceptions",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "To cache function results",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "To convert types at runtime",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To make all functions async",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What is the constructor shorthand in TypeScript?",
+            "codeSnippet": "class User {\n    constructor(public name: string, private age: number) {}\n}",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "It creates and initializes properties automatically",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "It makes the constructor optional",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "It creates getter and setter methods",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "It makes the class abstract",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Where should shared type definitions be placed in a TypeScript project?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "In each file that uses them",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "In a dedicated types/ folder with index.ts for re-exports",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "In the node_modules folder",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "In tsconfig.json",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain how to safely handle API responses in TypeScript. What is the danger of using type assertions directly on API data?",
+            "preferredAnswer": "**The danger of type assertions:**\n\n```typescript\n// ❌ DANGEROUS: Trusting API data blindly\nconst user = await response.json() as User;\nconsole.log(user.name.toUpperCase());  // Might crash!\n```\n\nAPIs can return unexpected data (errors, different formats, null values). Type assertions tell TypeScript \"trust me,\" but the runtime doesn't care — if `user.name` is undefined, the code crashes.\n\n**Safe approach 1: Type guards**\n\n```typescript\nfunction isUser(data: unknown): data is User {\n    return (\n        typeof data === 'object' &&\n        data !== null &&\n        'name' in data &&\n        typeof (data as User).name === 'string'\n    );\n}\n\nconst data: unknown = await response.json();\nif (isUser(data)) {\n    console.log(data.name);  // ✅ Safe\n}\n```\n\n**Safe approach 2: Zod validation (recommended)**\n\n```typescript\nimport { z } from 'zod';\n\nconst UserSchema = z.object({\n    id: z.number(),\n    name: z.string(),\n    email: z.string().email()\n});\n\nconst result = UserSchema.safeParse(await response.json());\nif (result.success) {\n    console.log(result.data.name);  // ✅ Validated\n} else {\n    console.error(result.error);\n}\n```\n\n**Key principle:** Never trust external data. Always validate at runtime boundaries (API calls, user input, file reads)."
+        },
+        {
+            "id": 2,
+            "question": "Explain the three access modifiers in TypeScript classes (public, private, protected) with examples of when to use each.",
+            "preferredAnswer": "**`public`** (default) — Accessible everywhere:\n\n```typescript\nclass User {\n    public name: string;  // Accessible anywhere\n}\n\nconst user = new User();\nuser.name = 'Alice';  // ✅ OK\n```\n**Use:** Properties and methods that are part of the class's public API.\n\n**`private`** — Only accessible within the class:\n\n```typescript\nclass BankAccount {\n    private balance: number = 0;\n    private validatePin(pin: string): boolean { ... }\n}\n\nconst account = new BankAccount();\naccount.balance;      // ❌ ERROR\naccount.validatePin('1234');  // ❌ ERROR\n```\n**Use:** Internal implementation details, sensitive data (passwords, tokens), helper methods.\n\n**`protected`** — Accessible within class AND subclasses:\n\n```typescript\nclass Animal {\n    protected name: string;\n    constructor(name: string) { this.name = name; }\n}\n\nclass Dog extends Animal {\n    bark() {\n        console.log(`${this.name} barks!`);  // ✅ OK in subclass\n    }\n}\n\nconst dog = new Dog('Rex');\ndog.name;  // ❌ ERROR from outside\n```\n**Use:** Properties needed by subclasses but not external code (inheritance hierarchies).\n\n**Summary:**\n- `public`: External API\n- `private`: Internal secrets\n- `protected`: Inheritance sharing"
+        },
+        {
+            "id": 3,
+            "question": "Write a generic function called 'groupBy' that takes an array and a key, and groups items by that key. For example, groupBy(users, 'role') should return { admin: [...], user: [...] }.",
+            "preferredAnswer": "```typescript\nfunction groupBy<T, K extends keyof T>(\n    array: T[],\n    key: K\n): Record<string, T[]> {\n    return array.reduce((result, item) => {\n        const groupKey = String(item[key]);\n        \n        if (!result[groupKey]) {\n            result[groupKey] = [];\n        }\n        \n        result[groupKey].push(item);\n        return result;\n    }, {} as Record<string, T[]>);\n}\n\n// Usage\ninterface User {\n    id: number;\n    name: string;\n    role: 'admin' | 'user' | 'guest';\n}\n\nconst users: User[] = [\n    { id: 1, name: 'Alice', role: 'admin' },\n    { id: 2, name: 'Bob', role: 'user' },\n    { id: 3, name: 'Charlie', role: 'admin' },\n    { id: 4, name: 'David', role: 'user' }\n];\n\nconst grouped = groupBy(users, 'role');\nconsole.log(grouped);\n// {\n//     admin: [{ id: 1, name: 'Alice', role: 'admin' }, { id: 3, name: 'Charlie', role: 'admin' }],\n//     user: [{ id: 2, name: 'Bob', role: 'user' }, { id: 4, name: 'David', role: 'user' }]\n// }\n\n// TypeScript ensures 'key' is a valid property of User!\ngroupBy(users, 'invalid');  // ❌ ERROR\n```\n\n**Key generic features:**\n- `T` — The array item type\n- `K extends keyof T` — K must be a valid key of T\n- `Record<string, T[]>` — Return type is an object with string keys and arrays of T"
+        },
+        {
+            "id": 4,
+            "question": "Explain the Result type pattern for error handling. Why might you use it instead of try/catch?",
+            "preferredAnswer": "**Result type pattern:**\n\n```typescript\ntype Result<T, E = Error> = \n    | { success: true; data: T }\n    | { success: false; error: E };\n```\n\n**Example:**\n\n```typescript\nfunction divide(a: number, b: number): Result<number, string> {\n    if (b === 0) {\n        return { success: false, error: 'Cannot divide by zero' };\n    }\n    return { success: true, data: a / b };\n}\n\nconst result = divide(10, 0);\n\nif (result.success) {\n    console.log(result.data);   // TypeScript knows 'data' exists\n} else {\n    console.log(result.error);  // TypeScript knows 'error' exists\n}\n```\n\n**Advantages over try/catch:**\n\n1. **Explicit error handling** — Errors are part of the return type, forcing you to handle them:\n```typescript\nconst result = await fetchUser(id);  // Returns Result<User, Error>\n// Can't ignore the error case!\n```\n\n2. **Type safety** — TypeScript narrows types correctly:\n```typescript\nif (result.success) {\n    // TypeScript KNOWS result.data exists here\n    console.log(result.data.name);\n}\n```\n\n3. **No hidden control flow** — Exceptions can jump anywhere; Results are just values that flow normally.\n\n4. **Composable** — Easy to chain multiple operations that might fail.\n\n**When to use:**\n- Expected failures (validation, not found, business rules)\n- When you want to force callers to handle errors\n\n**When to use try/catch:**\n- Truly exceptional situations (network failures, out of memory)\n- When errors should bubble up multiple levels"
+        },
+        {
+            "id": 5,
+            "question": "Describe best practices for organizing types in a large TypeScript project. Where should types be defined and how should they be exported?",
+            "preferredAnswer": "**Recommended folder structure:**\n\n```\nsrc/\n├── types/                    # Shared type definitions\n│   ├── index.ts              # Re-exports all types\n│   ├── models.ts             # Domain entities (User, Product)\n│   ├── api.ts                # API types (requests, responses)\n│   └── common.ts             # Utility types\n│\n├── components/\n│   └── Button/\n│       ├── Button.tsx\n│       └── Button.types.ts   # Component-specific types\n```\n\n**Best practices:**\n\n**1. Centralize shared types:**\n```typescript\n// types/index.ts\nexport * from './models';\nexport * from './api';\nexport * from './common';\n\n// Usage anywhere\nimport type { User, ApiResponse } from '@/types';\n```\n\n**2. Colocate component-specific types:**\n```typescript\n// components/Button/Button.types.ts\nexport interface ButtonProps {\n    label: string;\n    onClick: () => void;\n}\n```\n\n**3. Use `import type` for type-only imports:**\n```typescript\nimport type { User } from '@/types';  // Removed at compile time\n```\n\n**4. Separate domain models from API types:**\n```typescript\n// types/models.ts - Internal domain\ninterface User { id: number; name: string; }\n\n// types/api.ts - API contracts\ninterface UserResponse { user: User; token: string; }\n```\n\n**5. Create utility types for common patterns:**\n```typescript\n// types/common.ts\nexport type Nullable<T> = T | null;\nexport type AsyncResult<T> = Promise<Result<T, Error>>;\n```\n\n**6. Use path aliases:**\n```json\n// tsconfig.json\n{ \"paths\": { \"@/types\": [\"./src/types\"] } }\n```\n\n**Key principle:** Types should be easy to find, import, and maintain. Avoid scattering type definitions across random files."
+        }
+    ]
+}

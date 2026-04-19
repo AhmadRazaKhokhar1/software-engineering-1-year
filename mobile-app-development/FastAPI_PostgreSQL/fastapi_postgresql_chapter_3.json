@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 3: Data Structures & Collections",
+    "chapterId": "python_core_chapter_3",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Which data structure is ordered, mutable, and allows duplicates?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Tuple",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Set",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "List",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Dictionary",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What is the correct way to create an empty set?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "{}",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "set()",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "[]",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "set[]",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What will fruits[-1] return if fruits = ['apple', 'banana', 'cherry']?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "apple",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "banana",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "cherry",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Error",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Which method adds an item to the end of a list?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "add()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "append()",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "insert()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "push()",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What is the output of this code?",
+            "codeSnippet": "numbers = [1, 2, 2, 3, 3, 3]\nunique = set(numbers)\nprint(len(unique))",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "6",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "3",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "4",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Error",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "How do you safely access a dictionary key that might not exist?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "dict[key]",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "dict.get(key)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "dict.find(key)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "dict.key()",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What will this code output?",
+            "codeSnippet": "person = ('Alice', 25)\nperson[0] = 'Bob'",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "('Bob', 25)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "TypeError",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "('Alice', 25)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "NameError",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Which operation returns items that are in BOTH set A and set B?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "A | B (union)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "A & B (intersection)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "A - B (difference)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "A ^ B (symmetric difference)",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What does numbers[2:5] return if numbers = [0, 1, 2, 3, 4, 5, 6]?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "[2, 3, 4, 5]",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "[2, 3, 4]",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "[3, 4, 5]",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "[1, 2, 3, 4]",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Which data structure would you use to store a user's profile information (name, email, age)?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "List",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Tuple",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Set",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Dictionary",
+                    "isCorrect": true
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between list.remove(x) and list.pop(). When would you use each?",
+            "preferredAnswer": "remove(x) deletes the first occurrence of value x from the list. If x doesn't exist, it raises a ValueError. Use this when you know the value but not the position.\n\nExample: fruits.remove('apple')\n\npop() removes and returns the item at a specific index (default is last item). Use this when you need the removed value or when working with the list as a stack.\n\nExample: last_item = fruits.pop() or second = fruits.pop(1)"
+        },
+        {
+            "id": 2,
+            "question": "Why can't you use a list as a dictionary key, but you can use a tuple?",
+            "preferredAnswer": "Dictionary keys must be immutable (unchangeable) because Python uses hashing to store keys efficiently. If a key could change after being added, the hash would become invalid and the dictionary would break.\n\nLists are mutable - you can modify them after creation. Tuples are immutable - once created, they cannot be changed. Therefore, tuples can be dictionary keys but lists cannot.\n\nExample: locations = {(40.7, -74.0): 'New York'}  # Valid\nlocations = {[40.7, -74.0]: 'New York'}  # TypeError"
+        },
+        {
+            "id": 3,
+            "question": "Write code to find the three most common items in a list.",
+            "preferredAnswer": "items = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple', 'date', 'banana']\n\n# Count occurrences\ncounts = {}\nfor item in items:\n    counts[item] = counts.get(item, 0) + 1\n\n# Sort by count (descending)\nsorted_items = sorted(counts.items(), key=lambda x: x[1], reverse=True)\n\n# Get top 3\ntop_3 = sorted_items[:3]\nprint(top_3)  # [('apple', 3), ('banana', 3), ('cherry', 1)]"
+        },
+        {
+            "id": 4,
+            "question": "What is the difference between shallow copy and deep copy? How do you create each for a list?",
+            "preferredAnswer": "Shallow copy creates a new list, but if the list contains mutable objects (like other lists), it only copies references to those objects, not the objects themselves.\n\nDeep copy creates a completely independent copy, including all nested objects.\n\nShallow copy:\noriginal = [1, 2, [3, 4]]\ncopy = original.copy()  # or original[:] or list(original)\n\nDeep copy:\nimport copy\noriginal = [1, 2, [3, 4]]\ndeep = copy.deepcopy(original)\n\nWith shallow copy, changing original[2][0] affects the copy. With deep copy, it doesn't."
+        },
+        {
+            "id": 5,
+            "question": "Write a function that takes two lists and returns their common elements (intersection) without using sets.",
+            "preferredAnswer": "def find_common(list1, list2):\n    common = []\n    for item in list1:\n        if item in list2 and item not in common:\n            common.append(item)\n    return common\n\n# Test\na = [1, 2, 3, 4, 5]\nb = [4, 5, 6, 7, 8]\nprint(find_common(a, b))  # [4, 5]\n\nNote: Using sets would be more efficient: list(set(list1) & set(list2)), but this demonstrates list iteration and conditional logic."
+        }
+    ]
+}

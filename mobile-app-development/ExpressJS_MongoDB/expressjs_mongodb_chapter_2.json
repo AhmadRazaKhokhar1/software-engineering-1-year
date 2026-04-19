@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 2: Express Routing, Middleware & Project Structure",
+    "chapterId": "express_mongodb_chapter_2",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is the primary purpose of Express Router?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To connect to databases",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To create modular, mountable route handlers",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To serve static files",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To parse JSON requests",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What does the { mergeParams: true } option do when creating a router?",
+            "codeSnippet": "const router = express.Router({ mergeParams: true });",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Merges query parameters with body",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Allows access to parent route parameters",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Combines multiple routers into one",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Enables route caching",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "How do you access the 'category' from this URL: /products?category=electronics",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "req.params.category",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "req.query.category",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "req.body.category",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "req.url.category",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What is wrong with this error-handling middleware?",
+            "codeSnippet": "const errorHandler = (err, req, res) => {\n  res.status(500).json({ error: err.message });\n};",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "The status code is wrong",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Error handlers must have 4 parameters (err, req, res, next)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "It should use res.send instead of res.json",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "The error message format is incorrect",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What does the asyncHandler wrapper function do?",
+            "codeSnippet": "const asyncHandler = (fn) => (req, res, next) => {\n  Promise.resolve(fn(req, res, next)).catch(next);\n};",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Makes synchronous functions asynchronous",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Catches errors in async functions and passes them to error middleware",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Speeds up async operations",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Converts callbacks to promises",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Which file should NEVER be committed to version control?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": ".env.example",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "package.json",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": ".env",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "config.js",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What is the correct order for middleware and error handlers?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Error handler → Routes → 404 handler",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Routes → Error handler → 404 handler",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Routes → 404 handler → Error handler",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "404 handler → Routes → Error handler",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Which API versioning strategy is used in this URL: /api/v2/users?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Header versioning",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Query parameter versioning",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "URL path versioning",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Content-Type versioning",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What is the purpose of the service layer in Express architecture?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To handle HTTP requests directly",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To contain business logic and data operations",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To define route paths",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To parse request bodies",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What will this code output for the URL /users/42?",
+            "codeSnippet": "app.get('/users/:id', (req, res) => {\n  console.log(typeof req.params.id);\n  res.send('OK');\n});",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "number",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "string",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "object",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "undefined",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between req.params, req.query, and req.body. Provide an example showing when each is used.",
+            "preferredAnswer": "**req.params** — Route parameters from the URL path\n**req.query** — Query string parameters after `?` in URL\n**req.body** — Data sent in the request body (POST, PUT, PATCH)\n\n**Example Request:**\n```\nPUT /api/users/42?notify=true\nContent-Type: application/json\n\n{\"name\": \"John\", \"email\": \"john@example.com\"}\n```\n\n**In Express handler:**\n```javascript\napp.put('/api/users/:id', (req, res) => {\n  // req.params — from URL path\n  console.log(req.params.id);      // '42'\n  \n  // req.query — from query string\n  console.log(req.query.notify);   // 'true'\n  \n  // req.body — from JSON payload\n  console.log(req.body.name);      // 'John'\n  console.log(req.body.email);     // 'john@example.com'\n});\n```\n\n**Key points:**\n- All `req.params` values are **strings** (must convert to numbers if needed)\n- All `req.query` values are **strings** (must convert manually)\n- `req.body` requires `express.json()` middleware to be parsed\n- `req.params` are required (part of route definition)\n- `req.query` are optional (additional filters/options)"
+        },
+        {
+            "id": 2,
+            "question": "Write a custom middleware that validates an API key from request headers. If the key is missing or invalid, return a 401 error. If valid, allow the request to proceed.",
+            "preferredAnswer": "```javascript\n// middleware/apiKeyAuth.js\nconst validateApiKey = (req, res, next) => {\n  // Get API key from header\n  const apiKey = req.headers['x-api-key'];\n  \n  // Check if API key exists\n  if (!apiKey) {\n    return res.status(401).json({\n      success: false,\n      error: {\n        message: 'API key is required',\n        hint: 'Include X-API-Key header in your request'\n      }\n    });\n  }\n  \n  // Valid API keys (in real app, check database or env)\n  const validApiKeys = [\n    process.env.API_KEY_1,\n    process.env.API_KEY_2\n  ];\n  \n  // Validate the key\n  if (!validApiKeys.includes(apiKey)) {\n    return res.status(401).json({\n      success: false,\n      error: {\n        message: 'Invalid API key'\n      }\n    });\n  }\n  \n  // API key is valid — attach info to request and proceed\n  req.apiKeyValid = true;\n  req.apiKeyId = apiKey.substring(0, 8); // For logging\n  \n  next();\n};\n\nmodule.exports = validateApiKey;\n```\n\n**Usage:**\n\n```javascript\nconst validateApiKey = require('./middleware/apiKeyAuth');\n\n// Apply to all API routes\napp.use('/api', validateApiKey);\n\n// Or apply to specific routes\napp.get('/api/data', validateApiKey, (req, res) => {\n  res.json({ data: 'protected content' });\n});\n```\n\n**Testing:**\n```bash\n# Without API key — 401 error\ncurl http://localhost:3000/api/data\n\n# With valid API key — success\ncurl http://localhost:3000/api/data -H \"X-API-Key: your-valid-key\"\n```"
+        },
+        {
+            "id": 3,
+            "question": "Explain how error-handling middleware differs from regular middleware. Why must error handlers have 4 parameters?",
+            "preferredAnswer": "**Regular Middleware** has 3 parameters: `(req, res, next)`\n- Processes requests before they reach route handlers\n- Can modify req/res, perform checks, log data\n- Calls `next()` to continue or sends a response\n\n**Error-Handling Middleware** has 4 parameters: `(err, req, res, next)`\n- The first parameter `err` receives the error object\n- Only runs when an error is passed via `next(error)`\n- Used to centralize error handling logic\n\n**Why 4 parameters?**\n\nExpress identifies error handlers **by their function signature**. It checks the number of parameters:\n\n```javascript\n// Express internally does something like:\nif (middleware.length === 4) {\n  // This is an error handler\n} else {\n  // This is regular middleware\n}\n```\n\n**If you use only 3 parameters, Express won't recognize it as an error handler:**\n\n```javascript\n// ❌ WRONG — Won't catch errors (only 3 params)\napp.use((err, req, res) => {\n  res.status(500).json({ error: err.message });\n});\n\n// ✅ CORRECT — Catches errors (4 params)\napp.use((err, req, res, next) => {\n  res.status(500).json({ error: err.message });\n});\n```\n\n**Error flow:**\n\n```javascript\n// Route throws error\napp.get('/api/data', (req, res, next) => {\n  try {\n    throw new Error('Something failed');\n  } catch (error) {\n    next(error); // Pass to error handler\n  }\n});\n\n// Error handler catches it\napp.use((err, req, res, next) => {\n  console.error(err.stack);\n  res.status(500).json({ error: err.message });\n});\n```\n\n**Key points:**\n- Error handlers must be defined **after** all routes\n- Even if you don't use `next`, include it in the signature\n- Multiple error handlers can be chained"
+        },
+        {
+            "id": 4,
+            "question": "Describe a recommended folder structure for a medium-sized Express application. Explain the purpose of each folder.",
+            "preferredAnswer": "```\nmy-express-app/\n├── src/\n│   ├── config/         # Configuration files\n│   │   ├── config.js    # App settings from env vars\n│   │   └── db.js        # Database connection\n│   │\n│   ├── controllers/     # Request handlers\n│   │   ├── userController.js\n│   │   └── productController.js\n│   │\n│   ├── middleware/      # Custom middleware\n│   │   ├── auth.js      # Authentication\n│   │   ├── errorHandler.js\n│   │   └── validate.js  # Request validation\n│   │\n│   ├── models/          # Data models (Mongoose schemas)\n│   │   ├── User.js\n│   │   └── Product.js\n│   │\n│   ├── routes/          # Route definitions\n│   │   ├── index.js     # Route aggregator\n│   │   ├── userRoutes.js\n│   │   └── productRoutes.js\n│   │\n│   ├── services/        # Business logic\n│   │   ├── userService.js\n│   │   └── emailService.js\n│   │\n│   ├── utils/           # Helper functions\n│   │   ├── AppError.js  # Custom error classes\n│   │   └── asyncHandler.js\n│   │\n│   └── app.js           # Express app setup\n│\n├── tests/               # Test files\n├── .env                 # Environment variables\n├── .gitignore\n├── package.json\n└── server.js            # Entry point\n```\n\n**Purpose of each folder:**\n\n| Folder | Purpose |\n|--------|---------|\n| **config/** | Centralize configuration, environment variables, database setup |\n| **controllers/** | Handle HTTP requests, call services, send responses |\n| **middleware/** | Reusable request processing (auth, validation, logging) |\n| **models/** | Database schemas and data structure definitions |\n| **routes/** | URL path definitions and route-controller mapping |\n| **services/** | Business logic, database operations (keeps controllers thin) |\n| **utils/** | Helper functions, custom classes used across the app |\n\n**Benefits:**\n- **Separation of concerns**: Each layer has one responsibility\n- **Testability**: Services can be tested independently\n- **Maintainability**: Easy to find and modify code\n- **Scalability**: New features follow established patterns"
+        },
+        {
+            "id": 5,
+            "question": "Create an Express Router for a 'products' resource with full CRUD operations. Include route-level middleware for validation and proper HTTP status codes.",
+            "preferredAnswer": "```javascript\n// routes/productRoutes.js\nconst express = require('express');\nconst router = express.Router();\n\n// Simulated database\nlet products = [\n  { id: 1, name: 'Laptop', price: 999, category: 'electronics' },\n  { id: 2, name: 'Shirt', price: 29, category: 'clothing' }\n];\nlet nextId = 3;\n\n// Validation middleware\nconst validateProduct = (req, res, next) => {\n  const { name, price, category } = req.body;\n  const errors = [];\n  \n  if (!name || name.trim() === '') {\n    errors.push('Name is required');\n  }\n  \n  if (price === undefined || price === null) {\n    errors.push('Price is required');\n  } else if (typeof price !== 'number' || price < 0) {\n    errors.push('Price must be a positive number');\n  }\n  \n  if (!category || category.trim() === '') {\n    errors.push('Category is required');\n  }\n  \n  if (errors.length > 0) {\n    return res.status(400).json({\n      success: false,\n      errors\n    });\n  }\n  \n  next();\n};\n\n// Validate ID parameter\nconst validateId = (req, res, next) => {\n  const id = parseInt(req.params.id);\n  \n  if (isNaN(id) || id <= 0) {\n    return res.status(400).json({\n      success: false,\n      error: 'Invalid product ID'\n    });\n  }\n  \n  req.productId = id;\n  next();\n};\n\n// GET all products with filtering\nrouter.get('/', (req, res) => {\n  let result = [...products];\n  \n  // Filter by category\n  if (req.query.category) {\n    result = result.filter(p => \n      p.category.toLowerCase() === req.query.category.toLowerCase()\n    );\n  }\n  \n  // Filter by min price\n  if (req.query.minPrice) {\n    result = result.filter(p => p.price >= parseFloat(req.query.minPrice));\n  }\n  \n  // Sort\n  if (req.query.sort === 'price') {\n    result.sort((a, b) => a.price - b.price);\n  }\n  \n  res.status(200).json({\n    success: true,\n    count: result.length,\n    data: result\n  });\n});\n\n// GET single product\nrouter.get('/:id', validateId, (req, res) => {\n  const product = products.find(p => p.id === req.productId);\n  \n  if (!product) {\n    return res.status(404).json({\n      success: false,\n      error: 'Product not found'\n    });\n  }\n  \n  res.status(200).json({\n    success: true,\n    data: product\n  });\n});\n\n// POST create product\nrouter.post('/', validateProduct, (req, res) => {\n  const { name, price, category } = req.body;\n  \n  const newProduct = {\n    id: nextId++,\n    name: name.trim(),\n    price,\n    category: category.trim().toLowerCase(),\n    createdAt: new Date()\n  };\n  \n  products.push(newProduct);\n  \n  res.status(201).json({\n    success: true,\n    data: newProduct\n  });\n});\n\n// PUT update product\nrouter.put('/:id', validateId, validateProduct, (req, res) => {\n  const index = products.findIndex(p => p.id === req.productId);\n  \n  if (index === -1) {\n    return res.status(404).json({\n      success: false,\n      error: 'Product not found'\n    });\n  }\n  \n  const { name, price, category } = req.body;\n  \n  products[index] = {\n    ...products[index],\n    name: name.trim(),\n    price,\n    category: category.trim().toLowerCase(),\n    updatedAt: new Date()\n  };\n  \n  res.status(200).json({\n    success: true,\n    data: products[index]\n  });\n});\n\n// DELETE product\nrouter.delete('/:id', validateId, (req, res) => {\n  const index = products.findIndex(p => p.id === req.productId);\n  \n  if (index === -1) {\n    return res.status(404).json({\n      success: false,\n      error: 'Product not found'\n    });\n  }\n  \n  products.splice(index, 1);\n  \n  res.status(204).send();\n});\n\nmodule.exports = router;\n```\n\n**Usage in app.js:**\n```javascript\nconst productRoutes = require('./routes/productRoutes');\napp.use('/api/v1/products', productRoutes);\n```\n\n**HTTP Status Codes Used:**\n- `200` — Success (GET, PUT)\n- `201` — Created (POST)\n- `204` — No Content (DELETE)\n- `400` — Bad Request (validation errors)\n- `404` — Not Found"
+        }
+    ]
+}

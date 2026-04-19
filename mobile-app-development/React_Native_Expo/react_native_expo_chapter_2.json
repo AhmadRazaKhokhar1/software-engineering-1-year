@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 2: Core Components, StyleSheet & Flexbox Layout",
+    "chapterId": "react_native_expo_chapter_2",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "The default flexDirection in React Native is:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "row", "isCorrect": false },
+                { "key": "B", "text": "column", "isCorrect": true },
+                { "key": "C", "text": "wrap", "isCorrect": false },
+                { "key": "D", "text": "grid", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Which component should wrap plain text content?",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "View", "isCorrect": false },
+                { "key": "B", "text": "Text", "isCorrect": true },
+                { "key": "C", "text": "Fragment", "isCorrect": false },
+                { "key": "D", "text": "ScrollView", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "StyleSheet.create primarily helps with:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Network caching", "isCorrect": false },
+                { "key": "B", "text": "Registered style objects and validation", "isCorrect": true },
+                { "key": "C", "text": "SQL migrations", "isCorrect": false },
+                { "key": "D", "text": "iOS code signing", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "To fill the entire screen height, a common pattern on the root View is:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "height: 100", "isCorrect": false },
+                { "key": "B", "text": "flex: 1", "isCorrect": true },
+                { "key": "C", "text": "width: 100%", "isCorrect": false },
+                { "key": "D", "text": "position: absolute on all children", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "For touchable feedback on a custom child, prefer:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Text with onClick", "isCorrect": false },
+                { "key": "B", "text": "Pressable (modern) or TouchableOpacity (legacy patterns)", "isCorrect": true },
+                { "key": "C", "text": "Image only", "isCorrect": false },
+                { "key": "D", "text": "ScrollView onPress", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "ScrollView is appropriate when:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Rendering 10,000 list rows for best performance", "isCorrect": false },
+                { "key": "B", "text": "Scrolling a small or bounded amount of content", "isCorrect": true },
+                { "key": "C", "text": "Virtualizing images only", "isCorrect": false },
+                { "key": "D", "text": "Replacing navigation", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Safe area handling accounts for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Database transactions", "isCorrect": false },
+                { "key": "B", "text": "Notches, status bars, and home indicators", "isCorrect": true },
+                { "key": "C", "text": "HTTPS only", "isCorrect": false },
+                { "key": "D", "text": "Keyboard language", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "justifyContent controls alignment:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Along the cross axis", "isCorrect": false },
+                { "key": "B", "text": "Along the main axis", "isCorrect": true },
+                { "key": "C", "text": "Outside the layout tree", "isCorrect": false },
+                { "key": "D", "text": "Only for Text", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Local images are typically loaded with:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "require('./file.png')", "isCorrect": true },
+                { "key": "B", "text": "import from 'fs'", "isCorrect": false },
+                { "key": "C", "text": "<img src>", "isCorrect": false },
+                { "key": "D", "text": "document.querySelector", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "alignItems on a column flex container affects:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Horizontal positioning of children (cross axis)", "isCorrect": true },
+                { "key": "B", "text": "Vertical spacing along scroll", "isCorrect": false },
+                { "key": "C", "text": "Font family", "isCorrect": false },
+                { "key": "D", "text": "Network headers", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why does React Native default flexDirection to column, unlike CSS flexbox on the web?",
+            "preferredAnswer": "Mobile layouts are overwhelmingly **vertical**; column default matches common screen composition. Web often uses **row** nav bars; RN optimizes for **portrait** content stacks."
+        },
+        {
+            "id": 2,
+            "question": "When would you choose FlatList instead of ScrollView?",
+            "preferredAnswer": "**FlatList** virtualizes rows and mounts only visible items—needed for **long or infinite** lists. **ScrollView** renders **all** children at once, which hurts performance for large lists."
+        },
+        {
+            "id": 3,
+            "question": "Explain flex: 1 on a child inside a flex container.",
+            "preferredAnswer": "**flex: 1** makes the child **grow** to consume available space along the main axis within the parent’s constraints, sharing space with siblings according to flex rules."
+        },
+        {
+            "id": 4,
+            "question": "What problem does safe-area-context solve?",
+            "preferredAnswer": "It applies **insets** so content is not hidden under **notches**, **status bars**, or **home indicators**, differing per device."
+        },
+        {
+            "id": 5,
+            "question": "Give one reason StyleSheet.create is preferred over inline style objects everywhere.",
+            "preferredAnswer": "Centralized styles are easier to **maintain**, **reuse**, and **validate**; RN also documents slight performance benefits from registered styles versus recreating plain objects on every render in hot paths."
+        }
+    ]
+}

@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 6: Advanced Python Concepts & Best Practices",
+    "chapterId": "python_core_chapter_6",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What keyword is used to create a generator?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "return",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "yield",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "continue",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "break",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Which symbol is used to apply a decorator in Python?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "#",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "@",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "&",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "^",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What does [x**2 for x in range(3)] output?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "[1, 4, 9]",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "[0, 1, 4]",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "[0, 2, 4]",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "[0, 1, 2]",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Which file format is commonly used for modern Python package metadata?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": ".exe",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": ".py",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": ".txt",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "pyproject.toml",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What is the primary benefit of a virtual environment?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "It compiles code faster",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "It isolates project dependencies",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "It speeds up internet connection",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "It removes Python globally",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Which method allows iterating through a collection one item at a time?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "__next__()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "yield()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "iter()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "All of the above interact together",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Which context manager method is called when exiting the block?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "__start__",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "__close__",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "__exit__",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "__end__",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "According to PEP 8, what naming convention is used for constants?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "camelCase",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "snake_case",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "CONSTANT_CASE",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "ConstantCase",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What complexity class represents O(1)?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Logarithmic",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Linear",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Constant",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Exponential",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "How do you organize imports alphabetically?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "isort",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "black",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "flake8",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "pip",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between a regular function return and a generator yield.",
+            "preferredAnswer": "A function with return executes fully and returns a single value, terminating immediately.\n\nA function with yield pauses execution, returns a value, and remembers where it left off. When called again, it resumes right after the yield statement. This allows for lazy evaluation and memory efficiency, especially with large datasets."
+        },
+        {
+            "id": 2,
+            "question": "Write a decorator that prints 'Start' and 'End' around a function call.",
+            "preferredAnswer": "def timer_decorator(func):\n    def wrapper(*args, **kwargs):\n        print('Start')\n        result = func(*args, **kwargs)\n        print('End')\n        return result\n    return wrapper\n\n@timer_decorator\ndef greet(name):\n    print(f'Hello {name}')\n\ngreet('Alice')"
+        },
+        {
+            "id": 3,
+            "question": "Convert this loop to a dictionary comprehension:\nresults = {}\nfor i in range(5):\n    results[i] = i*i",
+            "preferredAnswer": "results = {i: i**2 for i in range(5)}\n\nThis achieves the same output {0:0, 1:1, 2:4, 3:9, 4:16} in a single line with better readability."
+        },
+        {
+            "id": 4,
+            "question": "Why should you put your venv folder in .gitignore?",
+            "preferredAnswer": "Because virtual environments contain thousands of downloaded library files specific to your machine and operating system. If committed:\n1. It bloats repository size.\n2. It causes conflicts when others clone it on different OS (e.g., macOS vs Windows).\n3. Users might accidentally install those packages instead of installing fresh dependencies."
+        },
+        {
+            "id": 5,
+            "question": "What is the purpose of the `if __name__ == '__main__':` block?",
+            "preferredAnswer": "It ensures the code inside only runs if the script is executed directly, not when imported as a module.\n\nExample:\nimport mymodule\n# If I imported mymodule elsewhere, I don't want the main block running instantly.\nif __name__ == '__main__':\n    main()\n\nThis promotes reusability of code."
+        }
+    ]
+}

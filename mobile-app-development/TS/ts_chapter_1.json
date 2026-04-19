@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 1: TypeScript Fundamentals & Core Types",
+    "chapterId": "typescript_chapter_1",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is TypeScript?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "A replacement for JavaScript",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "A superset of JavaScript with optional static typing",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "A JavaScript framework",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "A runtime environment for JavaScript",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "When does TypeScript catch errors?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "At runtime when code executes",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "During compilation before code runs",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Only in production",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Never, it only provides warnings",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What is the output of this code?",
+            "codeSnippet": "let age: number = 25;\nage = \"25\";\nconsole.log(age);",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "25",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "\"25\"",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Compilation error",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "undefined",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Which type should you use instead of 'any' for truly unknown data?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "object",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "unknown",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "void",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "never",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What does the 'void' type represent?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "An empty object",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "No return value from a function",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "A null value",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "An undefined variable",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What will TypeScript infer as the type of 'result'?",
+            "codeSnippet": "let result = 10 + 5;",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "any",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "number",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "string",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "unknown",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Which syntax correctly defines an array of strings?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "let names: [string] = [\"Alice\", \"Bob\"];",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "let names: string[] = [\"Alice\", \"Bob\"];",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "let names: Array = [\"Alice\", \"Bob\"];",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "let names: string = [\"Alice\", \"Bob\"];",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What is a tuple in TypeScript?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "An array with any number of elements of any type",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "An array with a fixed number of elements where each has a specific type",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "An object with key-value pairs",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "A type alias for an array",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What does the 'readonly' modifier do?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Makes a property optional",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Prevents a property from being modified after initialization",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Makes a property private",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Allows a property to be null",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What is the purpose of type aliases?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To create new primitive types",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To give a name to any type for reusability",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To convert types at runtime",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To disable type checking",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the key differences between TypeScript and JavaScript. Why would a team choose TypeScript for a large project?",
+            "preferredAnswer": "**TypeScript is a superset of JavaScript** that adds optional static typing and compile-time error checking. The key differences are:\n\n**1. Type Safety:**\n- JavaScript: Errors appear at runtime when code executes\n- TypeScript: Errors caught during development before code runs\n\n**2. Tooling:**\n- JavaScript: Basic autocomplete\n- TypeScript: Advanced IDE support with intelligent autocomplete, inline documentation, and refactoring tools\n\n**3. Compilation:**\n- JavaScript: Runs directly in browsers/Node.js\n- TypeScript: Must be compiled to JavaScript first\n\n**Why teams choose TypeScript for large projects:**\n\n1. **Catches bugs early** — prevents runtime errors by catching type mismatches during development\n2. **Better collaboration** — types serve as contracts between different parts of code and team members\n3. **Safer refactoring** — renaming or restructuring code is much safer\n4. **Self-documenting** — types act as inline documentation\n5. **Scales better** — essential for codebases with multiple developers and thousands of lines of code\n\nFor small projects, JavaScript might be fine. But as projects grow, TypeScript's benefits become invaluable."
+        },
+        {
+            "id": 2,
+            "question": "What is the difference between 'any' and 'unknown'? When should you use each?",
+            "preferredAnswer": "**`any`** and **`unknown`** both represent values whose type is not known, but they behave very differently:\n\n**`any` — No type safety (avoid it):**\n```typescript\nlet value: any = \"Hello\";\nvalue.toUpperCase();  // ✅ Allowed\nvalue.nonExistent();  // ✅ No error, but will crash at runtime!\n```\n\n`any` disables all type checking. TypeScript treats it like JavaScript — no protection, no autocomplete.\n\n**`unknown` — Type-safe (preferred):**\n```typescript\nlet value: unknown = \"Hello\";\nvalue.toUpperCase();  // ❌ ERROR: Object is of type 'unknown'\n\n// Type check required\nif (typeof value === \"string\") {\n    value.toUpperCase();  // ✅ Now safe\n}\n```\n\n`unknown` forces you to verify the type before using it.\n\n**When to use each:**\n- **`any`**: When migrating JavaScript to TypeScript incrementally (temporary)\n- **`unknown`**: When working with truly dynamic data (API responses, user input) where you don't know the type ahead of time but want to maintain safety\n\n**Rule:** Always prefer `unknown` over `any`. If you don't know the type, make TypeScript force you to check it."
+        },
+        {
+            "id": 3,
+            "question": "Create a type alias called 'Product' with the following properties: id (number), name (string), price (number), inStock (boolean, optional). Then create a product object using this type.",
+            "preferredAnswer": "```typescript\n// Define the Product type alias\ntype Product = {\n    id: number;\n    name: string;\n    price: number;\n    inStock?: boolean;  // Optional property\n};\n\n// Create product objects\nconst laptop: Product = {\n    id: 101,\n    name: \"MacBook Pro\",\n    price: 1999.99,\n    inStock: true\n};\n\nconst headphones: Product = {\n    id: 102,\n    name: \"AirPods Pro\",\n    price: 249.99\n    // inStock is optional, can be omitted\n};\n\n// Function using the Product type\nfunction displayProduct(product: Product): void {\n    console.log(`${product.name} - $${product.price}`);\n    if (product.inStock !== undefined) {\n        console.log(`In stock: ${product.inStock}`);\n    }\n}\n\ndisplayProduct(laptop);\n// Output:\n// MacBook Pro - $1999.99\n// In stock: true\n```\n\nThe `?` makes `inStock` optional, meaning it can be present or omitted without causing errors."
+        },
+        {
+            "id": 4,
+            "question": "Explain the difference between arrays and tuples in TypeScript. Provide an example of when you would use each.",
+            "preferredAnswer": "**Arrays** hold multiple values of the **same type** (or union of types) with **no fixed length**:\n\n```typescript\n// Array of numbers\nlet scores: number[] = [85, 90, 78, 92];\nscores.push(88);  // Can add more elements\n\n// Array of strings\nlet names: string[] = [\"Alice\", \"Bob\"];\nnames.push(\"Charlie\");\n```\n\n**Tuples** have a **fixed length** and **each position has a specific type**:\n\n```typescript\n// Tuple: [string, number]\nlet person: [string, number] = [\"Alice\", 25];\n\nperson = [25, \"Alice\"];  // ❌ ERROR: Wrong order\nperson = [\"Alice\", 25, true];  // ❌ ERROR: Too many elements\n```\n\n**When to use arrays:**\n- List of similar items (user names, product IDs, scores)\n- Length is variable and can grow/shrink\n- All elements are the same type\n\n**When to use tuples:**\n- Fixed structure data (coordinates: `[x, y]`, RGB colors: `[r, g, b]`)\n- Function returning multiple values of different types\n- React hooks: `const [count, setCount] = useState(0);`\n\n**Real-world examples:**\n\n```typescript\n// Array: List of temperatures (variable length)\nlet temperatures: number[] = [72, 68, 75, 70, 73];\n\n// Tuple: Geographic coordinates (fixed: latitude, longitude)\nlet location: [number, number] = [40.7128, -74.0060];\n\n// Tuple: Database row (id, name, active status)\nlet user: [number, string, boolean] = [101, \"Alice\", true];\n```"
+        },
+        {
+            "id": 5,
+            "question": "What is type inference? When should you rely on it vs. explicitly declaring types?",
+            "preferredAnswer": "**Type inference** is TypeScript's ability to **automatically determine** a variable's type based on its value:\n\n```typescript\n// TypeScript infers the type\nlet message = \"Hello\";  // Inferred as string\nlet count = 42;         // Inferred as number\nlet isActive = true;    // Inferred as boolean\n\nmessage = 123;  // ❌ ERROR: Type 'number' is not assignable to type 'string'\n```\n\nTypeScript is smart enough to know the type without you writing it explicitly.\n\n**When to RELY ON type inference:**\n\n1. **Simple variable initialization:**\n```typescript\nlet name = \"Alice\";  // Clear, inferred as string\nlet age = 25;        // Clear, inferred as number\n```\n\n2. **Function return values (when obvious):**\n```typescript\nfunction add(a: number, b: number) {\n    return a + b;  // Inferred as number\n}\n```\n\n**When to EXPLICITLY declare types:**\n\n1. **Variables declared without initialization:**\n```typescript\nlet userId: number;  // Must specify type\nuserId = 123;\n```\n\n2. **Function parameters (always):**\n```typescript\nfunction greet(name: string) {  // Explicit type required\n    console.log(`Hello, ${name}`);\n}\n```\n\n3. **Complex or ambiguous types:**\n```typescript\nlet data: User | null = null;  // Explicitly show intent\n```\n\n4. **For better readability in complex code:**\n```typescript\nlet config: AppConfig = loadConfig();  // Clear what config is\n```\n\n**Best practice:** Let TypeScript infer when it's obvious. Add explicit types when it improves clarity or is required."
+        }
+    ]
+}

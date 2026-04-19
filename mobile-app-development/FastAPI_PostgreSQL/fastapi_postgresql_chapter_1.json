@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 1: Backend & FastAPI Fundamentals",
+    "chapterId": "fastapi_sql_chapter_1",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What does API stand for?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Application Programming Interface",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "Automated Personal Integration",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Advanced Protocol Internet",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Active Programming Instance",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Which HTTP method is typically used to create a new resource?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "GET",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "PUT",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "POST",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "SEND",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What command runs a FastAPI app with auto-reload?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "python run.py",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "uvicorn main:app --reload",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "flask run",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "npm start",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Where is the automatic documentation located in FastAPI by default?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "/swagger",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "/api-docs",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "/docs",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "/help",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Which HTTP status code indicates 'Resource Created'?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "200",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "201",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "404",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "500",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "In FastAPI, what defines the location and type of a parameter in the URL?",
+            "codeSnippet": "@app.get(\"/items/{item_id}\")",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Query Parameter",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Header Parameter",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Path Parameter",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Body Parameter",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Which server is recommended for running FastAPI in production?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Gunicorn",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Uvicorn",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Nginx",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Node.js",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Which keyword is used to define a route handler in FastAPI?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "@route",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "@endpoint",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "@app.get()",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "@function",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What format does FastAPI automatically return for responses?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "XML",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "HTML",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "JSON",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "CSV",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Why is FastAPI considered faster than Flask?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "It uses compiled C extensions",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "It natively supports asynchronous programming (asyncio)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "It is written entirely in Rust",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "It caches everything by default",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between Path Parameters and Query Parameters with examples.",
+            "preferredAnswer": "Path parameters are mandatory values embedded in the URL structure to identify a specific resource.\nExample: GET /users/123 identifies User ID 123.\n\nQuery parameters are optional filtering/search criteria appended after '?'.\nExample: GET /users?active=true filters active users.\nPath identifies 'Who', Query filters 'Which subset'."
+        },
+        {
+            "id": 2,
+            "question": "List three benefits of using FastAPI over Flask for a new project.",
+            "preferredAnswer": "1. Native Async/Await support (async/await keywords built-in).\n2. Automatic Data Validation using Pydantic models (no manual checking).\n3. Automatic Interactive Documentation (Swagger UI) generated from code types without extra plugins."
+        },
+        {
+            "id": 3,
+            "question": "Write a FastAPI endpoint that returns a greeting message with a user name passed as a path parameter.",
+            "preferredAnswer": "python\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n@app.get(\"/greet/{name}\")\ndef greet_user(name: str):\n    return {\"message\": f\"Hello, {name}!\"}\n\n\nThis creates a dynamic URL like /greet/Alice that automatically extracts 'Alice' into the function argument."
+        },
+        {
+            "id": 4,
+            "question": "What is the purpose of the '--reload' flag when starting Uvicorn?",
+            "preferredAnswer": "The --reload flag enables auto-restart. If you modify any Python file in your project while the server is running, Uvicorn detects the change and automatically restarts the server process. This saves time during development because you don't need to stop/start manually after every change. Do not use in production."
+        },
+        {
+            "id": 5,
+            "question": "Why is 201 CREATED used instead of 200 OK for POST requests?",
+            "preferredAnswer": "While 200 OK means the request was processed successfully, 201 specifically indicates that a NEW resource was created as a result. Clients may rely on the 201 status code to trigger different behaviors (like redirecting to the new resource URL) compared to a simple update which would remain 200."
+        }
+    ]
+}

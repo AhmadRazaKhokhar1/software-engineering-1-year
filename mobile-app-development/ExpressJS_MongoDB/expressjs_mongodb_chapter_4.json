@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 4: CRUD Operations with Express & MongoDB",
+    "chapterId": "express_mongodb_chapter_4",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Which Mongoose method returns the updated document after modification?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Model.updateOne()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Model.findByIdAndUpdate() with { new: true }",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Model.update()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Model.modifyById()",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What does the 'runValidators: true' option do in findByIdAndUpdate?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Runs the query faster",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Validates the update data against schema rules",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Validates the document ID",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Runs pre-save middleware",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "How do you convert the query parameter 'price[gte]=100' to MongoDB format?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "{ price: { gte: 100 } }",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "{ price: { $gte: 100 } }",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "{ price: { >=: 100 } }",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "{ price: 100 }",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What is the correct way to skip 20 documents and return the next 10?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Model.find().skip(20).limit(10)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "Model.find().limit(10).skip(20)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Model.find().offset(20).take(10)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Model.find().page(3).perPage(10)",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Which MongoDB error code indicates a duplicate key violation?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "10001",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "11000",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "12000",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "404",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What does this code return?",
+            "codeSnippet": "const products = await Product.find()\n  .select('name price -_id')\n  .sort('-price');",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "All fields sorted by price ascending",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Only name and price (no _id), sorted by price descending",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "All products with price field removed",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Products with negative prices",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What is the purpose of the asyncHandler wrapper function?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To make synchronous functions asynchronous",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To catch errors in async functions and pass them to error middleware",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To speed up async operations",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To convert callbacks to promises",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Which HTTP status code should be returned when creating a new resource?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "200 OK",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "201 Created",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "204 No Content",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "202 Accepted",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What is soft delete and why is it preferred?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Deleting soft data types; it's faster",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Marking records as inactive instead of removing; allows data recovery",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Deleting data gradually; reduces server load",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Deleting without confirmation",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What does this query return?",
+            "codeSnippet": "const count = await Product.countDocuments({ \n  category: 'electronics',\n  price: { $gte: 100, $lte: 500 }\n});",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "All electronics products between $100-$500",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "The count of electronics products priced $100-$500",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "The first electronics product in the range",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "The sum of prices",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain how to connect an Express application to MongoDB using Mongoose. Include connection string format and error handling.",
+            "preferredAnswer": "**Database Connection Module:**\n\n```javascript\n// src/config/db.js\nconst mongoose = require('mongoose');\n\nconst connectDB = async () => {\n  try {\n    const conn = await mongoose.connect(process.env.MONGODB_URI);\n    console.log(`MongoDB Connected: ${conn.connection.host}`);\n    \n    // Event listeners\n    mongoose.connection.on('error', (err) => {\n      console.error(`MongoDB error: ${err}`);\n    });\n    \n    mongoose.connection.on('disconnected', () => {\n      console.warn('MongoDB disconnected');\n    });\n    \n  } catch (error) {\n    console.error(`Error: ${error.message}`);\n    process.exit(1);\n  }\n};\n\nmodule.exports = connectDB;\n```\n\n**Connection String Formats:**\n\n```env\n# Local MongoDB\nMONGODB_URI=mongodb://localhost:27017/myapp\n\n# MongoDB Atlas\nMONGODB_URI=mongodb+srv://user:password@cluster.mongodb.net/myapp\n```\n\n**Using in server.js:**\n\n```javascript\nrequire('dotenv').config();\nconst connectDB = require('./src/config/db');\n\nconst startServer = async () => {\n  await connectDB();\n  app.listen(3000);\n};\n\nstartServer();\n```\n\n**Key Points:**\n- Use environment variables for connection strings\n- Handle connection errors with try/catch\n- Listen to connection events for monitoring\n- Connect before starting the server"
+        },
+        {
+            "id": 2,
+            "question": "Describe the difference between findByIdAndUpdate() and using find() then save(). When would you use each?",
+            "preferredAnswer": "**findByIdAndUpdate() - Single Operation:**\n\n```javascript\nconst product = await Product.findByIdAndUpdate(\n  id,\n  { price: 99.99 },\n  { new: true, runValidators: true }\n);\n```\n\n- Single database operation (faster)\n- Does NOT trigger pre('save') middleware\n- Does NOT trigger post('save') middleware\n- Validators only run with `runValidators: true`\n\n**find() then save() - Two Operations:**\n\n```javascript\nconst product = await Product.findById(id);\nproduct.price = 99.99;\nawait product.save();\n```\n\n- Two database operations (slower)\n- DOES trigger pre('save') middleware\n- DOES trigger post('save') middleware\n- All validators run automatically\n- Can use `isModified()` checks\n\n**When to Use Each:**\n\n| findByIdAndUpdate() | find() + save() |\n|---------------------|------------------|\n| Simple field updates | Password hashing needed |\n| Performance critical | Need middleware to run |\n| No middleware needed | Complex conditional logic |\n| Atomic operations | Calculated fields |\n\n**Example - Password (must use save):**\n\n```javascript\n// Correct - triggers password hashing middleware\nconst user = await User.findById(id);\nuser.password = newPassword;\nawait user.save();\n\n// Wrong - password stored as plain text!\nawait User.findByIdAndUpdate(id, { password: newPassword });\n```"
+        },
+        {
+            "id": 3,
+            "question": "Implement a pagination system with page number, limit, total count, and navigation helpers.",
+            "preferredAnswer": "**APIFeatures Class:**\n\n```javascript\nclass APIFeatures {\n  constructor(query, queryString) {\n    this.query = query;\n    this.queryString = queryString;\n  }\n  \n  paginate() {\n    const page = parseInt(this.queryString.page, 10) || 1;\n    const limit = Math.min(parseInt(this.queryString.limit, 10) || 10, 100);\n    const skip = (page - 1) * limit;\n    \n    this.query = this.query.skip(skip).limit(limit);\n    this.pagination = { page, limit, skip };\n    \n    return this;\n  }\n}\n```\n\n**Controller:**\n\n```javascript\nexports.getAllProducts = async (req, res) => {\n  const totalCount = await Product.countDocuments();\n  \n  const features = new APIFeatures(Product.find(), req.query).paginate();\n  const products = await features.query;\n  \n  const { page, limit } = features.pagination;\n  const totalPages = Math.ceil(totalCount / limit);\n  \n  res.json({\n    success: true,\n    count: products.length,\n    pagination: {\n      currentPage: page,\n      totalPages,\n      totalItems: totalCount,\n      itemsPerPage: limit,\n      hasNextPage: page < totalPages,\n      hasPrevPage: page > 1\n    },\n    data: products\n  });\n};\n```\n\n**Usage:**\n\n```bash\nGET /api/products?page=2&limit=10\n```\n\n**Response:**\n\n```json\n{\n  \"success\": true,\n  \"count\": 10,\n  \"pagination\": {\n    \"currentPage\": 2,\n    \"totalPages\": 5,\n    \"totalItems\": 47,\n    \"hasNextPage\": true,\n    \"hasPrevPage\": true\n  },\n  \"data\": [...]\n}\n```"
+        },
+        {
+            "id": 4,
+            "question": "Create an error handling system that handles Mongoose validation errors, duplicate key errors, and cast errors.",
+            "preferredAnswer": "**Custom Error Class:**\n\n```javascript\n// src/utils/AppError.js\nclass AppError extends Error {\n  constructor(message, statusCode) {\n    super(message);\n    this.statusCode = statusCode;\n    this.status = `${statusCode}`.startsWith('4') ? 'fail' : 'error';\n    this.isOperational = true;\n  }\n}\nmodule.exports = AppError;\n```\n\n**Error Handler Middleware:**\n\n```javascript\n// src/middleware/errorHandler.js\nconst AppError = require('../utils/AppError');\n\nconst handleCastError = (err) => {\n  return new AppError(`Invalid ${err.path}: ${err.value}`, 400);\n};\n\nconst handleDuplicateKey = (err) => {\n  const field = Object.keys(err.keyValue)[0];\n  return new AppError(`Duplicate value for '${field}'`, 409);\n};\n\nconst handleValidationError = (err) => {\n  const messages = Object.values(err.errors).map(e => e.message);\n  return new AppError(`Validation failed: ${messages.join('. ')}`, 400);\n};\n\nmodule.exports = (err, req, res, next) => {\n  err.statusCode = err.statusCode || 500;\n  \n  if (process.env.NODE_ENV === 'development') {\n    res.status(err.statusCode).json({\n      success: false,\n      message: err.message,\n      stack: err.stack\n    });\n  } else {\n    let error = { ...err, message: err.message };\n    \n    if (err.name === 'CastError') error = handleCastError(err);\n    if (err.code === 11000) error = handleDuplicateKey(err);\n    if (err.name === 'ValidationError') error = handleValidationError(err);\n    \n    res.status(error.statusCode || 500).json({\n      success: false,\n      message: error.isOperational ? error.message : 'Something went wrong'\n    });\n  }\n};\n```\n\n**Async Handler:**\n\n```javascript\n// src/utils/asyncHandler.js\nmodule.exports = (fn) => (req, res, next) => {\n  Promise.resolve(fn(req, res, next)).catch(next);\n};\n```\n\n**Usage in Controller:**\n\n```javascript\nconst asyncHandler = require('../utils/asyncHandler');\nconst AppError = require('../utils/AppError');\n\nexports.getProduct = asyncHandler(async (req, res, next) => {\n  const product = await Product.findById(req.params.id);\n  \n  if (!product) {\n    return next(new AppError('Product not found', 404));\n  }\n  \n  res.json({ success: true, data: product });\n});\n```"
+        },
+        {
+            "id": 5,
+            "question": "Write a complete controller for creating a product with validation, duplicate checking, and proper error handling.",
+            "preferredAnswer": "```javascript\n// src/controllers/productController.js\nconst Product = require('../models/Product');\nconst asyncHandler = require('../utils/asyncHandler');\nconst AppError = require('../utils/AppError');\n\n// @desc    Create a new product\n// @route   POST /api/v1/products\n// @access  Private/Admin\nexports.createProduct = asyncHandler(async (req, res, next) => {\n  const { name, description, price, category, stock } = req.body;\n  \n  // Validation\n  if (!name || !description || !price || !category) {\n    return next(new AppError('Please provide all required fields', 400));\n  }\n  \n  if (price <= 0) {\n    return next(new AppError('Price must be greater than 0', 400));\n  }\n  \n  // Check for duplicate slug\n  const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-');\n  const existingProduct = await Product.findOne({ slug });\n  \n  if (existingProduct) {\n    return next(new AppError('A product with this name already exists', 409));\n  }\n  \n  // Create product\n  const product = await Product.create({\n    name,\n    description,\n    price,\n    category,\n    stock: stock || 0\n  });\n  \n  res.status(201).json({\n    success: true,\n    message: 'Product created successfully',\n    data: product\n  });\n});\n```\n\n**With Express-Validator:**\n\n```javascript\n// src/middleware/validators/productValidator.js\nconst { body, validationResult } = require('express-validator');\n\nexports.createProductRules = [\n  body('name')\n    .trim()\n    .notEmpty().withMessage('Name is required')\n    .isLength({ min: 3, max: 100 }).withMessage('Name: 3-100 chars'),\n  \n  body('description')\n    .trim()\n    .notEmpty().withMessage('Description is required')\n    .isLength({ min: 10 }).withMessage('Description: min 10 chars'),\n  \n  body('price')\n    .notEmpty().withMessage('Price is required')\n    .isFloat({ min: 0.01 }).withMessage('Price must be > 0'),\n  \n  body('category')\n    .notEmpty().withMessage('Category is required')\n    .isIn(['electronics', 'clothing', 'books', 'home', 'other'])\n    .withMessage('Invalid category')\n];\n\nexports.validate = (req, res, next) => {\n  const errors = validationResult(req);\n  if (!errors.isEmpty()) {\n    return res.status(400).json({\n      success: false,\n      errors: errors.array().map(e => ({ field: e.path, message: e.msg }))\n    });\n  }\n  next();\n};\n```\n\n**Route:**\n\n```javascript\nconst { createProductRules, validate } = require('../middleware/validators/productValidator');\n\nrouter.post('/', createProductRules, validate, createProduct);\n```"
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 5: Hooks — State, Effects & Mobile Lifecycle",
+    "chapterId": "react_native_expo_chapter_5",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "useState returns:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "[value, setValue] tuple", "isCorrect": true },
+                { "key": "B", "text": "A Promise", "isCorrect": false },
+                { "key": "C", "text": "Only the initial value", "isCorrect": false },
+                { "key": "D", "text": "A Redux store", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "useEffect with an empty dependency array runs:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "After every render", "isCorrect": false },
+                { "key": "B", "text": "Once after mount", "isCorrect": true },
+                { "key": "C", "text": "Never", "isCorrect": false },
+                { "key": "D", "text": "Only on Android", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "The cleanup function in useEffect is used to:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Remove listeners and cancel side effects", "isCorrect": true },
+                { "key": "B", "text": "Delete node_modules", "isCorrect": false },
+                { "key": "C", "text": "Force dark mode", "isCorrect": false },
+                { "key": "D", "text": "Compile native code", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "useMemo memoizes:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Computed values between renders when deps unchanged", "isCorrect": true },
+                { "key": "B", "text": "Images on disk", "isCorrect": false },
+                { "key": "C", "text": "Git history", "isCorrect": false },
+                { "key": "D", "text": "Keyboard layout", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "useCallback stabilizes:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Function identity across renders", "isCorrect": true },
+                { "key": "B", "text": "JPEG quality", "isCorrect": false },
+                { "key": "C", "text": "App Store screenshots", "isCorrect": false },
+                { "key": "D", "text": "SQLite schema", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "AppState 'background' indicates:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "The app is not active and may be suspended", "isCorrect": true },
+                { "key": "B", "text": "The app is compiling", "isCorrect": false },
+                { "key": "C", "text": "The keyboard is always open", "isCorrect": false },
+                { "key": "D", "text": "Hermes is disabled", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Stale closures in hooks happen when:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "An effect or callback references outdated state because deps are wrong", "isCorrect": true },
+                { "key": "B", "text": "TypeScript is off", "isCorrect": false },
+                { "key": "C", "text": "Images fail to load", "isCorrect": false },
+                { "key": "D", "text": "Safe area is too large", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "useReducer is helpful when:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "State transitions are complex or interdependent", "isCorrect": true },
+                { "key": "B", "text": "You never need TypeScript", "isCorrect": false },
+                { "key": "C", "text": "You only render Text", "isCorrect": false },
+                { "key": "D", "text": "You cannot use effects", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Which hook listens to keyboard show/hide?",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Keyboard API from react-native (e.g. addListener)", "isCorrect": true },
+                { "key": "B", "text": "useFonts", "isCorrect": false },
+                { "key": "C", "text": "useColorScheme only", "isCorrect": false },
+                { "key": "D", "text": "Linking.openURL", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Omitting dependencies in useEffect can cause:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Bugs where the effect uses old values", "isCorrect": true },
+                { "key": "B", "text": "Faster Hermes always", "isCorrect": false },
+                { "key": "C", "text": "Automatic OTA updates", "isCorrect": false },
+                { "key": "D", "text": "Guaranteed memory leaks never", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why clean up intervals and subscriptions in useEffect?",
+            "preferredAnswer": "Without cleanup, **listeners keep firing** after unmount, causing **memory leaks**, **setState on unmounted components**, and wasted battery."
+        },
+        {
+            "id": 2,
+            "question": "When should you avoid useMemo?",
+            "preferredAnswer": "For **cheap** computations where dependency arrays add noise, or when memoization **hides** real performance issues in lists—**profile first**."
+        },
+        {
+            "id": 3,
+            "question": "How does AppState differ from web page visibility?",
+            "preferredAnswer": "Mobile apps **suspend**, **background**, and **resume** with OS policies; timers and network may **pause**—you must **pause work** and **persist** state appropriately."
+        },
+        {
+            "id": 4,
+            "question": "Give an example of work to pause when the app backgrounds.",
+            "preferredAnswer": "**Animations**, **polling**, **live location tracking**, or **active audio**—resume on `active` or save user progress."
+        },
+        {
+            "id": 5,
+            "question": "What is the purpose of the dependency array?",
+            "preferredAnswer": "It tells React **when** to re-run the effect: when listed **values change**. Empty array means **mount-only**; omitted means **every render** (usually a bug)."
+        }
+    ]
+}

@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 1: Backend Fundamentals & Express Basics",
+    "chapterId": "express_mongodb_chapter_1",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is the primary role of backend development?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Designing user interfaces",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Processing business logic and managing data",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Creating CSS animations",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Building mobile applications",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "In the client-server architecture, what does the client do?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Stores all application data",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Initiates requests to the server",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Processes business logic",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Manages the database",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Which HTTP method should be used to retrieve data without modifying it?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "POST",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "PUT",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "GET",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "DELETE",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What does the HTTP status code 404 indicate?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Request succeeded",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Server error",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Resource not found",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Unauthorized access",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What is the correct way to create an Express application instance?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "const app = new Express();",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "const app = express();",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "const app = Express.create();",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "const app = require('express');",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What will be the output when accessing this route with URL /users/42?",
+            "codeSnippet": "app.get('/users/:id', (req, res) => {\n  res.send(`User ID: ${req.params.id}`);\n});",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "User ID: :id",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "User ID: 42",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "User ID: undefined",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Error",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What does the next() function do in middleware?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Sends the response to the client",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Passes control to the next middleware function",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Restarts the server",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Terminates the request",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Which built-in Express middleware is used to parse JSON request bodies?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "express.static()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "express.json()",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "express.parse()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "express.body()",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What HTTP status code should be returned when a new resource is successfully created?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "200 OK",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "201 Created",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "204 No Content",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "400 Bad Request",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What happens if you forget to call next() in middleware and don't send a response?",
+            "codeSnippet": "app.use((req, res, next) => {\n  console.log('Middleware executed');\n  // next() not called\n});",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "The server crashes",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "The request hangs and times out",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Express automatically calls next()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "The request completes successfully",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between frontend and backend with a real-world example.",
+            "preferredAnswer": "**Frontend** is everything the user sees and interacts with — the user interface, buttons, forms, and visual elements. **Backend** is the server-side logic that processes requests, manages data, and handles business rules.\n\n**Real-world example: Online Shopping**\n\n**Frontend (Client)**:\n- Product listing page with images and prices\n- Shopping cart interface\n- Checkout form\n- User sees and clicks buttons\n\n**Backend (Server)**:\n- Validates user login credentials\n- Checks product inventory in database\n- Calculates total price with taxes\n- Processes payment through payment gateway\n- Sends order confirmation email\n- Updates inventory count\n\n**Analogy**: Think of a bank:\n- **Frontend** = The ATM screen where you select options\n- **Backend** = The bank's systems that verify your account, check balance, and process transactions\n\nThe frontend is the presentation layer; the backend is where the actual work happens."
+        },
+        {
+            "id": 2,
+            "question": "What are the key principles of RESTful API design? Provide examples of good and bad RESTful URLs.",
+            "preferredAnswer": "**Key REST Principles:**\n\n1. **Resources are nouns** (not verbs): Use `/users`, not `/getUsers`\n2. **HTTP methods define actions**: GET, POST, PUT, DELETE\n3. **Stateless**: Each request is independent\n4. **Consistent structure**: Predictable URL patterns\n5. **Proper status codes**: 200 for success, 404 for not found, etc.\n\n**Good RESTful URLs:**\n\n```\nGET    /api/products          → Get all products\nGET    /api/products/42       → Get product with ID 42\nPOST   /api/products          → Create new product\nPUT    /api/products/42       → Update entire product 42\nPATCH  /api/products/42       → Partially update product 42\nDELETE /api/products/42       → Delete product 42\nGET    /api/products/42/reviews → Get reviews for product 42\n```\n\n**Bad RESTful URLs:**\n\n```\n❌ GET  /api/getAllProducts      (verb in URL)\n❌ GET  /api/deleteProduct/42    (action in URL, should be DELETE)\n❌ POST /api/product/update      (should use PUT/PATCH)\n❌ GET  /api/products?action=delete (action in query, should be DELETE method)\n```\n\n**Why it matters**: Consistent API design makes it intuitive for developers to use and maintain."
+        },
+        {
+            "id": 3,
+            "question": "Write middleware that logs the request method, URL, and timestamp for every request. Then create a protected route that uses authentication middleware.",
+            "preferredAnswer": "```javascript\nconst express = require('express');\nconst app = express();\n\n// Logging middleware - runs on every request\nconst requestLogger = (req, res, next) => {\n  const timestamp = new Date().toISOString();\n  const method = req.method;\n  const url = req.url;\n  \n  console.log(`[${timestamp}] ${method} ${url}`);\n  \n  next(); // Pass control to next middleware\n};\n\n// Authentication middleware\nconst requireAuth = (req, res, next) => {\n  // Get token from header\n  const token = req.headers.authorization;\n  \n  // Check if token exists\n  if (!token) {\n    return res.status(401).json({ \n      error: 'Authentication required' \n    });\n  }\n  \n  // Verify token (simplified - in real app, verify JWT)\n  if (token === 'Bearer valid-token-123') {\n    // Token is valid, attach user info to request\n    req.user = { id: 1, name: 'John Doe' };\n    next(); // Proceed to route handler\n  } else {\n    return res.status(403).json({ \n      error: 'Invalid token' \n    });\n  }\n};\n\n// Apply logging middleware globally\napp.use(requestLogger);\n\n// Public route - no authentication needed\napp.get('/api/public', (req, res) => {\n  res.json({ message: 'This is public data' });\n});\n\n// Protected route - authentication required\napp.get('/api/dashboard', requireAuth, (req, res) => {\n  res.json({ \n    message: 'Welcome to your dashboard',\n    user: req.user \n  });\n});\n\napp.listen(3000);\n```\n\n**Testing:**\n\n```bash\n# Public route - works without token\ncurl http://localhost:3000/api/public\n\n# Protected route - fails without token\ncurl http://localhost:3000/api/dashboard\n# Response: {\"error\":\"Authentication required\"}\n\n# Protected route - succeeds with valid token\ncurl http://localhost:3000/api/dashboard \\\n  -H \"Authorization: Bearer valid-token-123\"\n# Response: {\"message\":\"Welcome to your dashboard\",\"user\":{...}}\n```\n\n**Middleware order matters**: Logging runs first, then authentication when needed."
+        },
+        {
+            "id": 4,
+            "question": "Explain the difference between app.use() and app.get(). When would you use each?",
+            "preferredAnswer": "**app.use()** is for **middleware** — functions that run for requests before they reach route handlers. It can match all methods (GET, POST, etc.) and all paths or specific paths.\n\n**app.get()** is for **route handlers** — specifically handles GET requests to a defined path.\n\n**Key Differences:**\n\n| Feature | app.use() | app.get() |\n|---------|-----------|----------|\n| **Purpose** | Middleware | Route handler |\n| **HTTP Methods** | All (GET, POST, etc.) | Only GET |\n| **Path Matching** | Prefix matching | Exact matching |\n| **next() Required** | Yes (or send response) | No (sends response) |\n\n**Examples:**\n\n```javascript\n// app.use() - Middleware (runs for all methods)\napp.use(express.json()); // Runs for ALL requests\n\napp.use('/api', (req, res, next) => {\n  console.log('API request');\n  next(); // MUST call next() or send response\n});\n\n// This matches /api, /api/users, /api/users/42, etc.\napp.use('/api', (req, res, next) => {\n  console.log('Matches any path starting with /api');\n  next();\n});\n\n// app.get() - Route handler (only GET requests)\napp.get('/api/users', (req, res) => {\n  res.json({ users: [] }); // Sends response, no next() needed\n});\n\n// This matches ONLY /api/users with GET method\n```\n\n**When to use app.use():**\n- Applying middleware globally (logging, parsing, CORS)\n- Mounting routers\n- Setting up error handlers\n\n**When to use app.get():**\n- Handling specific GET requests\n- Retrieving data from API endpoints\n- Serving specific pages\n\n**Practical Example:**\n\n```javascript\n// Middleware with app.use()\napp.use(express.json()); // Parse JSON for all requests\napp.use(requestLogger); // Log all requests\n\n// Route handlers with app.get()\napp.get('/api/products', getProducts); // GET products\napp.post('/api/products', createProduct); // POST new product\n```"
+        },
+        {
+            "id": 5,
+            "question": "Create a simple Express API with routes for managing a todo list (GET all, GET one, POST, PUT, DELETE). Include proper status codes and error handling.",
+            "preferredAnswer": "```javascript\nconst express = require('express');\nconst app = express();\nconst PORT = 3000;\n\n// Middleware\napp.use(express.json());\n\n// In-memory database (array)\nlet todos = [\n  { id: 1, title: 'Learn Express', completed: false },\n  { id: 2, title: 'Build API', completed: false }\n];\n\nlet nextId = 3;\n\n// GET all todos\napp.get('/api/todos', (req, res) => {\n  res.status(200).json({\n    success: true,\n    count: todos.length,\n    data: todos\n  });\n});\n\n// GET single todo by ID\napp.get('/api/todos/:id', (req, res) => {\n  const todo = todos.find(t => t.id === parseInt(req.params.id));\n  \n  if (!todo) {\n    return res.status(404).json({\n      success: false,\n      error: 'Todo not found'\n    });\n  }\n  \n  res.status(200).json({\n    success: true,\n    data: todo\n  });\n});\n\n// POST - Create new todo\napp.post('/api/todos', (req, res) => {\n  const { title } = req.body;\n  \n  // Validation\n  if (!title || title.trim() === '') {\n    return res.status(400).json({\n      success: false,\n      error: 'Title is required'\n    });\n  }\n  \n  const newTodo = {\n    id: nextId++,\n    title: title.trim(),\n    completed: false\n  };\n  \n  todos.push(newTodo);\n  \n  res.status(201).json({\n    success: true,\n    data: newTodo\n  });\n});\n\n// PUT - Update todo\napp.put('/api/todos/:id', (req, res) => {\n  const todo = todos.find(t => t.id === parseInt(req.params.id));\n  \n  if (!todo) {\n    return res.status(404).json({\n      success: false,\n      error: 'Todo not found'\n    });\n  }\n  \n  const { title, completed } = req.body;\n  \n  // Validation\n  if (title !== undefined) {\n    if (title.trim() === '') {\n      return res.status(400).json({\n        success: false,\n        error: 'Title cannot be empty'\n      });\n    }\n    todo.title = title.trim();\n  }\n  \n  if (completed !== undefined) {\n    if (typeof completed !== 'boolean') {\n      return res.status(400).json({\n        success: false,\n        error: 'Completed must be a boolean'\n      });\n    }\n    todo.completed = completed;\n  }\n  \n  res.status(200).json({\n    success: true,\n    data: todo\n  });\n});\n\n// DELETE todo\napp.delete('/api/todos/:id', (req, res) => {\n  const index = todos.findIndex(t => t.id === parseInt(req.params.id));\n  \n  if (index === -1) {\n    return res.status(404).json({\n      success: false,\n      error: 'Todo not found'\n    });\n  }\n  \n  todos.splice(index, 1);\n  \n  res.status(204).send(); // No content\n});\n\n// 404 handler for undefined routes\napp.use((req, res) => {\n  res.status(404).json({\n    success: false,\n    error: 'Route not found'\n  });\n});\n\n// Global error handler\napp.use((err, req, res, next) => {\n  console.error(err.stack);\n  res.status(500).json({\n    success: false,\n    error: 'Server error'\n  });\n});\n\napp.listen(PORT, () => {\n  console.log(`Server running on http://localhost:${PORT}`);\n});\n```\n\n**Testing with curl:**\n\n```bash\n# Get all todos\ncurl http://localhost:3000/api/todos\n\n# Get single todo\ncurl http://localhost:3000/api/todos/1\n\n# Create todo\ncurl -X POST http://localhost:3000/api/todos \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"title\":\"Master MongoDB\"}'\n\n# Update todo\ncurl -X PUT http://localhost:3000/api/todos/1 \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"completed\":true}'\n\n# Delete todo\ncurl -X DELETE http://localhost:3000/api/todos/2\n```\n\n**Status codes used:**\n- **200**: Success (GET, PUT)\n- **201**: Resource created (POST)\n- **204**: Success, no content (DELETE)\n- **400**: Bad request (validation errors)\n- **404**: Not found\n- **500**: Server error"
+        }
+    ]
+}

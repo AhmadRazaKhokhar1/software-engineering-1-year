@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 4: Functions, Modules & File Handling",
+    "chapterId": "python_core_chapter_4",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What does a function return if it has no explicit return statement?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "0",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Empty string",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "None",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "False",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Which is the correct way to define a function with a default parameter?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "def greet(greeting='Hello', name):",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "def greet(name, greeting='Hello'):",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "def greet(name, greeting=Hello):",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "def greet(name='Alice', greeting):",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What is the output of this code?",
+            "codeSnippet": "def add(a, b):\n    return a + b\n\nresult = add(3, 5)\nprint(result)",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "8",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "35",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "None",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Error",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Which file mode should you use to add content to an existing file without deleting its current content?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "r",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "w",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "a",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "x",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What is the purpose of the 'with' statement when working with files?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "It makes files read faster",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "It automatically closes the file",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "It prevents file corruption",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "It enables writing to files",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Which module is used to work with JSON data in Python?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "csv",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "json",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "data",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "file",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What does the global keyword do inside a function?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Creates a new global variable",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Allows the function to modify a global variable",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Deletes a global variable",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Makes all variables global",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Which is the correct lambda function to square a number?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "lambda x: x * x",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "lambda x -> x * x",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "lambda: x * x",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "def lambda(x): return x * x",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What does json.loads() do?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Loads JSON from a file",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Converts a JSON string to a Python object",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Converts a Python object to JSON string",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Validates JSON syntax",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Which import statement is considered best practice?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "from math import *",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "import math",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "from math import all",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "import * from math",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between parameters and arguments with an example.",
+            "preferredAnswer": "Parameters are the variable names listed in the function definition. Arguments are the actual values passed to the function when calling it.\n\nExample:\ndef greet(name):  # 'name' is a parameter\n    print(f'Hello, {name}')\n\ngreet('Alice')  # 'Alice' is an argument\n\nParameters are placeholders. Arguments are the real data that fills those placeholders when you call the function."
+        },
+        {
+            "id": 2,
+            "question": "Why should you avoid using global variables? What is the alternative?",
+            "preferredAnswer": "Global variables create hidden dependencies that make code hard to test, debug, and understand. Any function can modify them, making it difficult to track where changes occur.\n\nProblems:\n1. Hard to test (functions depend on external state)\n2. Name conflicts across modules\n3. Difficult to reason about program flow\n\nAlternative: Pass values as parameters and return results.\n\n# BAD\ncount = 0\ndef increment():\n    global count\n    count += 1\n\n# GOOD\ndef increment(count):\n    return count + 1\n\ncount = 0\ncount = increment(count)"
+        },
+        {
+            "id": 3,
+            "question": "Write a function that reads a text file and returns the number of words in it. Handle the case where the file doesn't exist.",
+            "preferredAnswer": "def count_words(filename):\n    try:\n        with open(filename, 'r') as file:\n            content = file.read()\n            words = content.split()\n            return len(words)\n    except FileNotFoundError:\n        print(f'File {filename} not found')\n        return 0\n    except Exception as e:\n        print(f'Error: {e}')\n        return 0\n\n# Usage\nword_count = count_words('document.txt')\nprint(f'Total words: {word_count}')"
+        },
+        {
+            "id": 4,
+            "question": "What is the difference between json.dump() and json.dumps()? When would you use each?",
+            "preferredAnswer": "json.dump() writes a Python object directly to a FILE.\njson.dumps() converts a Python object to a JSON STRING.\n\nUse dump() when writing to a file:\ndata = {'name': 'Alice', 'age': 25}\nwith open('data.json', 'w') as file:\n    json.dump(data, file)  # Write directly to file\n\nUse dumps() when you need a JSON string (e.g., for APIs):\ndata = {'name': 'Alice', 'age': 25}\njson_string = json.dumps(data)  # Returns a string\nprint(json_string)  # '{\"name\": \"Alice\", \"age\": 25}'\n\nSimilarly: json.load() reads from a file, json.loads() parses a string."
+        },
+        {
+            "id": 5,
+            "question": "Write a function that takes a list of dictionaries representing users and saves them to a CSV file.",
+            "preferredAnswer": "import csv\n\ndef save_users_to_csv(users, filename):\n    if not users:\n        print('No users to save')\n        return\n    \n    # Get field names from first user\n    fieldnames = users[0].keys()\n    \n    try:\n        with open(filename, 'w', newline='') as file:\n            writer = csv.DictWriter(file, fieldnames=fieldnames)\n            writer.writeheader()  # Write column names\n            writer.writerows(users)  # Write all rows\n        print(f'Saved {len(users)} users to {filename}')\n    except Exception as e:\n        print(f'Error saving file: {e}')\n\n# Usage\nusers = [\n    {'name': 'Alice', 'age': 25, 'city': 'NYC'},\n    {'name': 'Bob', 'age': 30, 'city': 'LA'}\n]\nsave_users_to_csv(users, 'users.csv')"
+        }
+    ]
+}

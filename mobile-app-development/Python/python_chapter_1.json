@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 1: Python Basics & Programming Fundamentals",
+    "chapterId": "python_core_chapter_1",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Which symbol is used for single-line comments in Python?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "//",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "#",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "/* */",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "--",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "How does Python define blocks of code instead of curly braces { }?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Semicolons ;",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Indentation (whitespace)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Keywords begin/end",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Parentheses ()",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What is the data type of the value returned by the input() function?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Integer",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Float",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "String",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Boolean",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Which function is used to display output in the console?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "console.log()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "write()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "print()",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "echo()",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What will be the result of 5 + \"5\"?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "10",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "\"55\"",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "TypeError",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "55",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Which keyword is NOT used to define a variable in Python?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "var",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "Let",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "const",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "none (implicit)",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What is the correct way to cast a string \"10\" into an integer?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "string(10)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "int(\"10\")",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "float(\"10\")",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "cast(10, int)",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "How do you check the data type of a variable x?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "check(x)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "x.type",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "typeof(x)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "type(x)",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Which error occurs when you try to use a variable that hasn't been created?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "SyntaxError",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "NameError",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "TypeError",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "ValueError",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Which of the following is a valid variable name in Python?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "2nd_place",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "first-name",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "_score",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "class",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain why indentation is critical in Python compared to languages like C++ or Java.",
+            "preferredAnswer": "In languages like C++ or Java, curly braces { } define code blocks (like loops or functions). Whitespace is generally ignored.\n\nIn Python, indentation IS the structure. It defines where blocks begin and end. If indentation is inconsistent or incorrect, Python raises an IndentationError and refuses to run the code. This enforces readability and prevents structural bugs caused by mismatched braces."
+        },
+        {
+            "id": 2,
+            "question": "Why does input('Age: ') return a string instead of an integer, and how do you fix it?",
+            "preferredAnswer": "The input() function is designed to accept any keyboard input, which fundamentally comes in as text characters. Therefore, it defaults to returning a string ('str').\n\nIf a user types '25', Python receives it as \"25\", not the number 25.\n\nTo fix this, you must explicitly convert it using the int() or float() function:\n\nnumber = int(input('Age: '))\n\nIf the user enters text where a number is expected, this will raise a ValueError, so error handling is recommended later."
+        },
+        {
+            "id": 3,
+            "question": "Write a short script that asks for a user's name and birth year, calculates their approximate age, and prints a greeting.",
+            "preferredAnswer": "python\nname = input(\"Enter your name: \")\nbirth_year = int(input(\"Enter your birth year: \"))\nage = 2024 - birth_year\n\nprint(f\"Hello {name}, you are approximately {age} years old.\")\n\n\nKey elements demonstrated:\n1. input() for receiving data.\n2. int() to convert the year to a number for math.\n3. Arithmetic calculation.\n4. f-string for formatted output."
+        },
+        {
+            "id": 4,
+            "question": "Differentiate between SyntaxError, TypeError, and NameError with one example for each.",
+            "preferredAnswer": "1. SyntaxError: Code violates Python grammar.\n   Example: print(\"Hello\")  # Missing closing parenthesis.\n\n2. TypeError: Operation performed on wrong data types.\n   Example: 5 + \"5\"  # Cannot add integer and string.\n\n3. NameError: Variable used without being defined.\n   Example: print(x)  # x was never assigned a value.\n\nUnderstanding these helps debug code faster by identifying if the issue is spelling/structure (Syntax), logic/types (Type), or memory/definition (Name)."
+        },
+        {
+            "id": 5,
+            "question": "What is dynamic typing in Python, and what are its advantages?",
+            "preferredAnswer": "Dynamic typing means you do not declare variable types explicitly (e.g., no 'int x = 5'). The type is determined at runtime based on the value assigned.\n\nAdvantages:\n1. Faster writing: Less boilerplate code.\n2. Flexibility: A variable can hold an integer initially and later a string (though not recommended for clarity).\n3. Readability: Code looks cleaner and closer to pseudocode.\n\nDisadvantage: Can lead to unexpected TypeErrors if types change unintentionally."
+        }
+    ]
+}

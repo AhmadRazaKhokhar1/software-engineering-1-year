@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 5: Object-Oriented Programming & Error Handling",
+    "chapterId": "python_core_chapter_5",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is the purpose of the __init__ method in a class?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To initialize the class object with attributes",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "To create a new instance of the class",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "To delete the object",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To convert the object to a string",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "How do you indicate that a class inherits from another class in Python?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "class Child(Parent):",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "class Parent -> Child:",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "class Child inherits Parent:",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "class Child extends Parent:",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What does the 'self' parameter refer to in a class method?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "The class itself",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "The instance of the class",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "The parent class",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "The module containing the class",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Which keyword is used to call a method from the parent class?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "parent",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "base",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "super",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "this",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Which of the following is NOT a pillar of OOP?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Encapsulation",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Inheritance",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Polymorphism",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Instantiation",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What is the purpose of a finally block in exception handling?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To handle specific exceptions",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To execute code only if no exception occurs",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "To execute code regardless of whether an exception occurs",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "To raise a new exception",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "How do you make an attribute private in Python?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Using the private keyword",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Prefixing with a single underscore _",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Prefixing with double underscore __",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Using the protected keyword",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What does polymorphism allow in OOP?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Hiding implementation details",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Reusing code from parent classes",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Different classes to respond to the same method call",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Bundling data and methods together",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What will this code output?",
+            "codeSnippet": "class A:\n    def __init__(self, x):\n        self.x = x\n\nclass B(A):\n    def __init__(self, x, y):\n        super().__init__(x)\n        self.y = y\n\nobj = B(10, 20)\nprint(obj.x, obj.y)",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "10 20",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "20 10",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Error",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "None None",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Which block is executed when no exception occurs in a try-except structure?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "try",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "except",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "else",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "finally",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between instance variables and class variables with examples.",
+            "preferredAnswer": "Instance variables are unique to each object instance, while class variables are shared across all instances of the class.\n\nExample:\nclass Car:\n    # Class variable\n    wheels = 4\n    \n    def __init__(self, color):\n        # Instance variable\n        self.color = color\n\n# Usage\ncar1 = Car('red')\ncar2 = Car('blue')\n\nprint(car1.color)   # red (instance variable)\nprint(car2.color)   # blue (instance variable)\nprint(Car.wheels)   # 4 (class variable, same for all)\nprint(car1.wheels)  # 4 (access via instance)\n\nIf we change Car.wheels = 6, all instances see the change."
+        },
+        {
+            "id": 2,
+            "question": "What is the difference between method overloading and method overriding?",
+            "preferredAnswer": "Method overriding occurs when a subclass provides a different implementation of a method that is already defined in its parent class. The method has the same name and parameters.\n\nMethod overloading means having multiple methods with the same name but different parameters. Python doesn't support traditional overloading, but you can simulate it with default parameters or variable arguments.\n\nExample of overriding:\nclass Animal:\n    def make_sound(self):\n        return 'Some sound'\n\nclass Dog(Animal):\n    def make_sound(self):  # Overriding\n        return 'Bark'\n\nExample simulating overloading in Python:\ndef add(a, b, c=None):\n    if c is None:\n        return a + b\n    else:\n        return a + b + c"
+        },
+        {
+            "id": 3,
+            "question": "Write a custom exception class for validating email addresses and use it in a function.",
+            "preferredAnswer": "class InvalidEmailError(Exception):\n    def __init__(self, email, message='Invalid email format'):\n        self.email = email\n        self.message = message\n        super().__init__(f'{message}: {email}')\n\ndef validate_email(email):\n    if not isinstance(email, str):\n        raise InvalidEmailError(email, 'Email must be a string')\n    if '@' not in email:\n        raise InvalidEmailError(email, 'Email must contain @ symbol')\n    if '.' not in email.split('@')[-1]:\n        raise InvalidEmailError(email, 'Email must have domain with dot')\n    return True\n\n# Usage\ntry:\n    validate_email('invalid-email')\nexcept InvalidEmailError as e:\n    print(f'Error: {e}')"
+        },
+        {
+            "id": 4,
+            "question": "Explain the concept of encapsulation and why it's important, with an example.",
+            "preferredAnswer": "Encapsulation is the bundling of data (attributes) and methods that operate on that data within a single unit (class), and restricting direct access to some of the object's components. This is typically done by making attributes private and providing public getter/setter methods.\n\nImportance:\n1. Data Protection: Prevents accidental modification\n2. Controlled Access: Validation can be added in setters\n3. Implementation Hiding: Internal changes don't affect external code\n4. Maintainability: Easier to modify without breaking other code\n\nExample:\nclass BankAccount:\n    def __init__(self, balance):\n        self.__balance = balance  # Private attribute\n    \n    def get_balance(self):  # Getter\n        return self.__balance\n    \n    def deposit(self, amount):  # Setter with validation\n        if amount > 0:\n            self.__balance += amount\n        else:\n            raise ValueError('Amount must be positive')"
+        },
+        {
+            "id": 5,
+            "question": "Create a class hierarchy for different types of employees with appropriate inheritance.",
+            "preferredAnswer": "class Employee:\n    def __init__(self, name, employee_id, salary):\n        self.name = name\n        self.employee_id = employee_id\n        self.salary = salary\n    \n    def display_info(self):\n        return f'ID: {self.employee_id}, Name: {self.name}, Salary: ${self.salary}'\n    \n    def calculate_bonus(self):\n        return self.salary * 0.1  # 10% bonus\n\nclass Manager(Employee):\n    def __init__(self, name, employee_id, salary, department):\n        super().__init__(name, employee_id, salary)\n        self.department = department\n    \n    def calculate_bonus(self):  # Override\n        return self.salary * 0.2  # Managers get 20%\n    \n    def display_info(self):  # Override\n        base_info = super().display_info()\n        return f'{base_info}, Department: {self.department}, Role: Manager'\n\nclass Developer(Employee):\n    def __init__(self, name, employee_id, salary, programming_language):\n        super().__init__(name, employee_id, salary)\n        self.programming_language = programming_language\n    \n    def display_info(self):  # Override\n        base_info = super().display_info()\n        return f'{base_info}, Language: {self.programming_language}, Role: Developer'\n\n# Usage\nmanager = Manager('Alice', 'M001', 80000, 'IT')\ndev = Developer('Bob', 'D001', 70000, 'Python')\nprint(manager.display_info())\nprint(dev.display_info())\nprint(f'Manager bonus: ${manager.calculate_bonus()}')\nprint(f'Developer bonus: ${dev.calculate_bonus()}')"
+        }
+    ]
+}

@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 3: MongoDB Fundamentals & Data Modeling",
+    "chapterId": "express_mongodb_chapter_3",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What type of database is MongoDB?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Relational database",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Document-based NoSQL database",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Graph database",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Key-value store",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What is the maximum size of a single MongoDB document?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "1MB",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "4MB",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "16MB",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "64MB",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What is the MongoDB equivalent of a SQL table?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Document",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Collection",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Database",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Schema",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What does BSON stand for?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Basic Script Object Notation",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Binary JSON",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Boolean JavaScript Object Notation",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Binary Script Object Notation",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "When should you embed related documents instead of using references?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "When the related data is unbounded and can grow infinitely",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "When the related data is always accessed together",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "When you need many-to-many relationships",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "When the documents are very large",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What is the purpose of ObjectId in MongoDB?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To store large binary files",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To provide a unique identifier for documents",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To create indexes",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To define relationships between collections",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What does Mongoose provide for Node.js applications?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "HTTP server functionality",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Object Document Mapping with schemas and validation",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Authentication and authorization",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Static file serving",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What will this Mongoose schema validation do?",
+            "codeSnippet": "email: {\n  type: String,\n  required: [true, 'Email is required'],\n  unique: true,\n  lowercase: true\n}",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Make email optional and convert to uppercase",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Require email, ensure uniqueness, and convert to lowercase",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Only convert email to lowercase",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Validate email format using regex",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What is the purpose of the 'select: false' option in a Mongoose schema field?",
+            "codeSnippet": "password: {\n  type: String,\n  required: true,\n  select: false\n}",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Make the field read-only",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Exclude the field from query results by default",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Prevent the field from being indexed",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Make the field optional",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Which Mongoose middleware runs before saving a document?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "userSchema.post('save', fn)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "userSchema.pre('save', fn)",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "userSchema.before('save', fn)",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "userSchema.on('save', fn)",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the key differences between SQL databases and MongoDB. When would you choose one over the other?",
+            "preferredAnswer": "**Key Differences:**\n\n| Aspect | SQL | MongoDB |\n|--------|-----|----------|\n| **Data Model** | Tables with rows and columns | Collections with JSON-like documents |\n| **Schema** | Fixed, must be defined upfront | Flexible, can vary per document |\n| **Relationships** | JOINs across tables | Embedded documents or references |\n| **Scaling** | Vertical (bigger servers) | Horizontal (more servers) |\n| **Query Language** | SQL | MongoDB Query Language |\n| **Transactions** | Full ACID support | ACID support (v4.0+) |\n\n**Choose SQL when:**\n- Data has complex, well-defined relationships\n- Need complex transactions across multiple tables\n- Schema is stable and won't change often\n- Examples: Banking systems, ERP, accounting software\n\n**Choose MongoDB when:**\n- Schema needs to evolve rapidly during development\n- Data is hierarchical or document-oriented\n- Need horizontal scaling for high traffic\n- Working with JavaScript/JSON natively\n- Examples: Content management, real-time analytics, e-commerce catalogs, IoT applications\n\n**The key question:** How will you query and access your data? MongoDB excels when you retrieve complete documents; SQL excels when you need to combine data from multiple sources in complex ways."
+        },
+        {
+            "id": 2,
+            "question": "Describe the MongoDB document model. What are documents, collections, and databases? How do they relate to each other?",
+            "preferredAnswer": "**MongoDB Hierarchy:**\n\n```\nMongoDB Server\n  └── Database (myapp)\n       ├── Collection (users)\n       │    ├── Document { _id: 1, name: \"Alice\" }\n       │    ├── Document { _id: 2, name: \"Bob\" }\n       │    └── Document { _id: 3, name: \"Charlie\" }\n       │\n       └── Collection (products)\n            ├── Document { _id: 1, name: \"Laptop\" }\n            └── Document { _id: 2, name: \"Mouse\" }\n```\n\n**Documents:**\n- Basic unit of data in MongoDB\n- JSON-like structure (technically BSON)\n- Can contain nested objects and arrays\n- Has a unique `_id` field (auto-generated if not provided)\n- Maximum size: 16MB\n\n```javascript\n{\n  \"_id\": ObjectId(\"507f1f77bcf86cd799439011\"),\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"address\": {\n    \"city\": \"New York\",\n    \"country\": \"USA\"\n  },\n  \"tags\": [\"developer\", \"nodejs\"]\n}\n```\n\n**Collections:**\n- Group of related documents\n- Similar to a table in SQL, but no enforced schema\n- Documents within a collection can have different structures\n- Created automatically when first document is inserted\n\n**Databases:**\n- Container for collections\n- Each database has its own files on disk\n- Can have multiple databases on one server\n- Use `use databaseName` to switch databases\n\n**Key differences from SQL:**\n- No schema enforcement at database level\n- No JOINs needed for embedded data\n- More flexible structure but requires careful design"
+        },
+        {
+            "id": 3,
+            "question": "Explain the embedding vs referencing decision for schema design. Provide examples of when you would use each approach.",
+            "preferredAnswer": "**Embedding (Denormalization)**\n\nStore related data inside the same document:\n\n```javascript\n// User with embedded addresses\n{\n  \"_id\": ObjectId(\"user1\"),\n  \"name\": \"John Doe\",\n  \"addresses\": [\n    { \"type\": \"home\", \"city\": \"New York\" },\n    { \"type\": \"work\", \"city\": \"Boston\" }\n  ]\n}\n```\n\n**Use embedding when:**\n- Data is always accessed together\n- \"Contains\" relationship (address belongs to user)\n- Limited number of embedded items (< 100)\n- Data doesn't need to exist independently\n- Need atomic updates on related data\n\n**Referencing (Normalization)**\n\nStore related data in separate collections with references:\n\n```javascript\n// User document\n{ \"_id\": ObjectId(\"user1\"), \"name\": \"John\" }\n\n// Order documents (separate collection)\n{\n  \"_id\": ObjectId(\"order1\"),\n  \"userId\": ObjectId(\"user1\"),  // Reference\n  \"total\": 99.99\n}\n```\n\n**Use referencing when:**\n- Related data can grow unbounded (1000s of items)\n- Data is accessed independently\n- Many-to-many relationships\n- Data is shared across multiple documents\n- Need to avoid data duplication\n\n**Decision Framework:**\n\n| Question | Yes → | No → |\n|----------|-------|------|\n| Will array grow unbounded? | Reference | Consider embedding |\n| Accessed together 90%+ of time? | Embed | Reference |\n| Data exists independently? | Reference | Embed |\n| Need atomic operations? | Embed | Either works |\n\n**Hybrid approach (common):**\n```javascript\n// Order with embedded product summary AND reference\n{\n  \"_id\": ObjectId(\"order1\"),\n  \"userId\": ObjectId(\"user1\"),     // Reference\n  \"userEmail\": \"john@example.com\",  // Duplicated for quick access\n  \"items\": [\n    {\n      \"productId\": ObjectId(\"prod1\"),  // Reference\n      \"name\": \"Laptop\",                 // Duplicated snapshot\n      \"priceAtOrder\": 999               // Price when ordered\n    }\n  ]\n}\n```"
+        },
+        {
+            "id": 4,
+            "question": "Create a complete Mongoose schema for a blog post that includes title, content, author reference, tags, comments (embedded), and proper validation. Include timestamps and at least one virtual property.",
+            "preferredAnswer": "```javascript\nconst mongoose = require('mongoose');\n\n// Comment sub-schema (for embedding)\nconst commentSchema = new mongoose.Schema({\n  author: {\n    type: String,\n    required: [true, 'Comment author is required'],\n    trim: true,\n    maxlength: [50, 'Author name cannot exceed 50 characters']\n  },\n  content: {\n    type: String,\n    required: [true, 'Comment content is required'],\n    trim: true,\n    minlength: [1, 'Comment cannot be empty'],\n    maxlength: [1000, 'Comment cannot exceed 1000 characters']\n  },\n  createdAt: {\n    type: Date,\n    default: Date.now\n  }\n});\n\n// Main post schema\nconst postSchema = new mongoose.Schema({\n  title: {\n    type: String,\n    required: [true, 'Post title is required'],\n    trim: true,\n    minlength: [5, 'Title must be at least 5 characters'],\n    maxlength: [200, 'Title cannot exceed 200 characters']\n  },\n  \n  slug: {\n    type: String,\n    unique: true,\n    lowercase: true\n  },\n  \n  content: {\n    type: String,\n    required: [true, 'Post content is required'],\n    minlength: [50, 'Content must be at least 50 characters']\n  },\n  \n  excerpt: {\n    type: String,\n    maxlength: [300, 'Excerpt cannot exceed 300 characters']\n  },\n  \n  author: {\n    type: mongoose.Schema.Types.ObjectId,\n    ref: 'User',\n    required: [true, 'Post must have an author']\n  },\n  \n  tags: {\n    type: [String],\n    validate: {\n      validator: function(tags) {\n        return tags.length <= 10;\n      },\n      message: 'Cannot have more than 10 tags'\n    }\n  },\n  \n  category: {\n    type: String,\n    enum: {\n      values: ['technology', 'lifestyle', 'travel', 'food', 'other'],\n      message: '{VALUE} is not a valid category'\n    },\n    default: 'other'\n  },\n  \n  comments: {\n    type: [commentSchema],\n    validate: {\n      validator: function(comments) {\n        return comments.length <= 100;\n      },\n      message: 'Maximum 100 comments allowed per post'\n    }\n  },\n  \n  status: {\n    type: String,\n    enum: ['draft', 'published', 'archived'],\n    default: 'draft'\n  },\n  \n  views: {\n    type: Number,\n    default: 0,\n    min: [0, 'Views cannot be negative']\n  },\n  \n  featuredImage: String,\n  \n  publishedAt: Date\n  \n}, {\n  timestamps: true,\n  toJSON: { virtuals: true },\n  toObject: { virtuals: true }\n});\n\n// Indexes\npostSchema.index({ slug: 1 });\npostSchema.index({ author: 1, createdAt: -1 });\npostSchema.index({ tags: 1 });\npostSchema.index({ status: 1, publishedAt: -1 });\n\n// Virtual: Reading time\npostSchema.virtual('readingTime').get(function() {\n  const wordsPerMinute = 200;\n  const wordCount = this.content ? this.content.split(/\\s+/).length : 0;\n  const minutes = Math.ceil(wordCount / wordsPerMinute);\n  return `${minutes} min read`;\n});\n\n// Virtual: Comment count\npostSchema.virtual('commentCount').get(function() {\n  return this.comments ? this.comments.length : 0;\n});\n\n// Pre-save: Generate slug from title\npostSchema.pre('save', function(next) {\n  if (this.isModified('title')) {\n    this.slug = this.title\n      .toLowerCase()\n      .replace(/[^a-z0-9]+/g, '-')\n      .replace(/(^-|-$)/g, '');\n  }\n  \n  // Auto-generate excerpt if not provided\n  if (!this.excerpt && this.content) {\n    this.excerpt = this.content.substring(0, 297) + '...';\n  }\n  \n  // Set publishedAt when status changes to published\n  if (this.isModified('status') && this.status === 'published' && !this.publishedAt) {\n    this.publishedAt = new Date();\n  }\n  \n  next();\n});\n\n// Static: Find published posts\npostSchema.statics.findPublished = function() {\n  return this.find({ status: 'published' }).sort({ publishedAt: -1 });\n};\n\n// Instance: Add comment\npostSchema.methods.addComment = function(author, content) {\n  this.comments.push({ author, content });\n  return this.save();\n};\n\nconst Post = mongoose.model('Post', postSchema);\n\nmodule.exports = Post;\n```\n\n**Usage:**\n```javascript\nconst post = await Post.create({\n  title: 'Getting Started with MongoDB',\n  content: 'MongoDB is a document database...',\n  author: userId,\n  tags: ['mongodb', 'database', 'tutorial'],\n  category: 'technology'\n});\n\nconsole.log(post.readingTime); // \"3 min read\"\nconsole.log(post.slug); // \"getting-started-with-mongodb\"\n```"
+        },
+        {
+            "id": 5,
+            "question": "What are Mongoose middleware (hooks)? Explain pre and post hooks with practical examples for password hashing and logging.",
+            "preferredAnswer": "**Mongoose Middleware (Hooks)**\n\nMiddleware are functions that run at specific stages of a document's lifecycle. They allow you to execute code before or after certain operations.\n\n**Types of Middleware:**\n1. **Document middleware**: `save`, `validate`, `remove`, `updateOne`, `deleteOne`\n2. **Query middleware**: `find`, `findOne`, `updateMany`, `deleteMany`, etc.\n3. **Aggregate middleware**: `aggregate`\n4. **Model middleware**: `insertMany`\n\n---\n\n**Pre Hooks (run BEFORE the operation)**\n\n```javascript\nconst mongoose = require('mongoose');\nconst bcrypt = require('bcryptjs');\n\nconst userSchema = new mongoose.Schema({\n  email: String,\n  password: String,\n  passwordChangedAt: Date\n});\n\n// Pre-save: Hash password before saving\nuserSchema.pre('save', async function(next) {\n  // Only run if password was modified\n  if (!this.isModified('password')) {\n    return next();\n  }\n  \n  // Hash the password with cost factor 12\n  this.password = await bcrypt.hash(this.password, 12);\n  \n  // Set password changed timestamp\n  if (!this.isNew) {\n    this.passwordChangedAt = Date.now() - 1000;\n  }\n  \n  next();\n});\n\n// Pre-save: Update timestamp\nuserSchema.pre('save', function(next) {\n  if (!this.isNew) {\n    this.updatedAt = Date.now();\n  }\n  next();\n});\n\n// Pre-find: Exclude inactive users from all queries\nuserSchema.pre(/^find/, function(next) {\n  // 'this' refers to the query object\n  this.find({ isActive: { $ne: false } });\n  this.startTime = Date.now();\n  next();\n});\n\n// Pre-remove: Delete related documents\nuserSchema.pre('remove', async function(next) {\n  // Delete all posts by this user\n  await mongoose.model('Post').deleteMany({ author: this._id });\n  // Delete all comments by this user\n  await mongoose.model('Comment').deleteMany({ userId: this._id });\n  next();\n});\n```\n\n---\n\n**Post Hooks (run AFTER the operation)**\n\n```javascript\n// Post-save: Log new user creation\nuserSchema.post('save', function(doc, next) {\n  console.log(`[${new Date().toISOString()}] User saved: ${doc.email}`);\n  \n  // Could also send welcome email, track analytics, etc.\n  // sendWelcomeEmail(doc.email);\n  \n  next();\n});\n\n// Post-find: Log query duration\nuserSchema.post(/^find/, function(docs, next) {\n  const duration = Date.now() - this.startTime;\n  console.log(`Query took ${duration}ms, returned ${docs.length} documents`);\n  next();\n});\n\n// Post-save error handling\nuserSchema.post('save', function(error, doc, next) {\n  if (error.name === 'MongoServerError' && error.code === 11000) {\n    // Handle duplicate key error\n    const field = Object.keys(error.keyValue)[0];\n    next(new Error(`${field} already exists`));\n  } else {\n    next(error);\n  }\n});\n\n// Post-remove: Log deletion\nuserSchema.post('remove', function(doc) {\n  console.log(`User ${doc.email} and all related data deleted`);\n});\n```\n\n---\n\n**Complete Practical Example:**\n\n```javascript\nconst userSchema = new mongoose.Schema({\n  email: { type: String, unique: true },\n  password: { type: String, select: false },\n  loginAttempts: { type: Number, default: 0 },\n  lastLogin: Date,\n  isActive: { type: Boolean, default: true }\n});\n\n// PRE-SAVE: Hash password\nuserSchema.pre('save', async function(next) {\n  if (!this.isModified('password')) return next();\n  this.password = await bcrypt.hash(this.password, 12);\n  next();\n});\n\n// PRE-FIND: Exclude inactive, add query timing\nuserSchema.pre(/^find/, function(next) {\n  this.find({ isActive: true });\n  this._startTime = Date.now();\n  next();\n});\n\n// POST-FIND: Log query performance\nuserSchema.post(/^find/, function(docs, next) {\n  console.log(`Query executed in ${Date.now() - this._startTime}ms`);\n  next();\n});\n\n// POST-SAVE: Track new registrations\nuserSchema.post('save', function(doc, next) {\n  if (doc.wasNew) {\n    console.log(`New user registered: ${doc.email}`);\n    // analyticsService.track('user_registered', { email: doc.email });\n  }\n  next();\n});\n```\n\n**Key Points:**\n- Use `next()` to pass control to the next middleware\n- `this` refers to the document in document middleware\n- `this` refers to the query in query middleware\n- Pre hooks can modify data before it's saved\n- Post hooks are great for logging, analytics, and cleanup\n- Error handling post hooks receive error as first parameter"
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 8: Assets, Images, Fonts & Splash Screens",
+    "chapterId": "react_native_expo_chapter_8",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Local images are bundled with:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "require('./path.png')", "isCorrect": true },
+                { "key": "B", "text": "fetch('file://') only", "isCorrect": false },
+                { "key": "C", "text": "<img src>", "isCorrect": false },
+                { "key": "D", "text": "SQLite blobs", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Remote Image requires:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Explicit dimensions or flex layout with aspectRatio", "isCorrect": true },
+                { "key": "B", "text": "No size information ever", "isCorrect": false },
+                { "key": "C", "text": "WebView", "isCorrect": false },
+                { "key": "D", "text": "Gradle sync", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "expo-font useFonts returns loaded when:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Fonts finished loading", "isCorrect": true },
+                { "key": "B", "text": "App Store approved the app", "isCorrect": false },
+                { "key": "C", "text": "Camera permission granted", "isCorrect": false },
+                { "key": "D", "text": "HTTPS certificate installed", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "resizeMode 'cover' means:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Fill bounds, cropping overflow", "isCorrect": true },
+                { "key": "B", "text": "Never crop", "isCorrect": false },
+                { "key": "C", "text": "Stretch ignoring aspect", "isCorrect": false },
+                { "key": "D", "text": "Disable image", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Splash screen is configured in:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "app.json under expo.splash", "isCorrect": true },
+                { "key": "B", "text": "package.json devDependencies", "isCorrect": false },
+                { "key": "C", "text": "AndroidManifest.xml only manually", "isCorrect": false },
+                { "key": "D", "text": "tsconfig paths", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Adaptive icons on Android use:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Foreground and background layers in app.json", "isCorrect": true },
+                { "key": "B", "text": "Only SVG in runtime", "isCorrect": false },
+                { "key": "C", "text": "WebP exclusively in JS", "isCorrect": false },
+                { "key": "D", "text": "iOS storyboards", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "expo-image offers advantages like:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Caching and placeholders (per docs)", "isCorrect": true },
+                { "key": "B", "text": "Removing Metro", "isCorrect": false },
+                { "key": "C", "text": "Native module deletion", "isCorrect": false },
+                { "key": "D", "text": "Automatic App Store screenshots", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "@2x and @3x suffixes relate to:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Pixel density variants", "isCorrect": true },
+                { "key": "B", "text": "TypeScript versions", "isCorrect": false },
+                { "key": "C", "text": "Gradle plugins", "isCorrect": false },
+                { "key": "D", "text": "OAuth scopes", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Why gate UI until fonts load?",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Prevent visible font swap/layout jumps", "isCorrect": true },
+                { "key": "B", "text": "Because Text is forbidden", "isCorrect": false },
+                { "key": "C", "text": "Hermes requirement", "isCorrect": false },
+                { "key": "D", "text": "Apple mandates splash removal", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Asset modules are resolved at:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Bundle time by Metro", "isCorrect": true },
+                { "key": "B", "text": "Runtime from arbitrary URLs only", "isCorrect": false },
+                { "key": "C", "text": "SQLite queries", "isCorrect": false },
+                { "key": "D", "text": "App Store review", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why specify width/height or aspectRatio for remote images?",
+            "preferredAnswer": "Without intrinsic sizing, layout **reflows** after decode causing **jumps**; RN needs **bounded** layout for images."
+        },
+        {
+            "id": 2,
+            "question": "What is the purpose of app icon and splash consistency?",
+            "preferredAnswer": "**Brand recognition** and **trust**; mismatched splash vs in-app UI feels **unpolished** and confuses users during launch."
+        },
+        {
+            "id": 3,
+            "question": "When would you use a blurhash or placeholder?",
+            "preferredAnswer": "For **slow networks**—shows **structured placeholder** color until the full image arrives, improving perceived performance."
+        },
+        {
+            "id": 4,
+            "question": "How does expo-google-fonts simplify fonts?",
+            "preferredAnswer": "Prepackaged **font families** with **useFonts** integration—less manual **.ttf** copying for common open fonts."
+        },
+        {
+            "id": 5,
+            "question": "What happens if you forget to preload a custom font?",
+            "preferredAnswer": "Text may render with **system fallback** first, then **snap** to custom font—**FOUT**; preload with **useFonts** or similar."
+        }
+    ]
+}
