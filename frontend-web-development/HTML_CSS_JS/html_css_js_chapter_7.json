@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 7: Asynchronous JavaScript & APIs",
+  "chapterId": "html_css_js_chapter_7",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "What does `async` keyword do to a function?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Makes it run faster",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Makes it return a Promise automatically",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Makes it run twice",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Makes it synchronous",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What happens when JavaScript encounters `await`?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "It stops the entire browser",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "It pauses that function until the Promise resolves",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "It skips to the next function",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "It throws an error",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What does `fetch()` return?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "JSON data directly",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "A string",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "A Promise",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "An HTML element",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Why do we need `response.json()` after fetch?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "To validate the response",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "To convert the raw response body into a JavaScript object",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "To send data back to the server",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "To check for errors",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "When does `fetch()` reject its Promise?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "On 404 errors",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "On 500 errors",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "On network failures (no internet, DNS errors)",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "On any non-200 status",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is `Promise.all()` used for?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Running promises one after another",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Cancelling all promises",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Running multiple promises in parallel and waiting for all",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Retrying failed promises",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What does `try/catch` do in an async function?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Prevents the function from running",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Catches errors from rejected promises or thrown errors",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Makes the function synchronous",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Retries the code automatically",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What is the output?",
+      "codeSnippet": "console.log(\"A\");\nsetTimeout(() => console.log(\"B\"), 0);\nconsole.log(\"C\");",
+      "options": [
+        {
+          "key": "A",
+          "text": "A, B, C",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "A, C, B",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "B, A, C",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "C, A, B",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which is the correct way to handle errors with fetch?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "fetch(url).error(callback)",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "fetch(url).then().catch()",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "fetch(url).onError(callback)",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "fetch(url).reject(callback)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What is a loading state and why is it important?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "A JavaScript variable type",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Visual feedback shown while data is being fetched",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "A CSS animation property",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "A way to speed up API calls",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "Explain the difference between synchronous and asynchronous code with an example.",
+      "preferredAnswer": "Synchronous code runs **line by line** — each line waits for the previous one to finish. Asynchronous code starts a task and **moves on** without waiting. Example: `console.log(\"A\"); setTimeout(() => console.log(\"B\"), 1000); console.log(\"C\");` outputs A, C, B — because setTimeout is async and doesn't block the next line."
+    },
+    {
+      "id": 2,
+      "question": "What is a Promise? Describe its three states.",
+      "preferredAnswer": "A Promise is an object representing the eventual completion or failure of an async operation. Its three states are: **Pending** (initial state, still waiting), **Fulfilled/Resolved** (operation completed successfully, `.then()` runs), and **Rejected** (operation failed, `.catch()` runs). Once settled (fulfilled or rejected), a Promise cannot change state."
+    },
+    {
+      "id": 3,
+      "question": "Why does `fetch()` need two steps to get usable data? (response → response.json())",
+      "preferredAnswer": "The first `await fetch()` gives you a **Response object** containing metadata (status, headers) but the body hasn't been fully read yet. `response.json()` is a second async operation that **reads and parses the body stream** into a JavaScript object. They're separate because you might want to check `response.ok` or `response.status` before bothering to parse the body."
+    },
+    {
+      "id": 4,
+      "question": "What is the Event Loop and why does JavaScript need it?",
+      "preferredAnswer": "The Event Loop is a mechanism that allows JavaScript to perform non-blocking operations despite being single-threaded. It continuously checks if the Call Stack is empty, and if so, moves callbacks from the Callback Queue to the Call Stack. This lets JavaScript handle timers, API calls, and user events without freezing the page."
+    },
+    {
+      "id": 5,
+      "question": "Why should every API call in your app handle three states (loading, success, error)?",
+      "preferredAnswer": "**Loading** — gives users visual feedback that something is happening, preventing confusion or repeated clicks. **Success** — displays the fetched data properly. **Error** — tells users what went wrong and often provides a retry option. Without all three states, the app feels broken — users won't know if it's loading, and if something fails, they'll see a blank screen with no explanation."
+    }
+  ]
+}

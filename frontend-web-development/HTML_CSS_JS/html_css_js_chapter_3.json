@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 3: Events & User Interaction",
+  "chapterId": "html_css_js_chapter_3",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "Which method is the modern, recommended way to handle events?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "element.onclick = function() {}",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<button onclick=\"handleClick()\">",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "element.addEventListener(\"click\", function)",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "element.attachEvent(\"click\", function)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What does `e.preventDefault()` do on a form submission?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Prevents the event from bubbling",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Prevents the page from reloading",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Removes the form from the page",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Disables the submit button",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What is event bubbling?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Events only fire on the exact element clicked",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Events travel DOWN from parent to child",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Events travel UP from child to parent through ancestors",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Events fire on all elements simultaneously",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What does `e.target` return?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "The element the listener is attached to",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "The element that actually triggered the event",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "The parent element",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "The document object",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which event fires on EVERY keystroke in an input field?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "change",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "blur",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "input",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "submit",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is event delegation?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Assigning different events to each element",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Attaching ONE listener on a parent to handle events for all children",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Preventing events from firing",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Creating custom events",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "How do you make an event listener fire only once?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "addEventListener(\"click\", fn, { once: true })",
+          "isCorrect": true
+        },
+        {
+          "key": "B",
+          "text": "addEventListener(\"click\", fn, { single: true })",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "addEventOnce(\"click\", fn)",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "addEventListener(\"click\", fn, false)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which method finds the nearest ancestor matching a selector?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "parentElement",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "querySelector()",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "closest()",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "matches()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which keyboard property gives you the character of the pressed key?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "e.keyCode",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "e.code",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "e.key",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "e.char",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What is the difference between `e.target` and `e.currentTarget`?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "They are the same",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "e.target is the actual element clicked; e.currentTarget is the element with the listener",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "e.currentTarget is the actual element clicked; e.target is the listener",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "e.target only works with delegation",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "What is event bubbling? Explain with an example of three nested elements.",
+      "preferredAnswer": "Event bubbling means when an event occurs on an element, it doesn't just fire on that element — it **travels upward** through all its parent elements to the document root.\n\n```html\n<div id=\"outer\">\n    <div id=\"middle\">\n        <button id=\"inner\">Click Me</button>\n    </div>\n</div>\n```\n\n```javascript\ndocument.querySelector(\"#outer\").addEventListener(\"click\", () => console.log(\"Outer\"));\ndocument.querySelector(\"#middle\").addEventListener(\"click\", () => console.log(\"Middle\"));\ndocument.querySelector(\"#inner\").addEventListener(\"click\", () => console.log(\"Inner\"));\n```\n\nWhen the button is clicked, the output is:\n```\nInner      ← Event fires on the clicked element first\nMiddle     ← Then bubbles to parent\nOuter      ← Then bubbles to grandparent\n```\n\nThe event starts at the target (`#inner`) and bubbles UP through `#middle` to `#outer`. This behavior enables event delegation."
+    },
+    {
+      "id": 2,
+      "question": "What is event delegation? Why is it better than adding individual listeners to each element?",
+      "preferredAnswer": "Event delegation is a pattern where you attach **one listener on a parent element** instead of individual listeners on each child. The parent catches events from children via bubbling and uses `e.target` to determine which child was interacted with.\n\n```javascript\n// ONE listener handles ALL list items, even ones added later\ndocument.querySelector(\"ul\").addEventListener(\"click\", (e) => {\n    if (e.target.tagName === \"LI\") {\n        console.log(`Clicked: ${e.target.textContent}`);\n    }\n});\n```\n\n**Why it's better:**\n1. **Performance** — 1 listener instead of 100 (for 100 items)\n2. **Dynamic elements** — works for elements added after page load\n3. **Less memory** — fewer event listeners = less memory consumption\n4. **Cleaner code** — one handler instead of loops setting up listeners"
+    },
+    {
+      "id": 3,
+      "question": "Explain the difference between the `input` and `change` events. When would you use each?",
+      "preferredAnswer": "The **`input` event** fires on **every single change** to an input's value — every keystroke, paste, or deletion. It provides **real-time** feedback.\n\nThe **`change` event** fires only when the value is **committed** — for text inputs, this means when the user leaves the field (blur). For `<select>` and checkboxes, it fires immediately on change.\n\n```javascript\n// User types \"Hello\" in a text input:\n// input fires: 5 times (H, e, l, l, o)\n// change fires: 1 time (when user clicks away)\n```\n\n**Use `input`** for: live search filtering, character counters, real-time validation, password strength meters — anything needing instant feedback.\n\n**Use `change`** for: dropdown selections, checkbox toggles, final value processing — when you only care about the end result."
+    },
+    {
+      "id": 4,
+      "question": "Why is `e.preventDefault()` essential for handling form submissions with JavaScript? What happens without it?",
+      "preferredAnswer": "By default, when a form is submitted, the browser **reloads the page** and sends the form data to the URL specified in the form's `action` attribute. This is the traditional server-side behavior.\n\nWith modern JavaScript, we want to handle form data **on the client side** — validate it, process it, or send it via `fetch()` to an API. If the page reloads, our JavaScript loses all its state and the user experience is disrupted.\n\n```javascript\nform.addEventListener(\"submit\", (e) => {\n    e.preventDefault();     // STOP the page reload\n    // Now JavaScript handles everything\n    const data = new FormData(form);\n    // Validate, process, send via fetch(), etc.\n});\n```\n\n**Without `e.preventDefault()`:** The page reloads instantly, the form data is lost (or sent to a non-existent server), any JavaScript state is destroyed, and the user sees a blank page or error."
+    },
+    {
+      "id": 5,
+      "question": "Write JavaScript that implements event delegation on a `<ul>` to handle clicks on `<li>` elements. It should log the text of the clicked item AND work for items added dynamically after page load.",
+      "preferredAnswer": "```javascript\nconst list = document.querySelector(\"#task-list\");\n\n// ONE listener on the parent <ul>\nlist.addEventListener(\"click\", (e) => {\n    const item = e.target.closest(\"li\");\n    if (!item) return;\n    if (!list.contains(item)) return;\n    console.log(`Clicked: ${item.textContent}`);\n    item.classList.toggle(\"completed\");\n});\n\n// Adding a new item dynamically — it works WITHOUT adding a new listener!\nconst newItem = document.createElement(\"li\");\nnewItem.textContent = \"New Dynamic Task\";\nlist.appendChild(newItem);\n```\n\nThis works because: (1) The listener is on the `<ul>` parent. (2) When any `<li>` is clicked, the event bubbles up to `<ul>`. (3) `e.target.closest(\"li\")` finds the actual `<li>` that was clicked. (4) New `<li>` elements automatically work because the listener is on the parent."
+    }
+  ]
+}

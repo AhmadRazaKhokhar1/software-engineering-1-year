@@ -1,0 +1,143 @@
+{
+  "chapterTitle": "Chapter 1: JavaScript Foundations (Quick but Solid)",
+  "chapterId": "html_css_js_chapter_1",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "What is JavaScript's role in web development?",
+      "codeSnippet": null,
+      "options": [
+        { "key": "A", "text": "Defines page structure", "isCorrect": false },
+        { "key": "B", "text": "Styles the page", "isCorrect": false },
+        { "key": "C", "text": "Adds interactivity and behavior", "isCorrect": true },
+        { "key": "D", "text": "Stores data on the server", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which keyword should you use by DEFAULT for declaring variables?",
+      "codeSnippet": null,
+      "options": [
+        { "key": "A", "text": "var", "isCorrect": false },
+        { "key": "B", "text": "let", "isCorrect": false },
+        { "key": "C", "text": "const", "isCorrect": true },
+        { "key": "D", "text": "function", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What does `console.log(typeof \"42\")` output?",
+      "codeSnippet": null,
+      "options": [
+        { "key": "A", "text": "\"number\"", "isCorrect": false },
+        { "key": "B", "text": "\"string\"", "isCorrect": true },
+        { "key": "C", "text": "\"boolean\"", "isCorrect": false },
+        { "key": "D", "text": "\"undefined\"", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What is the result of `5 === \"5\"`?",
+      "codeSnippet": null,
+      "options": [
+        { "key": "A", "text": "true", "isCorrect": false },
+        { "key": "B", "text": "false", "isCorrect": true },
+        { "key": "C", "text": "undefined", "isCorrect": false },
+        { "key": "D", "text": "Error", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which is the correct arrow function syntax for a function that doubles a number?",
+      "codeSnippet": null,
+      "options": [
+        { "key": "A", "text": "const double = x -> x * 2;", "isCorrect": false },
+        { "key": "B", "text": "const double = x => x * 2;", "isCorrect": true },
+        { "key": "C", "text": "const double = (x) -> { return x * 2; }", "isCorrect": false },
+        { "key": "D", "text": "const double => x * 2;", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is the output of this code?",
+      "codeSnippet": "let x = 10;\nif (true) {\n    let x = 20;\n    console.log(x);\n}",
+      "options": [
+        { "key": "A", "text": "10", "isCorrect": false },
+        { "key": "B", "text": "20", "isCorrect": true },
+        { "key": "C", "text": "undefined", "isCorrect": false },
+        { "key": "D", "text": "Error", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which loop is best for iterating through an array in modern JavaScript?",
+      "codeSnippet": null,
+      "options": [
+        { "key": "A", "text": "for loop", "isCorrect": false },
+        { "key": "B", "text": "while loop", "isCorrect": false },
+        { "key": "C", "text": "for...of loop", "isCorrect": true },
+        { "key": "D", "text": "do...while loop", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What does `break` do inside a loop?",
+      "codeSnippet": null,
+      "options": [
+        { "key": "A", "text": "Skips the current iteration", "isCorrect": false },
+        { "key": "B", "text": "Exits the loop entirely", "isCorrect": true },
+        { "key": "C", "text": "Restarts the loop", "isCorrect": false },
+        { "key": "D", "text": "Pauses the loop", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Where should the `<script>` tag be placed for best performance?",
+      "codeSnippet": null,
+      "options": [
+        { "key": "A", "text": "Inside <head> without any attribute", "isCorrect": false },
+        { "key": "B", "text": "Before </body> or with defer in <head>", "isCorrect": true },
+        { "key": "C", "text": "Inside <title>", "isCorrect": false },
+        { "key": "D", "text": "Before <!DOCTYPE html>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What is the result of `\"5\" + 3` in JavaScript?",
+      "codeSnippet": null,
+      "options": [
+        { "key": "A", "text": "8", "isCorrect": false },
+        { "key": "B", "text": "\"53\"", "isCorrect": true },
+        { "key": "C", "text": "53", "isCorrect": false },
+        { "key": "D", "text": "Error", "isCorrect": false }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "Explain the difference between `let`, `const`, and `var`. When should you use each?",
+      "preferredAnswer": "**`const`** declares a variable that **cannot be reassigned**. Use it as your **default choice** for all variables. It prevents accidental value changes and makes code more predictable. Example: `const PI = 3.14;`\n\n**`let`** declares a variable that **can be reassigned**. Use it only when you know the value will change — counters, toggles, or values updated by user input. Example: `let count = 0; count++;`\n\n**`var`** is the legacy way to declare variables. It has **function scope** instead of block scope, which causes unexpected bugs. **Never use `var`** — always use `const` or `let`.\n\n**Rule of thumb:** Use `const` for everything. Switch to `let` only if reassignment is needed."
+    },
+    {
+      "id": 2,
+      "question": "What is the difference between `==` and `===`? Why should you always use `===`?",
+      "preferredAnswer": "`==` (loose equality) compares **values only** and performs **type conversion** before comparing. This means `5 == \"5\"` returns `true` because the string `\"5\"` is converted to the number `5`.\n\n`===` (strict equality) compares **both value AND type** without any conversion. So `5 === \"5\"` returns `false` because a number and a string are different types.\n\nYou should always use `===` because `==` produces unexpected results:\n\n```javascript\n0 == false       // true (unexpected!)\n\"\" == false     // true (unexpected!)\nnull == undefined // true (unexpected!)\n\n0 === false      // false (correct!)\n\"\" === false    // false (correct!)\n```\n\nStrict equality prevents bugs caused by implicit type conversion."
+    },
+    {
+      "id": 3,
+      "question": "Write a function called `isEligible` that takes `age` and `hasLicense` as parameters and returns `true` if the person is 18 or older AND has a license. Use an arrow function.",
+      "preferredAnswer": "```javascript\nconst isEligible = (age, hasLicense) => age >= 18 && hasLicense;\n\n// Testing\nconsole.log(isEligible(20, true));   // true\nconsole.log(isEligible(20, false));  // false\nconsole.log(isEligible(16, true));   // false\nconsole.log(isEligible(16, false));  // false\n```\n\nThe function uses an arrow function with implicit return. The `&&` operator ensures **both** conditions must be true. `age >= 18` checks if the person is an adult, and `hasLicense` checks if they have a license. Only when both are true does the function return `true`."
+    },
+    {
+      "id": 4,
+      "question": "Explain block scope with an example. Why is it important?",
+      "preferredAnswer": "Block scope means that variables declared with `let` or `const` inside a block `{ }` (such as an `if`, `for`, or `while` block) are **only accessible inside that block**. They do not exist outside it.\n\n```javascript\nif (true) {\n    const secret = \"hidden\";\n    let count = 42;\n    console.log(secret);    // ✅ Works — inside the block\n}\nconsole.log(secret);        // ❌ ERROR — secret doesn't exist here\nconsole.log(count);         // ❌ ERROR — count doesn't exist here\n```\n\nBlock scope is important because:\n1. It **prevents variable leakage** — variables don't accidentally affect other parts of the code\n2. It makes code **predictable** — you know exactly where a variable exists\n3. It **prevents bugs** — especially in loops where `var` would create shared references\n4. Each block has its own **isolated environment**, making code safer and easier to reason about"
+    },
+    {
+      "id": 5,
+      "question": "Write a `for...of` loop that iterates through the array `[\"HTML\", \"CSS\", \"JavaScript\", \"React\"]` and prints each skill with its number (1. HTML, 2. CSS, etc.).",
+      "preferredAnswer": "```javascript\nconst skills = [\"HTML\", \"CSS\", \"JavaScript\", \"React\"];\n\nlet number = 1;\nfor (const skill of skills) {\n    console.log(`${number}. ${skill}`);\n    number++;\n}\n\n// Output:\n// 1. HTML\n// 2. CSS\n// 3. JavaScript\n// 4. React\n```\n\nAlternatively, using `forEach` with index:\n\n```javascript\nskills.forEach((skill, index) => {\n    console.log(`${index + 1}. ${skill}`);\n});\n```\n\nThe `for...of` loop iterates through each element in the array. We use a separate `number` variable to track the position since `for...of` doesn't provide an index automatically. The template literal `` `${number}. ${skill}` `` formats each line cleanly."
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 4: Responsive Design, Best Practices & Mini Project",
+  "chapterId": "html_css_chapter_4",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "Which meta tag is essential for responsive design on mobile devices?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<meta name=\"description\">",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "<meta charset=\"UTF-8\">",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "<meta name=\"author\">",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What does @media (max-width: 768px) mean?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Apply styles when screen is wider than 768px",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Apply styles when screen is 768px or narrower",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Apply styles only at exactly 768px",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Apply styles to all screens",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which CSS unit is relative to the root element's font size?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "em",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "vh",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "rem",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "%",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What does clamp(1rem, 3vw, 2.5rem) do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Sets font size to exactly 3vw",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Sets minimum 1rem, scales with viewport, max 2.5rem",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Sets font size to 1rem only",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Creates three different font sizes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which approach does the industry recommend for responsive CSS?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Desktop-first with max-width queries",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Mobile-first with min-width queries",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "No media queries needed",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Separate CSS files for each device",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What does object-fit: cover do on an image?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Stretches the image to fill (may distort)",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Fits image inside container (may have gaps)",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Fills container maintaining aspect ratio (may crop)",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Removes the image",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What CSS property creates a smooth animation between state changes?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "animation",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "transition",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "transform",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "keyframes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of CSS custom properties (variables)?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Add JavaScript functionality",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Store reusable values like colors and spacing",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Create responsive breakpoints",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Replace media queries",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which selector targets an input when the user clicks into it?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "input:hover",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "input:active",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "input:focus",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "input:selected",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What does transform: translateY(-5px) do on hover?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Moves element 5px to the right",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Moves element 5px down",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Moves element 5px up",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Scales element by 5px",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "Explain the difference between max-width and min-width media queries. Which approach is mobile-first and why?",
+      "preferredAnswer": "**max-width** — Styles apply when screen is **at or below** the width. Used in **desktop-first** (default for large screens, override for smaller).\n\n**min-width** — Styles apply when screen is **at or above** the width. Used in **mobile-first** (default for mobile, enhance for larger).\n\nMobile-first (min-width) is recommended: simpler base CSS, less CSS loaded on mobile, progressive enhancement, and Google uses mobile-first indexing."
+    },
+    {
+      "id": 2,
+      "question": "What is the clamp() function? Write an example for a responsive heading never smaller than 1.5rem and never larger than 3rem.",
+      "preferredAnswer": "clamp(minimum, preferred, maximum) creates a value that scales between min and max.\n\n```css\nh1 { font-size: clamp(1.5rem, 4vw, 3rem); }\n```\nOn small screens: 1.5rem. On medium: scales with 4vw. On large: caps at 3rem. Eliminates multiple media queries for font sizing."
+    },
+    {
+      "id": 3,
+      "question": "List 5 CSS best practices for writing clean, professional, maintainable CSS.",
+      "preferredAnswer": "1. **Use CSS Variables** — Define colors, spacing, fonts in :root.\n2. **Use classes, not IDs, for styling** — Classes are reusable and lower specificity.\n3. **Organize with comments and sections** — Reset, Variables, Typography, Layout, Components, Media Queries.\n4. **Avoid !important** — Fix specificity issues instead of forcing overrides.\n5. **Follow mobile-first** — Base styles for mobile, min-width for larger screens."
+    },
+    {
+      "id": 4,
+      "question": "Write CSS that styles a text input: full width, 12px padding, light gray border that turns blue on focus with subtle shadow, smooth 0.3s transition.",
+      "preferredAnswer": "```css\ninput[type=\"text\"] {\n    width: 100%; padding: 12px 16px;\n    border: 2px solid #ddd;\n    border-radius: 6px;\n    outline: none;\n    transition: border-color 0.3s ease, box-shadow 0.3s ease;\n}\ninput[type=\"text\"]:focus {\n    border-color: #3498db;\n    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);\n}\n```"
+    },
+    {
+      "id": 5,
+      "question": "You've completed the entire HTML + CSS course. Describe what you can now build and what your next steps should be.",
+      "preferredAnswer": "**I can now:** (1) Write semantic, accessible HTML; (2) Style with CSS — colors, fonts, spacing, layouts; (3) Create layouts with Flexbox; (4) Build responsive sites with media queries and responsive units; (5) Add transitions and hover/focus states; (6) Follow best practices — variables, organization, accessibility.\n\n**Next steps:** CSS Grid, JavaScript for interactivity, Git & GitHub, build real projects (portfolio, landing pages), CSS frameworks (Tailwind/Bootstrap), then React/Vue/Angular."
+    }
+  ]
+}

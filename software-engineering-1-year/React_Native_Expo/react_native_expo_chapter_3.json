@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 3: TypeScript, Props & Component Architecture",
+    "chapterId": "react_native_expo_chapter_3",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Optional props in TypeScript are expressed with:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "static keyword", "isCorrect": false },
+                { "key": "B", "text": "? after the property name", "isCorrect": true },
+                { "key": "C", "text": "optional keyword before interface", "isCorrect": false },
+                { "key": "D", "text": "@Optional decorator", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "ViewStyle and TextStyle are imported from:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "react", "isCorrect": false },
+                { "key": "B", "text": "react-native", "isCorrect": true },
+                { "key": "C", "text": "expo-router", "isCorrect": false },
+                { "key": "D", "text": "typescript", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Typing onPress for a button component usually uses:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "() => void", "isCorrect": true },
+                { "key": "B", "text": "string", "isCorrect": false },
+                { "key": "C", "text": "number", "isCorrect": false },
+                { "key": "D", "text": "Promise<View>", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "children in a typed component is often typed as:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "React.ReactNode", "isCorrect": true },
+                { "key": "B", "text": "HTMLElement", "isCorrect": false },
+                { "key": "C", "text": "XMLDocument", "isCorrect": false },
+                { "key": "D", "text": "never", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Strict TypeScript helps React Native projects by:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Removing the need for components", "isCorrect": false },
+                { "key": "B", "text": "Catching prop and null errors at compile time", "isCorrect": true },
+                { "key": "C", "text": "Disabling Metro", "isCorrect": false },
+                { "key": "D", "text": "Bundling faster only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Splitting screens into smaller components primarily improves:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Readability, reuse, and testability", "isCorrect": true },
+                { "key": "B", "text": "GPS accuracy", "isCorrect": false },
+                { "key": "C", "text": "App Store ranking directly", "isCorrect": false },
+                { "key": "D", "text": "Binary size always", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "extends React.PropsWithChildren adds:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Built-in navigation", "isCorrect": false },
+                { "key": "B", "text": "Optional children to props typing", "isCorrect": true },
+                { "key": "C", "text": "SQLite bindings", "isCorrect": false },
+                { "key": "D", "text": "Hermes bytecode", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "A presentational component typically:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Owns all API calls and Redux", "isCorrect": false },
+                { "key": "B", "text": "Focuses on how things look given props", "isCorrect": true },
+                { "key": "C", "text": "Cannot use StyleSheet", "isCorrect": false },
+                { "key": "D", "text": "Must be a class component", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Type-only imports use:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "import type { X } from '...'", "isCorrect": true },
+                { "key": "B", "text": "require.type()", "isCorrect": false },
+                { "key": "C", "text": "typedef import", "isCorrect": false },
+                { "key": "D", "text": "using X from", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Which is a valid reason to create a components/ui folder?",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Store keystore files", "isCorrect": false },
+                { "key": "B", "text": "Share buttons, typography, and cards across screens", "isCorrect": true },
+                { "key": "C", "text": "Host Python scripts", "isCorrect": false },
+                { "key": "D", "text": "Replace app.json", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why type callback props like onSubmit: () => void instead of any?",
+            "preferredAnswer": "Explicit function types document the contract, enable **autocomplete**, and let TypeScript catch **wrong arity** or **missing handlers** before runtime."
+        },
+        {
+            "id": 2,
+            "question": "What is the difference between ViewStyle and TextStyle?",
+            "preferredAnswer": "**ViewStyle** styles layout containers (**View**, **Pressable**). **TextStyle** styles **Text** (font, lineHeight, etc.). Some props overlap (margin, padding) but text-specific props belong on **TextStyle**."
+        },
+        {
+            "id": 3,
+            "question": "Give one benefit of colocating types next to a component file.",
+            "preferredAnswer": "Changes to props stay **local** and visible during refactors; importing screens get **accurate** typings without hunting a global types folder."
+        },
+        {
+            "id": 4,
+            "question": "When might you use useReducer instead of useState for form state?",
+            "preferredAnswer": "When multiple fields update together with **complex transitions** or **shared validation** rules, a **reducer** centralizes updates and avoids a chain of interdependent **setState** calls."
+        },
+        {
+            "id": 5,
+            "question": "What does “thin screen, fat components” mean?",
+            "preferredAnswer": "Screens orchestrate data and navigation; **reusable UI** lives in components. This keeps each file focused and **testable**."
+        }
+    ]
+}

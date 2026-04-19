@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 11: EAS Build, Updates & Environment Config",
+    "chapterId": "react_native_expo_chapter_11",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "EAS Build produces:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Native binaries for devices and stores", "isCorrect": true },
+                { "key": "B", "text": "Only HTML files", "isCorrect": false },
+                { "key": "C", "text": "Python wheels", "isCorrect": false },
+                { "key": "D", "text": "Docker images only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "eas.json defines:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Build profiles like development, preview, production", "isCorrect": true },
+                { "key": "B", "text": "Git branches only", "isCorrect": false },
+                { "key": "C", "text": "SQL schemas", "isCorrect": false },
+                { "key": "D", "text": "VS Code theme", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "OTA updates via EAS Update can change:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "JavaScript bundles and assets within compatibility rules", "isCorrect": true },
+                { "key": "B", "text": "Arbitrary native code without a new build always", "isCorrect": false },
+                { "key": "C", "text": "App Store review status", "isCorrect": false },
+                { "key": "D", "text": "Device hardware", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Apple Developer Program is required for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "App Store distribution of iOS apps", "isCorrect": true },
+                { "key": "B", "text": "Running Expo Go only", "isCorrect": false },
+                { "key": "C", "text": "Writing TypeScript", "isCorrect": false },
+                { "key": "D", "text": "Android debug builds only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Channels in EAS Update help:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Separate staging vs production update streams", "isCorrect": true },
+                { "key": "B", "text": "Compile Swift on Windows", "isCorrect": false },
+                { "key": "C", "text": "Remove Hermes", "isCorrect": false },
+                { "key": "D", "text": "Disable Metro", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Secrets for builds should live in:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "EAS secrets / CI environment, not committed repos", "isCorrect": true },
+                { "key": "B", "text": "README.md in plain text", "isCorrect": false },
+                { "key": "C", "text": "Public GitHub gists", "isCorrect": false },
+                { "key": "D", "text": "Inline in client fetch calls always", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "A new native dependency often requires:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "A new development/production build", "isCorrect": true },
+                { "key": "B", "text": "Only OTA without checks", "isCorrect": false },
+                { "key": "C", "text": "Deleting app.json", "isCorrect": false },
+                { "key": "D", "text": "Removing icons", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "EXPO_PUBLIC_ variables are embedded at:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Build time into the JS bundle (public)", "isCorrect": true },
+                { "key": "B", "text": "Runtime from a hidden server without bundling", "isCorrect": false },
+                { "key": "C", "text": "Apple Keychain automatically", "isCorrect": false },
+                { "key": "D", "text": "Gradle daemon only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Android App Bundle (AAB) is:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Google Play’s preferred publish format", "isCorrect": true },
+                { "key": "B", "text": "iOS package", "isCorrect": false },
+                { "key": "C", "text": "A WebView format", "isCorrect": false },
+                { "key": "D", "text": "An npm tarball", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Versioning for stores must:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Increment per store rules (versionCode/build number)", "isCorrect": true },
+                { "key": "B", "text": "Stay identical forever", "isCorrect": false },
+                { "key": "C", "text": "Randomize each upload", "isCorrect": false },
+                { "key": "D", "text": "Match git commit only", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why can OTA not replace every kind of change?",
+            "preferredAnswer": "If you change **native code**, **permissions**, or **native modules**, users need a new **binary**—OTA updates **JS/assets** within the same native runtime compatibility."
+        },
+        {
+            "id": 2,
+            "question": "What is a preview profile used for?",
+            "preferredAnswer": "**Internal testers** get non-production builds with **staging** API endpoints and **feature flags** without touching production users."
+        },
+        {
+            "id": 3,
+            "question": "Why track runtimeVersion with updates?",
+            "preferredAnswer": "Ensures OTA bundles match the **native** runtime—prevents **crashes** from incompatible **JS** expecting different native modules."
+        },
+        {
+            "id": 4,
+            "question": "Name one artifact EAS Build might output for Android.",
+            "preferredAnswer": "**AAB** for Play Store or **APK** for direct installs/sideload testing—depending on profile configuration."
+        },
+        {
+            "id": 5,
+            "question": "Why keep secrets off the client?",
+            "preferredAnswer": "Client bundles are **inspectable**; attackers can extract keys—use **servers** to hold **private** credentials."
+        }
+    ]
+}

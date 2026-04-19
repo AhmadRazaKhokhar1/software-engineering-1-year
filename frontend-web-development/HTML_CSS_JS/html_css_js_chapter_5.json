@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 5: Data Handling & Browser Storage",
+  "chapterId": "html_css_js_chapter_5",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "What does `JSON.stringify()` do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Converts JSON to an object",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Converts an object to a JSON string",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Deletes JSON data",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Validates JSON syntax",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What does `localStorage.getItem(\"key\")` return if the key doesn't exist?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "undefined",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "0",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "null",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "An error",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which method removes the last item from an array?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "shift()",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "splice()",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "pop()",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "delete()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What is the correct way to store an array in localStorage?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "localStorage.setItem(\"arr\", [1,2,3])",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "localStorage.setItem(\"arr\", JSON.stringify([1,2,3]))",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "localStorage.setArray(\"arr\", [1,2,3])",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "localStorage.push([1,2,3])",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What does `filter()` return?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "A single item",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "A boolean",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "A new array with items that pass the test",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "The original array, modified",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How long does `sessionStorage` data last?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Forever",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "24 hours",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Until the browser tab is closed",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Until the computer restarts",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which is NOT a valid JSON value?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "\"hello\"",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "42",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "function() {}",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "null",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What does `map()` do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Finds a single element",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Transforms each element and returns a new array",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Removes elements that don't match",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Sorts the array",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What will `Object.keys({a: 1, b: 2})` return?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "[1, 2]",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "[\"a\", \"b\"]",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "{a, b}",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "\"a, b\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "In the To-Do app, why do we call `renderTasks()` after every change?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "To restart the app",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "To clear localStorage",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "To update the displayed HTML based on the current data",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "To validate the input",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "What is the difference between `localStorage` and `sessionStorage`? When would you use each?",
+      "preferredAnswer": "**localStorage** persists data even after the browser is closed — use it for saving user preferences like theme or saved tasks.\n\n**sessionStorage** only keeps data until the browser tab is closed — use it for temporary data like a multi-step form's progress that shouldn't persist forever."
+    },
+    {
+      "id": 2,
+      "question": "Why can't we store arrays or objects directly in localStorage? How do we solve this?",
+      "preferredAnswer": "`localStorage` can only store strings. If you store an array directly, it gets converted to a comma-separated string and loses its structure. The solution is to use `JSON.stringify()` before saving and `JSON.parse()` when reading back."
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between `map()` and `forEach()`?",
+      "preferredAnswer": "`forEach()` loops through an array and performs an action but returns nothing (`undefined`). `map()` also loops through but **returns a new array** with transformed values. Use `map()` when you need a new array; use `forEach()` when you just want to do something (like logging or updating DOM)."
+    },
+    {
+      "id": 4,
+      "question": "What does \"data-driven UI\" mean and why is it important?",
+      "preferredAnswer": "Data-driven UI means the HTML on the screen is **generated from data** (arrays/objects) using JavaScript, rather than being hardcoded. It's important because when data changes (add/delete/update), you just update the data and re-render. This is the foundation of how frameworks like React work."
+    },
+    {
+      "id": 5,
+      "question": "In the To-Do app, explain the flow that happens when a user adds a new task.",
+      "preferredAnswer": "When the user clicks \"Add\" or presses Enter: (1) the input value is read and trimmed, (2) a new task object `{text, completed: false}` is pushed to the `tasks` array, (3) the input is cleared, (4) `saveTasks()` writes the updated array to localStorage using `JSON.stringify()`, (5) `renderTasks()` clears the list and rebuilds all HTML from the `tasks` array, and (6) stats are updated."
+    }
+  ]
+}

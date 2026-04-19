@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 4: Navigation with Expo Router",
+    "chapterId": "react_native_expo_chapter_4",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Expo Router primarily uses which folder for routes?",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "src/routes", "isCorrect": false },
+                { "key": "B", "text": "app", "isCorrect": true },
+                { "key": "C", "text": "pages (Next.js only)", "isCorrect": false },
+                { "key": "D", "text": "navigation.yaml", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "A root _layout.tsx file is used to:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Store API keys in plain text", "isCorrect": false },
+                { "key": "B", "text": "Wrap child routes with providers and navigators", "isCorrect": true },
+                { "key": "C", "text": "Define Gradle settings", "isCorrect": false },
+                { "key": "D", "text": "Replace package.json", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Dynamic route segments often look like:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "user.tsx", "isCorrect": false },
+                { "key": "B", "text": "[id].tsx", "isCorrect": true },
+                { "key": "C", "text": "dynamic.id", "isCorrect": false },
+                { "key": "D", "text": "route.xml", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Tabs are commonly implemented with:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "A nested layout and tab navigator", "isCorrect": true },
+                { "key": "B", "text": "Only WebView", "isCorrect": false },
+                { "key": "C", "text": "SQLite triggers", "isCorrect": false },
+                { "key": "D", "text": "CSS z-index alone", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "router.replace differs from router.push because:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "replace swaps the current history entry instead of pushing another", "isCorrect": true },
+                { "key": "B", "text": "replace deletes node_modules", "isCorrect": false },
+                { "key": "C", "text": "replace only works on web", "isCorrect": false },
+                { "key": "D", "text": "replace animates slower", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "useLocalSearchParams is used to:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Read route parameters in the current screen", "isCorrect": true },
+                { "key": "B", "text": "Configure Metro", "isCorrect": false },
+                { "key": "C", "text": "Open the camera", "isCorrect": false },
+                { "key": "D", "text": "Encrypt storage", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Modal presentation is useful for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Short-lived tasks over the current screen", "isCorrect": true },
+                { "key": "B", "text": "Replacing databases", "isCorrect": false },
+                { "key": "C", "text": "Bundling Hermes", "isCorrect": false },
+                { "key": "D", "text": "Compiling Swift only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Deep linking configuration matters for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Opening specific screens from URLs or notifications", "isCorrect": true },
+                { "key": "B", "text": "Installing npm faster", "isCorrect": false },
+                { "key": "C", "text": "Disabling TypeScript", "isCorrect": false },
+                { "key": "D", "text": "Removing safe areas", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Expo Router builds on:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "React Navigation primitives", "isCorrect": true },
+                { "key": "B", "text": "jQuery Mobile", "isCorrect": false },
+                { "key": "C", "text": "Angular Router only", "isCorrect": false },
+                { "key": "D", "text": "Webpack loaders exclusively", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Grouping routes with parentheses (groups) helps:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Organize layouts without affecting the URL segment", "isCorrect": true },
+                { "key": "B", "text": "Hide JavaScript from Metro", "isCorrect": false },
+                { "key": "C", "text": "Disable Android back", "isCorrect": false },
+                { "key": "D", "text": "Compile to SwiftUI automatically", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why is file-based routing attractive in Expo Router?",
+            "preferredAnswer": "Routes are **discoverable from the filesystem**, less boilerplate than manually registering screens, and align with **URL-based** mental models for linking and web parity."
+        },
+        {
+            "id": 2,
+            "question": "When would you nest a stack inside a tab?",
+            "preferredAnswer": "When each tab has its own **detail flows**—e.g. Home tab pushes **ItemDetail** while Profile tab pushes **EditProfile**—keeping tab selection stable while stacks handle **depth**."
+        },
+        {
+            "id": 3,
+            "question": "What is a common pitfall when passing params between screens?",
+            "preferredAnswer": "Passing **non-serializable** objects (functions, class instances) or **large blobs** in params—prefer **IDs** and refetch or use a store/cache."
+        },
+        {
+            "id": 4,
+            "question": "How does Android hardware back interact with stacks?",
+            "preferredAnswer": "The stack should **pop** on back; misconfigured navigators can **exit the app** unexpectedly—test **back** on Android for each flow."
+        },
+        {
+            "id": 5,
+            "question": "What role does Link play in Expo Router?",
+            "preferredAnswer": "**Link** provides **declarative navigation** with `href`, supporting **prefetch** patterns on web and consistent navigation on native when configured."
+        }
+    ]
+}

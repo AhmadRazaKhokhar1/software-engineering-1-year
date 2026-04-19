@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 8: Final Project & Best Practices",
+  "chapterId": "html_css_js_chapter_8",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "What is the main benefit of separating code into multiple files?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "It makes the website load faster",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "It makes code easier to read, maintain, and debug",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "It is required by the browser",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "It reduces the number of bugs automatically",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What does the `defer` attribute do on a `<script>` tag?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Delays the script by 5 seconds",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Loads the script after HTML is fully parsed",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Prevents the script from running",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Makes the script run twice",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What is event delegation?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Removing all event listeners",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Adding one listener on a parent to handle events from children",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Passing events between files",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Delegating events to the server",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What does `debounce` do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Cancels a function permanently",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Delays function execution until the user stops triggering it",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Makes a function run faster",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Prevents a function from being called more than once ever",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which is the correct file to include FIRST in HTML?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "app.js (main application logic)",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "utils.js (utility/helper functions)",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "It doesn't matter",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "style.css",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is `document.createDocumentFragment()` used for?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Creating a new HTML page",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Building DOM elements in memory before adding them to the page",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Splitting a document into fragments",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Deleting parts of the DOM",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which deployment platform lets you drag and drop files to deploy?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "GitHub Pages",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Vercel",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Netlify",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "AWS",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Why should you use `escapeHTML()` when displaying user input?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "To make text bold",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "To prevent XSS (Cross-Site Scripting) attacks",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "To convert text to JSON",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "To compress the text",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What does `<script type=\"module\">` enable?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "jQuery support",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "ES6 import/export syntax",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Faster script execution",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Automatic error handling",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What should you do before deploying a project?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Delete all CSS",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Remove console.logs, test responsiveness, add meta tags",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Convert everything to TypeScript",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Add as many comments as possible",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "What does \"separation of concerns\" mean and why is it important in code organization?",
+      "preferredAnswer": "Separation of concerns means each part of your code handles **one responsibility** — data functions handle data, render functions handle UI, event handlers handle user actions. It's important because it makes code **easier to read**, **debug** (you know exactly where to look), and **reuse** (a fetch function can be used anywhere). It also prepares you for frameworks like React where this separation is enforced."
+    },
+    {
+      "id": 2,
+      "question": "Explain why event delegation is better than adding individual listeners to each element.",
+      "preferredAnswer": "Event delegation adds **one listener on a parent** instead of separate listeners on each child. It's better because: (1) **Performance** — fewer listeners use less memory, (2) **Dynamic elements** — it automatically works for elements added later via JavaScript, (3) **Cleaner code** — one handler instead of dozens. It works because of event bubbling — clicks on children bubble up to the parent."
+    },
+    {
+      "id": 3,
+      "question": "What is debouncing and when would you use it?",
+      "preferredAnswer": "Debouncing delays a function's execution until the user **stops triggering** it for a specified time. For example, with a search input, instead of calling the API on every keystroke (typing \"hello\" = 5 API calls), debounce waits until the user pauses typing, then makes **one call**. Use it for search inputs, window resize handlers, scroll events, or any frequently triggered event that does expensive work."
+    },
+    {
+      "id": 4,
+      "question": "What is the difference between GitHub Pages, Netlify, and Vercel for deployment?",
+      "preferredAnswer": "All three are free for static sites. **GitHub Pages** is built into GitHub — you enable it in settings and it deploys from your repo. **Netlify** is the easiest — you can drag and drop a folder to deploy instantly. **Vercel** is best for React/Next.js projects with GitHub integration. For vanilla HTML/CSS/JS projects, Netlify is the simplest choice. All provide free HTTPS and custom domain support."
+    },
+    {
+      "id": 5,
+      "question": "List 5 things you should check before deploying a web project.",
+      "preferredAnswer": "(1) Remove or minimize `console.log()` statements, (2) Test on mobile devices and different browsers for responsiveness, (3) Ensure all file paths are relative (not absolute like `C:/Users/...`), (4) Add proper `<title>`, `<meta description>`, and favicon, (5) Verify that `index.html` is in the root folder and all linked CSS/JS files load correctly."
+    }
+  ]
+}

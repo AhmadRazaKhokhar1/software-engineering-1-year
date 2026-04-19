@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 7: Navigation, Forms & Backend Features",
+    "chapterId": "react_nextjs_chapter_7",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What component should you use for client-side navigation in Next.js?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "<a>",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "<Link>",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "<Navigate>",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "<Route>",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "How do you access URL parameters in a page component?",
+            "codeSnippet": "// app/blog/[slug]/page.tsx",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "props.params",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "{ params }",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "useParams()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "getParams()",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What file creates an API route?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "api.js",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "route.ts",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "handler.js",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "endpoint.js",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What directive makes a function a Server Action?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "'use client'",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "'use server'",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "'use action'",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "'server-side'",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "How do you programmatically navigate in a Client Component?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "useNavigate()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "useRouter()",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "router.push()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "navigate()",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What does middleware.ts do?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Handles database connections",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Runs before a request is completed",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Manages state",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Compiles TypeScript",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "How do you read search params in a Server Component?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "useSearchParams()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "{ searchParams }",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "getSearchParams()",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "props.query",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What HTTP method is used for creating resources in REST APIs?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "GET",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "POST",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "PUT",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "PATCH",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "How do you set a cookie in a Route Handler?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "setCookie('name', 'value')",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "cookies().set('name', 'value')",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "response.cookie('name', 'value')",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "document.cookie = 'name=value'",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What does revalidatePath() do in a Server Action?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Validates form data",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Checks if a path exists",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Triggers re-generation of a specific path",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "Redirects to a path",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between <Link> and <a> in Next.js. Why should you use Link for internal navigation?",
+            "preferredAnswer": "**`<Link>`** — Next.js component for internal navigation\n\n```tsx\nimport Link from 'next/link';\n\n<Link href=\"/about\">About Us</Link>\n```\n\n**`<a>`** — Standard HTML anchor for external links\n\n```tsx\n<a href=\"https://google.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n  Google\n</a>\n```\n\n---\n\n**Key Differences:**\n\n**1. Navigation Type:**\n- `<Link>`: **Client-side** navigation (no page reload)\n- `<a>`: **Full page reload** (browser requests new HTML)\n\n**2. Performance:**\n```tsx\n// ✅ Link - Fast (no reload)\n<Link href=\"/products\">Products</Link>\n// User clicks → JavaScript updates URL → Component renders → Instant!\n\n// ❌ <a> - Slow (full reload)\n<a href=\"/products\">Products</a>\n// User clicks → Browser requests /products → Server responds → Parse HTML → Download JS → Render\n```\n\n**3. Prefetching:**\n```tsx\n// ✅ Link automatically prefetches pages in viewport\n<Link href=\"/about\">About</Link>\n// When link appears on screen, Next.js downloads the page in background\n// Click = instant navigation!\n\n// ❌ <a> doesn't prefetch\n<a href=\"/about\">About</a>\n// Click = wait for download\n```\n\n**4. Scroll Preservation:**\n```tsx\n// ✅ Link preserves scroll position on back navigation\nUser: /home → /products (scrolls down) → back to /home\n// Link remembers scroll position on /home\n\n// ❌ <a> always scrolls to top\n```\n\n**5. State Preservation:**\n```tsx\n// ✅ Link preserves React state during navigation\nconst [count, setCount] = useState(0);\n// Navigate with Link → count persists if component stays mounted\n\n// ❌ <a> causes full reload → all state lost\n```\n\n---\n\n**When to use each:**\n\n**Use `<Link>` for:**\n✅ Internal pages (`/about`, `/blog`, `/products`)\n✅ Better performance\n✅ Better user experience\n\n**Use `<a>` for:**\n✅ External URLs (`https://google.com`)\n✅ Downloads (`/file.pdf`)\n✅ Mailto/tel links (`mailto:email@example.com`)\n\n---\n\n**Example:**\n\n```tsx\nimport Link from 'next/link';\n\nexport default function Navigation() {\n  return (\n    <nav>\n      {/* ✅ Internal navigation */}\n      <Link href=\"/\">Home</Link>\n      <Link href=\"/about\">About</Link>\n      <Link href=\"/blog\">Blog</Link>\n      \n      {/* ✅ External link */}\n      <a href=\"https://github.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n        GitHub\n      </a>\n      \n      {/* ❌ WRONG: Using <a> for internal */}\n      <a href=\"/contact\">Contact (causes reload!)</a>\n    </nav>\n  );\n}\n```"
+        },
+        {
+            "id": 2,
+            "question": "What are Route Handlers? Create a Route Handler that handles GET, POST, and DELETE requests for a 'tasks' resource.",
+            "preferredAnswer": "**Route Handlers** are Next.js's built-in API routes — backend endpoints in your app.\n\n**File:** `app/api/tasks/route.ts`\n\n```tsx\n// app/api/tasks/route.ts\nimport { NextResponse } from 'next/server';\n\n// In-memory store (in production, use a database)\nlet tasks = [\n  { id: 1, title: 'Learn Next.js', completed: false },\n  { id: 2, title: 'Build a project', completed: false },\n];\n\nlet nextId = 3;\n\n// GET /api/tasks - Get all tasks\nexport async function GET(request) {\n  // Optional: Filter by query params\n  const { searchParams } = new URL(request.url);\n  const completed = searchParams.get('completed');\n\n  let filteredTasks = tasks;\n\n  if (completed !== null) {\n    filteredTasks = tasks.filter(t => \n      t.completed === (completed === 'true')\n    );\n  }\n\n  return NextResponse.json(filteredTasks);\n}\n\n// POST /api/tasks - Create a new task\nexport async function POST(request) {\n  try {\n    const body = await request.json();\n\n    // Validate\n    if (!body.title || body.title.trim() === '') {\n      return NextResponse.json(\n        { error: 'Title is required' },\n        { status: 400 }\n      );\n    }\n\n    // Create task\n    const newTask = {\n      id: nextId++,\n      title: body.title,\n      completed: body.completed || false,\n    };\n\n    tasks.push(newTask);\n\n    return NextResponse.json(newTask, { status: 201 });\n  } catch (error) {\n    return NextResponse.json(\n      { error: 'Invalid JSON' },\n      { status: 400 }\n    );\n  }\n}\n\n// DELETE /api/tasks?id=1 - Delete a task\nexport async function DELETE(request) {\n  const { searchParams } = new URL(request.url);\n  const id = parseInt(searchParams.get('id'));\n\n  if (!id) {\n    return NextResponse.json(\n      { error: 'Task ID is required' },\n      { status: 400 }\n    );\n  }\n\n  const index = tasks.findIndex(t => t.id === id);\n\n  if (index === -1) {\n    return NextResponse.json(\n      { error: 'Task not found' },\n      { status: 404 }\n    );\n  }\n\n  tasks.splice(index, 1);\n\n  return NextResponse.json({ success: true });\n}\n```\n\n---\n\n**Dynamic Route Handler (for update):**\n\n`app/api/tasks/[id]/route.ts`\n\n```tsx\n// app/api/tasks/[id]/route.ts\nimport { NextResponse } from 'next/server';\nimport { tasks } from '../route';  // Import shared data\n\n// GET /api/tasks/1 - Get single task\nexport async function GET(request, { params }) {\n  const id = parseInt(params.id);\n  const task = tasks.find(t => t.id === id);\n\n  if (!task) {\n    return NextResponse.json(\n      { error: 'Task not found' },\n      { status: 404 }\n    );\n  }\n\n  return NextResponse.json(task);\n}\n\n// PATCH /api/tasks/1 - Update task\nexport async function PATCH(request, { params }) {\n  const id = parseInt(params.id);\n  const task = tasks.find(t => t.id === id);\n\n  if (!task) {\n    return NextResponse.json(\n      { error: 'Task not found' },\n      { status: 404 }\n    );\n  }\n\n  const body = await request.json();\n\n  // Update fields\n  if (body.title !== undefined) task.title = body.title;\n  if (body.completed !== undefined) task.completed = body.completed;\n\n  return NextResponse.json(task);\n}\n\n// DELETE /api/tasks/1 - Delete task (alternative to query param)\nexport async function DELETE(request, { params }) {\n  const id = parseInt(params.id);\n  const index = tasks.findIndex(t => t.id === id);\n\n  if (index === -1) {\n    return NextResponse.json(\n      { error: 'Task not found' },\n      { status: 404 }\n    );\n  }\n\n  const deleted = tasks.splice(index, 1)[0];\n  return NextResponse.json(deleted);\n}\n```\n\n---\n\n**Usage from Client:**\n\n```tsx\n// Get all tasks\nconst tasks = await fetch('/api/tasks').then(r => r.json());\n\n// Get completed tasks only\nconst completed = await fetch('/api/tasks?completed=true').then(r => r.json());\n\n// Create task\nconst newTask = await fetch('/api/tasks', {\n  method: 'POST',\n  headers: { 'Content-Type': 'application/json' },\n  body: JSON.stringify({ title: 'New task', completed: false })\n}).then(r => r.json());\n\n// Update task\nawait fetch('/api/tasks/1', {\n  method: 'PATCH',\n  headers: { 'Content-Type': 'application/json' },\n  body: JSON.stringify({ completed: true })\n});\n\n// Delete task (option 1: query param)\nawait fetch('/api/tasks?id=1', { method: 'DELETE' });\n\n// Delete task (option 2: path param)\nawait fetch('/api/tasks/1', { method: 'DELETE' });\n```\n\n---\n\n**With Database (Prisma example):**\n\n```tsx\nimport { prisma } from '@/lib/prisma';\n\nexport async function GET() {\n  const tasks = await prisma.task.findMany();\n  return NextResponse.json(tasks);\n}\n\nexport async function POST(request) {\n  const body = await request.json();\n  \n  const task = await prisma.task.create({\n    data: { title: body.title, completed: false }\n  });\n  \n  return NextResponse.json(task, { status: 201 });\n}\n```"
+        },
+        {
+            "id": 3,
+            "question": "What are Server Actions? Create a Server Action that handles form submission to create a new blog post with validation.",
+            "preferredAnswer": "**Server Actions** are asynchronous functions that run on the server. They're the modern way to handle forms in Next.js — no API routes needed!\n\n**Benefits:**\n- ✅ No separate API route needed\n- ✅ Progressive enhancement (works without JS)\n- ✅ Type-safe\n- ✅ Automatic revalidation\n\n---\n\n**Server Action with Validation:**\n\n```tsx\n// app/actions/posts.ts\n'use server';\n\nimport { revalidatePath } from 'next/cache';\nimport { redirect } from 'next/navigation';\nimport { z } from 'zod';\nimport { prisma } from '@/lib/prisma';\n\n// Validation schema\nconst PostSchema = z.object({\n  title: z.string().min(3, 'Title must be at least 3 characters').max(100),\n  content: z.string().min(10, 'Content must be at least 10 characters'),\n  category: z.enum(['tutorial', 'guide', 'news']),\n  published: z.boolean().default(false),\n});\n\nexport async function createPost(formData) {\n  // Extract form data\n  const data = {\n    title: formData.get('title'),\n    content: formData.get('content'),\n    category: formData.get('category'),\n    published: formData.get('published') === 'on',\n  };\n\n  // Validate\n  const result = PostSchema.safeParse(data);\n\n  if (!result.success) {\n    // Return validation errors\n    return {\n      success: false,\n      errors: result.error.flatten().fieldErrors,\n    };\n  }\n\n  // Create post in database\n  try {\n    const post = await prisma.post.create({\n      data: {\n        ...result.data,\n        slug: result.data.title.toLowerCase().replace(/\\s+/g, '-'),\n      },\n    });\n\n    // Revalidate blog page\n    revalidatePath('/blog');\n\n    // Redirect to new post\n    redirect(`/blog/${post.slug}`);\n  } catch (error) {\n    return {\n      success: false,\n      errors: { _form: ['Failed to create post'] },\n    };\n  }\n}\n```\n\n---\n\n**Form Component (Server Component):**\n\n```tsx\n// app/new-post/page.tsx\nimport { createPost } from '../actions/posts';\n\nexport default function NewPostPage() {\n  return (\n    <div>\n      <h1>Create New Post</h1>\n      \n      {/* Form action points directly to Server Action */}\n      <form action={createPost}>\n        <div>\n          <label htmlFor=\"title\">Title</label>\n          <input \n            type=\"text\" \n            id=\"title\" \n            name=\"title\" \n            required \n          />\n        </div>\n\n        <div>\n          <label htmlFor=\"content\">Content</label>\n          <textarea \n            id=\"content\" \n            name=\"content\" \n            rows=\"10\"\n            required\n          />\n        </div>\n\n        <div>\n          <label htmlFor=\"category\">Category</label>\n          <select id=\"category\" name=\"category\" required>\n            <option value=\"tutorial\">Tutorial</option>\n            <option value=\"guide\">Guide</option>\n            <option value=\"news\">News</option>\n          </select>\n        </div>\n\n        <div>\n          <label>\n            <input type=\"checkbox\" name=\"published\" />\n            Publish immediately\n          </label>\n        </div>\n\n        <button type=\"submit\">Create Post</button>\n      </form>\n    </div>\n  );\n}\n```\n\n---\n\n**Client Component with Error Handling:**\n\n```tsx\n// app/components/CreatePostForm.js\n'use client';\n\nimport { useState } from 'react';\nimport { useFormStatus } from 'react-dom';\nimport { createPost } from '../actions/posts';\n\nfunction SubmitButton() {\n  const { pending } = useFormStatus();\n  \n  return (\n    <button type=\"submit\" disabled={pending}>\n      {pending ? 'Creating...' : 'Create Post'}\n    </button>\n  );\n}\n\nexport default function CreatePostForm() {\n  const [errors, setErrors] = useState({});\n\n  const handleSubmit = async (formData) => {\n    const result = await createPost(formData);\n\n    if (!result?.success) {\n      setErrors(result?.errors || {});\n    }\n  };\n\n  return (\n    <form action={handleSubmit}>\n      {errors._form && (\n        <div className=\"error\">{errors._form[0]}</div>\n      )}\n\n      <div>\n        <label htmlFor=\"title\">Title</label>\n        <input type=\"text\" id=\"title\" name=\"title\" />\n        {errors.title && (\n          <p className=\"error\">{errors.title[0]}</p>\n        )}\n      </div>\n\n      <div>\n        <label htmlFor=\"content\">Content</label>\n        <textarea id=\"content\" name=\"content\" rows=\"10\" />\n        {errors.content && (\n          <p className=\"error\">{errors.content[0]}</p>\n        )}\n      </div>\n\n      <div>\n        <label htmlFor=\"category\">Category</label>\n        <select id=\"category\" name=\"category\">\n          <option value=\"tutorial\">Tutorial</option>\n          <option value=\"guide\">Guide</option>\n          <option value=\"news\">News</option>\n        </select>\n        {errors.category && (\n          <p className=\"error\">{errors.category[0]}</p>\n        )}\n      </div>\n\n      <div>\n        <label>\n          <input type=\"checkbox\" name=\"published\" />\n          Publish immediately\n        </label>\n      </div>\n\n      <SubmitButton />\n    </form>\n  );\n}\n```\n\n---\n\n**Key Features:**\n\n✅ **Server-side validation** with Zod\n✅ **Type-safe** form handling\n✅ **Automatic revalidation** of blog page\n✅ **Redirect** to new post after creation\n✅ **Error handling** with field-specific errors\n✅ **Loading state** with useFormStatus\n✅ **Progressive enhancement** (works without JS)\n\n**Flow:**\n1. User fills form\n2. Submits → calls Server Action\n3. Server validates data\n4. Server saves to database\n5. Server revalidates `/blog`\n6. Server redirects to `/blog/new-post-slug`\n7. User sees new post"
+        },
+        {
+            "id": 4,
+            "question": "Explain middleware in Next.js. Create middleware that protects routes requiring authentication and redirects unauthenticated users to login.",
+            "preferredAnswer": "**Middleware** runs **before a request is completed** — perfect for authentication, redirects, headers, and logging.\n\n**Key Features:**\n- ✅ Runs on **Edge Runtime** (ultra-fast)\n- ✅ Executes **before** page renders\n- ✅ Can modify request/response\n- ✅ Can redirect, rewrite, add headers\n\n---\n\n**Authentication Middleware:**\n\n```tsx\n// middleware.ts (root of project)\nimport { NextResponse } from 'next/server';\n\nexport function middleware(request) {\n  // Get session token from cookies\n  const sessionToken = request.cookies.get('session')?.value;\n  const { pathname } = request.nextUrl;\n\n  // Define protected routes\n  const isProtectedRoute = \n    pathname.startsWith('/dashboard') ||\n    pathname.startsWith('/profile') ||\n    pathname.startsWith('/settings');\n\n  // Define auth routes (login, register)\n  const isAuthRoute = \n    pathname === '/login' ||\n    pathname === '/register';\n\n  // SCENARIO 1: User tries to access protected route without auth\n  if (isProtectedRoute && !sessionToken) {\n    // Save the URL they tried to visit\n    const loginUrl = new URL('/login', request.url);\n    loginUrl.searchParams.set('from', pathname);\n    \n    return NextResponse.redirect(loginUrl);\n  }\n\n  // SCENARIO 2: Authenticated user tries to visit login/register\n  if (isAuthRoute && sessionToken) {\n    return NextResponse.redirect(new URL('/dashboard', request.url));\n  }\n\n  // SCENARIO 3: Add custom headers to all responses\n  const response = NextResponse.next();\n  response.headers.set('x-middleware-cache', 'no-cache');\n\n  return response;\n}\n\n// Configure which routes to run middleware on\nexport const config = {\n  matcher: [\n    /*\n     * Match all request paths except:\n     * - _next/static (static files)\n     * - _next/image (image optimization files)\n     * - favicon.ico (favicon file)\n     * - public folder\n     */\n    '/((?!_next/static|_next/image|favicon.ico|.*\\\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',\n  ],\n};\n```\n\n---\n\n**Advanced Example with Session Verification:**\n\n```tsx\n// middleware.ts\nimport { NextResponse } from 'next/server';\nimport { verifySession } from './lib/auth';\n\nexport async function middleware(request) {\n  const sessionToken = request.cookies.get('session')?.value;\n  const { pathname } = request.nextUrl;\n\n  // Protected routes\n  const protectedRoutes = ['/dashboard', '/profile', '/settings', '/admin'];\n  const isProtected = protectedRoutes.some(route => \n    pathname.startsWith(route)\n  );\n\n  if (isProtected) {\n    // No session token\n    if (!sessionToken) {\n      const loginUrl = new URL('/login', request.url);\n      loginUrl.searchParams.set('from', pathname);\n      return NextResponse.redirect(loginUrl);\n    }\n\n    // Verify session (check if valid and not expired)\n    const session = await verifySession(sessionToken);\n\n    if (!session) {\n      // Invalid/expired session\n      const response = NextResponse.redirect(new URL('/login', request.url));\n      response.cookies.delete('session');  // Clear invalid cookie\n      return response;\n    }\n\n    // Admin-only routes\n    if (pathname.startsWith('/admin') && session.user.role !== 'admin') {\n      return NextResponse.redirect(new URL('/dashboard', request.url));\n    }\n\n    // Add user info to request headers (accessible in pages)\n    const response = NextResponse.next();\n    response.headers.set('x-user-id', session.user.id);\n    response.headers.set('x-user-role', session.user.role);\n    return response;\n  }\n\n  // Redirect logged-in users away from auth pages\n  if (['/login', '/register'].includes(pathname) && sessionToken) {\n    return NextResponse.redirect(new URL('/dashboard', request.url));\n  }\n\n  return NextResponse.next();\n}\n\nexport const config = {\n  matcher: [\n    '/dashboard/:path*',\n    '/profile/:path*',\n    '/settings/:path*',\n    '/admin/:path*',\n    '/login',\n    '/register',\n  ],\n};\n```\n\n---\n\n**Login Page (handle redirect after login):**\n\n```tsx\n// app/login/page.tsx\n'use client';\n\nimport { useSearchParams, useRouter } from 'next/navigation';\nimport { login } from '../actions/auth';\n\nexport default function LoginPage() {\n  const searchParams = useSearchParams();\n  const router = useRouter();\n  const from = searchParams.get('from') || '/dashboard';\n\n  const handleSubmit = async (formData) => {\n    const result = await login(formData);\n\n    if (result.success) {\n      // Redirect to original destination\n      router.push(from);\n    }\n  };\n\n  return (\n    <div>\n      <h1>Login</h1>\n      <p>Please sign in to continue</p>\n      {searchParams.get('from') && (\n        <p className=\"info\">You must be logged in to access that page.</p>\n      )}\n      \n      <form action={handleSubmit}>\n        <input type=\"email\" name=\"email\" placeholder=\"Email\" required />\n        <input type=\"password\" name=\"password\" placeholder=\"Password\" required />\n        <button type=\"submit\">Login</button>\n      </form>\n    </div>\n  );\n}\n```\n\n---\n\n**Other Middleware Use Cases:**\n\n```tsx\n// 1. Logging\nexport function middleware(request) {\n  console.log(`${request.method} ${request.nextUrl.pathname}`);\n  return NextResponse.next();\n}\n\n// 2. Rate limiting\nconst rateLimit = new Map();\n\nexport function middleware(request) {\n  const ip = request.ip || 'unknown';\n  const now = Date.now();\n  const limit = rateLimit.get(ip);\n\n  if (limit && now - limit < 1000) {\n    return new Response('Too many requests', { status: 429 });\n  }\n\n  rateLimit.set(ip, now);\n  return NextResponse.next();\n}\n\n// 3. A/B Testing\nexport function middleware(request) {\n  const bucket = Math.random() < 0.5 ? 'A' : 'B';\n  const response = NextResponse.next();\n  response.cookies.set('ab-test', bucket);\n  return response;\n}\n\n// 4. Internationalization (i18n)\nexport function middleware(request) {\n  const locale = request.cookies.get('locale')?.value || 'en';\n  \n  if (!request.nextUrl.pathname.startsWith(`/${locale}`)) {\n    return NextResponse.redirect(\n      new URL(`/${locale}${request.nextUrl.pathname}`, request.url)\n    );\n  }\n  \n  return NextResponse.next();\n}\n```\n\n**Key Points:**\n✅ Runs on Edge (fast, globally distributed)\n✅ Can't access full Node.js APIs (no fs, database)\n✅ Use for auth, redirects, headers, A/B testing\n✅ Keep it lightweight (runs on every request)"
+        },
+        {
+            "id": 5,
+            "question": "Create a complete authentication flow: login form with Server Action, protected dashboard page, and logout functionality.",
+            "preferredAnswer": "**Complete Authentication System:**\n\n---\n\n**1. Database Schema (Prisma example):**\n\n```prisma\n// prisma/schema.prisma\nmodel User {\n  id           String    @id @default(cuid())\n  email        String    @unique\n  passwordHash String\n  name         String\n  sessions     Session[]\n  createdAt    DateTime  @default(now())\n}\n\nmodel Session {\n  id        String   @id @default(cuid())\n  userId    String\n  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)\n  expiresAt DateTime\n  createdAt DateTime @default(now())\n}\n```\n\n---\n\n**2. Auth Utilities:**\n\n```tsx\n// lib/auth.ts\nimport { cookies } from 'next/headers';\nimport { prisma } from './prisma';\nimport bcrypt from 'bcrypt';\n\n// Get current user from session\nexport async function getCurrentUser() {\n  const sessionId = cookies().get('session')?.value;\n\n  if (!sessionId) return null;\n\n  const session = await prisma.session.findUnique({\n    where: { id: sessionId },\n    include: { user: true },\n  });\n\n  if (!session || session.expiresAt < new Date()) {\n    return null;\n  }\n\n  return session.user;\n}\n\n// Create session\nexport async function createSession(userId) {\n  const session = await prisma.session.create({\n    data: {\n      userId,\n      expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days\n    },\n  });\n\n  cookies().set('session', session.id, {\n    httpOnly: true,\n    secure: process.env.NODE_ENV === 'production',\n    sameSite: 'lax',\n    maxAge: 7 * 24 * 60 * 60, // 7 days\n  });\n\n  return session;\n}\n\n// Delete session\nexport async function deleteSession() {\n  const sessionId = cookies().get('session')?.value;\n\n  if (sessionId) {\n    await prisma.session.delete({\n      where: { id: sessionId },\n    });\n  }\n\n  cookies().delete('session');\n}\n```\n\n---\n\n**3. Server Actions:**\n\n```tsx\n// app/actions/auth.js\n'use server';\n\nimport { redirect } from 'next/navigation';\nimport { z } from 'zod';\nimport bcrypt from 'bcrypt';\nimport { prisma } from '@/lib/prisma';\nimport { createSession, deleteSession } from '@/lib/auth';\n\nconst LoginSchema = z.object({\n  email: z.string().email('Invalid email'),\n  password: z.string().min(6, 'Password must be at least 6 characters'),\n});\n\nexport async function login(formData) {\n  // Validate\n  const data = {\n    email: formData.get('email'),\n    password: formData.get('password'),\n  };\n\n  const result = LoginSchema.safeParse(data);\n\n  if (!result.success) {\n    return {\n      success: false,\n      errors: result.error.flatten().fieldErrors,\n    };\n  }\n\n  // Find user\n  const user = await prisma.user.findUnique({\n    where: { email: result.data.email },\n  });\n\n  if (!user) {\n    return {\n      success: false,\n      errors: { email: ['Invalid email or password'] },\n    };\n  }\n\n  // Verify password\n  const valid = await bcrypt.compare(result.data.password, user.passwordHash);\n\n  if (!valid) {\n    return {\n      success: false,\n      errors: { email: ['Invalid email or password'] },\n    };\n  }\n\n  // Create session\n  await createSession(user.id);\n\n  // Redirect to dashboard\n  redirect('/dashboard');\n}\n\nexport async function logout() {\n  await deleteSession();\n  redirect('/');\n}\n\nconst RegisterSchema = z.object({\n  name: z.string().min(2, 'Name must be at least 2 characters'),\n  email: z.string().email('Invalid email'),\n  password: z.string().min(6, 'Password must be at least 6 characters'),\n});\n\nexport async function register(formData) {\n  const data = {\n    name: formData.get('name'),\n    email: formData.get('email'),\n    password: formData.get('password'),\n  };\n\n  const result = RegisterSchema.safeParse(data);\n\n  if (!result.success) {\n    return {\n      success: false,\n      errors: result.error.flatten().fieldErrors,\n    };\n  }\n\n  // Check if user exists\n  const existing = await prisma.user.findUnique({\n    where: { email: result.data.email },\n  });\n\n  if (existing) {\n    return {\n      success: false,\n      errors: { email: ['Email already registered'] },\n    };\n  }\n\n  // Hash password\n  const passwordHash = await bcrypt.hash(result.data.password, 10);\n\n  // Create user\n  const user = await prisma.user.create({\n    data: {\n      name: result.data.name,\n      email: result.data.email,\n      passwordHash,\n    },\n  });\n\n  // Create session\n  await createSession(user.id);\n\n  redirect('/dashboard');\n}\n```\n\n---\n\n**4. Login Page:**\n\n```tsx\n// app/login/page.tsx\nimport { login } from '../actions/auth';\nimport Link from 'next/link';\n\nexport default function LoginPage() {\n  return (\n    <div className=\"auth-container\">\n      <h1>Login</h1>\n      \n      <form action={login}>\n        <div>\n          <label htmlFor=\"email\">Email</label>\n          <input \n            type=\"email\" \n            id=\"email\" \n            name=\"email\" \n            placeholder=\"you@example.com\"\n            required \n          />\n        </div>\n\n        <div>\n          <label htmlFor=\"password\">Password</label>\n          <input \n            type=\"password\" \n            id=\"password\" \n            name=\"password\" \n            placeholder=\"••••••••\"\n            required \n          />\n        </div>\n\n        <button type=\"submit\">Login</button>\n      </form>\n\n      <p>\n        Don't have an account? <Link href=\"/register\">Register</Link>\n      </p>\n    </div>\n  );\n}\n```\n\n---\n\n**5. Register Page:**\n\n```tsx\n// app/register/page.tsx\nimport { register } from '../actions/auth';\nimport Link from 'next/link';\n\nexport default function RegisterPage() {\n  return (\n    <div className=\"auth-container\">\n      <h1>Register</h1>\n      \n      <form action={register}>\n        <div>\n          <label htmlFor=\"name\">Name</label>\n          <input type=\"text\" id=\"name\" name=\"name\" required />\n        </div>\n\n        <div>\n          <label htmlFor=\"email\">Email</label>\n          <input type=\"email\" id=\"email\" name=\"email\" required />\n        </div>\n\n        <div>\n          <label htmlFor=\"password\">Password</label>\n          <input type=\"password\" id=\"password\" name=\"password\" required />\n        </div>\n\n        <button type=\"submit\">Register</button>\n      </form>\n\n      <p>\n        Already have an account? <Link href=\"/login\">Login</Link>\n      </p>\n    </div>\n  );\n}\n```\n\n---\n\n**6. Protected Dashboard:**\n\n```tsx\n// app/dashboard/page.tsx\nimport { getCurrentUser } from '@/lib/auth';\nimport { redirect } from 'next/navigation';\nimport { logout } from '../actions/auth';\n\nexport default async function Dashboard() {\n  const user = await getCurrentUser();\n\n  if (!user) {\n    redirect('/login');\n  }\n\n  return (\n    <div>\n      <header>\n        <h1>Dashboard</h1>\n        <form action={logout}>\n          <button type=\"submit\">Logout</button>\n        </form>\n      </header>\n\n      <main>\n        <h2>Welcome, {user.name}!</h2>\n        <p>Email: {user.email}</p>\n        <p>Member since: {new Date(user.createdAt).toLocaleDateString()}</p>\n      </main>\n    </div>\n  );\n}\n```\n\n---\n\n**7. Middleware:**\n\n```tsx\n// middleware.ts\nimport { NextResponse } from 'next/server';\n\nexport function middleware(request) {\n  const sessionCookie = request.cookies.get('session');\n  const { pathname } = request.nextUrl;\n\n  const isProtected = pathname.startsWith('/dashboard');\n  const isAuthPage = ['/login', '/register'].includes(pathname);\n\n  // Redirect to login if accessing protected route without session\n  if (isProtected && !sessionCookie) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  // Redirect to dashboard if already logged in and trying to access auth pages\n  if (isAuthPage && sessionCookie) {\n    return NextResponse.redirect(new URL('/dashboard', request.url));\n  }\n\n  return NextResponse.next();\n}\n\nexport const config = {\n  matcher: ['/dashboard/:path*', '/login', '/register'],\n};\n```\n\n---\n\n**Flow:**\n\n1. User visits `/dashboard` → No session → Redirected to `/login`\n2. User fills login form → Submits → Server Action validates\n3. Valid credentials → Creates session → Sets cookie → Redirects to `/dashboard`\n4. User sees dashboard with their info\n5. User clicks logout → Deletes session → Clears cookie → Redirects to home\n\n✅ Secure (passwords hashed, httpOnly cookies)\n✅ Simple (no JWT complexity)\n✅ Fast (session lookup)\n✅ Protected routes\n✅ Redirect after login"
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 6: Lists — FlatList, SectionList & Performance",
+    "chapterId": "react_native_expo_chapter_6",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "FlatList virtualizes by:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Rendering only items near the viewport", "isCorrect": true },
+                { "key": "B", "text": "Loading all rows at once", "isCorrect": false },
+                { "key": "C", "text": "Using WebView", "isCorrect": false },
+                { "key": "D", "text": "Disabling scrolling", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "keyExtractor should return:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "A stable unique string for each item", "isCorrect": true },
+                { "key": "B", "text": "Random numbers each render", "isCorrect": false },
+                { "key": "C", "text": "The entire item object", "isCorrect": false },
+                { "key": "D", "text": "Always index only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "SectionList is used for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Grouped sections with headers", "isCorrect": true },
+                { "key": "B", "text": "SQLite migrations", "isCorrect": false },
+                { "key": "C", "text": "HTTP caching only", "isCorrect": false },
+                { "key": "D", "text": "Camera preview", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "getItemLayout helps performance when:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Row height is fixed or computable without measuring", "isCorrect": true },
+                { "key": "B", "text": "Rows have unknown dynamic heights always", "isCorrect": false },
+                { "key": "C", "text": "You use ScrollView", "isCorrect": false },
+                { "key": "D", "text": "Images are disabled", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "extraData on FlatList is for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Forcing re-render when external state affecting rows changes", "isCorrect": true },
+                { "key": "B", "text": "Adding padding to the OS", "isCorrect": false },
+                { "key": "C", "text": "Encrypting list items", "isCorrect": false },
+                { "key": "D", "text": "Changing app icon", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "memo on a row component helps when:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Props are stable and renders are expensive", "isCorrect": true },
+                { "key": "B", "text": "You never pass callbacks", "isCorrect": false },
+                { "key": "C", "text": "You use only ScrollView", "isCorrect": false },
+                { "key": "D", "text": "You disable TypeScript", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "ListEmptyComponent displays:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "UI when data array is empty", "isCorrect": true },
+                { "key": "B", "text": "Keyboard", "isCorrect": false },
+                { "key": "C", "text": "Splash screen", "isCorrect": false },
+                { "key": "D", "text": "EAS credentials", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "onEndReached is often used for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Infinite scroll pagination", "isCorrect": true },
+                { "key": "B", "text": "Opening Settings", "isCorrect": false },
+                { "key": "C", "text": "Taking photos", "isCorrect": false },
+                { "key": "D", "text": "Signing APKs", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Avoid anonymous renderItem that allocates new functions if:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "It causes unnecessary row re-renders at scale", "isCorrect": true },
+                { "key": "B", "text": "It improves GPS", "isCorrect": false },
+                { "key": "C", "text": "Hermes requires it", "isCorrect": false },
+                { "key": "D", "text": "FlatList forbids functions", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "initialNumToRender tunes:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "How many items to render initially for perceived performance", "isCorrect": true },
+                { "key": "B", "text": "App Store pricing", "isCorrect": false },
+                { "key": "C", "text": "OAuth scopes", "isCorrect": false },
+                { "key": "D", "text": "Splash duration only", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why is ScrollView a poor choice for 5,000 rows?",
+            "preferredAnswer": "**ScrollView** mounts **all** children up front—memory and layout cost explode. **FlatList** virtualizes."
+        },
+        {
+            "id": 2,
+            "question": "Why should keyExtractor keys be stable?",
+            "preferredAnswer": "Unstable keys cause **wrong reuse** of rows, **state bugs**, and **janky** reordering when data updates."
+        },
+        {
+            "id": 3,
+            "question": "What role does windowSize play in FlatList?",
+            "preferredAnswer": "It controls how many screen lengths of items stay mounted around the viewport—**higher** uses more memory, **lower** can increase mount churn."
+        },
+        {
+            "id": 4,
+            "question": "When is SectionList preferred over FlatList?",
+            "preferredAnswer": "When data is **grouped** with **section headers** and possibly **sticky** headers—e.g. contacts alphabet sections."
+        },
+        {
+            "id": 5,
+            "question": "Name one symptom of an expensive renderItem.",
+            "preferredAnswer": "**Dropped frames** when scrolling, **JS thread** spikes in perf overlay, or **battery** drain on long scrolls."
+        }
+    ]
+}

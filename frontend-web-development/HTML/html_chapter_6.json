@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 6: Images, Media & Content Grouping",
+  "chapterId": "html_chapter_6",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "Which attribute is REQUIRED on every <img> tag for accessibility?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "title",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "width",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "alt",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "src",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What type of element is <img>?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Block element with closing tag",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Inline void element",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Semantic block element",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Inline element with closing tag",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which image format is best for photographs?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "PNG",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "SVG",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "GIF",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "JPEG",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What does ../ mean in a file path?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Go into a subfolder",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Go up one folder level",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Stay in the current folder",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Go to the root of the website",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between <div> and <span>?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<div> is inline, <span> is block",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<div> is block-level, <span> is inline",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "<div> is semantic, <span> is not",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "They are exactly the same",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Which tag provides a caption for an image?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<caption>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<alt>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<figcaption>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<label>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What happens when an image fails to load?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "The page crashes",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Nothing appears",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "The alt text is displayed instead",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "The title text is displayed",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "How do you make an image clickable (a link)?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Add href to the <img> tag",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Wrap <img> inside an <a> tag",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Use <link> tag with image",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Add click=\"true\" to <img>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is a BAD image file name?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "hero-banner.jpg",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "team-photo.png",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "my vacation photo (1).jpg",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "product-headphones.webp",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "When should you use alt=\"\" (empty alt)?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "When you forget to write alt text",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "For every image",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "For purely decorative images that add no information",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "For linked images",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "Why is the alt attribute so important? Give three reasons.",
+      "preferredAnswer": "1. **Accessibility:** Screen readers read the alt text aloud to visually impaired users.\n2. **Broken Images:** If an image fails to load, the alt text is displayed in its place.\n3. **SEO:** Search engines rely on alt text to understand what the image shows."
+    },
+    {
+      "id": 2,
+      "question": "Explain the difference between <div> and <span> with a practical example of each.",
+      "preferredAnswer": "**<div>** is a **block-level** container (full width, new line). Used to group large sections.\n**<span>** is an **inline** container (stays within text flow). Used to target specific words or phrases.\n\nExample: `<p>The price is <span>$49.99</span> per month.</p>`\nNeither has semantic meaning — they exist for CSS targeting and grouping."
+    },
+    {
+      "id": 3,
+      "question": "You have pages/about.html and images/team.jpg at the same level. Write the correct <img> tag to display team.jpg from about.html.",
+      "preferredAnswer": "```html\n<img src=\"../images/team.jpg\" alt=\"Our team photo\" width=\"600\" height=\"400\">\n```\nFrom `pages/about.html`, we go **up one level** (`../`) to reach the root, then into `images/` to find `team.jpg`."
+    },
+    {
+      "id": 4,
+      "question": "What is <figure> and <figcaption>? When would you use them instead of just <img> alone?",
+      "preferredAnswer": "`<figure>` is a semantic container that groups an image with its `<figcaption>` (caption). Use them when an image needs a **visible caption** that explains or credits the image. Use `<img>` alone when the image doesn't need a visible caption (icons, logos, decorative images)."
+    },
+    {
+      "id": 5,
+      "question": "What is \"div soup\" and why should you avoid it? How can you fix it?",
+      "preferredAnswer": "\"Div soup\" is excessive, unnecessary nesting of `<div>` elements that makes code messy and hard to maintain.\n\n**How to fix:** (1) Only use `<div>` when you genuinely need to group content for CSS; (2) Use **semantic tags** instead (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`); (3) Remove any `<div>` that doesn't serve a clear purpose."
+    }
+  ]
+}

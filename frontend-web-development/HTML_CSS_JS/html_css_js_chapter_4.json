@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 4: CSS Control via JavaScript",
+  "chapterId": "html_css_js_chapter_4",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "What is the BEST way to change an element's appearance with JavaScript?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Set inline styles with element.style.property",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Toggle CSS classes with element.classList.toggle()",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Use innerHTML to change the element",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Remove and recreate the element",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How do you update a CSS custom property (variable) with JavaScript?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "document.style.setProperty(\"--color\", \"red\")",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "document.documentElement.style.setProperty(\"--color\", \"red\")",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "document.css.setVariable(\"--color\", \"red\")",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "document.root.style[\"--color\"] = \"red\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which event fires AFTER a CSS transition finishes?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "transitionstart",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "transitionend",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "animationend",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "transitioncomplete",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What does `window.matchMedia(\"(max-width: 768px)\")` return?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "A boolean",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "A MediaQueryList object with a .matches property",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "The current window width",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "A CSS string",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Where should theme colors be defined for a theme switcher?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "In JavaScript variables",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "In CSS custom properties (variables)",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "In HTML data attributes",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "In inline styles",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is `IntersectionObserver` used for?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Observing CSS changes",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Detecting when elements enter or leave the viewport",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Watching for DOM mutations",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Monitoring network requests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "How do you persist a user's theme preference across page visits?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Cookies only",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Session storage",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "localStorage",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "URL parameters",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What does `requestAnimationFrame()` do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Pauses the animation",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Runs a callback before the next screen repaint for smooth animation",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Creates a CSS animation",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Sets a timeout of 16ms",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which CSS property should be used for the TRANSITION when toggling between light and dark themes?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "animation",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "transition: background-color 0.4s ease, color 0.4s ease",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "transform",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "opacity",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What is the correct architecture for a theme switcher?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Define all colors in JavaScript",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "CSS variables for colors + JS toggles a class + localStorage saves preference",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Inline styles changed by JavaScript",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Two separate CSS files loaded dynamically",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "Explain the \"CSS defines, JS decides\" principle. Why is it considered best practice?",
+      "preferredAnswer": "The principle means **CSS should define all possible visual states** (active, hidden, dark-theme, error, etc.) while **JavaScript only decides WHEN to apply them** by toggling classes.\n\n```css\n/* CSS DEFINES the visual state */\n.modal { opacity: 0; visibility: hidden; transition: all 0.3s ease; }\n.modal.active { opacity: 1; visibility: visible; }\n```\n```javascript\n// JS DECIDES when to apply it\nmodal.classList.toggle(\"active\");\n```\n\n**Why it's best practice:** (1) Separation of concerns — styling in CSS, behavior in JS. (2) CSS transitions work automatically. (3) Easier maintenance. (4) Better performance — browsers optimize CSS transitions. (5) Reusability — same class works on any element."
+    },
+    {
+      "id": 2,
+      "question": "Describe three different methods to control CSS with JavaScript. When would you use each?",
+      "preferredAnswer": "1. **Class Toggling** — `element.classList.add(\"active\")` — Use for predefined visual state changes like active/inactive, open/closed, light/dark. Default best practice for most situations.\n\n2. **Inline Styles** — `element.style.width = \"75%\"` — Use for dynamic, calculated values that can't be predefined in CSS — positions based on mouse coordinates, sizes based on data, user-selected colors from a color picker.\n\n3. **CSS Custom Properties** — `document.documentElement.style.setProperty(\"--primary\", \"#e74c3c\")` — Use for theme-wide changes where one variable affects many elements: switching color schemes, global font sizes, user-customizable themes.\n\n**Rule of thumb:** Start with class toggling. Use inline styles for runtime-calculated values. Use CSS variables for global theme changes."
+    },
+    {
+      "id": 3,
+      "question": "How does a complete dark mode theme switcher work? Describe the architecture from CSS to JavaScript to persistence.",
+      "preferredAnswer": "A complete theme switcher works in four layers:\n\n**1. CSS Variables:** Define two sets of colors — one in `:root` (light theme) and one in `html.dark-theme` (dark theme). All styles use `var(--variable-name)`.\n\n**2. CSS Transitions:** Add `transition: background-color 0.4s ease, color 0.4s ease` for smooth theme switching.\n\n**3. JavaScript Toggle:** Add/remove the `dark-theme` class on the `<html>` element. One class change switches ALL colors because CSS variables cascade down.\n\n**4. Persistence:** Save the user's choice in `localStorage`. On page load, check `localStorage` first, then fall back to `window.matchMedia(\"(prefers-color-scheme: dark)\")` for system preference.\n\n```javascript\nconst theme = localStorage.getItem(\"theme\") || (matchMedia(\"(prefers-color-scheme: dark)\").matches ? \"dark\" : \"light\");\ndocument.documentElement.classList.toggle(\"dark-theme\", theme === \"dark\");\n```"
+    },
+    {
+      "id": 4,
+      "question": "What is `IntersectionObserver` and why is it better than using scroll event listeners for animations?",
+      "preferredAnswer": "`IntersectionObserver` is a browser API that **asynchronously detects when elements enter or leave the viewport**. You create an observer, tell it which elements to watch, and it calls your callback when they become visible.\n\n```javascript\nconst observer = new IntersectionObserver((entries) => {\n    entries.forEach(entry => {\n        if (entry.isIntersecting) entry.target.classList.add(\"visible\");\n    });\n}, { threshold: 0.15 });\ndocument.querySelectorAll(\".fade-in\").forEach(el => observer.observe(el));\n```\n\n**Why it's better than scroll listeners:** (1) Performance — scroll events fire hundreds of times per second; IntersectionObserver runs asynchronously. (2) No manual position calculations. (3) Battery friendly on mobile. (4) Clean API with built-in threshold."
+    },
+    {
+      "id": 5,
+      "question": "Write JavaScript code that creates a notification system — a function that accepts a message and type (success/error/info), creates a notification element, animates it in, and auto-removes it after 3 seconds.",
+      "preferredAnswer": "```javascript\nconst showNotification = (message, type = \"info\", duration = 3000) => {\n    const notification = document.createElement(\"div\");\n    notification.classList.add(\"notification\", type);\n    notification.textContent = message;\n    document.querySelector(\"#notification-container\").appendChild(notification);\n    requestAnimationFrame(() => notification.classList.add(\"show\"));\n    setTimeout(() => {\n        notification.classList.remove(\"show\");\n        notification.addEventListener(\"transitionend\", () => notification.remove());\n    }, duration);\n};\nshowNotification(\"Settings saved!\", \"success\");\n```\n\nThe corresponding CSS uses `transform: translateX(120%)` as default and `transform: translateX(0)` for `.show`, with a transition. `requestAnimationFrame` ensures the initial state is registered before adding `.show`. `transitionend` removes the element after the exit animation completes."
+    }
+  ]
+}

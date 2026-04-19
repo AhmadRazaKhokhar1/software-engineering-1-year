@@ -1,0 +1,303 @@
+{
+  "chapterTitle": "Chapter 4: Inline Elements, Formatting & Semantic Meaning",
+  "chapterId": "html_chapter_4",
+  "MCQs": [
+    {
+      "id": 1,
+      "question": "Which of the following is an INLINE element?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<p>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<h1>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<strong>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<hr>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What is the key difference between <strong> and <b>?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<strong> is italic, <b> is bold",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<strong> carries semantic importance, <b> is just visual",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "They are exactly the same",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "<b> is semantic, <strong> is not",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which tag would you use to show a chemical formula like H₂O?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<sup>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<sub>",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "<small>",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "<code>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What does the <mark> tag do?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Makes text bold",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Makes text italic",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "Highlights text with a yellow background",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "Deletes text",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is CORRECT nesting?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<strong><p>Text</p></strong>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<p><strong>Text</strong></p>",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "<em><h2>Text</h2></em>",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "<span><div>Text</div></span>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What does <del> represent?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Delivered text",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Deleted/removed text",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Delayed text",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "Decorated text",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which tag should be used for copyright fine print at the bottom of a page?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<h6>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<em>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<small>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<sub>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "How do block elements stack on a page?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "Horizontally (left to right)",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "Vertically (top to bottom)",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "Diagonally",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "They overlap each other",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What is the correct way to write E = mc² in HTML?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "E = mc<sub>2</sub>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "E = mc<sup>2</sup>",
+          "isCorrect": true
+        },
+        {
+          "key": "C",
+          "text": "E = mc<small>2</small>",
+          "isCorrect": false
+        },
+        {
+          "key": "D",
+          "text": "E = mc<mark>2</mark>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Which tag shows the full form of an abbreviation when hovered?",
+      "codeSnippet": null,
+      "options": [
+        {
+          "key": "A",
+          "text": "<code>",
+          "isCorrect": false
+        },
+        {
+          "key": "B",
+          "text": "<q>",
+          "isCorrect": false
+        },
+        {
+          "key": "C",
+          "text": "<abbr>",
+          "isCorrect": true
+        },
+        {
+          "key": "D",
+          "text": "<small>",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "ShortQuestions": [
+    {
+      "id": 1,
+      "question": "Explain the difference between block-level and inline elements with one example of each.",
+      "preferredAnswer": "**Block elements** start on a new line and take up the full available width. Example: `<p>This is a paragraph.</p>`\n\n**Inline elements** do NOT start on a new line — they flow within text and only take up as much space as their content. Example: `<strong>important</strong>`\n\n```html\n<p>This is a <strong>block containing inline</strong> text.</p>\n```"
+    },
+    {
+      "id": 2,
+      "question": "Why should you use <strong> instead of <b> in most cases?",
+      "preferredAnswer": "`<strong>` is a **semantic** tag that tells browsers, screen readers, and search engines that the text is **genuinely important**. `<b>` is **non-semantic** — it only makes text visually bold without any meaning. Using `<strong>` improves **accessibility, SEO, and code meaning**."
+    },
+    {
+      "id": 3,
+      "question": "Write HTML code that shows: \"The price was ~~$99.99~~ and is now $59.99 (limited offer)\" using appropriate semantic tags.",
+      "preferredAnswer": "```html\n<p>The price was <del>$99.99</del> and is now <strong>$59.99</strong> <small>(limited offer)</small></p>\n```\n\n- `<del>` for the old deleted price\n- `<strong>` for the new important price\n- `<small>` for the fine-print note"
+    },
+    {
+      "id": 4,
+      "question": "What is the difference between <em> and <i>? Give one appropriate use case for each.",
+      "preferredAnswer": "`<em>` is **semantic** — it means the text is **stressed/emphasized**. Use case: `<p>I said <em>today</em>, not tomorrow.</p>`\n\n`<i>` is **non-semantic** — it just makes text italic visually. Use case: `<p>The French word <i>bonjour</i> means hello.</p>` (foreign word, no emphasis intended)"
+    },
+    {
+      "id": 5,
+      "question": "Why is it wrong to put a block element inside an inline element? Give an incorrect and corrected example.",
+      "preferredAnswer": "Block elements define large structural sections; inline elements live within text flow. Putting a block inside an inline breaks the document structure.\n\n❌ WRONG: `<strong><p>This is wrong</p></strong>`\n✅ CORRECT: `<p><strong>This is correct</strong></p>`\n\n**Rule:** Inline elements go INSIDE block elements, never the reverse."
+    }
+  ]
+}

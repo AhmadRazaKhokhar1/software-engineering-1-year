@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 4: Side Effects, Data Fetching & React Best Practices",
+    "chapterId": "react_nextjs_chapter_4",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is the purpose of useEffect?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To create state variables",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To perform side effects in functional components",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To style components",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To render JSX",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "When does this useEffect run?",
+            "codeSnippet": "useEffect(() => {\n    console.log('Effect');\n}, []);",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "After every render",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Only once after initial render",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Never",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Before the component renders",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "When does this useEffect run?",
+            "codeSnippet": "useEffect(() => {\n    console.log('Effect');\n}, [count]);",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Only once",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "When count changes",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Never",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "On every render",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What is the purpose of the cleanup function in useEffect?",
+            "codeSnippet": "useEffect(() => {\n    return () => {\n        // cleanup\n    };\n}, []);",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "To initialize state",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "To clean up side effects when component unmounts or before re-running effect",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "To fetch data",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "To update the DOM",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What are the three states you should typically manage when fetching data?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "data, loading, error",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "count, name, email",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "start, middle, end",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "pending, success, failure",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Can you make the useEffect callback async directly?",
+            "codeSnippet": "useEffect(async () => {\n    const data = await fetch(url);\n}, []);",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Yes, this is correct",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "No, you must create an async function inside useEffect",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Yes, but only with await",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "No, useEffect cannot be used with async at all",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What is 'lifting state up'?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Moving state to a parent component to share it between children",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "Increasing the value of state",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Deleting state from a component",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Moving state to localStorage",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Which cleanup is needed for setInterval?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "clearTimeout",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "clearInterval",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "removeEventListener",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "abort",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "When should you create a custom hook?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "When you have reusable logic that uses hooks",
+                    "isCorrect": true
+                },
+                {
+                    "key": "B",
+                    "text": "For every component",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "Only for API calls",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Never, always use built-in hooks",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "What is the correct execution order?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "useEffect runs → component renders → DOM updates",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Component renders → DOM updates → useEffect runs",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "DOM updates → component renders → useEffect runs",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "useEffect runs → DOM updates → component renders",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain useEffect and its dependency array. What's the difference between: no array, empty array [], and [count]?",
+            "preferredAnswer": "**useEffect** runs side effects after the component renders.\n\n**Syntax:**\n```tsx\nuseEffect(() => {\n    // Effect code\n}, [dependencies]);\n```\n\n**Three dependency array scenarios:**\n\n**1. No array — Runs after EVERY render:**\n```tsx\nuseEffect(() => {\n    console.log('Runs after every render');\n});\n// Use case: Rare, usually a mistake\n```\n\n**2. Empty array `[]` — Runs ONCE (on mount):**\n```tsx\nuseEffect(() => {\n    console.log('Runs only once when component mounts');\n    // Fetch initial data, set up subscriptions\n}, []);\n// Use case: Initial data fetching, subscriptions\n```\n\n**3. With dependencies `[count]` — Runs when dependencies change:**\n```tsx\nuseEffect(() => {\n    console.log('Runs when count changes');\n    document.title = `Count: ${count}`;\n}, [count]);\n// Use case: React to specific value changes\n```\n\n**Complete example:**\n```tsx\nfunction Example() {\n    const [count, setCount] = useState(0);\n    const [name, setName] = useState('');\n\n    // Runs on every render\n    useEffect(() => {\n        console.log('Every render');\n    });\n\n    // Runs once on mount\n    useEffect(() => {\n        console.log('Component mounted');\n        // Fetch initial data\n    }, []);\n\n    // Runs when count changes\n    useEffect(() => {\n        console.log('Count changed:', count);\n    }, [count]);\n\n    // Runs when count OR name changes\n    useEffect(() => {\n        console.log('Count or name changed');\n    }, [count, name]);\n\n    return <div>...</div>;\n}\n```\n\n**Rule:** Always include values from component scope (props, state) used inside the effect in the dependency array."
+        },
+        {
+            "id": 2,
+            "question": "Create a component that fetches user data from an API. Handle loading, error, and success states properly. Use async/await.",
+            "preferredAnswer": "```tsx\nimport { useState, useEffect } from 'react';\n\nfunction UserProfile({ userId }) {\n    const [user, setUser] = useState(null);\n    const [loading, setLoading] = useState(true);\n    const [error, setError] = useState(null);\n\n    useEffect(() => {\n        // Can't make useEffect callback async directly\n        const fetchUser = async () => {\n            try {\n                // Reset states\n                setLoading(true);\n                setError(null);\n\n                // Fetch data\n                const response = await fetch(\n                    `https://jsonplaceholder.typicode.com/users/${userId}`\n                );\n\n                // Check if response is ok\n                if (!response.ok) {\n                    throw new Error(`HTTP error! status: ${response.status}`);\n                }\n\n                // Parse JSON\n                const data = await response.json();\n                setUser(data);\n            } catch (err) {\n                // Handle errors\n                setError(err.message);\n                setUser(null);\n            } finally {\n                // Always runs (success or error)\n                setLoading(false);\n            }\n        };\n\n        fetchUser();\n    }, [userId]); // Re-fetch when userId changes\n\n    // Loading state\n    if (loading) {\n        return (\n            <div className=\"loading\">\n                <div className=\"spinner\"></div>\n                <p>Loading user...</p>\n            </div>\n        );\n    }\n\n    // Error state\n    if (error) {\n        return (\n            <div className=\"error\">\n                <p>❌ Error: {error}</p>\n                <button onClick={() => window.location.reload()}>\n                    Try Again\n                </button>\n            </div>\n        );\n    }\n\n    // Success state\n    if (!user) {\n        return <div>No user found</div>;\n    }\n\n    return (\n        <div className=\"user-profile\">\n            <h2>{user.name}</h2>\n            <p><strong>Email:</strong> {user.email}</p>\n            <p><strong>Phone:</strong> {user.phone}</p>\n            <p><strong>Website:</strong> {user.website}</p>\n            <div className=\"address\">\n                <h3>Address</h3>\n                <p>{user.address.street}, {user.address.city}</p>\n            </div>\n        </div>\n    );\n}\n\nexport default UserProfile;\n```\n\n**Key points:**\n\n✅ Three states: loading, error, data\n✅ try/catch/finally for error handling\n✅ async function created inside useEffect\n✅ Conditional rendering based on state\n✅ Re-fetches when userId changes"
+        },
+        {
+            "id": 3,
+            "question": "What is a cleanup function in useEffect? Provide examples of when you need cleanup (timers, event listeners, fetch requests).",
+            "preferredAnswer": "A **cleanup function** runs when:\n1. Component unmounts\n2. Before the effect runs again (if dependencies changed)\n\nIt prevents **memory leaks** and **unwanted behavior**.\n\n**Syntax:**\n```tsx\nuseEffect(() => {\n    // Setup\n    \n    return () => {\n        // Cleanup (runs on unmount or before re-run)\n    };\n}, []);\n```\n\n**Example 1: Timer (setInterval)**\n\n```tsx\nfunction Timer() {\n    const [seconds, setSeconds] = useState(0);\n\n    useEffect(() => {\n        // Setup: Start interval\n        const intervalId = setInterval(() => {\n            setSeconds(prev => prev + 1);\n        }, 1000);\n\n        // ✅ Cleanup: Clear interval\n        return () => {\n            clearInterval(intervalId);\n            console.log('Timer cleaned up');\n        };\n    }, []);\n\n    return <div>Seconds: {seconds}</div>;\n}\n```\n\nWithout cleanup, interval keeps running even after component unmounts → memory leak!\n\n**Example 2: Event Listener**\n\n```tsx\nfunction MouseTracker() {\n    const [position, setPosition] = useState({ x: 0, y: 0 });\n\n    useEffect(() => {\n        const handleMouseMove = (e) => {\n            setPosition({ x: e.clientX, y: e.clientY });\n        };\n\n        // Setup: Add listener\n        window.addEventListener('mousemove', handleMouseMove);\n\n        // ✅ Cleanup: Remove listener\n        return () => {\n            window.removeEventListener('mousemove', handleMouseMove);\n        };\n    }, []);\n\n    return <div>Mouse: {position.x}, {position.y}</div>;\n}\n```\n\n**Example 3: Fetch with AbortController**\n\n```tsx\nfunction UserData({ userId }) {\n    const [user, setUser] = useState(null);\n\n    useEffect(() => {\n        const abortController = new AbortController();\n\n        const fetchUser = async () => {\n            try {\n                const response = await fetch(\n                    `https://api.example.com/users/${userId}`,\n                    { signal: abortController.signal } // Pass abort signal\n                );\n                const data = await response.json();\n                setUser(data);\n            } catch (error) {\n                if (error.name !== 'AbortError') {\n                    console.error('Error:', error);\n                }\n            }\n        };\n\n        fetchUser();\n\n        // ✅ Cleanup: Abort fetch if userId changes or unmounts\n        return () => {\n            abortController.abort();\n        };\n    }, [userId]);\n\n    return <div>{user?.name}</div>;\n}\n```\n\n**Common cleanup scenarios:**\n\n| Effect | Cleanup |\n|--------|----------|\n| `setInterval` | `clearInterval(id)` |\n| `setTimeout` | `clearTimeout(id)` |\n| Event listeners | `removeEventListener` |\n| Fetch requests | `abortController.abort()` |\n| WebSocket | `socket.close()` |\n| Subscriptions | `unsubscribe()` |"
+        },
+        {
+            "id": 4,
+            "question": "What is 'lifting state up'? Provide an example where two sibling components need to share state.",
+            "preferredAnswer": "**Lifting state up** means moving state to the closest common parent component so multiple children can access and modify it.\n\n**Problem:** Sibling components can't directly share state.\n\n**Example: Product List and Cart**\n\n```tsx\n// ❌ PROBLEM: ProductList and Cart can't communicate\nfunction App() {\n    return (\n        <div>\n            <ProductList />  {/* Has products */}\n            <Cart />         {/* Needs to know what's added */}\n        </div>\n    );\n}\n```\n\n**✅ SOLUTION: Lift state to parent**\n\n```tsx\nimport { useState } from 'react';\n\n// Parent component holds shared state\nfunction App() {\n    const [cart, setCart] = useState([]);\n\n    const addToCart = (product) => {\n        setCart([...cart, product]);\n    };\n\n    const removeFromCart = (productId) => {\n        setCart(cart.filter(item => item.id !== productId));\n    };\n\n    return (\n        <div className=\"app\">\n            {/* Pass state and functions down as props */}\n            <ProductList onAddToCart={addToCart} />\n            <Cart items={cart} onRemoveFromCart={removeFromCart} />\n        </div>\n    );\n}\n\n// Child 1: ProductList\nfunction ProductList({ onAddToCart }) {\n    const products = [\n        { id: 1, name: 'Laptop', price: 999 },\n        { id: 2, name: 'Phone', price: 699 },\n        { id: 3, name: 'Tablet', price: 499 }\n    ];\n\n    return (\n        <div className=\"product-list\">\n            <h2>Products</h2>\n            {products.map(product => (\n                <div key={product.id} className=\"product\">\n                    <h3>{product.name}</h3>\n                    <p>${product.price}</p>\n                    <button onClick={() => onAddToCart(product)}>\n                        Add to Cart\n                    </button>\n                </div>\n            ))}\n        </div>\n    );\n}\n\n// Child 2: Cart\nfunction Cart({ items, onRemoveFromCart }) {\n    const total = items.reduce((sum, item) => sum + item.price, 0);\n\n    return (\n        <div className=\"cart\">\n            <h2>Cart ({items.length})</h2>\n            {items.length === 0 ? (\n                <p>Cart is empty</p>\n            ) : (\n                <div>\n                    {items.map((item, index) => (\n                        <div key={index} className=\"cart-item\">\n                            <span>{item.name} - ${item.price}</span>\n                            <button onClick={() => onRemoveFromCart(item.id)}>\n                                Remove\n                            </button>\n                        </div>\n                    ))}\n                    <div className=\"total\">\n                        <strong>Total: ${total}</strong>\n                    </div>\n                </div>\n            )}\n        </div>\n    );\n}\n```\n\n**Key concept:**\n\n1. **State lives in parent** (App)\n2. **Children receive data via props** (cart items)\n3. **Children call functions to update parent state** (addToCart, removeFromCart)\n4. **Data flows down, events flow up**\n\n**When to lift state:**\n\n✅ Multiple components need the same data\n✅ Sibling components need to communicate\n✅ Data needs to be synchronized across components\n\n**Problem with deep nesting:**\n\nIf state needs to be passed through many levels, consider:\n- Context API (for global state like theme, user)\n- State management libraries (Redux, Zustand)"
+        },
+        {
+            "id": 5,
+            "question": "Create a custom hook called 'useFetch' that handles data fetching with loading and error states. Show how to use it in a component.",
+            "preferredAnswer": "```tsx\n// hooks/useFetch.js\nimport { useState, useEffect } from 'react';\n\nfunction useFetch(url, options = {}) {\n    const [data, setData] = useState(null);\n    const [loading, setLoading] = useState(true);\n    const [error, setError] = useState(null);\n\n    useEffect(() => {\n        // Don't fetch if no URL\n        if (!url) return;\n\n        const abortController = new AbortController();\n\n        const fetchData = async () => {\n            try {\n                setLoading(true);\n                setError(null);\n\n                const response = await fetch(url, {\n                    ...options,\n                    signal: abortController.signal\n                });\n\n                if (!response.ok) {\n                    throw new Error(`HTTP error! status: ${response.status}`);\n                }\n\n                const result = await response.json();\n                setData(result);\n            } catch (err) {\n                // Ignore abort errors\n                if (err.name !== 'AbortError') {\n                    setError(err.message);\n                }\n            } finally {\n                setLoading(false);\n            }\n        };\n\n        fetchData();\n\n        // Cleanup: abort fetch on unmount or URL change\n        return () => {\n            abortController.abort();\n        };\n    }, [url]); // Re-fetch when URL changes\n\n    return { data, loading, error };\n}\n\nexport default useFetch;\n```\n\n**Usage in components:**\n\n```tsx\nimport useFetch from './hooks/useFetch';\n\n// Example 1: Fetch users\nfunction UserList() {\n    const { data: users, loading, error } = useFetch(\n        'https://jsonplaceholder.typicode.com/users'\n    );\n\n    if (loading) return <div>Loading users...</div>;\n    if (error) return <div>Error: {error}</div>;\n\n    return (\n        <ul>\n            {users.map(user => (\n                <li key={user.id}>{user.name}</li>\n            ))}\n        </ul>\n    );\n}\n\n// Example 2: Fetch single user\nfunction UserProfile({ userId }) {\n    const { data: user, loading, error } = useFetch(\n        `https://jsonplaceholder.typicode.com/users/${userId}`\n    );\n\n    if (loading) return <div>Loading...</div>;\n    if (error) return <div>Error: {error}</div>;\n    if (!user) return <div>No user found</div>;\n\n    return (\n        <div>\n            <h2>{user.name}</h2>\n            <p>{user.email}</p>\n        </div>\n    );\n}\n\n// Example 3: Multiple fetches\nfunction Dashboard() {\n    const { data: users } = useFetch('https://api.example.com/users');\n    const { data: posts } = useFetch('https://api.example.com/posts');\n    const { data: comments } = useFetch('https://api.example.com/comments');\n\n    return (\n        <div>\n            <h1>Dashboard</h1>\n            <p>Users: {users?.length}</p>\n            <p>Posts: {posts?.length}</p>\n            <p>Comments: {comments?.length}</p>\n        </div>\n    );\n}\n```\n\n**Enhanced version with refetch:**\n\n```tsx\nfunction useFetch(url, options = {}) {\n    const [data, setData] = useState(null);\n    const [loading, setLoading] = useState(true);\n    const [error, setError] = useState(null);\n    const [refetchIndex, setRefetchIndex] = useState(0);\n\n    const refetch = () => {\n        setRefetchIndex(prev => prev + 1);\n    };\n\n    useEffect(() => {\n        const fetchData = async () => {\n            // ... (same as before)\n        };\n\n        fetchData();\n    }, [url, refetchIndex]); // Re-fetch when refetchIndex changes\n\n    return { data, loading, error, refetch };\n}\n\n// Usage\nfunction UserList() {\n    const { data: users, loading, error, refetch } = useFetch(\n        'https://jsonplaceholder.typicode.com/users'\n    );\n\n    return (\n        <div>\n            <button onClick={refetch}>Refresh</button>\n            {/* ... */}\n        </div>\n    );\n}\n```\n\n**Benefits of custom hooks:**\n\n✅ Reusable logic\n✅ Cleaner components\n✅ Separation of concerns\n✅ Easier testing\n✅ Consistent error handling"
+        }
+    ]
+}

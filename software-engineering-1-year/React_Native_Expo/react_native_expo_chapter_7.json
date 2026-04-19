@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 7: Forms, TextInput & Keyboard UX",
+    "chapterId": "react_native_expo_chapter_7",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "A controlled TextInput means:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "value is driven by React state via onChangeText", "isCorrect": true },
+                { "key": "B", "text": "The OS controls value without React", "isCorrect": false },
+                { "key": "C", "text": "TextInput cannot be edited", "isCorrect": false },
+                { "key": "D", "text": "Only multiline works", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "keyboardType=\"email-address\" helps:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Show an email-friendly keyboard", "isCorrect": true },
+                { "key": "B", "text": "Validate email on server automatically", "isCorrect": false },
+                { "key": "C", "text": "Disable secure text entry", "isCorrect": false },
+                { "key": "D", "text": "Remove focus", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "secureTextEntry is used for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Password fields", "isCorrect": true },
+                { "key": "B", "text": "Phone dialer", "isCorrect": false },
+                { "key": "C", "text": "Disabling keyboard", "isCorrect": false },
+                { "key": "D", "text": "HTTPS setup", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "KeyboardAvoidingView adjusts layout when:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "The keyboard opens and would cover focused fields", "isCorrect": true },
+                { "key": "B", "text": "The app is killed", "isCorrect": false },
+                { "key": "C", "text": "Images load", "isCorrect": false },
+                { "key": "D", "text": "Dark mode toggles", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "keyboardShouldPersistTaps on ScrollView helps:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Tap buttons inside scroll while keyboard is open", "isCorrect": true },
+                { "key": "B", "text": "Remove TextInput", "isCorrect": false },
+                { "key": "C", "text": "Compile Swift", "isCorrect": false },
+                { "key": "D", "text": "Disable scrolling", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "onSubmitEditing often pairs with:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Moving focus to the next field or submitting a form", "isCorrect": true },
+                { "key": "B", "text": "Deleting app data", "isCorrect": false },
+                { "key": "C", "text": "Opening camera", "isCorrect": false },
+                { "key": "D", "text": "Changing app icon", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "accessibilityLabel on TextInput improves:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Screen reader descriptions", "isCorrect": true },
+                { "key": "B", "text": "Network speed", "isCorrect": false },
+                { "key": "C", "text": "APK size", "isCorrect": false },
+                { "key": "D", "text": "Gradle sync", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "autoCapitalize=\"none\" is typical for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Emails and usernames", "isCorrect": true },
+                { "key": "B", "text": "Postal addresses only", "isCorrect": false },
+                { "key": "C", "text": "Passwords always", "isCorrect": false },
+                { "key": "D", "text": "OTP with digits only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Blur validation means:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Validate when the field loses focus", "isCorrect": true },
+                { "key": "B", "text": "Validate only on app launch", "isCorrect": false },
+                { "key": "C", "text": "Never show errors", "isCorrect": false },
+                { "key": "D", "text": "Disable TextInput", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "returnKeyType can be set to:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "next, done, search, etc.", "isCorrect": true },
+                { "key": "B", "text": "Only done on Android", "isCorrect": false },
+                { "key": "C", "text": "Hermes bytecode", "isCorrect": false },
+                { "key": "D", "text": "Gradle version", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why can keyboard handling differ between iOS and Android?",
+            "preferredAnswer": "**OS keyboard behavior**, **window resizing**, and **vendor** differences mean `KeyboardAvoidingView` behavior and `behavior` prop choices vary—test both platforms."
+        },
+        {
+            "id": 2,
+            "question": "What is a ref used for with TextInput?",
+            "preferredAnswer": "**Imperative methods**: `focus()`, `blur()`, `clear()`, measuring layout—bridging declarative React with **focus control**."
+        },
+        {
+            "id": 3,
+            "question": "Why show inline errors instead of only Alert.alert?",
+            "preferredAnswer": "**Inline** errors are **contextual**, accessible, and don’t block interaction—users fix fields **faster**."
+        },
+        {
+            "id": 4,
+            "question": "When might you use a form library (e.g. react-hook-form) in RN?",
+            "preferredAnswer": "Large forms with **validation schemas**, **dirty tracking**, and **performance** optimizations for controlled fields."
+        },
+        {
+            "id": 5,
+            "question": "What does keyboardVerticalOffset adjust?",
+            "preferredAnswer": "Extra offset for **headers, tab bars**, or **custom** chrome so focused fields aren’t hidden under the keyboard."
+        }
+    ]
+}

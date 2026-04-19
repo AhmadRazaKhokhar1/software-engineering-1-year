@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 12: Testing, Debugging & Store Release",
+    "chapterId": "react_native_expo_chapter_12",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "LogBox in development shows:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Warnings and errors with stack traces", "isCorrect": true },
+                { "key": "B", "text": "App Store revenue", "isCorrect": false },
+                { "key": "C", "text": "Gradle daemon status", "isCorrect": false },
+                { "key": "D", "text": "SQLite vacuum logs only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Jest is commonly used for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Unit tests of pure functions and utilities", "isCorrect": true },
+                { "key": "B", "text": "Signing iOS binaries", "isCorrect": false },
+                { "key": "C", "text": "Designing splash screens", "isCorrect": false },
+                { "key": "D", "text": "Generating app icons", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "React Native Testing Library focuses on:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Testing components as users interact (queries by role/text)", "isCorrect": true },
+                { "key": "B", "text": "Snapshotting native bytecode", "isCorrect": false },
+                { "key": "C", "text": "Measuring CPU fans", "isCorrect": false },
+                { "key": "D", "text": "Replacing Metro", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Perf monitor can show:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "JS and UI thread FPS indicators", "isCorrect": true },
+                { "key": "B", "text": "Bank account balances", "isCorrect": false },
+                { "key": "C", "text": "Gradle memory only on iOS", "isCorrect": false },
+                { "key": "D", "text": "Apple review score", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Hermes is:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "A JavaScript engine used by React Native", "isCorrect": true },
+                { "key": "B", "text": "A CSS framework", "isCorrect": false },
+                { "key": "C", "text": "An Apple certificate", "isCorrect": false },
+                { "key": "D", "text": "A database migration tool", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Crash reporting tools like Sentry help:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Capture production crashes with stack traces", "isCorrect": true },
+                { "key": "B", "text": "Automatically pass App Review", "isCorrect": false },
+                { "key": "C", "text": "Remove all bugs", "isCorrect": false },
+                { "key": "D", "text": "Disable user privacy", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Store screenshots must:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Match each store’s size and content guidelines", "isCorrect": true },
+                { "key": "B", "text": "Be optional always", "isCorrect": false },
+                { "key": "C", "text": "Include competitor logos", "isCorrect": false },
+                { "key": "D", "text": "Hide the actual UI", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Privacy policy URL is often required when:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Collecting user data", "isCorrect": true },
+                { "key": "B", "text": "Using only local-only tic-tac-toe with no network", "isCorrect": false },
+                { "key": "C", "text": "Debugging only", "isCorrect": false },
+                { "key": "D", "text": "Installing Node", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "E2E tests (Detox/Maestro) validate:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Full user flows on simulators/devices", "isCorrect": true },
+                { "key": "B", "text": "Compiler internals of Hermes only", "isCorrect": false },
+                { "key": "C", "text": "Gradle download speed", "isCorrect": false },
+                { "key": "D", "text": "Xcode license agreements", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Accessibility labels help:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Users of assistive technologies understand controls", "isCorrect": true },
+                { "key": "B", "text": "Increase APK size only", "isCorrect": false },
+                { "key": "C", "text": "Disable animations always", "isCorrect": false },
+                { "key": "D", "text": "Replace HTTPS", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why fix warnings before shipping?",
+            "preferredAnswer": "Warnings often indicate **future errors** or **deprecated APIs** that become **crashes** or **rejections** in production."
+        },
+        {
+            "id": 2,
+            "question": "What is the difference between unit and E2E tests?",
+            "preferredAnswer": "**Unit** tests isolate **small** pieces (functions/components). **E2E** tests drive the **full app** like a user—slower but higher **confidence** on critical paths."
+        },
+        {
+            "id": 3,
+            "question": "Why read native logs with Xcode/logcat?",
+            "preferredAnswer": "Some failures happen **below** JS (native crashes, linking)—JS stack traces alone miss **native** causes."
+        },
+        {
+            "id": 4,
+            "question": "Name one item on a release checklist besides code.",
+            "preferredAnswer": "**Store metadata**, **privacy**, **analytics opt-in**, **rollback plan**, **support contact**, **feature flags**—operational readiness."
+        },
+        {
+            "id": 5,
+            "question": "Why is accessibility a release concern?",
+            "preferredAnswer": "It affects **real users**, **App Store** expectations, and sometimes **legal** compliance—also improves **general UX** (larger tap targets, clarity)."
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "chapterTitle": "Chapter 9: Device APIs — Permissions, Camera & Media",
+    "chapterId": "react_native_expo_chapter_9",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "Runtime permissions on mobile are requested:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "When a feature needs them (camera, photos)", "isCorrect": true },
+                { "key": "B", "text": "Only at factory reset", "isCorrect": false },
+                { "key": "C", "text": "Never on iOS", "isCorrect": false },
+                { "key": "D", "text": "Only via email", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "NSPhotoLibraryUsageDescription is for:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Explaining photo access to users on iOS", "isCorrect": true },
+                { "key": "B", "text": "Gradle plugin id", "isCorrect": false },
+                { "key": "C", "text": "Android package name", "isCorrect": false },
+                { "key": "D", "text": "Disabling camera", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "If permission is denied, you should:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Provide fallback UI and a path to Settings if needed", "isCorrect": true },
+                { "key": "B", "text": "Crash the app", "isCorrect": false },
+                { "key": "C", "text": "Silently retry in an infinite loop", "isCorrect": false },
+                { "key": "D", "text": "Delete user data", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "expo-image-picker commonly needs:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Media library / camera permissions per platform rules", "isCorrect": true },
+                { "key": "B", "text": "Root access", "isCorrect": false },
+                { "key": "C", "text": "No configuration", "isCorrect": false },
+                { "key": "D", "text": "A paid Apple certificate for dev", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Principle of least privilege means:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Request only permissions you need", "isCorrect": true },
+                { "key": "B", "text": "Request all permissions upfront", "isCorrect": false },
+                { "key": "C", "text": "Disable HTTPS", "isCorrect": false },
+                { "key": "D", "text": "Use WebView for everything", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Linking.openSettings() can:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Open the app settings page for manual permission changes", "isCorrect": true },
+                { "key": "B", "text": "Install apps without user consent", "isCorrect": false },
+                { "key": "C", "text": "Bypass OS security", "isCorrect": false },
+                { "key": "D", "text": "Modify root filesystem", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Camera vs image picker choice depends on:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Product UX: simple pick vs live camera experience", "isCorrect": true },
+                { "key": "B", "text": "Whether you use TypeScript", "isCorrect": false },
+                { "key": "C", "text": "Hermes on/off", "isCorrect": false },
+                { "key": "D", "text": "Expo SDK patch number only", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Android permission model differs from iOS in that:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Details vary by OS version and vendor; test both", "isCorrect": true },
+                { "key": "B", "text": "They are identical in every case", "isCorrect": false },
+                { "key": "C", "text": "Android has no permissions", "isCorrect": false },
+                { "key": "D", "text": "iOS never shows dialogs", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Privacy Nutrition Labels / Data Safety require:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Accurate disclosure of data collection in stores", "isCorrect": true },
+                { "key": "B", "text": "Open sourcing the app", "isCorrect": false },
+                { "key": "C", "text": "Removing analytics always", "isCorrect": false },
+                { "key": "D", "text": "Disabling encryption", "isCorrect": false }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Just-in-time permission requests mean:",
+            "codeSnippet": null,
+            "options": [
+                { "key": "A", "text": "Ask when the user triggers the feature", "isCorrect": true },
+                { "key": "B", "text": "Ask before install only", "isCorrect": false },
+                { "key": "C", "text": "Never ask", "isCorrect": false },
+                { "key": "D", "text": "Ask daily randomly", "isCorrect": false }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Why must permission strings be clear and honest?",
+            "preferredAnswer": "Stores and OS guidelines require **truthful** explanations; users deny **vague** requests—hurting **conversion** and **trust**."
+        },
+        {
+            "id": 2,
+            "question": "What is a rationale screen before the OS dialog?",
+            "preferredAnswer": "An **in-app** explanation framing **why** the feature needs access—shown **before** triggering `requestPermissionsAsync` to improve **accept rates**."
+        },
+        {
+            "id": 3,
+            "question": "Why avoid unused permissions in app manifests?",
+            "preferredAnswer": "**Review risk**, user **distrust**, and potential **rejection**—only declare what you use."
+        },
+        {
+            "id": 4,
+            "question": "How does limited photo library access on iOS affect apps?",
+            "preferredAnswer": "Users may grant **subset** access—handle **partial** selections and **re-prompt** flows per Apple APIs."
+        },
+        {
+            "id": 5,
+            "question": "Name one Expo module for barcode scanning (conceptual).",
+            "preferredAnswer": "Historically **`expo-barcode-scanner`** or camera-based modules depending on **SDK**—always follow **current** Expo docs for the installed version."
+        }
+    ]
+}

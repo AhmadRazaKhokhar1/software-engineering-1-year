@@ -1,0 +1,303 @@
+{
+    "chapterTitle": "Chapter 6: Rendering Strategies & Data Fetching in Next.js",
+    "chapterId": "react_nextjs_chapter_6",
+    "MCQs": [
+        {
+            "id": 1,
+            "question": "What is the default rendering mode for components in Next.js App Router?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Client Components",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Server Components",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Static Components",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Hybrid Components",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Which fetch option makes a request never cached (always fresh)?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "cache: 'force-cache'",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "cache: 'no-store'",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "next: { revalidate: 0 }",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "cache: 'default'",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What does SSR stand for?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Static Site Rendering",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Server-Side Rendering",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Single Server Response",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Secure Server Request",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What does this code do?",
+            "codeSnippet": "const res = await fetch(url, {\n  next: { revalidate: 60 }\n});",
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Fetches data every 60 milliseconds",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Caches data and revalidates after 60 seconds",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Times out after 60 seconds",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Retries 60 times on failure",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What is ISR?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Instant Server Response",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Incremental Static Regeneration",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Internal Server Routing",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Integrated Security Rules",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Which environment variable prefix makes it accessible in Client Components?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "CLIENT_",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "NEXT_PUBLIC_",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "PUBLIC_",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "BROWSER_",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What function generates static paths at build time for dynamic routes?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "getStaticPaths",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "generateStaticParams",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "getStaticProps",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "generatePaths",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "How do you force a page to always render dynamically (SSR)?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "export const static = false",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "export const dynamic = 'force-dynamic'",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "export const ssr = true",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Add 'use server' directive",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "What does revalidateTag() do?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "Validates user input",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "Triggers on-demand revalidation of all fetches with that tag",
+                    "isCorrect": true
+                },
+                {
+                    "key": "C",
+                    "text": "Adds a tag to HTML elements",
+                    "isCorrect": false
+                },
+                {
+                    "key": "D",
+                    "text": "Checks if a tag exists",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "When should you use SSG (Static Site Generation)?",
+            "codeSnippet": null,
+            "options": [
+                {
+                    "key": "A",
+                    "text": "For personalized user dashboards",
+                    "isCorrect": false
+                },
+                {
+                    "key": "B",
+                    "text": "For real-time stock prices",
+                    "isCorrect": false
+                },
+                {
+                    "key": "C",
+                    "text": "For static content like about pages and documentation",
+                    "isCorrect": true
+                },
+                {
+                    "key": "D",
+                    "text": "For user authentication pages",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "ShortQuestions": [
+        {
+            "id": 1,
+            "question": "Explain the difference between SSR, SSG, and ISR. When would you use each rendering strategy?",
+            "preferredAnswer": "**SSR (Server-Side Rendering)** — Renders on every request\n\n```tsx\nexport const dynamic = 'force-dynamic';\n\nasync function getData() {\n  const res = await fetch(url, { cache: 'no-store' });\n  return res.json();\n}\n\nexport default async function Page() {\n  const data = await getData();  // Fresh on every request\n  return <div>{data.content}</div>;\n}\n```\n\n**How it works:**\n1. User requests page\n2. Server fetches fresh data\n3. Server renders HTML\n4. Browser receives updated HTML\n\n**When to use:**\n✅ Personalized content (user dashboards)\n✅ Real-time data (stock prices, live scores)\n✅ Frequently changing data (news feeds)\n✅ Authentication-dependent pages\n\n---\n\n**SSG (Static Site Generation)** — Pre-renders at build time\n\n```tsx\nasync function getData() {\n  const res = await fetch(url);  // Default: cached forever\n  return res.json();\n}\n\nexport default async function Page() {\n  const data = await getData();  // Fetched once at build\n  return <div>{data.content}</div>;\n}\n```\n\n**How it works:**\n1. At build time, server fetches data\n2. Server generates HTML files\n3. Every request serves the same HTML (super fast!)\n\n**When to use:**\n✅ Static content (about, FAQ, landing pages)\n✅ Blog posts (content rarely changes)\n✅ Documentation\n✅ Marketing pages\n\n---\n\n**ISR (Incremental Static Regeneration)** — Static + periodic updates\n\n```tsx\nasync function getData() {\n  const res = await fetch(url, {\n    next: { revalidate: 3600 }  // Revalidate every hour\n  });\n  return res.json();\n}\n\nexport default async function Page() {\n  const data = await getData();\n  return <div>{data.content}</div>;\n}\n```\n\n**How it works:**\n1. First request generates static HTML\n2. Serves cached HTML (fast!)\n3. After revalidation time, regenerates in background\n4. Subsequent requests get updated HTML\n\n**When to use:**\n✅ E-commerce (product inventory updates)\n✅ Blog (new posts added periodically)\n✅ News sites (articles published hourly)\n✅ Any content that updates on a schedule\n\n---\n\n**Summary:**\n\n| Strategy | When to Use | Performance | Freshness |\n|----------|-------------|-------------|------------|\n| SSG | Static content | ⚡⚡⚡ Fastest | Stale until rebuild |\n| ISR | Periodic updates | ⚡⚡ Fast | Fresh after revalidation |\n| SSR | Real-time/personalized | ⚡ Slower | Always fresh |"
+        },
+        {
+            "id": 2,
+            "question": "How do you fetch data in Server Components? Show examples of fetching with different caching strategies (default, no-cache, revalidate).",
+            "preferredAnswer": "**Server Components can fetch data directly** using async/await:\n\n**1. Default (cached forever - SSG):**\n\n```tsx\nasync function getData() {\n  // ✅ Default: Cached indefinitely\n  const res = await fetch('https://api.example.com/data');\n  return res.json();\n}\n\nexport default async function Page() {\n  const data = await getData();\n  return <div>{data.title}</div>;\n}\n```\n\n**When:** Static content that never changes\n\n---\n\n**2. No cache (always fresh - SSR):**\n\n```tsx\nasync function getData() {\n  // ❌ Never cached - always fetches fresh\n  const res = await fetch('https://api.example.com/data', {\n    cache: 'no-store'\n  });\n  return res.json();\n}\n\nexport default async function Page() {\n  const data = await getData();  // Fresh on every request\n  return (\n    <div>\n      <h1>{data.title}</h1>\n      <p>Generated at: {new Date().toLocaleTimeString()}</p>\n    </div>\n  );\n}\n```\n\n**When:** Real-time data, user-specific content\n\n---\n\n**3. Time-based revalidation (ISR):**\n\n```tsx\nasync function getData() {\n  // ⏱️ Cached, revalidates every 60 seconds\n  const res = await fetch('https://api.example.com/data', {\n    next: { revalidate: 60 }\n  });\n  return res.json();\n}\n\nexport default async function Page() {\n  const data = await getData();\n  return <div>{data.title}</div>;\n}\n```\n\n**When:** Content updates periodically\n\n---\n\n**4. Tag-based revalidation (on-demand ISR):**\n\n```tsx\nasync function getData() {\n  // 🏷️ Tagged for on-demand revalidation\n  const res = await fetch('https://api.example.com/data', {\n    next: { \n      revalidate: 3600,  // Also revalidate every hour\n      tags: ['homepage', 'featured']\n    }\n  });\n  return res.json();\n}\n\nexport default async function Page() {\n  const data = await getData();\n  return <div>{data.title}</div>;\n}\n```\n\nTrigger revalidation:\n```tsx\n// app/api/revalidate/route.ts\nimport { revalidateTag } from 'next/cache';\n\nexport async function POST() {\n  revalidateTag('homepage');  // Revalidate all fetches with this tag\n  return Response.json({ revalidated: true });\n}\n```\n\n**When:** Event-driven updates (CMS webhooks, admin updates)\n\n---\n\n**5. Multiple parallel fetches:**\n\n```tsx\nasync function getUser() {\n  const res = await fetch('https://api.example.com/user', {\n    cache: 'no-store'  // Always fresh\n  });\n  return res.json();\n}\n\nasync function getPosts() {\n  const res = await fetch('https://api.example.com/posts', {\n    next: { revalidate: 60 }  // Revalidate every minute\n  });\n  return res.json();\n}\n\nexport default async function Dashboard() {\n  // ✅ Fetch in parallel\n  const [user, posts] = await Promise.all([\n    getUser(),\n    getPosts()\n  ]);\n\n  return (\n    <div>\n      <h1>Welcome, {user.name}</h1>\n      <div>Posts: {posts.length}</div>\n    </div>\n  );\n}\n```\n\n---\n\n**6. Direct database access (Server Components only):**\n\n```tsx\nimport { db } from '@/lib/db';\n\nexport default async function ProductsPage() {\n  // ✅ Query database directly - no API needed!\n  const products = await db.product.findMany({\n    orderBy: { createdAt: 'desc' },\n    take: 10\n  });\n\n  return (\n    <div>\n      {products.map(product => (\n        <div key={product.id}>\n          <h2>{product.name}</h2>\n          <p>${product.price}</p>\n        </div>\n      ))}\n    </div>\n  );\n}\n```\n\n**Key Points:**\n✅ Server Components can use async/await directly\n✅ No useEffect needed\n✅ Data fetching happens on server (faster, more secure)\n✅ Can access databases, file system, env variables"
+        },
+        {
+            "id": 3,
+            "question": "What is generateStaticParams? How do you use it to pre-render dynamic routes at build time?",
+            "preferredAnswer": "**`generateStaticParams`** tells Next.js which dynamic routes to pre-render at build time (SSG for dynamic routes).\n\n**Problem without it:**\nDynamic routes like `/blog/[slug]` can't be pre-rendered because Next.js doesn't know which slugs exist.\n\n**Solution with generateStaticParams:**\n\n```tsx\n// app/blog/[slug]/page.tsx\n\n// ✅ Tell Next.js which paths to pre-render\nexport async function generateStaticParams() {\n  // Fetch all posts from API/database\n  const posts = await fetch('https://api.example.com/posts')\n    .then(res => res.json());\n\n  // Return array of params\n  return posts.map(post => ({\n    slug: post.slug,  // Must match [slug] in folder name\n  }));\n}\n\n// Fetch individual post\nasync function getPost(slug) {\n  const res = await fetch(`https://api.example.com/posts/${slug}`);\n  return res.json();\n}\n\n// Generate metadata for each post\nexport async function generateMetadata({ params }) {\n  const post = await getPost(params.slug);\n  \n  return {\n    title: post.title,\n    description: post.excerpt,\n  };\n}\n\n// The page component\nexport default async function BlogPost({ params }) {\n  const post = await getPost(params.slug);\n\n  return (\n    <article>\n      <h1>{post.title}</h1>\n      <p className=\"date\">{post.date}</p>\n      <div dangerouslySetInnerHTML={{ __html: post.content }} />\n    </article>\n  );\n}\n```\n\n**At build time:**\n```\nGenerating static pages:\n  ✓ /blog/getting-started-nextjs\n  ✓ /blog/react-hooks-guide  \n  ✓ /blog/typescript-basics\n  ✓ /blog/server-components\n```\n\nAll blog posts are pre-rendered as HTML files!\n\n---\n\n**Multiple dynamic segments:**\n\n```tsx\n// app/shop/[category]/[product]/page.tsx\n\nexport async function generateStaticParams() {\n  const categories = await getCategories();\n  const params = [];\n\n  for (const category of categories) {\n    const products = await getProducts(category.slug);\n    \n    products.forEach(product => {\n      params.push({\n        category: category.slug,\n        product: product.slug,\n      });\n    });\n  }\n\n  return params;\n}\n\nexport default async function ProductPage({ params }) {\n  const { category, product } = params;\n  // ...\n}\n```\n\n**Build output:**\n```\n✓ /shop/electronics/laptop\n✓ /shop/electronics/phone\n✓ /shop/clothing/shirt\n✓ /shop/clothing/pants\n```\n\n---\n\n**With ISR (revalidation):**\n\n```tsx\nexport async function generateStaticParams() {\n  const posts = await fetch('https://api.example.com/posts')\n    .then(res => res.json());\n\n  return posts.map(post => ({ slug: post.slug }));\n}\n\nasync function getPost(slug) {\n  const res = await fetch(`https://api.example.com/posts/${slug}`, {\n    next: { revalidate: 3600 }  // Revalidate every hour\n  });\n  return res.json();\n}\n\nexport default async function BlogPost({ params }) {\n  const post = await getPost(params.slug);\n  return <article>...</article>;\n}\n```\n\nNow:\n1. All posts pre-rendered at build\n2. Each post revalidates every hour\n3. New posts added via on-demand revalidation\n\n---\n\n**Fallback for new posts:**\n\n```tsx\n// If a slug isn't in generateStaticParams, Next.js will:\n// 1. Try to generate it on-demand (first request)\n// 2. Cache it for future requests\n\nexport const dynamicParams = true;  // Default: allow new params\n\n// Or disable fallback:\nexport const dynamicParams = false;  // Only pre-rendered pages work\n```\n\n---\n\n**Key Points:**\n✅ Pre-renders dynamic routes at build time\n✅ Great for SEO (all pages indexed)\n✅ Ultra-fast (static HTML)\n✅ Combine with ISR for best of both worlds"
+        },
+        {
+            "id": 4,
+            "question": "Explain environment variables in Next.js. What's the difference between NEXT_PUBLIC_ variables and regular environment variables? Which are accessible where?",
+            "preferredAnswer": "**Environment variables** store configuration and secrets outside your code.\n\n**Two types in Next.js:**\n\n1. **Server-only** (no prefix) — Only accessible on server\n2. **Public** (`NEXT_PUBLIC_` prefix) — Accessible everywhere\n\n---\n\n**Setup:**\n\n```bash\n# .env.local (not committed to Git)\n\n# ❌ PRIVATE - Server only\nDATABASE_URL=postgresql://user:pass@localhost/db\nAPI_SECRET_KEY=super-secret-key-12345\nSTRIPE_SECRET_KEY=sk_live_...\n\n# ✅ PUBLIC - Browser accessible\nNEXT_PUBLIC_API_URL=https://api.example.com\nNEXT_PUBLIC_SITE_NAME=My Awesome Site\nNEXT_PUBLIC_GOOGLE_ANALYTICS=UA-12345678\n```\n\n---\n\n**Server Components (all variables accessible):**\n\n```tsx\n// app/products/page.tsx (Server Component)\n\nasync function getProducts() {\n  // ✅ Can access private variables\n  const res = await fetch(`${process.env.API_URL}/products`, {\n    headers: {\n      'Authorization': `Bearer ${process.env.API_SECRET_KEY}`\n    }\n  });\n  return res.json();\n}\n\nexport default async function ProductsPage() {\n  const products = await getProducts();\n  \n  // ✅ Can access public variables\n  const siteName = process.env.NEXT_PUBLIC_SITE_NAME;\n  \n  return (\n    <div>\n      <h1>{siteName} - Products</h1>\n      {products.map(product => (\n        <div key={product.id}>{product.name}</div>\n      ))}\n    </div>\n  );\n}\n```\n\n---\n\n**Client Components (only NEXT_PUBLIC_ accessible):**\n\n```tsx\n// app/components/Analytics.js\n'use client';\n\nexport default function Analytics() {\n  // ✅ Public variable works\n  const analyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;\n  console.log('Analytics ID:', analyticsId);  // ✅ Works\n  \n  // ❌ Private variable is undefined in browser\n  const secretKey = process.env.API_SECRET_KEY;\n  console.log('Secret:', secretKey);  // undefined\n  \n  return <div>Analytics initialized</div>;\n}\n```\n\n---\n\n**API Routes (all variables accessible):**\n\n```tsx\n// app/api/users/route.ts\n\nexport async function GET() {\n  // ✅ Full access to all environment variables\n  const res = await fetch(`${process.env.API_URL}/users`, {\n    headers: {\n      'Authorization': `Bearer ${process.env.API_SECRET_KEY}`\n    }\n  });\n  \n  const users = await res.json();\n  return Response.json(users);\n}\n```\n\n---\n\n**Security Table:**\n\n| Variable Type | Example | Server Component | Client Component | API Route |\n|--------------|---------|------------------|------------------|----------|\n| Private | `DATABASE_URL` | ✅ Yes | ❌ undefined | ✅ Yes |\n| Private | `API_SECRET_KEY` | ✅ Yes | ❌ undefined | ✅ Yes |\n| Public | `NEXT_PUBLIC_API_URL` | ✅ Yes | ✅ Yes | ✅ Yes |\n| Public | `NEXT_PUBLIC_SITE_NAME` | ✅ Yes | ✅ Yes | ✅ Yes |\n\n---\n\n**⚠️ DANGER: Don't expose secrets!**\n\n```tsx\n// ❌ DANGEROUS - Secret exposed to browser!\n'use client';\n\nexport default function BadComponent() {\n  // This WON'T work but shows intent to expose secret\n  const secret = process.env.API_SECRET_KEY;  // undefined\n  return <div>{secret}</div>;\n}\n\n// ❌ DANGEROUS - Accidentally making secret public\n// .env.local\nNEXT_PUBLIC_DATABASE_URL=postgresql://...  // ❌ NEVER DO THIS!\n```\n\n---\n\n**✅ Best Practices:**\n\n```tsx\n// 1. Validate environment variables on startup\n// lib/env.js\n\nfunction getEnvVar(key) {\n  const value = process.env[key];\n  if (!value) {\n    throw new Error(`Missing environment variable: ${key}`);\n  }\n  return value;\n}\n\nexport const env = {\n  // Private (server-only)\n  databaseUrl: getEnvVar('DATABASE_URL'),\n  apiSecretKey: getEnvVar('API_SECRET_KEY'),\n  \n  // Public (browser-safe)\n  apiUrl: getEnvVar('NEXT_PUBLIC_API_URL'),\n  siteName: getEnvVar('NEXT_PUBLIC_SITE_NAME'),\n};\n```\n\n```tsx\n// 2. Use in components\nimport { env } from '@/lib/env';\n\nexport default async function Page() {\n  const res = await fetch(`${env.apiUrl}/data`, {\n    headers: {\n      'Authorization': `Bearer ${env.apiSecretKey}`\n    }\n  });\n  // ...\n}\n```\n\n```tsx\n// 3. Different environments\n// .env.local (local dev)\nDATABASE_URL=postgresql://localhost/dev_db\n\n// .env.production (production)\nDATABASE_URL=postgresql://prod-server/prod_db\n```\n\n---\n\n**Key Rules:**\n\n1. ✅ Use `NEXT_PUBLIC_` for browser-safe values only\n2. ❌ Never prefix secrets with `NEXT_PUBLIC_`\n3. ✅ Keep `.env.local` in `.gitignore`\n4. ✅ Validate required variables on startup\n5. ✅ Use Server Components or API routes for secrets"
+        },
+        {
+            "id": 5,
+            "question": "Create a blog page that: 1) Pre-renders all posts at build time, 2) Revalidates every 10 minutes, 3) Allows on-demand revalidation via API route.",
+            "preferredAnswer": "**Complete implementation:**\n\n```tsx\n// app/blog/[slug]/page.tsx\n\n// 1. Pre-render all posts at build time\nexport async function generateStaticParams() {\n  const posts = await fetch('https://api.example.com/posts')\n    .then(res => res.json());\n\n  return posts.map(post => ({\n    slug: post.slug,\n  }));\n}\n\n// Generate metadata for each post\nexport async function generateMetadata({ params }) {\n  const post = await getPost(params.slug);\n  \n  return {\n    title: post.title,\n    description: post.excerpt,\n    openGraph: {\n      title: post.title,\n      description: post.excerpt,\n      images: [post.image],\n    },\n  };\n}\n\n// 2. Fetch with revalidation\nasync function getPost(slug) {\n  const res = await fetch(`https://api.example.com/posts/${slug}`, {\n    next: { \n      revalidate: 600,  // Revalidate every 10 minutes (600 seconds)\n      tags: ['posts', `post-${slug}`]  // Tags for on-demand revalidation\n    }\n  });\n  \n  if (!res.ok) {\n    throw new Error('Failed to fetch post');\n  }\n  \n  return res.json();\n}\n\n// The page component\nexport default async function BlogPost({ params }) {\n  const post = await getPost(params.slug);\n\n  return (\n    <article className=\"blog-post\">\n      <header>\n        <h1>{post.title}</h1>\n        <div className=\"meta\">\n          <span>By {post.author}</span>\n          <span>{new Date(post.date).toLocaleDateString()}</span>\n        </div>\n      </header>\n\n      {post.image && (\n        <img src={post.image} alt={post.title} />\n      )}\n\n      <div \n        className=\"content\"\n        dangerouslySetInnerHTML={{ __html: post.content }}\n      />\n\n      <footer>\n        <div className=\"tags\">\n          {post.tags?.map(tag => (\n            <span key={tag} className=\"tag\">{tag}</span>\n          ))}\n        </div>\n      </footer>\n    </article>\n  );\n}\n```\n\n---\n\n**3. On-demand revalidation API route:**\n\n```tsx\n// app/api/revalidate/route.ts\nimport { revalidatePath, revalidateTag } from 'next/cache';\n\nexport async function POST(request) {\n  // Verify secret token\n  const secret = request.headers.get('x-revalidate-secret');\n  \n  if (secret !== process.env.REVALIDATE_SECRET) {\n    return Response.json(\n      { error: 'Invalid secret' },\n      { status: 401 }\n    );\n  }\n\n  try {\n    const body = await request.json();\n    const { type, slug, path } = body;\n\n    if (type === 'post' && slug) {\n      // Revalidate specific post\n      revalidateTag(`post-${slug}`);\n      console.log(`Revalidated post: ${slug}`);\n    } else if (type === 'all-posts') {\n      // Revalidate all posts\n      revalidateTag('posts');\n      console.log('Revalidated all posts');\n    } else if (path) {\n      // Revalidate specific path\n      revalidatePath(path);\n      console.log(`Revalidated path: ${path}`);\n    }\n\n    return Response.json({\n      revalidated: true,\n      now: Date.now()\n    });\n  } catch (err) {\n    return Response.json(\n      { error: err.message },\n      { status: 500 }\n    );\n  }\n}\n```\n\n---\n\n**Environment variables:**\n\n```bash\n# .env.local\nREVALIDATE_SECRET=your-super-secret-token-here\n```\n\n---\n\n**Triggering revalidation:**\n\n```bash\n# 1. Revalidate specific post\ncurl -X POST https://yoursite.com/api/revalidate \\\n  -H \"Content-Type: application/json\" \\\n  -H \"x-revalidate-secret: your-super-secret-token-here\" \\\n  -d '{\"type\": \"post\", \"slug\": \"getting-started-nextjs\"}'\n\n# 2. Revalidate all posts\ncurl -X POST https://yoursite.com/api/revalidate \\\n  -H \"Content-Type: application/json\" \\\n  -H \"x-revalidate-secret: your-super-secret-token-here\" \\\n  -d '{\"type\": \"all-posts\"}'\n\n# 3. Revalidate specific path\ncurl -X POST https://yoursite.com/api/revalidate \\\n  -H \"Content-Type: application/json\" \\\n  -H \"x-revalidate-secret: your-super-secret-token-here\" \\\n  -d '{\"path\": \"/blog\"}'\n```\n\n---\n\n**CMS Webhook integration (e.g., Contentful, Sanity):**\n\n```typescript\n// In your CMS, configure webhook:\n// URL: https://yoursite.com/api/revalidate\n// Method: POST\n// Headers: x-revalidate-secret: your-token\n// Body:\n{\n  \"type\": \"post\",\n  \"slug\": \"{{entry.slug}}\"  // CMS variable\n}\n```\n\n---\n\n**How it works:**\n\n**Build time:**\n```\n✓ Generating static pages:\n  /blog/post-1\n  /blog/post-2\n  /blog/post-3\n```\n\n**Runtime:**\n1. **0:00** - User visits `/blog/post-1` → Serves cached HTML (instant!)\n2. **0:00 - 9:59** - All requests serve cached HTML\n3. **10:00** - First request after 10 min → Serves stale HTML, regenerates in background\n4. **10:01** - Subsequent requests serve fresh HTML\n\n**On-demand:**\n- Admin publishes new post → Webhook triggers revalidation\n- Specific post updated immediately\n- No waiting for 10-minute interval\n\n---\n\n**Key features:**\n✅ All posts pre-rendered at build (SSG)\n✅ Automatic revalidation every 10 minutes (ISR)\n✅ On-demand revalidation via API (instant updates)\n✅ Secure with secret token\n✅ Tagged for granular control\n✅ SEO-friendly (static HTML)\n✅ Ultra-fast (cached)\n✅ Always up-to-date (revalidation)"
+        }
+    ]
+}
